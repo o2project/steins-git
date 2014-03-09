@@ -1,0 +1,378 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rgb",
+				"rgbValues"
+			],
+			[
+				"conver",
+				"convertTargetTo"
+			],
+			[
+				"output",
+				"outputTextDefault"
+			],
+			[
+				"is",
+				"isColorCode"
+			],
+			[
+				"colo",
+				"colorCodeValues"
+			],
+			[
+				"co",
+				"colorCodeValues"
+			],
+			[
+				"Colo",
+				"ColorConverter"
+			],
+			[
+				"ko",
+				"knockout"
+			],
+			[
+				"to",
+				"toColorCode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "about-git.re",
+			"settings":
+			{
+				"buffer_size": 354,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"selected_items":
+		[
+			[
+				"review",
+				"Set Syntax: ReVIEW"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"add ",
+				"Package Control: Add Repository"
+			],
+			[
+				"aj",
+				"Set Syntax: Jade"
+			],
+			[
+				"jad",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"tyep",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"ins pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pain",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"packa ",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"type",
+				"TypeScript: Check Syntax"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"typescript",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"projec",
+				"Project: Save As"
+			],
+			[
+				"projet",
+				"Project: Add Folder"
+			],
+			[
+				"proje",
+				"Project: Close"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"typescrit",
+				"Typescript: Open Error Panel"
+			],
+			[
+				"typesc",
+				"Typescript: Reload Project"
+			]
+		],
+		"width": 417.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/bower.json",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/package.json",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/index.jade",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/Gruntfile.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/styles/main.sass",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/scripts/main.ts",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/scripts/color-converter.ts",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/.gitignore",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/README.md",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/.tmp/styles/main.css",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/styles/main.css",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/User/TypeScript.sublime-settings",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/scripts/color-converter.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/.tmp/scripts/color-converter.d.ts",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/scripts/color-converter.d.ts",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/index.html",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/.idea/encodings.xml",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/styles/main.scss",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/Better TypeScript/TypeScript.sublime-settings",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/Better TypeScript/Keymaps/Default (OSX).sublime-keymap",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/User/Typescript.sublime-settings",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/User/T3S.sublime-settings",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/T3S/T3S.sublime-settings",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/scripts/.sublimets",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/T3S/examples/sublimets/.sublimets",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/.sublimets",
+		"/Users/kubosho/share/sublime projects/color-converter.sublime-project",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/color-converter.sublime-project",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/color-converter.sublime-project ",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/T3S/Typescript.sublime-settings",
+		"/Users/kubosho/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/node_modules/grunt/internal-tasks/subgrunt.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/suffix-utils.jsm",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/node_modules/jshint-stylish/stylish.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/build.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/app/bower_components/jquery/jquery.js",
+		"/Users/kubosho/localrepos/o2p.jp/color-converter/node_modules/grunt-mocha/node_modules/mocha/lib/reporters/json-stream.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"isColorCode",
+			"HEXValues",
+			"colorCode",
+			"clean",
+			"/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"isHEX",
+			"hexValues",
+			"HEX",
+			"toRGB"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "about-git.re",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ReVIEW/review.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "c86.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
