@@ -1,0 +1,24 @@
+= [WIP] Steins;Git
+:Author:      O2 Project
+:keywords:    Git, Steins;Gate
+:revnumber:   {bookversion}
+:source:      https://github.com/o2project/steins-git
+:lang:        ja
+:icons:       font
+:numbered:
+:toc2:
+
+[IMPORTANT]
+=====
+*この書籍はまだ作業中です！*
+=====
+
+[IMPORTANT]
+=====
+この書籍の進行状況は https://github.com/o2project/steins-git/issues?state=open[Issues · o2project/steins-git] や以下から確認できます。
+=====
+
+:leveloffset: 1
+
+// 第一章
+include::Ch1_WhatsGit/readme.adoc[]
