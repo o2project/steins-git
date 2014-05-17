@@ -10,6 +10,19 @@ PUBLISH_BRANCH = 'gh-pages'
 
 TEMP_DIR = 'build'
 
+def init_repo(repo, branch)
+  require 'fileutils'
+
+  if Dir["#{TEMP_DIR}/.git"].empty?
+    FileUtils.rm_rf TEMP_DIR
+    system "git clone --quiet #{repo} #{TEMP_DIR} 2> /dev/null"
+  end
+
+  Dir.chdir TEMP_DIR do
+    sh "git checkout --orphan #{branch}"
+  end
+end
+
 def build_asciidoc(src, output)
   sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
 end
