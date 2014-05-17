@@ -34,6 +34,15 @@ def build_asciidoc(src, output)
   sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
 end
 
+def push_to_target_branch(repo, branch)
+  sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
+  Dir.chdir TEMP_DIR do
+    sh 'git add -A'
+    sh "git commit -m '[ci skip] Update with #{sha1}'"
+    system "git push --quiet #{repo} #{branch} 2> /dev/null"
+  end
+end
+
 namespace :generate do
   desc 'index.adocをindex.htmlへ変換します'
   task :html do
