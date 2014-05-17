@@ -23,6 +23,13 @@ def init_repo(repo, branch)
   end
 end
 
+def update_repo(branch)
+  Dir.chdir DEST_DIR do
+    sh 'git fetch origin'
+    sh "git reset --hard origin/#{branch}"
+  end
+end
+
 def build_asciidoc(src, output)
   sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
 end
