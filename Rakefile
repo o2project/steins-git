@@ -24,7 +24,7 @@ def init_repo(repo, branch)
 end
 
 def update_repo(branch)
-  Dir.chdir DEST_DIR do
+  Dir.chdir TEMP_DIR do
     sh 'git fetch origin'
     sh "git reset --hard origin/#{branch}"
   end
