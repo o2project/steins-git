@@ -49,7 +49,6 @@ task :setup do
 end
 
 namespace :generate do
-  desc 'index.adocをindex.htmlへ変換します'
   task :html do
     puts 'Generate HTML...'
     puts 'Building asciidoc'
