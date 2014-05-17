@@ -15,7 +15,7 @@ def init_repo(repo, branch)
 
   if Dir["#{TEMP_DIR}/.git"].empty?
     FileUtils.rm_rf TEMP_DIR
-    system "git clone --quiet #{repo} #{TEMP_DIR} 2> /dev/null"
+    sh "git clone --quiet #{repo} #{TEMP_DIR} 2> /dev/null"
   end
 
   Dir.chdir TEMP_DIR do
@@ -39,9 +39,8 @@ def push_to_target_branch(repo, branch)
 
   Dir.chdir TEMP_DIR do
     sh 'git add -A'
-    sh 'git status'
     sh "git commit -m '[ci skip] Update with #{sha1}'"
-    system "git push --quiet #{repo} #{branch} 2> /dev/null"
+    sh "git push --quiet #{repo} #{branch} 2> /dev/null"
   end
 end
 
