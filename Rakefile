@@ -43,6 +43,11 @@ def push_to_target_branch(repo, branch)
   end
 end
 
+task :setup do
+  init_repo REPOSITORY, PUBLISH_BRANCH
+  update_repo PUBLISH_BRANCH
+end
+
 namespace :generate do
   desc 'index.adocをindex.htmlへ変換します'
   task :html do
