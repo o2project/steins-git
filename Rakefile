@@ -56,3 +56,7 @@ namespace :generate do
     puts "Done! => #{OUTPUT_FILE}"
   end
 end
+
+task :publish do
+  push_to_target_branch REPOSITORY, PUBLISH_BRANCH
+end
