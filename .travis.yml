@@ -15,7 +15,7 @@ before_script:
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake setup > /dev/null'
 
 script:
-  - rake genarate:html
+  - rake generate:html
 
 after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake publish > /dev/null'
