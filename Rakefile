@@ -10,7 +10,7 @@ PUBLISH_BRANCH = 'gh-pages'
 
 TEMP_DIR = 'build'
 
-def init_repo(branch)
+def init_repo(repo, branch)
     require 'fileutils'
 
   if Dir["#{TEMP_DIR}/.git"].empty?
