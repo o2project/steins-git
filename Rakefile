@@ -1,5 +1,5 @@
 SRC_FILE = 'index.adoc'
-OUTPUT_FILE = 'index.html'
+OUTPUT_FILE = 'build/index.html'
 
 REPOSITORY = if ENV['GH_TOKEN']
                'https://$GH_TOKEN@github.com/o2project/steins-git'
