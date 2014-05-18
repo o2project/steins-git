@@ -22,7 +22,7 @@ def push_to_target_branch(repo, branch)
 
   sh 'git add -A'
   sh "git commit -m '[ci skip] Update with #{sha1}'"
-  sh "git push --quiet #{repo} #{branch} 2> /dev/null"
+  sh "git push --quiet #{repo} #{branch}"
 end
 
 task :setup do
