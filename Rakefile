@@ -26,7 +26,6 @@ def push_to_target_branch(repo, branch)
 end
 
 task :setup do
-  init_repo REPOSITORY, PUBLISH_BRANCH
   update_repo PUBLISH_BRANCH
 end
 
