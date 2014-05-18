@@ -8,8 +8,19 @@ REPOSITORY = if ENV['GH_TOKEN']
              end
 PUBLISH_BRANCH = 'gh-pages'
 
-def init_repo(repo, branch)
-  sh "git checkout --orphan #{branch}"
+TEMP_DIR = 'build'
+
+def init_repo(branch)
+    require 'fileutils'
+
+  if Dir["#{TEMP_DIR}/.git"].empty?
+    FileUtils.rm_rf TEMP_DIR
+    sh "git clone --quiet #{repository} #{TEMP_DIR} 2> /dev/null"
+  end
+
+  Dir.chdir TEMP_DIR do
+    sh "git checkout --orphan #{branch}"
+  end
 end
 
 def update_repo(branch)
@@ -31,7 +42,7 @@ end
 
 task :setup do
   init_repo REPOSITORY, PUBLISH_BRANCH
-  update_repo 'master'
+  update_repo PUBLISH_BRANCH
 end
 
 namespace :generate do
