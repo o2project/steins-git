@@ -31,9 +31,7 @@ def update_repo(branch)
 end
 
 def build_asciidoc(src, output)
-  Dir.chdir TEMP_DIR do
-    sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
-  end
+  sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
 end
 
 def push_to_target_branch(repo, branch)
