@@ -31,15 +31,19 @@ def update_repo(branch)
 end
 
 def build_asciidoc(src, output)
-  sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
+  Dir.chdir TEMP_DIR do
+    sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
+  end
 end
 
 def push_to_target_branch(repo, branch)
   sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
 
-  sh 'git add -A'
-  sh "git commit -m '[ci skip] Update with #{sha1}'"
-  sh "git push --quiet #{repo} #{branch}"
+  Dir.chdir TEMP_DIR do
+    sh 'git add -A'
+    sh "git commit -m '[ci skip] Update with #{sha1}'"
+    sh "git push --quiet #{repo} #{branch}"
+  end
 end
 
 task :setup do
