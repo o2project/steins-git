@@ -15,7 +15,7 @@ def init_repo(repo, branch)
 
   if Dir["#{TEMP_DIR}/.git"].empty?
     FileUtils.rm_rf TEMP_DIR
-    sh "git clone --quiet #{repository} #{TEMP_DIR} 2> /dev/null"
+    sh "git clone --quiet #{repo} #{TEMP_DIR} 2> /dev/null"
   end
 
   Dir.chdir TEMP_DIR do
