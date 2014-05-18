@@ -31,7 +31,7 @@ end
 
 task :setup do
   init_repo REPOSITORY, PUBLISH_BRANCH
-  update_repo PUBLISH_BRANCH
+  update_repo 'master'
 end
 
 namespace :generate do
