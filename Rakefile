@@ -8,21 +8,6 @@ REPOSITORY = if ENV['GH_TOKEN']
              end
 PUBLISH_BRANCH = 'gh-pages'
 
-TEMP_DIR = 'build'
-
-def init_repo(repo, branch)
-  require 'fileutils'
-
-  if Dir["#{TEMP_DIR}/.git"].empty?
-    FileUtils.rm_rf TEMP_DIR
-    sh "git clone --quiet #{repo} #{TEMP_DIR} 2> /dev/null"
-  end
-
-  Dir.chdir TEMP_DIR do
-    sh "git checkout --orphan #{branch}"
-  end
-end
-
 def update_repo(branch)
   Dir.chdir TEMP_DIR do
     sh 'git fetch origin'
