@@ -1,8 +1,5 @@
 language: ruby
 
-rvm:
-  - 2.1.2
-
 env:
   global:
     - GIT_COMMITTER_NAME=kubosho_
