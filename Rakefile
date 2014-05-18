@@ -9,10 +9,8 @@ REPOSITORY = if ENV['GH_TOKEN']
 PUBLISH_BRANCH = 'gh-pages'
 
 def update_repo(branch)
-  Dir.chdir TEMP_DIR do
-    sh 'git fetch origin'
-    sh "git reset --hard origin/#{branch}"
-  end
+  sh 'git fetch origin'
+  sh "git reset --hard origin/#{branch}"
 end
 
 def build_asciidoc(src, output)
