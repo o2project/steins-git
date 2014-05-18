@@ -24,8 +24,10 @@ def init_repo(repo, branch)
 end
 
 def update_repo(branch)
-  sh 'git fetch origin'
-  sh "git reset --hard origin/#{branch}"
+  Dir.chdir TEMP_DIR do
+    sh 'git fetch origin'
+    sh "git reset --hard origin/#{branch}"
+  end
 end
 
 def build_asciidoc(src, output)
