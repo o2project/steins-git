@@ -37,9 +37,11 @@ end
 def push_to_target_branch(repo, branch)
   sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
 
-  sh 'git add -A'
-  sh "git commit -m '[ci skip] Update with #{sha1}'"
-  sh "git push --quiet #{repo} #{branch}"
+  Dir.chdir DEST_DIR do
+    sh 'git add -A'
+    sh "git commit -m '[ci skip] Update with #{sha1}'"
+    sh "git push --quiet #{repo} #{branch}"
+  end
 end
 
 task :setup do
