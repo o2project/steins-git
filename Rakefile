@@ -8,6 +8,10 @@ REPOSITORY = if ENV['GH_TOKEN']
              end
 PUBLISH_BRANCH = 'gh-pages'
 
+def init_repo(repo, branch)
+  sh "git checkout --orphan #{branch}"
+end
+
 def update_repo(branch)
   sh 'git fetch origin'
   sh "git reset --hard origin/#{branch}"
@@ -26,6 +30,7 @@ def push_to_target_branch(repo, branch)
 end
 
 task :setup do
+  init_repo REPOSITORY, PUBLISH_BRANCH
   update_repo PUBLISH_BRANCH
 end
 
