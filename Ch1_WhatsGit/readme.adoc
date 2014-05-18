@@ -1,5 +1,0 @@
-[[chapter1-what-is-git]]
-= Chapter.1 - Gitとは何か
-:imagesdir: Ch1_WhatsGit/
-
-include::what-is-version-control.adoc[]
