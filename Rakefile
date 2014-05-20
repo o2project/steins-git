@@ -1,5 +1,6 @@
 SRC_FILE = 'index.adoc'
-OUTPUT_FILE = 'build/index.html'
+OUTPUT_DIRECTORY = 'build/'
+OUTPUT_FILE = 'index.html'
 
 REPOSITORY = if ENV['GH_TOKEN']
                'https://$GH_TOKEN@github.com/o2project/steins-git'
@@ -11,7 +12,7 @@ PUBLISH_BRANCH = 'gh-pages'
 TEMP_DIR = 'build'
 
 def init_repo(repo, branch)
-    require 'fileutils'
+  require 'fileutils'
 
   if Dir["#{TEMP_DIR}/.git"].empty?
     FileUtils.rm_rf TEMP_DIR
@@ -53,11 +54,20 @@ namespace :generate do
   task :html do
     puts 'Generate HTML...'
     puts 'Building asciidoc'
-    build_asciidoc SRC_FILE, OUTPUT_FILE
+    build_asciidoc SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_FILE}"
     puts "Done! => #{OUTPUT_FILE}"
   end
 end
 
+task :preview do
+  sh 'bundle exec guard'
+end
+
 task :publish do
   push_to_target_branch REPOSITORY, PUBLISH_BRANCH
+end
+
+task :clean do
+  require 'fileutils'
+  FileUtils.rm_rf OUTPUT_DIRECTORY
 end
