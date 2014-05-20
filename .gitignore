@@ -2,3 +2,4 @@ build
 .bundle
 Gemfile.lock
 vendor
+node_modules
