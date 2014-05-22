@@ -374,7 +374,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li>
 <ul class="sectlevel2">
 <li><a href="#_">1.1. はじめに</a></li>
-<li><a href="#what-is-version-control">1.2. バージョン管理システムとは</a></li>
+<li><a href="#what-is-version-control">1.2. バージョン管理システムとは？</a></li>
 </ul>
 </li>
 </ul>
@@ -426,18 +426,75 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="what-is-version-control">1.2. バージョン管理システムとは</h3>
-<div class="sect3">
-<h4 id="__2">1.2.1. 集中バージョン管理システム</h4>
+<h3 id="what-is-version-control">1.2. バージョン管理システムとは？</h3>
 <div class="paragraph">
-<p>ポケモンのセーブデータのようなもの</p>
+<p>Gitについて説明する前に、バージョン管理システムについて説明します。</p>
+</div>
+<div class="paragraph">
+<p>バージョン管理システム、それはあるプロジェクト内でファイルの変更履歴(いつ、なにが、誰によって変更された)などを記録しておくシステムとなります。</p>
+</div>
+<div class="paragraph">
+<p>上の一文を見て、ゲームのセーブデータみたいだなと思った人は合っています。</p>
+</div>
+<div class="sect3">
+<h4 id="__2">1.2.1. もっとも簡単なバージョン管理</h4>
+<div class="paragraph">
+<p>バージョン管理の手法として、ファイルの名前に日付や名前を追加するというのがもっとも簡単で、また、よく使われます。</p>
+</div>
+<div class="paragraph">
+<p>例えばSteins;Gateだと、以下の画像のように各章のフォーントリガーがキーになるところでデータをセーブしておくという手法を使ったことはあると思います。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch1_WhatsGit/img/load_select.png" alt="Steins;Gateロード画面">
+</div>
+</div>
+<div class="sect4">
+<h5 id="__3">問題点</h5>
+<div class="paragraph">
+<p>しかし、このもっとも簡単なバージョン管理には思いつく限りでも四つあります。</p>
+</div>
+<div class="paragraph">
+<p>まず一つ目に、どのファイルを更新すればいいのか分からなくなってしまうことです。</p>
+</div>
+<div class="paragraph">
+<p>例えば、未来ガジェットのアイデアをひらめいてメモしたい時、以下のファイル管理方法の場合だとオカリンは「はて…どれに書き込めばよかったかな」と困るでしょう。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch1_WhatsGit/img/gadget_idea.png" alt="未来ガジェットのアイデアをあちこちに書いてしまった例">
+</div>
+</div>
+<div class="paragraph">
+<p>二つ目は、間違ったファイルに書き込んでしまうことです。</p>
+</div>
+<div class="paragraph">
+<p>上記の図の例だと、「最終版」と書かれているファイルにひらめいたアイデアを書き込んだものの、実は「最新」と書かれているほうが新しかった…ということが起こる可能性があります。</p>
+</div>
+<div class="paragraph">
+<p>Steins;Gateのゲームでもデータをセーブする場所を間違え、ある時点までのデータが消えたということがあると思います。実際自分は、フェイリスエンドを見るために残しておいたデータに、ルカ子エンドに進むデータを上書きしてしまい、鈴羽エンドへ分岐するデータから再びフェイリスエンドへ分岐するところまでやり直したということがありました。地味につらかったです。</p>
+</div>
+<div class="paragraph">
+<p>三つ目は、内容を前のものに戻しづらい、または戻せないということです。</p>
+</div>
+<div class="paragraph">
+<p>例えば、先ほどのセーブデータを間違えて上書きしてしまった例だと、ルカ子エンドに進むようにしてしまったデータを上書きしてしまってそれに気づいたものの、もはや元に戻す方法がなく、仕方なく鈴羽エンドに分岐するところでセーブしておいたデータを、間違えて上書きしてしまったデータのところにセーブしてやり直しました。</p>
+</div>
+<div class="paragraph">
+<p>四つ目は、多人数での編集がほぼ不可能という点です。</p>
+</div>
+<div class="paragraph">
+<p>例えば、オカリンがひらめいたアイデアを書いたファイルを、ネットワーク上の共有のフォルダに保存していたとします。それを紅莉栖が見て、あれこれ書いて保存したと思ったら、オカリンがまた新たなアイデアを同じファイルに書いて保存してしまい、結果、紅莉栖が編集した点が全て消え、また元に戻せなくなります。おそらくこの事で二人は口喧嘩することになるでしょう。</p>
+</div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__3">1.2.2. 分散バージョン管理システム</h4>
-<div class="paragraph">
-<p>シュタゲのセーブデータのようなもの</p>
+<h4 id="__4">1.2.2. 集中バージョン管理システム</h4>
+
 </div>
+<div class="sect3">
+<h4 id="__5">1.2.3. 分散バージョン管理システム</h4>
+
 </div>
 </div>
 </div>
@@ -446,7 +503,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="footer">
 <div id="footer-text">
 Version {bookversion}<br>
-Last updated 2014-05-20 15:47:00 UTC
+Last updated 2014-05-22 13:54:43 UTC
 </div>
 </div>
 </body>
