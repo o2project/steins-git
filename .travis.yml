@@ -20,3 +20,11 @@ script:
 
 after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake publish > /dev/null'
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/27b1fcce7376ca15fd91
+    on_success: change
+    on_failure: always
+    on_start: false
