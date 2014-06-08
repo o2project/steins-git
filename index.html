@@ -370,11 +370,13 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#chapter1-what-is-git">1. Chapter.1 - Gitとは何か</a></li>
+<li><a href="#chapter1-what-is-git">1. Chapter.1 - Gitとはなにか</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#_">1.1. はじめに</a></li>
-<li><a href="#what-is-version-control">1.2. バージョン管理システムとは？</a></li>
+<li><a href="#about-version-control">1.1. バージョン管理について</a></li>
+<li><a href="#easiest-to-version-control">1.2. もっとも簡単なバージョン管理</a></li>
+<li><a href="#what-is-revision-control">1.3. 集中型バージョン管理</a></li>
+<li><a href="#what-is-version-control">1.4. 分散型バージョン管理</a></li>
 </ul>
 </li>
 </ul>
@@ -414,43 +416,35 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect1">
-<h2 id="chapter1-what-is-git">1. Chapter.1 - Gitとは何か</h2>
+<h2 id="chapter1-what-is-git">1. Chapter.1 - Gitとはなにか</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_">1.1. はじめに</h3>
+<h3 id="about-version-control">1.1. バージョン管理について</h3>
 <div class="paragraph">
-<p>Gitとは分散型バージョン管理システムの一つです。他にも集中型バージョン管理システムというものがあったり、Git以外の分散型バージョン管理システムもあります。</p>
+<p>Gitとは、バージョン管理システムの一つです。</p>
 </div>
 <div class="paragraph">
-<p>とはいえ、バージョン管理システム？分散型？集中型？と疑問が浮かんできたと思います。本稿では、GitについてSteins;Gateに例えつつ、説明していきます。</p>
+<p>バージョン管理システムは、あるプロジェクト内でファイルの変更履歴などを記録しておくシステムとなります。ここでいう変更履歴とは「いつ、なにが、誰によって変更された」を指し示します。ゲームのセーブデータみたいだなと思った人はだいたい合っています。</p>
+</div>
+<div class="paragraph">
+<p>では、Gitの説明に移りたいところですが、その前にバージョン管理システムの種類について説明します。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="what-is-version-control">1.2. バージョン管理システムとは？</h3>
+<h3 id="easiest-to-version-control">1.2. もっとも簡単なバージョン管理</h3>
 <div class="paragraph">
-<p>Gitについて説明する前に、バージョン管理システムについて説明します。</p>
+<p>もっとも簡単かつ、よく使われるバージョン管理の手法として、「ファイル名に日付や自分の名前などを追加する」があります。</p>
 </div>
 <div class="paragraph">
-<p>バージョン管理システム、それはあるプロジェクト内でファイルの変更履歴(いつ、なにが、誰によって変更された)などを記録しておくシステムとなります。</p>
-</div>
-<div class="paragraph">
-<p>上の一文を見て、ゲームのセーブデータみたいだなと思った人は合っています。</p>
-</div>
-<div class="sect3">
-<h4 id="__2">1.2.1. もっとも簡単なバージョン管理</h4>
-<div class="paragraph">
-<p>バージョン管理の手法として、ファイルの名前に日付や自分の名前などを追加するというのがもっとも簡単で、また、よく使われます。</p>
-</div>
-<div class="paragraph">
-<p>例えばSteins;Gateだと、以下の画像のように各章のフォーントリガーがキーになるところでデータをセーブしておくという手法を使ったことはあると思います。</p>
+<p>Steins;Gateで例えると、以下の画像のように「各章のフォーントリガーがキーになるところでデータをセーブしておく」という手法を使ったことがあるという人はいると思います。</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="Ch1_WhatsGit/img/load_select.png" alt="Steins;Gateロード画面">
 </div>
 </div>
-<div class="sect4">
-<h5 id="__3">利点</h5>
+<div class="sect3">
+<h4 id="_">1.2.1. 利点</h4>
 <div class="paragraph">
 <p>このもっとも簡単なバージョン管理の利点としては、手軽であるということです。</p>
 </div>
@@ -458,8 +452,8 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>この「ファイルの名前に日付や自分の名前などを追加する」バージョン管理ですが、ファイルを選択した状態で、Windowsであれば「F2」、Macであれば「Enter」を押すことで、ファイル名の編集ができます。</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="__4">問題点</h5>
+<div class="sect3">
+<h4 id="__2">1.2.2. 問題点</h4>
 <div class="paragraph">
 <p>しかし、このもっとも簡単なバージョン管理には思いつく限りでも四つあります。</p>
 </div>
@@ -493,12 +487,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>四つ目は、多人数での編集がほぼ不可能という点です。</p>
 </div>
 <div class="paragraph">
-<p>例えば、オカリンがひらめいたアイデアを書いたファイルを、ネットワーク上の共有のフォルダに保存していたとします。それを紅莉栖が見て、あれこれ書いて保存したと思ったら、オカリンがまた新たなアイデアを同じファイルに書いて保存してしまい、結果、紅莉栖が編集した点が全て消え、また元に戻せなくなります。おそらくこの事で二人は口喧嘩することになるでしょう。</p>
+<p>例えば、オカリンがひらめいたアイデアを書いたファイルを、ネットワーク上の共有のフォルダに保存していたとします。それを紅莉栖が見て、あれこれ書いて保存したと思ったら、オカリンがまた新たなアイデアを同じファイルに書いて保存してしまい、結果、紅莉栖が編集した点が全て消え、元に戻せなくなります。おそらくこの事で二人は口喧嘩することになるでしょう。</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="__5">1.2.2. 集中型バージョン管理システム</h4>
+<div class="sect2">
+<h3 id="what-is-revision-control">1.3. 集中型バージョン管理</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -510,8 +504,8 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="__6">1.2.3. 分散型バージョン管理システム</h4>
+<div class="sect2">
+<h3 id="what-is-version-control">1.4. 分散型バージョン管理</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -526,11 +520,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
 Version {bookversion}<br>
-Last updated 2014-06-08 12:04:16 UTC
+Last updated 2014-06-08 14:47:38 UTC
 </div>
 </div>
 </body>
