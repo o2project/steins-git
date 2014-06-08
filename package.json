@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/o2project/steins-git/issues"
   },
-  "homepage": "https://github.com/o2project/steins-git"
+  "homepage": "https://github.com/o2project/steins-git",
+  "devDependencies": {
+    "grunt-shell": "^0.7.0"
+  }
 }
