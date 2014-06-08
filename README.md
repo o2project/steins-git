@@ -3,14 +3,21 @@ Steins;Git
 
 [![Build Status](https://travis-ci.org/o2project/steins-git.svg?branch=master)](https://travis-ci.org/o2project/steins-git) [![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git)
 
-C86(日曜日 西地区"な"ブロック－11b)にて頒布予定の、GitをSteins;Gateを使って説明する薄い本です。
+C86(日曜日 西地区"な"ブロック-11b)にて頒布予定の、GitをSteins;Gateを使って説明する薄い本です。
 
 http://o2project.github.io/steins-git より見ることができます。
 
-## 対象読者
+## ローカルで確認する
 
-- Steins;Gateのゲームで全てのエンディングを見た、アニメを全話見たなどして、Steins;Gateがどういうものか分かっている人
-- Gitを使ったことがない、または使ったことはあるが、ふんわりとしたところしか分からない人
+各種パッケージのインストールやローカルでの確認をおこないたい場合は、以下のコマンドを上から順に実行してください。
+
+```
+git clone git@github.com:o2project/steins-git.git
+bundle install --path vendor/bundle
+npm install
+grunt
+grunt server
+```
 
 ## ライセンス
 
