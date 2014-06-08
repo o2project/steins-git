@@ -20,5 +20,16 @@
 
 :leveloffset: 1
 
-// 第一章
+:numbered!:
+
+include::Ch0_Introduction/readme.adoc[]
+
+:numbered:
+
 include::Ch1_WhatsGit/readme.adoc[]
+
+include::Ch2_WhyGit/readme.adoc[]
+
+include::Ch3_HowToGit/readme.adoc[]
+
+include::Ch4_HowToGitHub/readme.adoc[]
