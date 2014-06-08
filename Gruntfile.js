@@ -32,7 +32,7 @@ module.exports = function(grunt) {
             },
             adoc: {
                 files: [
-                    'Ch1_WhatsGit/*.adoc',
+                    'Ch*/*.adoc',
                     'index.adoc'
                 ],
                 tasks: ['shell:generateHtml']
