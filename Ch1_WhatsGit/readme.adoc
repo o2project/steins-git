@@ -1,11 +1,11 @@
 [[chapter1-what-is-git]]
-= Chapter.1 - Gitとは何か
+= Chapter.1 - Gitとはなにか
 :imagesdir: Ch1_WhatsGit/
 
-== はじめに
+include::about-version-control.adoc[]
 
-Gitとは分散型バージョン管理システムの一つです。他にも集中型バージョン管理システムというものがあったり、Git以外の分散型バージョン管理システムもあります。
+include::easiest-to-version-control.adoc[]
 
-とはいえ、バージョン管理システム？分散型？集中型？と疑問が浮かんできたと思います。本稿では、GitについてSteins;Gateに例えつつ、説明していきます。
+include::what-is-revision-control.adoc[]
 
 include::what-is-version-control.adoc[]
