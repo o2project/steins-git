@@ -12,7 +12,8 @@ http://o2project.github.io/steins-git より見ることができます。
 各種パッケージのインストールやローカルでの確認をおこないたい場合は、以下のコマンドを上から順に実行してください。
 
 ```
-git clone git@github.com:o2project/steins-git.git
+git clone https://github.com/o2project/steins-git.git steins-git
+cd steins-git
 bundle install --path vendor/bundle
 npm install
 grunt
