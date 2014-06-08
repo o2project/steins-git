@@ -42,7 +42,8 @@ def directory_copy(src, dist)
 end
 
 def build_asciidoc(src, output)
-  sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
+  sh "bundle exec asciidoctor -a bookversion=`node ./bin/bookversion` \
+  -a icons=font -o #{output} #{src}"
 end
 
 def push_to_target_branch(repo, branch)
