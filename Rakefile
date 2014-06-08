@@ -31,6 +31,16 @@ def update_repo(branch)
   end
 end
 
+def directory_copy(src, dist)
+  require 'fileutils'
+
+  unless File.exist?(dist)
+    FileUtils.mkdir_p(dist)
+  end
+
+  FileUtils.copy_entry src, dist
+end
+
 def build_asciidoc(src, output)
   sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
 end
@@ -52,10 +62,12 @@ end
 
 namespace :generate do
   task :html do
-    puts 'Generate HTML...'
-    puts 'Building asciidoc'
+    puts '画像のディレクトリをbuildディレクトリ配下にコピーします…'
+    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
+    puts "完了！"
+    puts 'HTMLを生成します…'
     build_asciidoc SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_FILE}"
-    puts "Done! => #{OUTPUT_FILE}"
+    puts "完了！ => #{OUTPUT_FILE}"
   end
 end
 
