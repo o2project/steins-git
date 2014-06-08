@@ -59,10 +59,6 @@ namespace :generate do
   end
 end
 
-task :preview do
-  sh 'bundle exec guard'
-end
-
 task :publish do
   push_to_target_branch REPOSITORY, PUBLISH_BRANCH
 end
