@@ -31,6 +31,16 @@ def update_repo(branch)
   end
 end
 
+def directory_copy(src, dist)
+  require 'fileutils'
+
+  unless File.exist?(dist)
+    FileUtils.mkdir_p(dist)
+  end
+
+  FileUtils.copy_entry src, dist
+end
+
 def build_asciidoc(src, output)
   sh "bundle exec asciidoctor -a icons=font -o #{output} #{src}"
 end
@@ -52,8 +62,10 @@ end
 
 namespace :generate do
   task :html do
+    puts 'Each section img directory recursively copy to under build directory...'
+    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
+    puts "Done!"
     puts 'Generate HTML...'
-    puts 'Building asciidoc'
     build_asciidoc SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_FILE}"
     puts "Done! => #{OUTPUT_FILE}"
   end

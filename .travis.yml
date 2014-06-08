@@ -6,6 +6,7 @@ branches:
 
 env:
   global:
+    - export LC_CTYPE=en_US.UTF-8
     - GIT_COMMITTER_NAME=kubosho_
     - GIT_COMMITTER_EMAIL=ta2@o2p.jp
     - GIT_AUTHOR_NAME=kubosho_
