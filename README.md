@@ -11,7 +11,7 @@ http://o2project.github.io/steins-git より見ることができます。
 
 各種パッケージのインストールやローカルでの確認をおこないたい場合は、以下のコマンドを上から順に実行してください。
 
-事前にNode.jsやrvmやrbenvを利用してRubyがインストールされている想定です。
+事前にNode.jsと、rvmやrbenvを利用してRubyがインストールされている想定です。
 
 ```
 git clone https://github.com/o2project/steins-git.git steins-git
