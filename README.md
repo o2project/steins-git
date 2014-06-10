@@ -22,6 +22,18 @@ grunt
 grunt server
 ```
 
+## 貢献
+
+[![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git) に意見などどうぞ。
+
+[CONTRIBUTE.md](CONTRIBUTE.md "CONTRIBUTE.md")も、ガイドラインなど書いてあるので参考にしてください。
+
+1. リポジトリをフォークしましょう！
+2. 新たなfeatureブランチを作ります: <code>git checkout -b my-new-feature</code>
+3. 変更点をコミットします: `git commit -am 'ほげもげを追加'`
+4. リモートにプッシュします: `git push origin my-new-feature`
+5. pull requestしましょう :D
+
 ## ライセンス
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
