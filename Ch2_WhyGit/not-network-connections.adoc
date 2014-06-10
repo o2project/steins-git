@@ -1,0 +1,4 @@
+[[not-network-connections]]
+== ネットワーク接続がいらない
+
+言い過ぎ感

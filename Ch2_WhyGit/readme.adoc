@@ -1,3 +1,9 @@
 [[chapter2-why-git]]
 = Chapter.2 - なぜGitを使うのか
 :imagesdir: Ch2_WhyGit/
+
+
+第一章で説明した、バージョン管理システムの中でも、なぜ分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。
+
+include::difference-between-the-revision-control-and-version-control.adoc[]
+include::not-network-connections.adoc[]

@@ -1,0 +1,2 @@
+[[difference-between-the-revision-control-and-version-control]]
+== 集中型・分散型バージョン管理システムの違い
