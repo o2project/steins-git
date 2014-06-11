@@ -6,6 +6,6 @@ include::about-version-control.adoc[]
 
 include::easiest-to-version-control.adoc[]
 
-include::what-is-revision-control.adoc[]
+include::what-is-centralized-revision-control.adoc[]
 
 include::what-is-version-control.adoc[]
