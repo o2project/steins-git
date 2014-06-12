@@ -8,4 +8,4 @@ include::easiest-to-version-control.adoc[]
 
 include::centralized-revision-control.adoc[]
 
-include::what-is-version-control.adoc[]
+include::distributed-revision-control.adoc[]
