@@ -1,3 +1,7 @@
 [[chapter3-how-to-git]]
 = Chapter.3 - Gitの使いかた
 :imagesdir: Ch3_HowToGit/
+
+ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使いかたを知りたいという人もいるでしょう。
+
+この章では、Gitの使いかたとして、Gitを使う上で必要なGitのコマンドについてSteins;Gateに例えて説明していきます。
