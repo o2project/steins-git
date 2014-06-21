@@ -58,5 +58,6 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', ['shell:generateHtml']);
 
-    grunt.registerTask('server', ['connect', 'open', 'watch']);
+    grunt.registerTask('server', ['connect', 'watch']);
+    grunt.registerTask('server-open', ['connect', 'open', 'watch']);
 };
