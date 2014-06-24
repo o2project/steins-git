@@ -371,13 +371,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#chapter0-introduction">はじめに</a></li>
-<li><a href="#chapter1-what-is-git">1. Chapter.1 - Gitとはなにか</a></li>
+<li><a href="#chapter1-what-is-git">1. Chapter.1 - バージョン管理とはなにか</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#about-version-control">1.1. バージョン管理について</a></li>
-<li><a href="#easiest-to-version-control">1.2. もっとも手軽なバージョン管理</a></li>
-<li><a href="#centralized-revision-control">1.3. 集中型バージョン管理(SVN)</a></li>
-<li><a href="#distributed-revision-control">1.4. 分散型バージョン管理(Git)</a></li>
+<li><a href="#easiest-to-version-control">1.1. もっとも手軽なバージョン管理</a></li>
+<li><a href="#centralized-revision-control">1.2. 集中型バージョン管理(SVN)</a></li>
+<li><a href="#distributed-revision-control">1.3. 分散型バージョン管理(Git)</a></li>
 </ul>
 </li>
 <li><a href="#chapter2-why-git">2. Chapter.2 - なぜGitを使うのか</a></li>
@@ -432,22 +431,19 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect1">
-<h2 id="chapter1-what-is-git">1. Chapter.1 - Gitとはなにか</h2>
+<h2 id="chapter1-what-is-git">1. Chapter.1 - バージョン管理とはなにか</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="about-version-control">1.1. バージョン管理について</h3>
 <div class="paragraph">
-<p>Gitとは、バージョン管理システムの一つです。</p>
+<p>Gitについて触れる前に、バージョン管理システムについて説明します。</p>
 </div>
 <div class="paragraph">
 <p>バージョン管理システムは、あるプロジェクト内でファイルの変更履歴などを記録しておくシステムとなります。ここでいう変更履歴とは「いつ、なにが、誰によって変更された」を指し示します。ゲームのセーブデータみたいだなと思った人はだいたい合っています。</p>
 </div>
 <div class="paragraph">
-<p>では、Gitの説明に移りたいところですが、その前にバージョン管理システムの種類について説明します。</p>
-</div>
+<p>バージョン管理システムには種類がいくつかあります。まずはGitを解説する前に、各バージョン管理システムについて解説していきます。</p>
 </div>
 <div class="sect2">
-<h3 id="easiest-to-version-control">1.2. もっとも手軽なバージョン管理</h3>
+<h3 id="easiest-to-version-control">1.1. もっとも手軽なバージョン管理</h3>
 <div class="paragraph">
 <p>もっとも手軽かつ、よく使われるバージョン管理の手法として、「ファイル名を変更する」があります。</p>
 </div>
@@ -460,7 +456,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="_">1.2.1. 「ファイル名を変更する」バージョン管理の利点</h4>
+<h4 id="_">1.1.1. 「ファイル名を変更する」バージョン管理の利点</h4>
 <div class="paragraph">
 <p>この、ファイル名を変更するバージョン管理の利点として、「手軽である」ということです。</p>
 </div>
@@ -472,7 +468,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__2">1.2.2. どのファイルを更新すればいいのか分からなくなる</h4>
+<h4 id="__2">1.1.2. どのファイルを更新すればいいのか分からなくなる</h4>
 <div class="paragraph">
 <p>例えば、未来ガジェットのアイデアをひらめいてメモしたい時、以下のファイル管理方法の場合だとオカリンは「はて…どれに書き込めばよかったかな」と困るでしょう。</p>
 </div>
@@ -483,7 +479,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__3">1.2.3. 間違ったファイルに書き込んでしまう</h4>
+<h4 id="__3">1.1.3. 間違ったファイルに書き込んでしまう</h4>
 <div class="paragraph">
 <p>上記の図の例だと、「最終版」と書かれているファイルにひらめいたアイデアを書き込んだものの、実は「最新」と書かれているほうが新しかった…ということが起こる可能性があります。</p>
 </div>
@@ -492,20 +488,20 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__4">1.2.4. 内容を前のものに戻しづらい、または戻せない</h4>
+<h4 id="__4">1.1.4. 内容を前のものに戻しづらい、または戻せない</h4>
 <div class="paragraph">
 <p>例えば、先ほどのセーブデータを間違えて上書きしてしまった例だと、ルカ子エンドに進むようにしてしまったデータを上書きしてしまってそれに気づいたものの、もはや元に戻す方法がなく、仕方なく鈴羽エンドに分岐するところでセーブしておいたデータを、間違えて上書きしてしまったデータのところにセーブしてやり直しました。</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__5">1.2.5. 多人数での編集がほぼ不可能</h4>
+<h4 id="__5">1.1.5. 多人数での編集がほぼ不可能</h4>
 <div class="paragraph">
 <p>例えば、オカリンがひらめいたアイデアを書いたファイルを、ネットワーク上の共有のフォルダに保存していたとします。それを紅莉栖が見て、あれこれ書いて保存したと思ったら、オカリンがまた新たなアイデアを同じファイルに書いて保存してしまい、結果、紅莉栖が編集した点が全て消え、元に戻せなくなります。おそらくこの事で二人は口喧嘩することになるでしょう。</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="centralized-revision-control">1.3. 集中型バージョン管理(SVN)</h3>
+<h3 id="centralized-revision-control">1.2. 集中型バージョン管理(SVN)</h3>
 <div class="paragraph">
 <p>このように、ファイル名を変更するというバージョン管理では、多人数でファイルを編集したいときに困ることになります。</p>
 </div>
@@ -513,16 +509,16 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>また、内容を前のものに戻しづらかったり、戻せないということが往々にして起きるため、例えばセーブデータを上書きしてしまったときに、再度やり直し…ということがおきます。</p>
 </div>
 <div class="paragraph">
-<p>そこで集中型バージョン管理というものが出てきます。ここでは集中型バージョン管理の中でも、「SVN(Subversion))」について解説していきます。</p>
+<p>そこで「集中型バージョン管理システム」というものが出てきます。ここでは集中型バージョン管理システムの中でも、「SVN(Subversion))」について解説していきます。</p>
 </div>
 <div class="sect3">
-<h4 id="_svn_subversion">1.3.1. SVN(Subversion)の概要</h4>
+<h4 id="_svn_subversion">1.2.1. SVN(Subversion)の概要</h4>
 <div class="paragraph">
-<p>SVNは集中型バージョン管理の一つで、ネットワーク上に「リポジトリ」と呼ばれる、「ファイルそのものや、いつ誰がどこを変更したという履歴」を保存しておくものがあり、そこに皆が「コミット」と呼ばれる「作業内容を記録・反映」する行為をしていきます。</p>
+<p>SVNは集中型バージョン管理システムの一つで、ネットワーク上に「リポジトリ」と呼ばれる、「ファイルそのものや、いつ誰がどこを変更したという履歴」を保存しておくものがあり、そこに皆が「コミット」と呼ばれる「作業内容を記録・反映」する行為をしていきます。</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__6">1.3.2. 「ファイル名を変更する」バージョン管理と比較したときの利点</h4>
+<h4 id="__6">1.2.2. 「ファイル名を変更する」バージョン管理と比較したときの利点</h4>
 <div class="paragraph">
 <p>SVNを使う利点としては、ファイル名を変更する手法のバージョン管理のデメリットをなくせるということです。</p>
 </div>
@@ -534,29 +530,26 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__7">1.3.3. 問題点を以下に書く</h4>
+<h4 id="__7">1.2.3. 問題点を以下に書く</h4>
 
 </div>
 </div>
 <div class="sect2">
-<h3 id="distributed-revision-control">1.4. 分散型バージョン管理(Git)</h3>
+<h3 id="distributed-revision-control">1.3. 分散型バージョン管理(Git)</h3>
 <div class="paragraph">
-<p>ここでようやく分散型バージョン管理が出てきます。</p>
-</div>
-<div class="paragraph">
-<p>分散型バージョン管理には何種類かありますが、ここではこの書籍のテーマである「Git」を、集中型バージョン管理システムであるSVNと比べて、分散型バージョン管理システムであるGitには、どのような違いがあってどんな利点があるかを解説していきます。</p>
+<p>次に分散型バージョン管理システムについて説明します。分散型バージョン管理には何種類かありますが、ここではこの書籍のテーマである「Git」を例に取り、集中型バージョン管理システムであるSVNと比べて、分散型バージョン管理システムであるGitには、どのような違いがあってどんな利点があるかを解説していきます。</p>
 </div>
 <div class="sect3">
-<h4 id="_git">1.4.1. Gitの概要</h4>
+<h4 id="_git">1.3.1. Gitの概要</h4>
 <div class="paragraph">
-<p>Gitは分散型バージョン管理の一つです。Gitの場合は自分のPC上に「リポジトリ」があり、自分の手元でで作業内容を記録(コミット)していくことができます。他人と作業内容を共有する場合は、ネットワーク上に共有用のリポジトリを用意しておき、そこへ自分の作業内容を送信(プッシュ)します。</p>
+<p>Gitは分散型バージョン管理システムの一つです。Gitの場合は自分のPC上に「リポジトリ」があり、自分の手元でで作業内容を記録(コミット)していくことができます。他人と作業内容を共有する場合は、ネットワーク上に共有用のリポジトリを用意しておき、そこへ自分の作業内容を送信(プッシュ)します。</p>
 </div>
 <div class="paragraph">
-<p>この分散型バージョン管理というものは、SVNと比較した際の利点として、三つあります。その利点について、以下に書いていきます。</p>
+<p>この分散型バージョン管理システムというものは、SVNと比較した際の利点として、三つあります。その利点について、以下に書いていきます。</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__8">1.4.2. 一人で作業する場合は共有リポジトリがいらない</h4>
+<h4 id="__8">1.3.2. 一人で作業する場合は共有リポジトリがいらない</h4>
 <div class="paragraph">
 <p>SVNは、作業内容を記録するために、まずはリポジトリ用のサーバーを用意することから始めないといけません。</p>
 </div>
@@ -568,7 +561,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__9">1.4.3. リポジトリを手元に持てる</h4>
+<h4 id="__9">1.3.3. リポジトリを手元に持てる</h4>
 <div class="paragraph">
 <p>SVNは、手元にリポジトリがなく、ネットワーク上にだけリポジトリがあります。これは、ローカル上にリポジトリを持たない分、ハードディスクやSSDに記録できることが増えることになるというメリットがありますが、一方で、ネットワーク環境が無いと作業内容の記録(コミット)や今までおこなった作業内容の履歴を見ることができません。</p>
 </div>
@@ -577,7 +570,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">1.4.4. 手元のリポジトリでいろいろと試せる</h4>
+<h4 id="__10">1.3.4. 手元のリポジトリでいろいろと試せる</h4>
 <div class="paragraph">
 <p>SVNは、リポジトリが共有のリポジトリしかないため、コマンドを気軽に試せる環境とは言えないです。</p>
 </div>
@@ -630,7 +623,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-06-23 16:18:35 UTC
+Last updated 2014-06-24 00:56:06 UTC
 </div>
 </div>
 </body>
