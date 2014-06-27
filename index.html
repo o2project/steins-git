@@ -509,7 +509,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>また、内容を前のものに戻しづらかったり、戻せないということが往々にして起きるため、例えばセーブデータを上書きしてしまったときに、再度やり直し…ということがおきます。</p>
 </div>
 <div class="paragraph">
-<p>そこで「集中型バージョン管理システム」というものが出てきます。ここでは集中型バージョン管理システムの中でも、「SVN(Subversion))」について解説していきます。</p>
+<p>そこで「集中型バージョン管理システム」というものが出てきます。ここでは集中型バージョン管理システムの中でも、「SVN(Subversion)」について解説していきます。</p>
 </div>
 <div class="sect3">
 <h4 id="_svn_subversion">1.2.1. SVN(Subversion)の概要</h4>
@@ -518,7 +518,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__6">1.2.2. 「ファイル名を変更する」バージョン管理と比較したときの利点</h4>
+<h4 id="__svn">1.2.2. 「ファイル名を変更する」バージョン管理と比較したときのSVNの利点</h4>
 <div class="paragraph">
 <p>SVNを使う利点としては、ファイル名を変更する手法のバージョン管理のデメリットをなくせるということです。</p>
 </div>
@@ -530,8 +530,16 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__7">1.2.3. 問題点を以下に書く</h4>
-
+<h4 id="_svn">1.2.3. SVNの欠点</h4>
+<div class="paragraph">
+<p>完璧なようにも見えるSVNですが、欠点は二つあります。</p>
+</div>
+<div class="paragraph">
+<p>まず一つ目が、SVNによるバージョン管理を始める際の敷居が高いということです。</p>
+</div>
+<div class="paragraph">
+<p>SVNはリポジトリ用のディレクトリをつくり、そのディレクトリをSVNが使えるように初期化した後、trunk・tags・branchesというディレクトリを慣習としてつくっておかないといけません。とても敷居が高く感じられます。</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -549,7 +557,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__8">1.3.2. 一人で作業する場合は共有リポジトリがいらない</h4>
+<h4 id="__6">1.3.2. 一人で作業する場合は共有リポジトリがいらない</h4>
 <div class="paragraph">
 <p>SVNは、作業内容を記録するために、まずはリポジトリ用のサーバーを用意することから始めないといけません。</p>
 </div>
@@ -561,7 +569,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__9">1.3.3. リポジトリを手元に持てる</h4>
+<h4 id="__7">1.3.3. リポジトリを手元に持てる</h4>
 <div class="paragraph">
 <p>SVNは、手元にリポジトリがなく、ネットワーク上にだけリポジトリがあります。これは、ローカル上にリポジトリを持たない分、ハードディスクやSSDに記録できることが増えることになるというメリットがありますが、一方で、ネットワーク環境が無いと作業内容の記録(コミット)や今までおこなった作業内容の履歴を見ることができません。</p>
 </div>
@@ -570,7 +578,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">1.3.4. 手元のリポジトリでいろいろと試せる</h4>
+<h4 id="__8">1.3.4. 手元のリポジトリでいろいろと試せる</h4>
 <div class="paragraph">
 <p>SVNは、リポジトリが共有のリポジトリしかないため、コマンドを気軽に試せる環境とは言えないです。</p>
 </div>
@@ -634,7 +642,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-06-27 05:27:09 UTC
+Last updated 2014-06-27 05:51:32 UTC
 </div>
 </div>
 </body>
