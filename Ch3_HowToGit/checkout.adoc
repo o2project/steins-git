@@ -1,5 +1,0 @@
-[[checkout]]
-
-== git checkout
-
-Steins;Gateで例えるのであれば、世界線移動です。
