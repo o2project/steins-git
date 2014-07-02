@@ -389,7 +389,8 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#chapter3-how-to-git">3. Chapter.3 - Gitの使いかた</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#git-checkout">3.1. git checkout</a></li>
+<li><a href="#git-branch">3.1. git branch</a></li>
+<li><a href="#git-checkout">3.2. git checkout</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -639,7 +640,62 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>この章では、Gitの使いかたとして、Gitを使う上で必要なGitのコマンドについてSteins;Gateに例えて説明していきます。</p>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.1. git checkout</h3>
+<h3 id="git-branch">3.1. git branch</h3>
+<div class="paragraph">
+<p>Gitでは「ブランチ」という言葉がありますが、この「ブランチ」が一つの世界線となります。</p>
+</div>
+<div class="paragraph">
+<p><code>git branch</code>というコマンドは、ブランチの一覧表示をおこなったり、新たにブランチを作成するコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>例えば、以下のブランチがあったとします。今のブランチは<code>0.409420</code>――秋葉原が電気街となり、フェイリスのお父さんが生きている世界線です。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>0.571024</code></p>
+</li>
+<li>
+<p><code>0.523299</code></p>
+</li>
+<li>
+<p><code>0.456903</code></p>
+</li>
+<li>
+<p><code>0.409420</code> &#8592; 今ここ</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>この観測している世界線、もといブランチの一覧は以下のコマンドで見ることができます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git branch</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>また、新たなブランチをつくるためには以下のコマンドを使います。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git branch ブランチ名</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>例えば、以下のコマンドを実行すると、0.337187というブランチがつくられます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git branch 0.337187</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ただし、ブランチがつくられるだけで、新たなブランチには移動しません。移動するためには次に説明する<code>git checkout</code>というDメール的役割もあるコマンドを使わなければいけません。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-checkout">3.2. git checkout</h3>
 <div class="paragraph">
 <p>電話レンジ(仮)のようなコマンドです。</p>
 </div>
@@ -647,7 +703,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>git branchの節でも説明しましたが、Gitのブランチは一つの世界線です。このコマンドは世界線間や現在の世界線で過去に戻る機能を実現します。</p>
 </div>
 <div class="sect3">
-<h4 id="__9">3.1.1. 世界線を移動する方法</h4>
+<h4 id="__9">3.2.1. 世界線を移動する方法</h4>
 <div class="paragraph">
 <p>例えば、以下のブランチがあったとします。現在は<code>0.571024</code>――β世界線で紅莉栖が何者かにより刺され、オカリンが初めての世界線変動をした世界にいます。</p>
 </div>
@@ -699,7 +755,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">3.1.2. タイムリープする方法</h4>
+<h4 id="__10">3.2.2. タイムリープする方法</h4>
 <div class="paragraph">
 <p>また、<code>git checkout</code>はタイムリープをすることもできます。例えば、以下の作業履歴があったとします。</p>
 </div>
@@ -758,7 +814,7 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-01 15:59:01 UTC
+Last updated 2014-07-02 16:19:19 UTC
 </div>
 </div>
 </body>
