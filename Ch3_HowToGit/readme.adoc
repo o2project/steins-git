@@ -8,3 +8,4 @@
 
 include::git-branch.adoc[]
 include::git-checkout.adoc[]
+include::git-merge.adoc[]
