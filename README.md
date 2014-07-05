@@ -16,9 +16,7 @@ http://o2project.github.io/steins-git より見ることができます。
 ```
 git clone https://github.com/o2project/steins-git.git steins-git
 cd steins-git
-bundle install --path vendor/bundle
-npm install
-grunt
+./bin/setup.sh
 grunt server
 ```
 
