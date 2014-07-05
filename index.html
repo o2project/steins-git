@@ -391,6 +391,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <ul class="sectlevel2">
 <li><a href="#git-branch">3.1. git branch</a></li>
 <li><a href="#git-checkout">3.2. git checkout</a></li>
+<li><a href="#git-merge">3.3. git merge</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -802,6 +803,56 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="git-merge">3.3. git merge</h3>
+<div class="paragraph">
+<p>現在のブランチに別のブランチで作業していたところを取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>例えば、今までは以下のようにブランチがあるという話でした。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>0.571024</code></p>
+</li>
+<li>
+<p><code>0.523299</code></p>
+</li>
+<li>
+<p><code>0.456903</code></p>
+</li>
+<li>
+<p><code>0.409420</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ですが、実はこれらの他にも「master」というブランチがありました。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>master</code></p>
+</li>
+<li>
+<p><code>0.571024</code></p>
+</li>
+<li>
+<p><code>0.523299</code></p>
+</li>
+<li>
+<p><code>0.456903</code></p>
+</li>
+<li>
+<p><code>0.409420</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>このmasterというブランチは、各ブランチでおこなってきた作業内容をまとめるブランチとなります。</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -814,7 +865,7 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-02 16:28:23 UTC
+Last updated 2014-07-05 05:42:04 UTC
 </div>
 </div>
 </body>
