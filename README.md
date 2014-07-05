@@ -24,7 +24,7 @@ grunt server
 
 [![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git) に意見などどうぞ。
 
-[CONTRIBUTE.md](CONTRIBUTE.md "CONTRIBUTE.md")も、ガイドラインなど書いてあるので参考にしてください。
+[CONTRIBUTING.md](CONTRIBUTING.md "CONTRIBUTING.md")も、ガイドラインなど書いてあるので参考にしてください。
 
 1. リポジトリをフォークしましょう！
 2. 新たなfeatureブランチを作ります: <code>git checkout -b my-new-feature</code>
