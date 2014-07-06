@@ -391,6 +391,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <ul class="sectlevel2">
 <li><a href="#git-branch">3.1. git branch</a></li>
 <li><a href="#git-checkout">3.2. git checkout</a></li>
+<li><a href="#git-merge">3.3. git merge</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -802,6 +803,35 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="git-merge">3.3. git merge</h3>
+<div class="paragraph">
+<p>現在のブランチに別のブランチでの作業内容を取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge.png" alt="0.523307の作業内容を0.571046にマージする例">
+</div>
+</div>
+<div class="paragraph">
+<p>例えば、0.571046で萌郁がDメールを送ったという作業をし、<code>git checkout</code>で0.523307というブランチに移動しました。</p>
+</div>
+<div class="paragraph">
+<p>その0.523307というブランチでは、岡部がIBN5100を取り戻すべく、萌郁と乱闘の末Dメールを送信したが何も起こらなかったり、FBの正体を突き止めたものの自殺してしまったり、FBの携帯からIBN5100の捜索を中止するというDメールを送るという作業をしました。</p>
+</div>
+<div class="paragraph">
+<p>その0.523307での作業結果を0.571046のブランチに反映させたいときに以下のコマンドを実行します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git checkout 0.571046
+git merge 0.523307</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>これで、0.571046には0.523307での作業内容が反映され、萌郁のDメールは打ち消され、IBN5100を持ったままとなりました。</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -814,7 +844,7 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-05 14:43:00 UTC
+Last updated 2014-07-06 07:47:24 UTC
 </div>
 </div>
 </body>
