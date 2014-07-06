@@ -389,9 +389,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#chapter3-how-to-git">3. Chapter.3 - Gitの使いかた</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#git-branch">3.1. git branch</a></li>
-<li><a href="#git-checkout">3.2. git checkout</a></li>
-<li><a href="#git-merge">3.3. git merge</a></li>
+<li><a href="#git-init">3.1. git init</a></li>
+<li><a href="#git-branch">3.2. git branch</a></li>
+<li><a href="#git-checkout">3.3. git checkout</a></li>
+<li><a href="#git-merge">3.4. git merge</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -641,7 +642,18 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>この章では、Gitの使いかたとして、Gitを使う上で必要なGitのコマンドについてSteins;Gateに例えて説明していきます。</p>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.1. git branch</h3>
+<h3 id="git-init">3.1. git init</h3>
+<div class="paragraph">
+<p>現在のディレクトリをGitで管理するようにするコマンドです。以下のコマンドを実行するだけで、実行したディレクトリをGitを使って管理できます。　</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git init</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-branch">3.2. git branch</h3>
 <div class="paragraph">
 <p>Gitでは「ブランチ」という言葉がありますが、この「ブランチ」が一つの世界線となります。</p>
 </div>
@@ -696,7 +708,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.2. git checkout</h3>
+<h3 id="git-checkout">3.3. git checkout</h3>
 <div class="paragraph">
 <p>電話レンジ(仮)のようなコマンドです。</p>
 </div>
@@ -704,7 +716,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>git branchの節でも説明しましたが、Gitのブランチは一つの世界線です。このコマンドは世界線間や現在の世界線で過去に戻る機能を実現します。</p>
 </div>
 <div class="sect3">
-<h4 id="__9">3.2.1. 世界線を移動する方法</h4>
+<h4 id="__9">3.3.1. 世界線を移動する方法</h4>
 <div class="paragraph">
 <p>例えば、以下のブランチがあったとします。現在は<code>0.571024</code>――β世界線で紅莉栖が何者かにより刺され、オカリンが初めての世界線変動をした世界にいます。</p>
 </div>
@@ -756,7 +768,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">3.2.2. タイムリープする方法</h4>
+<h4 id="__10">3.3.2. タイムリープする方法</h4>
 <div class="paragraph">
 <p>また、<code>git checkout</code>はタイムリープをすることもできます。例えば、以下の作業履歴があったとします。</p>
 </div>
@@ -804,7 +816,7 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.3. git merge</h3>
+<h3 id="git-merge">3.4. git merge</h3>
 <div class="paragraph">
 <p>現在のブランチに別のブランチでの作業内容を取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
 </div>
@@ -844,7 +856,7 @@ git merge 0.523307</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-06 07:50:15 UTC
+Last updated 2014-07-06 09:02:17 UTC
 </div>
 </div>
 </body>
