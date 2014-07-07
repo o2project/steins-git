@@ -390,9 +390,11 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li>
 <ul class="sectlevel2">
 <li><a href="#git-init">3.1. git init</a></li>
-<li><a href="#git-branch">3.2. git branch</a></li>
-<li><a href="#git-checkout">3.3. git checkout</a></li>
-<li><a href="#git-merge">3.4. git merge</a></li>
+<li><a href="#git-add">3.2. git add</a></li>
+<li><a href="#git-commit">3.3. git commit</a></li>
+<li><a href="#git-branch">3.4. git branch</a></li>
+<li><a href="#git-checkout">3.5. git checkout</a></li>
+<li><a href="#git-merge">3.6. git merge</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -653,7 +655,31 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.2. git branch</h3>
+<h3 id="git-add">3.2. git add</h3>
+<div class="paragraph">
+<p>作業内容をローカルリポジトリに送るための下準備をするコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>これは、ダルが「フェリス杯 敵の配置は VLVVLVLL」という内容のDメールを送る時に、「岡部にその内容を確認する」ことが<code>git add</code>です。</p>
+</div>
+<div class="paragraph">
+<p><code>git add</code>でしていることは、新規もしくは変更したファイルをステージングエリアと一般的に言われる場所に登録することです。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-commit">3.3. git commit</h3>
+<div class="paragraph">
+<p>作業内容をリポジトリに記録するためのコマンドです。Dメールを実際に送るときのコマンドとなります。</p>
+</div>
+<div class="paragraph">
+<p>先ほどの<code>git add</code>では、「新規もしくは変更したファイルをステージングエリアと一般的に言われる場所に登録する」ところまでやりました。シュタゲで例えると「岡部にDメールの内容を確認するところ」までといった形です。</p>
+</div>
+<div class="paragraph">
+<p><code>git commit</code>でステージングエリアに登録したファイルをローカルリポジトリに実際に反映させます。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-branch">3.4. git branch</h3>
 <div class="paragraph">
 <p>Gitでは「ブランチ」という言葉がありますが、この「ブランチ」が一つの世界線となります。</p>
 </div>
@@ -708,7 +734,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.3. git checkout</h3>
+<h3 id="git-checkout">3.5. git checkout</h3>
 <div class="paragraph">
 <p>電話レンジ(仮)のようなコマンドです。</p>
 </div>
@@ -716,7 +742,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>git branchの節でも説明しましたが、Gitのブランチは一つの世界線です。このコマンドは世界線間や現在の世界線で過去に戻る機能を実現します。</p>
 </div>
 <div class="sect3">
-<h4 id="__9">3.3.1. 世界線を移動する方法</h4>
+<h4 id="__9">3.5.1. 世界線を移動する方法</h4>
 <div class="paragraph">
 <p>例えば、以下のブランチがあったとします。現在は<code>0.571024</code>――β世界線で紅莉栖が何者かにより刺され、オカリンが初めての世界線変動をした世界にいます。</p>
 </div>
@@ -768,7 +794,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">3.3.2. タイムリープする方法</h4>
+<h4 id="__10">3.5.2. タイムリープする方法</h4>
 <div class="paragraph">
 <p>また、<code>git checkout</code>はタイムリープをすることもできます。例えば、以下の作業履歴があったとします。</p>
 </div>
@@ -816,7 +842,7 @@ Date: Wed Aug 11 17:00:00 2010 +0900
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.4. git merge</h3>
+<h3 id="git-merge">3.6. git merge</h3>
 <div class="paragraph">
 <p>現在のブランチに別のブランチでの作業内容を取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
 </div>
@@ -856,7 +882,7 @@ git merge 0.523307</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-06 15:12:57 UTC
+Last updated 2014-07-07 15:35:00 UTC
 </div>
 </div>
 </body>
