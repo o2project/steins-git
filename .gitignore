@@ -4,3 +4,4 @@ Gemfile.lock
 vendor
 node_modules
 .idea
+.DS_Store
