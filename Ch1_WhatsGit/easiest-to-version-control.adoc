@@ -5,7 +5,7 @@
 
 Steins;Gateで例えると、以下の画像のように「各章のフォーントリガーがキーになるところでデータをセーブしておく」という手法を使ったことがあるという人はいると思います。
 
-image::img/load_select.png[Steins;Gateロード画面]
+image::img/nitro-steins-gate_load.png[Steins;Gateロード画面]
 
 === 「ファイル名を変更する」バージョン管理の利点
 
