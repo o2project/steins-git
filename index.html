@@ -389,8 +389,8 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#chapter3-how-to-git">3. Chapter.3 - Gitの使いかた</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#git-init">3.1. git init</a></li>
-<li><a href="#git-add">3.2. git add</a></li>
+<li><a href="#git-init">3.1. Gitによるバージョン管理を始める</a></li>
+<li><a href="#git-add">3.2. 作業内容を記録するための準備をする</a></li>
 <li><a href="#git-commit">3.3. git commit</a></li>
 <li><a href="#git-branch">3.4. git branch</a></li>
 <li><a href="#git-checkout">3.5. git checkout</a></li>
@@ -644,26 +644,41 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>この章では、Gitの使いかたとして、Gitを使う上で必要なGitのコマンドについてSteins;Gateに例えて説明していきます。</p>
 </div>
 <div class="sect2">
-<h3 id="git-init">3.1. git init</h3>
-<div class="paragraph">
-<p>現在のディレクトリをGitで管理するようにするコマンドです。以下のコマンドを実行するだけで、実行したディレクトリをGitを使って管理できます。　</p>
-</div>
+<h3 id="git-init">3.1. Gitによるバージョン管理を始める</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git init</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>現在のディレクトリをGitによるバージョン管理ができるようにするコマンドです。例えるならば、未来ガジェット研究所で電話レンジ(仮)が作られた状態にするコマンドです。</p>
+</div>
+<div class="paragraph">
+<p><code>git init</code>とすると、現在のディレクトリがバージョン管理対象になりますが、以下のようにすることにより、任意のディレクトリをバージョン管理対象にすることができます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git init 任意のディレクトリ名</code></pre>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="git-add">3.2. git add</h3>
-<div class="paragraph">
-<p>作業内容をローカルリポジトリに送るための下準備をするコマンドです。</p>
+<h3 id="git-add">3.2. 作業内容を記録するための準備をする</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git add ファイル名</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>これは、ダルが「フェリス杯 敵の配置は VLVVLVLL」という内容のDメールを送る時に、「岡部にその内容を確認する」ことが<code>git add</code>です。</p>
+<p>作業内容をリポジトリに記録するために準備をするコマンドです。新規に作った、もしくは変更したファイルを「ステージングエリア」と一般的に言われるところに記録します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git add -p ファイル名</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><code>git add</code>でしていることは、新規もしくは変更したファイルをステージングエリアと一般的に言われる場所に登録することです。</p>
+<p>まとめてやってしまった作業内容を細かく記録することもできます。その場合は<code>git add</code>に<code>-p</code>というオプションを付けます。</p>
 </div>
 </div>
 <div class="sect2">
@@ -882,7 +897,7 @@ git merge 0.523307</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-08 18:06:24 UTC
+Last updated 2014-07-10 02:13:00 UTC
 </div>
 </div>
 </body>
