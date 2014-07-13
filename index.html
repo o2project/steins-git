@@ -393,7 +393,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#git-add">3.2. 作業内容を記録するための準備をする</a></li>
 <li><a href="#git-commit">3.3. 作業内容を記録する</a></li>
 <li><a href="#git-branch">3.4. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.5. git checkout</a></li>
+<li><a href="#git-checkout">3.5. ブランチを切り替える</a></li>
 <li><a href="#git-merge">3.6. git merge</a></li>
 </ul>
 </li>
@@ -723,7 +723,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p><code>git branch</code>はブランチの一覧を見たり、新たにブランチを作成したり、ブランチを削除したりすることができます。</p>
 </div>
 <div class="paragraph">
-<p>例えば、現在のブランチが<code>0.409420</code>――秋葉原が電気街となり、フェイリスのお父さんが生きている世界線だとします。</p>
+<p>例えば、現在のブランチが0.409420――秋葉原が電気街となり、フェイリスのお父さんが生きている世界線だとします。</p>
 </div>
 <div class="paragraph">
 <p>0.409420のブランチの作業履歴を見ると以下のようになっています。図の中に「HEAD」という言葉がありますが、これが今作業しているブランチのことを示しています。</p>
@@ -750,6 +750,15 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="paragraph">
+<p>0.337187というブランチを作った状態で<code>git branch</code>を実行すると、以下のように表示されます。ブランチ名の左横にアスタリスクが付いているのは、現在いるブランチを示しています。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>* 0.409420
+  0.337187</code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>また、ブランチを削除するためには下記のコマンドを使います。ブランチを削除するときは、現在作業しているブランチ(この場合だと0.409420)は削除できません。現在作業しているブランチを削除したい場合は<code>git checkout</code>を使って、他のブランチに移動してから、下記のコマンドを実行します。</p>
 </div>
 <div class="listingblock">
@@ -759,67 +768,56 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.5. git checkout</h3>
-<div class="paragraph">
-<p>電話レンジ(仮)のようなコマンドです。</p>
+<h3 id="git-checkout">3.5. ブランチを切り替える</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git checkout</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>git branchの節でも説明しましたが、Gitのブランチは一つの世界線です。このコマンドは世界線間や現在の世界線で過去に戻る機能を実現します。</p>
+<p>現在のブランチから別のブランチへ移動するコマンドです。例えるならば、電話レンジ(仮)のような機能を実現するコマンドです。</p>
+</div>
+<div class="paragraph">
+<p><code>git branch</code>の節でも説明しましたが、Gitのブランチは一つの世界線です。<code>git branch</code>だけでは世界線を移動することはできませんでしたが、この<code>git checkout</code>は世界線を移動したり、現在の世界線の過去に戻る(タイムリープする)ということができます。</p>
 </div>
 <div class="sect3">
-<h4 id="__9">3.5.1. 世界線を移動する方法</h4>
+<h4 id="__9">3.5.1. ブランチを移動する方法</h4>
 <div class="paragraph">
-<p>例えば、以下のブランチがあったとします。現在は<code>0.571024</code>――β世界線で紅莉栖が何者かにより刺され、オカリンが初めての世界線変動をした世界にいます。</p>
+<p>例えば、現在のブランチが0.409420とします。<code>git branch</code>でも使った図ですが、以下のような作業履歴をたどっていってます。</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>0.571024</code> &#8592; 今ここ</p>
-</li>
-<li>
-<p><code>0.571015</code></p>
-</li>
-<li>
-<p><code>0.523299</code></p>
-</li>
-<li>
-<p>&#8230;</p>
-</li>
-</ul>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-branch.png" alt="ブランチの図">
+</div>
 </div>
 <div class="paragraph">
-<p>この状態で以下のコマンドを実行します。</p>
+<p>では、先ほど<code>git branch</code>の節で作ったブランチに移動します。ブランチを移動するには以下のようにコマンドを実行します。</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>git checkout 0.571015</code></pre>
+<pre class="highlight"><code>git checkout 0.337187</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>すると、<code>0.571015</code>の世界線に移動します。ルカ子が宝くじを買い、番号が1つ違いで3等が当たらなかった世界線となります。</p>
+<p>これで0.337187というブランチに移動しました。今作業しているブランチを示すHEADは0.337187を指し示しています。</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>0.571024</code></p>
-</li>
-<li>
-<p><code>0.571015</code> &#8592; 今ここ</p>
-</li>
-<li>
-<p><code>0.523299</code></p>
-</li>
-<li>
-<p>&#8230;</p>
-</li>
-</ul>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-checkout-moved-branch.png" alt="git checkout 0.337187を実行した後の状態">
+</div>
 </div>
 <div class="paragraph">
-<p><code>git commit</code>でおこなった、作業内容の記録をしたということは消えていません。リーディングシュタイナーにより、世界線を切り替えた後でも保持されます。</p>
+<p>この状態で<code>git branch</code>を実行すると、以下のように表示されます。現在作業している0.337187というブランチの左横にアスタリスクが付きました。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>  0.409420
+* 0.337187</code></pre>
+</div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">3.5.2. タイムリープする方法</h4>
+<h4 id="__10">3.5.2. 現在のブランチの過去に戻る方法</h4>
 <div class="paragraph">
 <p>また、<code>git checkout</code>はタイムリープをすることもできます。例えば、以下の作業履歴があったとします。</p>
 </div>
@@ -907,7 +905,7 @@ git merge 0.523307</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-12 15:58:12 UTC
+Last updated 2014-07-13 09:16:03 UTC
 </div>
 </div>
 </body>
