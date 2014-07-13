@@ -12,11 +12,11 @@ git checkout
 
 === ブランチを移動する方法
 
-例えば、現在のブランチが0.409420とします。`git branch`でも使った図ですが、以下のような作業履歴をたどっていってます。
+現在のブランチは0.409420ということは`git branch`の時に説明しました。また、先ほど0.337187というブランチを作ったので、現在の作業履歴は以下のようになっています。
 
-image::img/git-branch.png[ブランチの図]
+image::img/git-checkout-moved-branch-before.png[ブランチの図]
 
-では、先ほど`git branch`の節で作ったブランチに移動します。ブランチを移動するには以下のようにコマンドを実行します。
+では、0.337187というブランチに移動します。ブランチを移動するには以下のようにコマンドを実行します。
 
 ```
 git checkout 0.337187
@@ -24,7 +24,7 @@ git checkout 0.337187
 
 これで0.337187というブランチに移動しました。今作業しているブランチを示すHEADは0.337187を指し示しています。
 
-image::img/git-checkout-moved-branch.png[git checkout 0.337187を実行した後の状態]
+image::img/git-checkout-moved-branch-after.png[git checkout 0.337187を実行した後の状態]
 
 この状態で`git branch`を実行すると、以下のように表示されます。現在作業している0.337187というブランチの左横にアスタリスクが付きました。
 
@@ -33,44 +33,38 @@ image::img/git-checkout-moved-branch.png[git checkout 0.337187を実行した後
 * 0.337187
 ```
 
-=== 現在のブランチの過去に戻る方法
+=== 現在のブランチでの過去の状態に戻る方法
 
-また、`git checkout`はタイムリープをすることもできます。例えば、以下の作業履歴があったとします。
-
-```
-commit 20100815
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Sun Aug 15 17:00:00 2010 +0900
-
-    コミマの帰りにまゆりが死んでしまった…
-
-commit 20100814
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Sat Aug 14 17:00:00 2010 +0900
-
-    襲撃は結局一日伸びただけだった
-
-commit 20100813
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Fri Aug 13 17:00:00 2010 +0900
-
-    タイムリープマシンが完成したが、ラウンダーに襲撃されまゆりが死んだ…
-
-commit 20100812
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Thu Aug 12 17:00:00 2010 +0900
-
-    鈴羽のタイムマシンを修理したが、失敗したという手紙が届いてしまった
-
-commit 20100811
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Wed Aug 11 17:00:00 2010 +0900
-
-    謎の脅迫メールが来た
-```
-
-この状態で、`commit 20100811`の状態に戻りたいという場合は、以下のコマンドを実行することにより、脅迫メールをもらった状態へとタイムリープすることができます。
+また、`git checkout`は現在のブランチでの過去の状態に戻ることもできます。いわゆるタイムリープです。例えば、`0.337187`というブランチに移動したばかりの時は、以下のような作業履歴になっているとします。
 
 ```
-git checkout 20100811
+commit 20100810
+Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
+Date: Thu Aug 10 12:02:00 2010 +0900
+
+    「助手の脅迫に屈せず鈴羽を尾行せよ！」というDメールを送信した
+
+commit 20100809
+Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
+Date: Wed Aug 09 15:54:00 2010 +0900
+
+    「お前を見ているぞ」という文章と赤いゼリーが添付された謎の脅迫メールが来た
+
+commit 20100807
+Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
+Date: Wed Aug 07 13:21:00 2010 +0900
+
+    フェイリスがDメールを送信したら、秋葉原から萌えが消え、純粋な電気街になっていた
+
+commit 20100806
+Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
+Date: Wed Aug 06 11:54:00 2010 +0900
+
+    ルカ子がDメールを送信したが、ルカ子の見た目に変化はない…確かにリーディングシュタイナーは発動したのだが
+
+commit 20100804
+Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
+Date: Wed Aug 04 10:31:00 2010 +0900
+
+    萌郁がDメールを送信したら、ラボメンから萌郁という存在が消えていた
 ```
