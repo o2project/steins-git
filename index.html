@@ -394,7 +394,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#git-commit">3.3. 作業内容を記録する</a></li>
 <li><a href="#git-branch">3.4. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
 <li><a href="#git-checkout">3.5. ブランチを切り替える</a></li>
-<li><a href="#git-merge">3.6. git merge</a></li>
+<li><a href="#git-merge">3.6. 別のブランチでの作業内容を取り込む</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -816,73 +816,47 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="__10">3.5.2. 現在のブランチでの過去の状態に戻る方法</h4>
-<div class="paragraph">
-<p>また、<code>git checkout</code>は現在のブランチでの過去の状態に戻ることもできます。いわゆるタイムリープです。例えば、<code>0.337187</code>というブランチに移動したばかりの時は、以下のような作業履歴になっているとします。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>commit 20100810
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Thu Aug 10 12:02:00 2010 +0900
-
-    「助手の脅迫に屈せず鈴羽を尾行せよ！」というDメールを送信した
-
-commit 20100809
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 09 15:54:00 2010 +0900
-
-    「お前を見ているぞ」という文章と赤いゼリーが添付された謎の脅迫メールが来た
-
-commit 20100807
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 07 13:21:00 2010 +0900
-
-    フェイリスがDメールを送信したら、秋葉原から萌えが消え、純粋な電気街になっていた
-
-commit 20100806
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 06 11:54:00 2010 +0900
-
-    ルカ子がDメールを送信したが、ルカ子の見た目に変化はない…確かにリーディングシュタイナーは発動したのだが
-
-commit 20100804
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 04 10:31:00 2010 +0900
-
-    萌郁がDメールを送信したら、ラボメンから萌郁という存在が消えていた</code></pre>
-</div>
-</div>
-</div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.6. git merge</h3>
+<h3 id="git-merge">3.6. 別のブランチでの作業内容を取り込む</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git merge</code></pre>
+</div>
+</div>
 <div class="paragraph">
-<p>現在のブランチに別のブランチでの作業内容を取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
+<p>別ブランチの作業内容を現在のブランチに取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>さきほど、<code>git checkout</code>で0.409420というブランチから0.337187というブランチに移動しました。その0.337187でいくつか作業をおこない、作業履歴が以下のようになりました。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-merge.png" alt="0.523307の作業内容を0.571046にマージする例">
+<img src="Ch3_HowToGit/img/git-merge-before.png" alt="0.337187でいくつか作業をした例">
 </div>
 </div>
 <div class="paragraph">
-<p>例えば、0.571046で萌郁がDメールを送ったという作業をし、<code>git checkout</code>で0.523307というブランチに移動しました。</p>
+<p>この状態では、0.409420のブランチは"「助手の脅迫に屈せず鈴羽を尾行せよ！」というDメールを送信した"という作業が一番新しい作業となってます。</p>
 </div>
 <div class="paragraph">
-<p>その0.523307というブランチでは、岡部がIBN5100を取り戻すべく、萌郁と乱闘の末Dメールを送信したが何も起こらなかったり、FBの正体を突き止めたものの自殺してしまったり、FBの携帯からIBN5100の捜索を中止するというDメールを送るという作業をしました。</p>
+<p>また、0.337187のブランチは"タイムマシンの修理を終えて鈴羽が過去に跳躍したが、Mr. ブラウンから鈴羽が失敗したという手紙を受け取った…"という作業が一番新しい作業となっています。</p>
 </div>
 <div class="paragraph">
-<p>その0.523307での作業結果を0.571046のブランチに反映させたいときに以下のコマンドを実行します。</p>
+<p>その0.337187での作業結果を、0.409420のブランチに反映させたいときに以下のコマンドを実行します。</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>git checkout 0.571046
-git merge 0.523307</code></pre>
+<pre class="highlight"><code>git checkout 0.409420
+git merge 0.337187</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>これで、0.571046には0.523307での作業内容が反映され、萌郁のDメールは打ち消され、IBN5100を持ったままとなりました。</p>
+<p><code>git merge</code>をおこなった後は、以下のように0.409420のブランチに、0.337187のブランチでの作業内容が統合されています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge-after.png" alt="マージした後の0.409420の状態">
+</div>
 </div>
 </div>
 </div>
@@ -897,7 +871,7 @@ git merge 0.523307</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-13 15:33:46 UTC
+Last updated 2014-07-15 14:32:24 UTC
 </div>
 </div>
 </body>
