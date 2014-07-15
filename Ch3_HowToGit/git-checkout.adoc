@@ -32,39 +32,3 @@ image::img/git-checkout-moved-branch-after.png[git checkout 0.337187を実行し
   0.409420
 * 0.337187
 ```
-
-=== 現在のブランチでの過去の状態に戻る方法
-
-また、`git checkout`は現在のブランチでの過去の状態に戻ることもできます。いわゆるタイムリープです。例えば、`0.337187`というブランチに移動したばかりの時は、以下のような作業履歴になっているとします。
-
-```
-commit 20100810
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Thu Aug 10 12:02:00 2010 +0900
-
-    「助手の脅迫に屈せず鈴羽を尾行せよ！」というDメールを送信した
-
-commit 20100809
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Wed Aug 09 15:54:00 2010 +0900
-
-    「お前を見ているぞ」という文章と赤いゼリーが添付された謎の脅迫メールが来た
-
-commit 20100807
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Wed Aug 07 13:21:00 2010 +0900
-
-    フェイリスがDメールを送信したら、秋葉原から萌えが消え、純粋な電気街になっていた
-
-commit 20100806
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Wed Aug 06 11:54:00 2010 +0900
-
-    ルカ子がDメールを送信したが、ルカ子の見た目に変化はない…確かにリーディングシュタイナーは発動したのだが
-
-commit 20100804
-Author: Kyouma Hououin <sg-epk@jtk93.x29.jp>
-Date: Wed Aug 04 10:31:00 2010 +0900
-
-    萌郁がDメールを送信したら、ラボメンから萌郁という存在が消えていた
-```
