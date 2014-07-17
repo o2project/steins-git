@@ -391,12 +391,13 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <ul class="sectlevel2">
 <li><a href="#git-init">3.1. Gitによるバージョン管理を始める</a></li>
 <li><a href="#git-add">3.2. 作業内容を記録するための準備をする</a></li>
-<li><a href="#git-commit">3.3. 作業内容を記録する</a></li>
-<li><a href="#git-branch">3.4. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.5. ブランチを切り替える</a></li>
-<li><a href="#git-reset">3.6. 変更をリセットする</a></li>
-<li><a href="#git-merge">3.7. 別のブランチでの作業内容を取り込む</a></li>
-<li><a href="#git-log">3.8. 作業履歴を見る</a></li>
+<li><a href="#git-rm">3.3. ファイルを削除する</a></li>
+<li><a href="#git-commit">3.4. 作業内容を記録する</a></li>
+<li><a href="#git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
+<li><a href="#git-checkout">3.6. ブランチを切り替える</a></li>
+<li><a href="#git-reset">3.7. 変更をリセットする</a></li>
+<li><a href="#git-merge">3.8. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-log">3.9. 作業履歴を見る</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -698,7 +699,21 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-commit">3.3. 作業内容を記録する</h3>
+<h3 id="git-rm">3.3. ファイルを削除する</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git rm ファイル名</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>すでにリポジトリにあるファイルを削除するためのコマンドです。削除したいファイルをステージングエリアに記録します。</p>
+</div>
+<div class="paragraph">
+<p><code>git rm</code>を実行した後にこの後説明する<code>git commit</code>を実行することにより、リポジトリから<code>git rm</code>で指定したファイルが削除されます。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-commit">3.4. 作業内容を記録する</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git commit</code></pre>
@@ -712,7 +727,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.4. ブランチの一覧を見たり、ブランチを作ったりする</h3>
+<h3 id="git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git branch</code></pre>
@@ -770,7 +785,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.5. ブランチを切り替える</h3>
+<h3 id="git-checkout">3.6. ブランチを切り替える</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git checkout</code></pre>
@@ -783,7 +798,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p><code>git branch</code>の節でも説明しましたが、Gitのブランチは一つの世界線です。<code>git branch</code>だけでは世界線を移動することはできませんでしたが、この<code>git checkout</code>は世界線を移動したり、現在の世界線の過去に戻る(タイムリープする)ということができます。</p>
 </div>
 <div class="sect3">
-<h4 id="__9">3.5.1. ブランチを移動する方法</h4>
+<h4 id="__9">3.6.1. ブランチを移動する方法</h4>
 <div class="paragraph">
 <p>現在のブランチは0.409420ということは<code>git branch</code>の時に説明しました。また、先ほど0.337187というブランチを作ったので、現在の作業履歴は以下のようになっています。</p>
 </div>
@@ -820,7 +835,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-reset">3.6. 変更をリセットする</h3>
+<h3 id="git-reset">3.7. 変更をリセットする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git reset</code></pre>
@@ -904,7 +919,7 @@ git reset --hard 20100813b #コミット番号を指定</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.7. 別のブランチでの作業内容を取り込む</h3>
+<h3 id="git-merge">3.8. 別のブランチでの作業内容を取り込む</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git merge</code></pre>
@@ -946,7 +961,7 @@ git merge 0.337187</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-log">3.8. 作業履歴を見る</h3>
+<h3 id="git-log">3.9. 作業履歴を見る</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git log</code></pre>
@@ -983,7 +998,7 @@ Date: Wed Aug 10 20:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-17 10:51:55 UTC
+Last updated 2014-07-17 11:17:50 UTC
 </div>
 </div>
 </body>
