@@ -8,6 +8,7 @@
 
 include::git-init.adoc[]
 include::git-add.adoc[]
+include::git-rm.adoc[]
 include::git-commit.adoc[]
 include::git-branch.adoc[]
 include::git-checkout.adoc[]
