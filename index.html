@@ -396,6 +396,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#git-checkout">3.5. ブランチを切り替える</a></li>
 <li><a href="#git-reset">3.6. 変更をリセットする</a></li>
 <li><a href="#git-merge">3.7. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-log">3.8. 作業履歴を見る</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -944,6 +945,32 @@ git merge 0.337187</code></pre>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="git-log">3.8. 作業履歴を見る</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git log</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>今までの作業履歴を見ることができるコマンドです。例えるならば、ゲームシステムになりますがバックログ(今まで流れた文章を見る機能)を実現するコマンドです。</p>
+</div>
+<div class="paragraph">
+<p><code>git reset</code>の節で以下のようなログが出てきたと思います。これは<code>git log</code>というコマンドを実行した時の結果表示を模したものとなります。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>commit 20100810a
+Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
+Date: Wed Aug 10 20:00:00 2010 +0900
+
+    ラボとSERNが直通回線で繋がっていることをダルが発見した。これでLHCを操作することができる</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>このように、<code>git reset</code>などに必要なコミット番号や、誰が作業者なのか、いつ作業がおこなわれたのか、その作業では何がおこなわれたのかという履歴を、<code>git log</code>というコマンドを実行することにより見ることができます。</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -956,7 +983,7 @@ git merge 0.337187</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-17 08:40:48 UTC
+Last updated 2014-07-17 10:49:23 UTC
 </div>
 </div>
 </body>
