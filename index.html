@@ -398,6 +398,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#git-reset">3.7. 変更をリセットする</a></li>
 <li><a href="#git-merge">3.8. 別のブランチでの作業内容を取り込む</a></li>
 <li><a href="#git-log">3.9. 作業履歴を見る</a></li>
+<li><a href="#git-rebase">3.10. 作業履歴を改変する</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -986,6 +987,168 @@ Date: Wed Aug 10 20:00:00 2010 +0900
 <p>このように、<code>git reset</code>などに必要なコミット番号や、誰が作業者なのか、いつ作業がおこなわれたのか、その作業では何がおこなわれたのかという履歴を、<code>git log</code>というコマンドを実行することにより見ることができます。</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="git-rebase">3.10. 作業履歴を改変する</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git rebase -i</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>作業履歴を改変するコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>例として、電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃により、まゆりが殺されてしまった後の作業履歴を示します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-rebase-before.png" alt="まゆりが何度も死んでしまった時の作業履歴">
+</div>
+</div>
+<div class="paragraph">
+<p>この時に先ほど説明した<code>git log</code>に<code>--oneline</code>というオプションを付けて実行すると、以下のような作業履歴を見ることができます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>$ git log --oneline
+95f4c50 タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
+c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
+6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
+a2fffd8 助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__10">3.10.1. 複数の作業履歴を一つにまとめる</h4>
+<div class="paragraph">
+<p>では、初めにまゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git rebase -i HEAD^^^^
+git rebase -i a2fffd8</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>少し解説をします。<code>HEAD^^^^</code>というのは、この場合現在の変更内容から数えて、四つ前の変更内容を指します。つまりこの場合は、<code>a2fffd8</code>の変更内容を指すことになります。下はそのまま<code>a2fffd8</code>の変更内容を指しています。</p>
+</div>
+<div class="paragraph">
+<p>いずれかのコマンドを実行すると以下のような編集画面が表示されます。この画面では対象となる作業履歴に対して、どういう変更を加えるかという情報が書かれています。画面上部では作業履歴が、画面下部ではどのような変更を加えられるかの説明が書かれています。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>pick 6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
+pick c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
+pick e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
+pick 95f4c50 タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+
+# Rebase a2fffd8..95f4c50 onto a2fffd8
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>では、最初以外の作業履歴でpickとなっているところを、squashと書き換えてみます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>pick 6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
+squash c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
+squash e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
+squash 95f4c50 タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+(以下略)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>そうするとpickとした変更内容に、squashとした変更内容がまとめられます。この状態で編集画面上で保存をおこなうと、新たなコミットメッセージを入力するための画面が表示されます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code># This is a combination of 4 commits.
+# The first commit's message is:
+萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
+
+# This is the 2nd commit message:
+
+まゆりがラウンダーが運転する車に轢かれて死んでしまった
+
+# This is the 3rd commit message:
+
+地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
+
+# This is the 4th commit message:
+
+タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# rebase in progress; onto a2fffd8
+# You are currently editing a commit while rebasing branch 'master' on 'a2fffd8'.
+#
+# Changes to be committed:
+#       modified:   test.txt
+#</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>このように、最初は各作業ごとのコミットメッセージが表示されていますが、今回はこれらを使わず新しいコミットメッセージを入力します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>萌郁やラウンダー達の手によりまゆりが死んでしまった
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# rebase in progress; onto a2fffd8
+# You are currently editing a commit while rebasing branch 'master' on 'a2fffd8'.
+#
+# Changes to be committed:
+#       modified:   test.txt
+#</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>これにより、改めて<code>git log</code>で作業履歴を表示すると、以下のように表示されると思います。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>commit cdd5e0d0b86e16d08f51a57f19e035ba4f43cd59
+Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
+Date:   Fri Aug 13 19:46:00 2010 +0900
+
+    萌郁やラウンダー達の手によりまゆりが死んでしまった
+
+commit a2fffd83ac8265b52668694bc9669e8f2bf099b2
+Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
+Date:   Fri Aug 13 14:00:00 2010 +0900
+
+    助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>図にすると以下のようになります。作業履歴をまとめる前に比べ、かなり簡素になっていることが分かります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-rebase-after.png" alt="作業履歴をまとめた後の作業履歴">
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -998,7 +1161,7 @@ Date: Wed Aug 10 20:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-17 11:17:50 UTC
+Last updated 2014-07-19 14:47:27 UTC
 </div>
 </div>
 </body>
