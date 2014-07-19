@@ -1019,9 +1019,75 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">3.10.1. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="__10">3.10.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
-<p>では、初めにまゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
+<p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、一番上で「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっています。これを修正します。そのためにまずは以下のコマンドを実行します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git rebase -i HEAD^</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>すると以下の画面が表示されます。ここで「pick」となっているところを、「reword」に変更します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>pick cdd5e0d タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+
+# Rebase a2fffd8..cdd5e0d onto a2fffd8
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>すると、コミットメッセージを編集できます。ここでは「が」を付け加えて保存します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# rebase in progress; onto e9ad957
+# You are currently editing a commit while rebasing branch 'master' on 'e9ad957'.
+#
+# Changes to be committed:
+#       modified:   test.txt
+#</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>コミットメッセージを編集した後、改めて<code>git log --oneline</code>を実行すると、一番上のコミットメッセージが修正されていることが確認できます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>d1b661b タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
+e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
+c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
+6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
+a2fffd8 助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__11">3.10.2. 複数の作業履歴を一つにまとめる</h4>
+<div class="paragraph">
+<p>次に、まゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1040,7 +1106,7 @@ git rebase -i a2fffd8</code></pre>
 <pre class="highlight"><code>pick 6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
 pick c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
 pick e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-pick 95f4c50 タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+pick 95f4c50 タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
 
 # Rebase a2fffd8..95f4c50 onto a2fffd8
 #
@@ -1069,7 +1135,7 @@ pick 95f4c50 タクシーで逃げようとしたら、ラウンダー追って�
 <pre class="highlight"><code>pick 6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
 squash c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
 squash e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-squash 95f4c50 タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+squash 95f4c50 タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
 (以下略)</code></pre>
 </div>
 </div>
@@ -1092,7 +1158,7 @@ squash 95f4c50 タクシーで逃げようとしたら、ラウンダー追っ�
 
 # This is the 4th commit message:
 
-タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
+タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
@@ -1161,7 +1227,7 @@ Date:   Fri Aug 13 14:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-19 14:47:27 UTC
+Last updated 2014-07-19 15:25:35 UTC
 </div>
 </div>
 </body>
