@@ -393,12 +393,13 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#git-add">3.2. 作業内容を記録するための準備をする</a></li>
 <li><a href="#git-rm">3.3. ファイルを削除する</a></li>
 <li><a href="#git-commit">3.4. 作業内容を記録する</a></li>
-<li><a href="#git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.6. ブランチを切り替える</a></li>
-<li><a href="#git-reset">3.7. 変更をリセットする</a></li>
-<li><a href="#git-merge">3.8. 別のブランチでの作業内容を取り込む</a></li>
-<li><a href="#git-log">3.9. 作業履歴を見る</a></li>
-<li><a href="#git-rebase">3.10. 作業履歴を改変する</a></li>
+<li><a href="#git-status">3.5. リポジトリの今の状態を見る</a></li>
+<li><a href="#git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
+<li><a href="#git-checkout">3.7. ブランチを切り替える</a></li>
+<li><a href="#git-reset">3.8. 変更をリセットする</a></li>
+<li><a href="#git-merge">3.9. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-log">3.10. 作業履歴を見る</a></li>
+<li><a href="#git-rebase">3.11. 作業履歴を改変する</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-how-to-github">4. Chapter.4 - GitHubの使いかた</a></li>
@@ -728,7 +729,46 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</h3>
+<h3 id="git-status">3.5. リポジトリの今の状態を見る</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git status</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>git add</code>でステージングエリアに追加した作業内容や<code>git rm</code>で削除したファイルの状況や、リポジトリに登録されていないファイルなどが見られるコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>例えば、このリポジトリのとある時の状況を<code>git status</code>で見ると、以下のように表示されます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+        modified:   Ch3_HowToGit/readme.adoc
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+
+        Ch3_HowToGit/git-status.adoc
+
+no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>「Changes not staged for commit」と書いているところで「modified」となっているのが、「リポジトリに登録されているファイルだが、作業した内容をリポジトリに登録していない状況」のファイルです。</p>
+</div>
+<div class="paragraph">
+<p>また、「Untracked files」となっているのが、「まだリポジトリに登録していない(バージョン管理をしていない)ファイル」となります。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git branch</code></pre>
@@ -786,7 +826,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.6. ブランチを切り替える</h3>
+<h3 id="git-checkout">3.7. ブランチを切り替える</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git checkout</code></pre>
@@ -799,7 +839,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p><code>git branch</code>の節でも説明しましたが、Gitのブランチは一つの世界線です。<code>git branch</code>だけでは世界線を移動することはできませんでしたが、この<code>git checkout</code>は世界線を移動したり、現在の世界線の過去に戻る(タイムリープする)ということができます。</p>
 </div>
 <div class="sect3">
-<h4 id="__9">3.6.1. ブランチを移動する方法</h4>
+<h4 id="__9">3.7.1. ブランチを移動する方法</h4>
 <div class="paragraph">
 <p>現在のブランチは0.409420ということは<code>git branch</code>の時に説明しました。また、先ほど0.337187というブランチを作ったので、現在の作業履歴は以下のようになっています。</p>
 </div>
@@ -836,7 +876,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-reset">3.7. 変更をリセットする</h3>
+<h3 id="git-reset">3.8. 変更をリセットする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git reset</code></pre>
@@ -920,7 +960,7 @@ git reset --hard 20100813b #コミット番号を指定</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.8. 別のブランチでの作業内容を取り込む</h3>
+<h3 id="git-merge">3.9. 別のブランチでの作業内容を取り込む</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git merge</code></pre>
@@ -962,7 +1002,7 @@ git merge 0.337187</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-log">3.9. 作業履歴を見る</h3>
+<h3 id="git-log">3.10. 作業履歴を見る</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git log</code></pre>
@@ -988,7 +1028,7 @@ Date: Wed Aug 10 20:00:00 2010 +0900
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rebase">3.10. 作業履歴を改変する</h3>
+<h3 id="git-rebase">3.11. 作業履歴を改変する</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git rebase -i</code></pre>
@@ -1019,7 +1059,7 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">3.10.1. コミットメッセージを変更する</h4>
+<h4 id="__10">3.11.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
 <p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、一番上で「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっています。これを修正します。そのためにまずは以下のコマンドを実行します。</p>
 </div>
@@ -1085,7 +1125,7 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__11">3.10.2. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="__11">3.11.2. 複数の作業履歴を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
 </div>
@@ -1227,7 +1267,7 @@ Date:   Fri Aug 13 14:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2014-07-19 15:25:35 UTC
+Last updated 2014-07-20 11:08:47 UTC
 </div>
 </div>
 </body>
