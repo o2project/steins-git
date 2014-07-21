@@ -7,6 +7,6 @@
 
 では、その集中型バージョン管理システムより、なぜ、分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。
 
-include::start-a-one-person.adoc[]
+include::easy-to-start.adoc[]
 include::not-need-network-connection.adoc[]
-
+include::try-out-a-local-repository.adoc[]
