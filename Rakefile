@@ -1,6 +1,7 @@
 SRC_FILE = 'index.adoc'
 OUTPUT_DIRECTORY = 'build/'
-OUTPUT_FILE = 'index.html'
+OUTPUT_HTML_FILE = 'index.html'
+OUTPUT_XML_FILE = 'steins-git.xml'
 
 REPOSITORY = if ENV['GH_TOKEN']
                'https://$GH_TOKEN@github.com/o2project/steins-git'
@@ -41,9 +42,16 @@ def directory_copy(src, dist)
   FileUtils.copy_entry src, dist
 end
 
-def build_asciidoc(src, output)
+def build_asciidoc_to_html(src, output)
   sh "bundle exec asciidoctor -a bookversion=`node ./bin/bookversion` \
   -a icons=font -o #{output} #{src}"
+end
+
+def build_asciidoc_to_pdf(src, output)
+  sh "bundle exec asciidoctor -a lang=en -a bookversion=`node ./bin/bookversion` \
+  -a icons=font -b docbook \
+  -o #{output} #{src}"
+  sh "./bin/build-pdf #{output}"
 end
 
 def push_to_target_branch(repo, branch)
@@ -68,8 +76,18 @@ namespace :generate do
     directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
     puts "Done!"
     puts 'Generate HTML...'
-    build_asciidoc SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_FILE}"
-    puts "Done! => #{OUTPUT_FILE}"
+    build_asciidoc_to_html SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_HTML_FILE}"
+    puts "Done! => #{OUTPUT_HTML_FILE}"
+  end
+
+  task :pdf do
+    puts 'Each section img directory recursively copy to under build directory...'
+    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
+    directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
+    puts "Done!"
+    puts 'Generate PDF...'
+    build_asciidoc_to_pdf SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_XML_FILE}"
+    puts "Done!"
   end
 end
 
