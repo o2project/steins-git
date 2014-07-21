@@ -3,7 +3,10 @@
 :imagesdir: Ch2_WhyGit/
 
 
-第一章で説明した、バージョン管理システムの中でも、なぜ分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。
+バージョン管理システムには、分散型バージョン管理システムといわれるGitなど以外にも、集中型バージョン管理システムといわれるSVNなどがあります。
 
-include::start-a-one-person.adoc[]
+では、その集中型バージョン管理システムより、なぜ、分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。
+
+include::easy-to-start.adoc[]
 include::not-need-network-connection.adoc[]
+include::try-out-a-local-repository.adoc[]
