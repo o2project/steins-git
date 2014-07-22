@@ -6,6 +6,8 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
   - 執筆者
 - @fruitsnoodle
   - Git初心者の立場から本をレビューとイラストの発注など
+- [GiantRobot](http://www.pixiv.net/member_illust.php?id=1223059)
+  - 表紙・各章の挿絵担当
 
 ## Steins;Gitの様々なやりとりについて
 
