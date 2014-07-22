@@ -38,3 +38,13 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
 ## ローカルでプレビューしたい場合について
 
 [README.md](https://github.com/o2project/steins-git/blob/master/README.md)をご覧ください。
+
+## コミットメッセージについて
+
+[azu/release-changelog](https://github.com/azu/release-changelog)により、[CHANGELOG.md](CHANGELOG.md)を自動生成するため、以下のルールに沿った形で書くことを推奨します。
+
+[conventional-changelog/CONVENTIONS.md at master · ajoslin/conventional-changelog](https://github.com/ajoslin/conventional-changelog/blob/master/CONVENTIONS.md)
+
+[azu/promises-book](https://github.com/azu/promises-book)と同じく、`feat`, `write`, `fix`, `docs`というのをコミットメッセージ内に含めることにより、CHANGELOGの対象になります。
+
+とはいえ、分からない場合はとりあえず`chore`を使ったり、他のコミットメッセージを使っても大丈夫です。
