@@ -2,10 +2,12 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
 
 ## Steins;Gitに主に関わっている人
 
-- @kubosho_
+- [kubosho](https://github.com/kubosho)
   - 執筆者
-- @fruitsnoodle
-  - Git初心者の立場から本をレビューとイラストの発注など
+- [fruitsnoodle](https://github.com/fruitsnoodle)
+  - Git初心者の立場から本をレビュー
+  - イラストの発注
+  - 各種調査
 - [GiantRobot](http://www.pixiv.net/member_illust.php?id=1223059)
   - 表紙・各章の挿絵担当
 
