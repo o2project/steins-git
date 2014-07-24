@@ -20,11 +20,11 @@ cd steins-git
 grunt server
 ```
 
-## 貢献
+## 貢献したい
 
 [![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git) に意見などどうぞ。
 
-[CONTRIBUTING.md](CONTRIBUTING.md "CONTRIBUTING.md")も、ガイドラインなど書いてあるので参考にしてください。
+[CONTRIBUTING.md](CONTRIBUTING.md "CONTRIBUTING.md")も、ガイドラインなど書いてあるので参考にしてみてください。
 
 1. リポジトリをフォークしましょう！
 2. 新たなfeatureブランチを作ります: <code>git checkout -b my-new-feature</code>
@@ -37,3 +37,5 @@ grunt server
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 
 文章のライセンスについては<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>となっております。
+
+Steins;Gateのゲームのスクリーンショットの著作権については、MAGES./5pb./Nitroplusに帰属します。
