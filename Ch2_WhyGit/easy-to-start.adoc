@@ -7,4 +7,4 @@ SVNでバージョン管理を始める際の手順は、 http://www.hyuki.com/t
 
 Gitは、`git init`というコマンドを実行するだけで、自分のPC上でGitによるバージョン管理ができるようになります。
 
-なお、岡部がラボメンと共同で作業したいと思う事はあると思います。その際はGitの場合であれば https://github.com/[GitHub] を、SVNの場合であれば http://sourceforge.jp/[SourceForge.JP] を使うと手軽に共用リポジトリを使えるようになります。
+なお、共同で作業する場合に、Gitの場合であれば https://github.com/[GitHub] を、SVNの場合であれば http://sourceforge.jp/[SourceForge.JP] を使うと手軽に共用リポジトリを使えるようになります。また、この場合はGitとSVNどちらもほぼ同じ手順で共同作業を始めることができます。
