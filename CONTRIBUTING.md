@@ -23,6 +23,13 @@ Steins;Gitは、「Gitの使い方を、Steins;Gateの世界観を通して説�
 
 とはいえ、今回のコミケのジャンル的には「ギャルゲー内のSteins;Gate枠」なので、なるべくSteins;Gateを絡めていこうとは思っています。
 
+## Steins;Gitの対象読者について
+
+対象の読者は以下の通りとなります。
+
+- Steins;Gateのアニメを全話見た、もしくはゲームで全てのエンディングを見た人
+- Gitを触れたことがない、もしくは、Gitを触り始めたばかりの人
+
 ## Steins;Gitの様々なやりとりについて
 
 何か決めないといけないだったり、執筆の際は、[Issues](https://github.com/o2project/steins-git/issues?state=open)からIssueを立ててやりとりをします。
