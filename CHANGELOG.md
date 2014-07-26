@@ -1,3 +1,21 @@
+### v0.1.1 (2014-07-26)
+
+
+#### Bug Fixes
+
+* **easy-to-start:** 「SVNによるバージョン管理は敷居が高い」という書き方ではなく、「手順が増える」という書き方に修正 ([326caa9b](https://github.com/o2project/steins-git/commit/326caa9bbc8585912dbe2ffc2f1c6bae2281aaeb))
+
+
+#### New and Edit
+
+* **Ch4:** 第四章をあとがきという形に変更した ([c303401d](https://github.com/o2project/steins-git/commit/c303401d00589f546f34100c7dcd812468669b74))
+
+
+#### Features
+
+* **CHANGELOG.md:** 更新履歴ファイルを追加 ([d4a0c38c](https://github.com/o2project/steins-git/commit/d4a0c38cde37c1213dc016dcc0f261f887c6eb2c))
+
+
 ## 0.1.0 (2014-07-23)
 
 
