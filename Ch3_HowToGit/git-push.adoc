@@ -5,3 +5,7 @@
 ```
 git push
 ```
+
+```
+git push -u
+```
