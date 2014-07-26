@@ -1,3 +1,0 @@
-[[chapter4-how-to-github]]
-= Chapter.4 - GitHubの使いかた
-:imagesdir: Ch4_HowToGitHub/

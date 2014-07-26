@@ -42,4 +42,4 @@ include::Ch2_WhyGit/readme.adoc[]
 
 include::Ch3_HowToGit/readme.adoc[]
 
-include::Ch4_HowToGitHub/readme.adoc[]
+include::Ch4_PostScript/readme.adoc[]
