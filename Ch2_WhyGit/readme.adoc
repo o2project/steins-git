@@ -2,6 +2,9 @@
 = Chapter.2 - なぜGitを使うのか
 :imagesdir: Ch2_WhyGit/
 
+ifeval::["{backend}" != "html5"]
+image::img/daru.jpg[ダル]
+endif::[]
 
 バージョン管理システムには、分散型バージョン管理システムといわれるGitなど以外にも、集中型バージョン管理システムといわれるSVNなどがあります。
 
