@@ -1,0 +1,17 @@
+[[git-remote]]
+
+## リモートリポジトリの設定をおこなう
+
+```
+git remote
+```
+
+```
+git remote add
+```
+
+```
+git remote set-url
+```
+
+`git remote remove`や`git remote rename`というコマンドもあります。　
