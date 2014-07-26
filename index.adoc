@@ -1,12 +1,15 @@
 = [WIP] Steins;Git
-:Author:      O2 Project
-:keywords:    Git, Steins;Gate
-:revnumber:   {bookversion}
-:source:      https://github.com/o2project/steins-git
-:lang:        ja
-:icons:       font
+:author: kubosho
+:authorinitials:
+:keywords: Git, Steins;Gate
+:revnumber: {bookversion}
+:source: https://github.com/o2project/steins-git
+:lang: ja
+:icons: font
 :numbered:
 :toc2:
+
+ifeval::["{backend}" == "html5"]
 
 [IMPORTANT]
 =====
@@ -28,18 +31,36 @@
 この書籍の進行状況は https://github.com/o2project/steins-git/issues?state=open[Issues · o2project/steins-git] や以下から確認できます。
 =====
 
+endif::[]
+
 :leveloffset: 1
 
+// はじめにではナンバリングをおこなわない
 :numbered!:
+
+// <<< PAGE BREAK PDFのみ
+<<<
 
 include::Ch0_Introduction/readme.adoc[]
 
+<<<
+
+// ナンバリング開始
 :numbered:
 
 include::Ch1_WhatsGit/readme.adoc[]
 
+<<<
+
 include::Ch2_WhyGit/readme.adoc[]
 
+<<<
+
 include::Ch3_HowToGit/readme.adoc[]
+
+// あどがきではナンバリングをおこなわない
+:numbered!:
+
+<<<
 
 include::Ch4_PostScript/readme.adoc[]
