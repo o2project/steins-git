@@ -390,16 +390,21 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li>
 <ul class="sectlevel2">
 <li><a href="#git-init">3.1. Gitによるバージョン管理を始める</a></li>
-<li><a href="#git-add">3.2. 作業内容を記録するための準備をする</a></li>
-<li><a href="#git-rm">3.3. ファイルを削除する</a></li>
-<li><a href="#git-commit">3.4. 作業内容を記録する</a></li>
-<li><a href="#git-status">3.5. リポジトリの今の状態を見る</a></li>
-<li><a href="#git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.7. ブランチを切り替える</a></li>
-<li><a href="#git-reset">3.8. 変更をリセットする</a></li>
-<li><a href="#git-merge">3.9. 別のブランチでの作業内容を取り込む</a></li>
-<li><a href="#git-log">3.10. 作業履歴を見る</a></li>
-<li><a href="#git-rebase">3.11. 作業履歴を改変する</a></li>
+<li><a href="#git-clone">3.2. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
+<li><a href="#git-add">3.3. 作業内容を記録するための準備をする</a></li>
+<li><a href="#git-rm">3.4. ファイルを削除する</a></li>
+<li><a href="#git-commit">3.5. 作業内容を記録する</a></li>
+<li><a href="#git-status">3.6. リポジトリの今の状態を見る</a></li>
+<li><a href="#git-branch">3.7. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
+<li><a href="#git-checkout">3.8. ブランチを切り替える</a></li>
+<li><a href="#git-reset">3.9. 変更をリセットする</a></li>
+<li><a href="#git-merge">3.10. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-log">3.11. 作業履歴を見る</a></li>
+<li><a href="#git-rebase">3.12. 作業履歴を改変する</a></li>
+<li><a href="#git-remote">3.13. 新たなリモートリポジトリを追加する</a></li>
+<li><a href="#git-fetch">3.14. リモートリポジトリの情報を最新のものにする</a></li>
+<li><a href="#git-pull">3.15. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
+<li><a href="#git-push">3.16. リモートリポジトリに作業内容を送る</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-PostScript">あとがき</a></li>
@@ -684,7 +689,26 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-add">3.2. 作業内容を記録するための準備をする</h3>
+<h3 id="git-clone">3.2. すでにあるリモートリポジトリを使ってバージョン管理を始める</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git clone</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>すでにあるリモートリポジトリを使ってGitによるバージョン管理を始めるためのコマンドです。リモートリポジトリの完全な複製を自分のPC上に作ります。このコマンドは、<code>git init</code>とは違って、最初から他の人(例えばラボメンなど)と共同で作業をおこなえる体制が整っています。</p>
+</div>
+<div class="paragraph">
+<p>では試しに、すでにあるリポジトリの複製を自分のPC上に作りましょう。以下のコマンドを任意のフォルダで実行することにより、「steins-gate」というリモートリポジトリの完全な複製が、自分のPC上に作られます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git clone git@github.com:o2project/steins-gate.git</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-add">3.3. 作業内容を記録するための準備をする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git add ファイル名</code></pre>
@@ -703,7 +727,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rm">3.3. ファイルを削除する</h3>
+<h3 id="git-rm">3.4. ファイルを削除する</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git rm ファイル名</code></pre>
@@ -717,7 +741,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-commit">3.4. 作業内容を記録する</h3>
+<h3 id="git-commit">3.5. 作業内容を記録する</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git commit</code></pre>
@@ -731,7 +755,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-status">3.5. リポジトリの今の状態を見る</h3>
+<h3 id="git-status">3.6. リポジトリの今の状態を見る</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git status</code></pre>
@@ -770,7 +794,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</h3>
+<h3 id="git-branch">3.7. ブランチの一覧を見たり、ブランチを作ったりする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git branch</code></pre>
@@ -828,7 +852,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.7. ブランチを切り替える</h3>
+<h3 id="git-checkout">3.8. ブランチを切り替える</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git checkout</code></pre>
@@ -841,7 +865,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 <p><code>git branch</code>の節でも説明しましたが、Gitのブランチは一つの世界線です。<code>git branch</code>だけでは世界線を移動することはできませんでしたが、この<code>git checkout</code>は世界線を移動したり、現在の世界線の過去に戻る(タイムリープする)ということができます。</p>
 </div>
 <div class="sect3">
-<h4 id="__4">3.7.1. ブランチを移動する方法</h4>
+<h4 id="__4">3.8.1. ブランチを移動する方法</h4>
 <div class="paragraph">
 <p>現在のブランチは0.409420ということは<code>git branch</code>の時に説明しました。また、先ほど0.337187というブランチを作ったので、現在の作業履歴は以下のようになっています。</p>
 </div>
@@ -878,7 +902,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-reset">3.8. 変更をリセットする</h3>
+<h3 id="git-reset">3.9. 変更をリセットする</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git reset</code></pre>
@@ -962,7 +986,7 @@ git reset --hard 20100813b #コミット番号を指定</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.9. 別のブランチでの作業内容を取り込む</h3>
+<h3 id="git-merge">3.10. 別のブランチでの作業内容を取り込む</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git merge</code></pre>
@@ -1004,7 +1028,7 @@ git merge 0.337187</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-log">3.10. 作業履歴を見る</h3>
+<h3 id="git-log">3.11. 作業履歴を見る</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git log</code></pre>
@@ -1030,7 +1054,7 @@ Date: Wed Aug 10 20:00:00 2010 +0900
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rebase">3.11. 作業履歴を改変する</h3>
+<h3 id="git-rebase">3.12. 作業履歴を改変する</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git rebase -i</code></pre>
@@ -1061,7 +1085,7 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__5">3.11.1. コミットメッセージを変更する</h4>
+<h4 id="__5">3.12.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
 <p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、一番上で「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっています。これを修正します。そのためにまずは以下のコマンドを実行します。</p>
 </div>
@@ -1127,7 +1151,7 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__6">3.11.2. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="__6">3.12.2. 複数の作業履歴を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
 </div>
@@ -1255,8 +1279,137 @@ Date:   Fri Aug 13 14:00:00 2010 +0900
 <img src="Ch3_HowToGit/img/git-rebase-after.png" alt="作業履歴をまとめた後の作業履歴">
 </div>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="git-remote">3.13. 新たなリモートリポジトリを追加する</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git remote add</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>今までは一人でGitを使ってきました。ですが、ラボメンと作業を共同でおこなう場合、リモートリポジトリと呼ばれる共用のリポジトリが必要となってきます。そのリモートリポジトリを登録するコマンドが、<code>git remote add</code>です。</p>
+</div>
+<div class="paragraph">
+<p>例えば、以下のコマンドを実行すると、以降は<code>origin</code>という名前で、<code>origin</code>以降に指定したURLにアクセスできます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git remote add origin git@github.com:o2project/steins-git.git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>このoriginという名前は<code>git remote rename</code>というコマンドで変えることができます。以下の例では、originをsteins-gateという名前に変更する事ができます。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git remote rename origin steins-gate</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>他にも<code>git remote rm</code>という登録したリモートリポジトリを削除するコマンドや<code>git remote set-url</code>という登録したリモートリポジトリのURLを変えるコマンドがあります。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-fetch">3.14. リモートリポジトリの情報を最新のものにする</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git fetch</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>git clone</code>で自分のPC上にリモートリポジトリの複製を作りましたが、リモートリポジトリは岡部以外にもラボメン達が変更を加えます。例えば、電話レンジ(仮)をタイムリープマシンに改造する作業の時は、紅莉栖とダルが、リポジトリに変更を加えます。</p>
+</div>
+<div class="paragraph">
+<p>そうした変更をリモートリポジトリから取得するのが<code>git fetch</code>となります。</p>
+</div>
+<div class="paragraph">
+<p>なお、あくまでリモートリポジトリの情報を最新にするコマンドであり、自分のPC上のリポジトリにリモートリポジトリの作業内容が取り込まれるわけではありません。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-pull">3.15. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git pull</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込むコマンドとなります。</p>
+</div>
+<div class="paragraph">
+<p>先ほど<code>git rebase</code>のところで、最終的に以下のような作業履歴になっていました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-rebase-after.png" alt="作業履歴をまとめた後の作業履歴">
+</div>
+</div>
+<div class="paragraph">
+<p>しかし、岡部以外にもラボメンは作業しています。実際に、今回は紅莉栖が作業していました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-pull-before.png" alt="紅莉栖が作業している">
+</div>
+</div>
+<div class="paragraph">
+<p>ここで<code>git pull</code>をおこなう事により、origin/0.337187の情報が更新され、また、その情報が自分のPC上のリポジトリにマージされます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-pull-after.png" alt="自分のPC上のリポジトリとリモートリポジトリの同期をとった">
+</div>
+</div>
+<div class="paragraph">
+<p>先ほどの<code>git fetch</code>とは違い、自分のPC上のリポジトリにリモートリポジトリの作業内容が取り込まれます。<code>git fetch</code>と<code>git merge</code>を同時におこなっているコマンドと言えます。つまり、以下のコマンドを実行したのと同じ事を<code>git pull</code>ではおこなっています。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git fetch
+git merge origin/0.337187</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-push">3.16. リモートリポジトリに作業内容を送る</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git push</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>自分がおこなった作業内容を、リモートリポジトリに送信するコマンドです。</p>
+</div>
+<div class="paragraph">
+<p><code>git pull</code>のところで、紅莉栖はマイフォークが欲しいということを岡部に伝えました。その後に岡部はタイムリープし、紅莉栖にタイムリープしてきた事を伝えましたが、なかなか信じてくれません。</p>
+</div>
+<div class="paragraph">
+<p>そこで岡部は、「今助手が欲しいものはマイフォーク」という事を伝え、タイムリープしてきた事を信じさせました。それを作業履歴に表すと以下のようになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-push-before.png" alt="git push前">
+</div>
+</div>
+<div class="paragraph">
+<p>この状態では、まだ自分のPC上にしか「紅莉栖が今欲しい物はマイフォーク」と言った作業履歴がありません。リモートリポジトリにも紅莉栖に言ったという作業履歴を反映させるためには、以下のコマンドを実行します。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git push origin 0.337187</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>このコマンドを実行する事により、リモートリポジトリにも紅莉栖に言ったという作業履歴が反映されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-push-after.png" alt="git push後">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -1270,7 +1423,7 @@ Date:   Fri Aug 13 14:00:00 2010 +0900
 <div id="footer">
 <div id="footer-text">
 Version 0.1.3<br>
-Last updated 2014-07-26 16:10:17 UTC
+Last updated 2014-07-27 13:15:38 UTC
 </div>
 </div>
 </body>
