@@ -36,6 +36,8 @@ grunt server
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 
-文章のライセンスについては<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>となっております。
+文章と、独自に作成した図のライセンスについては、<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons — 表示 - 非営利 2.1 日本 — CC BY-NC 2.1 JP</a>となっております。
+
+クレジットは`(C) O2 Project`をお使いください。
 
 Steins;Gateのゲームのスクリーンショットの著作権については、MAGES./5pb./Nitroplusに帰属します。
