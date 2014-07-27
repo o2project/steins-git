@@ -5,3 +5,8 @@ vendor
 node_modules
 .idea
 .DS_Store
+
+img/steins-git.jpg
+Ch1_WhatsGit/img/mayuri.jpg
+Ch2_WhyGit/img/daru.jpg
+Ch3_HowToGit/img/labmem.jpg

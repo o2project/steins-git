@@ -82,7 +82,9 @@ namespace :generate do
 
   task :pdf do
     puts 'Each section img directory recursively copy to under build directory...'
+    directory_copy './img', "#{OUTPUT_DIRECTORY}/img"
     directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
+    directory_copy 'Ch2_WhyGit/img', "#{OUTPUT_DIRECTORY}/Ch2_WhyGit/img"
     directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
     puts "Done!"
     puts 'Generate PDF...'

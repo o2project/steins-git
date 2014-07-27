@@ -1,12 +1,13 @@
 = [WIP] Steins;Git
 :author: kubosho
-:authorinitials:
+:authorinitials: kubosho
 :keywords: Git, Steins;Gate
 :revnumber: {bookversion}
 :source: https://github.com/o2project/steins-git
 :lang: ja
 :icons: font
-:numbered:
+:docinfo1:
+:numbered!:
 :toc2:
 
 ifeval::["{backend}" == "html5"]
@@ -55,9 +56,6 @@ endif::[]
 
 :leveloffset: 1
 
-// はじめにではナンバリングをおこなわない
-:numbered!:
-
 // <<< PAGE BREAK PDFのみ
 <<<
 
@@ -78,9 +76,9 @@ include::Ch2_WhyGit/readme.adoc[]
 
 include::Ch3_HowToGit/readme.adoc[]
 
+<<<
+
 // あどがきではナンバリングをおこなわない
 :numbered!:
-
-<<<
 
 include::Ch4_PostScript/readme.adoc[]
