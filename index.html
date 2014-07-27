@@ -371,6 +371,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#chapter0-introduction">はじめに</a></li>
+<li>
+<ul class="sectlevel3">
+<li><a href="#_">謝辞</a></li>
+<li><a href="#__2">本書の構成</a></li>
+</ul>
+</li>
 <li><a href="#chapter1-what-is-git">1. Chapter.1 - バージョン管理とはなにか</a></li>
 <li>
 <ul class="sectlevel2">
@@ -497,7 +503,67 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="sect1">
 <h2 id="chapter0-introduction">はじめに</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>本書は「Gitの使い方を、Steins;Gateの世界観を通して説明する」事を目的にして執筆しました。</p>
+</div>
+<div class="paragraph">
+<p>本書の目標としては、「Steins;Gateのアニメを全話見た人や、ゲームで全てのエンディングを見た人で、Gitに触れた事がない、もしくは触り始めたばかりという人が、Gitの使い方を知るきっかけになる」という事です。</p>
+</div>
+<div class="paragraph">
+<p>故に、Gitの全ての機能の説明をしません。普段、自分が使うことが多いコマンドを中心に書いています。</p>
+</div>
+<div class="sect3">
+<h4 id="_">謝辞</h4>
+<div class="paragraph">
+<p><a href="https://twitter.com/kyo_ago/">@kyo_ago</a> の下記のツイートにより、本書を書こうと思いました。また <a href="https://twitter.com/search?f=realtime&amp;q=%23SteinsGit">#SteinsGit</a> というTwitterのハッシュタグを通じて、いろいろと助言をいただきました。</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>今日の飲み会を一言でいうと「シュタゲで分かるgithub」
+<a href="https://twitter.com/kyo_ago/status/193703522351595522">2012年4月21日</a></p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>結局「シュタゲで覚えるgit」って誰も書かなかったんですか？
+<a href="https://twitter.com/kyo_ago/status/413586733008044032">2013年12月19日</a></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>また、 <a href="https://gitter.im/o2project/steins-git">Gitter</a> というチャットサービス上で、yosiwoさんには構成について助言をもらいました。</p>
+</div>
+<div class="paragraph">
+<p>本当にありがとうございます。</p>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
+<div class="sect3">
+<h4 id="__2">本書の構成</h4>
+<div class="paragraph">
+<p>本書は全三章とあとがきから成り立っています。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>第一章では、バージョン管理とは何かという事から説明し、その中でGitがどんな特徴を持っているかについて説明します。</p>
+</li>
+<li>
+<p>第二章では、バージョン管理システムの中でも、なぜGitを使うのかというのを利点を提示して説明します。</p>
+</li>
+<li>
+<p>第三章では、実際にGitを使っていきます。Gitで自分がよく使うコマンドについて説明します。</p>
+</li>
+<li>
+<p>あとがきでは、Gitをラボメンで使うなど、複数人で使う場合に、その助けとなるサービスを紹介します。また、本書を書くにあたって参照したサイトや書籍を紹介します。</p>
+</li>
+</ol>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -535,7 +601,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>しかし、ファイル名を変更するバージョン管理には、問題点が思いつく限りでも三つあります。それらの問題点について一つずつ詳細に書いていきます。</p>
 </div>
 <div class="sect3">
-<h4 id="_">1.1.1. どのファイルを更新すればいいのか分からなくなる</h4>
+<h4 id="__3">1.1.1. どのファイルを更新すればいいのか分からなくなる</h4>
 <div class="paragraph">
 <p>例えば、未来ガジェットのアイデアをひらめいてメモしたい時、以下のファイル管理方法の場合だとオカリンは「はて…どれに書き込めばよかったかな」と困るでしょう。</p>
 </div>
@@ -549,7 +615,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__2">1.1.2. 内容を前のものに戻しづらい、または戻せない</h4>
+<h4 id="__4">1.1.2. 内容を前のものに戻しづらい、または戻せない</h4>
 <div class="paragraph">
 <p>上記で「最終版」と書かれているファイルにひらめいたアイデアを書き込んだ時に、それが間違いだと分かり、元のファイルの状態に戻したいとします。しかし、元の状態がどんなものだったか思い出せず、削除しすぎて編集前に書かれていた内容も削除してしまったり、また、追記した内容を完全に消せていなかったりという事があると思います。</p>
 </div>
@@ -561,7 +627,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__3">1.1.3. 多人数での編集がほぼ不可能</h4>
+<h4 id="__5">1.1.3. 多人数での編集がほぼ不可能</h4>
 <div class="paragraph">
 <p>例えば、オカリンがひらめいたアイデアを書いたファイルを、ネットワーク上の共有のフォルダに保存していたとします。それを紅莉栖が見て、あれこれ書いて保存したと思ったら、オカリンがまた新たなアイデアを同じファイルに書いて保存してしまい、結果、紅莉栖が編集した点が全て消え、元に戻せなくなります。おそらくこの事で二人は口喧嘩することになるでしょう。</p>
 </div>
@@ -865,7 +931,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 <p><code>git branch</code>の節でも説明しましたが、Gitのブランチは一つの世界線です。<code>git branch</code>だけでは世界線を移動することはできませんでしたが、この<code>git checkout</code>は世界線を移動したり、現在の世界線の過去に戻る(タイムリープする)ということができます。</p>
 </div>
 <div class="sect3">
-<h4 id="__4">3.8.1. ブランチを移動する方法</h4>
+<h4 id="__6">3.8.1. ブランチを移動する方法</h4>
 <div class="paragraph">
 <p>現在のブランチは0.409420ということは<code>git branch</code>の時に説明しました。また、先ほど0.337187というブランチを作ったので、現在の作業履歴は以下のようになっています。</p>
 </div>
@@ -1085,7 +1151,7 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__5">3.12.1. コミットメッセージを変更する</h4>
+<h4 id="__7">3.12.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
 <p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、一番上で「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっています。これを修正します。そのためにまずは以下のコマンドを実行します。</p>
 </div>
@@ -1151,7 +1217,7 @@ a2fffd8 助手がタイムリープマシンを完成させた。あまりに危
 </div>
 </div>
 <div class="sect3">
-<h4 id="__6">3.12.2. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="__8">3.12.2. 複数の作業履歴を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
 </div>
@@ -1423,7 +1489,7 @@ git merge origin/0.337187</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.1.3<br>
-Last updated 2014-07-27 13:37:21 UTC
+Last updated 2014-07-27 14:09:39 UTC
 </div>
 </div>
 </body>
