@@ -1,17 +1,23 @@
 [[git-remote]]
 
-## リモートリポジトリの設定をおこなう
-
-```
-git remote
-```
+## 新たなリモートリポジトリを追加する
 
 ```
 git remote add
 ```
 
+今までは一人でGitを使ってきました。ですが、ラボメンと作業を共同でおこなう場合、リモートリポジトリと呼ばれる共用のリポジトリが必要となってきます。そのリモートリポジトリを登録するコマンドが、`git remote add`です。
+
+例えば、以下のコマンドを実行すると、以降は`origin`という名前で、`origin`以降に指定したURLにアクセスできます。
+
 ```
-git remote set-url
+git remote add origin git@github.com:o2project/steins-git.git
 ```
 
-`git remote remove`や`git remote rename`というコマンドもあります。　
+このoriginという名前は`git remote rename`というコマンドで変えることができます。以下の例では、originをsteins-gateという名前に変更する事ができます。
+
+```
+git remote rename origin steins-gate
+```
+
+他にも`git remote rm`という登録したリモートリポジトリを削除するコマンドや`git remote set-url`という登録したリモートリポジトリのURLを変えるコマンドがあります。
