@@ -40,4 +40,10 @@ grunt server
 
 クレジットは`(C) O2 Project`をお使いください。
 
+表紙のイラストや各章ごとのイラストは、下記のクレジットを"必ず"含めてください。
+
+`(C) GiantRobot / pixiv ID 1223059`
+
+---
+
 Steins;Gateのゲームのスクリーンショットの著作権については、MAGES./5pb./Nitroplusに帰属します。
