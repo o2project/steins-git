@@ -8,7 +8,7 @@
 
 故に、Gitの全ての機能の説明をしません。普段、自分が使うことが多いコマンドを中心に書いています。
 
-### 謝辞
+## 謝辞
 
 https://twitter.com/kyo_ago/[@kyo_ago] の下記のツイートにより、本書を書こうと思いました。また https://twitter.com/search?f=realtime&q=%23SteinsGit[#SteinsGit] というTwitterのハッシュタグを通じて、いろいろと助言をいただきました。
 
@@ -25,7 +25,7 @@ https://twitter.com/kyo_ago/[@kyo_ago] の下記のツイートにより、本�
 // <<< PAGE BREAK PDFのみ
 <<<
 
-### 本書の構成
+## 本書の構成
 
 本書は全三章とあとがきから成り立っています。
 
