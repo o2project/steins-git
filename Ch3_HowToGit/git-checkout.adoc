@@ -8,4 +8,4 @@
 
 切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックする事により、ブランチを切り替える事ができます。
 
-image::img/git-checkout/git-checkout.png[ブランチを移動した後]
+image::img/git-checkout/git-checkout-after.png[ブランチを移動した後, 460]
