@@ -16,7 +16,6 @@
   * リモートリポジトリに関するコマンドの説明を書き始めた ([a20c88aa](https://github.com/o2project/steins-git/commit/a20c88aaf11c95051b50c8001a1dc59d54361fed))
 * **Ch4:** あとがきのアウトラインを書いた ([612b60e7](https://github.com/o2project/steins-git/commit/612b60e7c832909b3c06b2534b70860c4acd12e6))
 * **Ch4:** あとがきを執筆した ([bce7edd0](https://github.com/o2project/steins-git/commit/bce7edd074eb860df904e96776cb833e456bad25))
-
 * **git-branch:** git branchについての説明を書きかえた ([a165b1d2](https://github.com/o2project/steins-git/commit/a165b1d2f833378c4b4a2a6bb3c7a971112c539c))
 * **git-checkout:** git checkoutの説明を書きかえた ([952846ae](https://github.com/o2project/steins-git/commit/952846ae6d48be48ea51414071d77f21ae215800))
 * **git-clone:**
