@@ -10,7 +10,7 @@
 
 ## 謝辞
 
-https://twitter.com/kyo_ago/[@kyo_ago] の下記のツイートにより、本書を書こうと思いました。また https://twitter.com/search?f=realtime&q=%23SteinsGit[#SteinsGit] というTwitterのハッシュタグを通じて、いろいろと助言をいただきました。
+https://twitter.com/kyo_ago/[@kyo_ago] の下記のツイートにより、本書を書こうと思いました。
 
 > 今日の飲み会を一言でいうと「シュタゲで分かるgithub」
 > https://twitter.com/kyo_ago/status/193703522351595522[2012年4月21日]
@@ -18,7 +18,11 @@ https://twitter.com/kyo_ago/[@kyo_ago] の下記のツイートにより、本�
 > 結局「シュタゲで覚えるgit」って誰も書かなかったんですか？
 > https://twitter.com/kyo_ago/status/413586733008044032[2013年12月19日]
 
-また、 https://gitter.im/o2project/steins-git[Gitter] というチャットサービス上で、yosiwoさんには構成について助言をもらいました。
+また https://twitter.com/search?f=realtime&q=%23SteinsGit[#SteinsGit] というTwitterのハッシュタグを通じていろいろと助言をいただいたり、 https://twitter.com/watilde[@watilde] と一緒にレビュー会というのを開いていただきました。
+
+他にも https://gitter.im/o2project/steins-git[Gitter] というチャットサービス上で https://github.com/yosiwo[yosiwo] さんには構成について助言をもらいました。
+
+そして http://blog.o2p.jp/2014/07/23/c86-steins-git.html[「シュタゲで分かるGit」をテーマにした「Steins;Git」という薄い本をC86(コミックマーケット86)で頒布します(予定)] という記事を公開した際に、期待する声や欲しいという声をあげてくださった皆さんには、執筆を頑張る気力をもらいました。
 
 本当にありがとうございます。
 
