@@ -5,7 +5,7 @@ Steins;Git
 
 C86(日曜日 西地区"な"ブロック-11b)にて頒布予定の、GitをSteins;Gateを使って説明する薄い本です。
 
-http://o2project.github.io/steins-git より見ることができます。
+http://o2project.github.io/steins-git より見ることができます。ただし、**ページ容量が10MBを超えています** ので注意してください。
 
 ## ローカルで確認する
 
