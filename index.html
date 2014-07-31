@@ -397,20 +397,14 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <ul class="sectlevel2">
 <li><a href="#git-init">3.1. Gitによるバージョン管理を始める</a></li>
 <li><a href="#git-clone">3.2. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
-<li><a href="#git-add">3.3. 作業内容を記録するための準備をする</a></li>
-<li><a href="#git-rm">3.4. ファイルを削除する</a></li>
-<li><a href="#git-commit">3.5. 作業内容を記録する</a></li>
-<li><a href="#git-status">3.6. リポジトリの今の状態を見る</a></li>
-<li><a href="#git-branch">3.7. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.8. ブランチを切り替える</a></li>
-<li><a href="#git-reset">3.9. 変更をリセットする</a></li>
+<li><a href="#git-commit">3.3. 作業内容を記録する</a></li>
+<li><a href="#git-branch">3.4. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
+<li><a href="#git-checkout">3.5. ブランチを切り替える</a></li>
+<li><a href="#git-reset">3.6. 変更をリセットする</a></li>
+<li><a href="#git-rebase">3.7. 作業履歴を改変する</a></li>
+<li><a href="#git-push">3.8. リモートリポジトリに作業内容を送る</a></li>
+<li><a href="#git-pull">3.9. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
 <li><a href="#git-merge">3.10. 別のブランチでの作業内容を取り込む</a></li>
-<li><a href="#git-log">3.11. 作業履歴を見る</a></li>
-<li><a href="#git-rebase">3.12. 作業履歴を改変する</a></li>
-<li><a href="#git-remote">3.13. 新たなリモートリポジトリを追加する</a></li>
-<li><a href="#git-fetch">3.14. リモートリポジトリの情報を最新のものにする</a></li>
-<li><a href="#git-pull">3.15. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
-<li><a href="#git-push">3.16. リモートリポジトリに作業内容を送る</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-PostScript">あとがき</a></li>
@@ -418,7 +412,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <ul class="sectlevel2">
 <li><a href="#_github">GitHub</a></li>
 <li><a href="#_bitbucket">Bitbucket</a></li>
-<li><a href="#__9">参考にした資料</a></li>
+<li><a href="#__8">参考にした資料</a></li>
 </ul>
 </li>
 </ul>
@@ -744,297 +738,163 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 <div class="sect2">
 <h3 id="git-init">3.1. Gitによるバージョン管理を始める</h3>
-<div class="listingblock">
+<div class="paragraph">
+<p>任意のフォルダでGitによるバージョン管理ができるようにします。例えるならば、未来ガジェット研究所でタイムリープマシンが作られた状態にするものです。</p>
+</div>
+<div class="paragraph">
+<p>SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンのうち、一番左のボタンを押します。</p>
+</div>
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>git init</code></pre>
+<img src="Ch3_HowToGit/img/git-init/git-init-sourcetree-select.png" alt="SourceTreeのボタン">
 </div>
 </div>
 <div class="paragraph">
-<p>現在のディレクトリをGitによるバージョン管理ができるようにするコマンドです。例えるならば、未来ガジェット研究所で電話レンジ(仮)が作られた状態にするコマンドです。</p>
+<p>ボタンを押すと、いくつか選択肢が出てきますが、その内「リポジトリを作成」というのを選択します。すると、リポジトリ保存先などが表示されるので、任意のフォルダを選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-init/git-init-sourcetree-init.png" alt="リポジトリ名を決めている状態" width="460">
+</div>
 </div>
 <div class="paragraph">
-<p><code>git init</code>とすると、現在のディレクトリがバージョン管理対象になりますが、以下のようにすることにより、任意のディレクトリをバージョン管理対象にすることができます。</p>
+<p>作成ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。ただし、まだ何も作業内容がないので、過去に戻ったり改変したりということはできません。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>git init 任意のディレクトリ名</code></pre>
+<img src="Ch3_HowToGit/img/git-init/git-init-empty.png" alt="リポジトリが作られた状態" width="460">
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="git-clone">3.2. すでにあるリモートリポジトリを使ってバージョン管理を始める</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git clone</code></pre>
-</div>
+<div class="paragraph">
+<p>すでにあるリモートリポジトリを使ってGitによるバージョン管理を始められるようにします。具体的には、リモートリポジトリの完全なコピーを自分のPC上に作ります。</p>
 </div>
 <div class="paragraph">
-<p>すでにあるリモートリポジトリを使ってGitによるバージョン管理を始めるためのコマンドです。リモートリポジトリの完全な複製を自分のPC上に作ります。このコマンドは、<code>git init</code>とは違って、最初から他の人(例えばラボメンなど)と共同で作業をおこなえる体制が整っています。</p>
+<p>これはリモートリポジトリからコピーを作っているため、最初から他の人(例えばラボメンなど)と共同でタイムリープマシンを使って作業をおこなえる体制が整っています。</p>
 </div>
 <div class="paragraph">
-<p>では試しに、すでにあるリポジトリの複製を自分のPC上に作りましょう。以下のコマンドを任意のフォルダで実行することにより、「steins-gate」というリモートリポジトリの完全な複製が、自分のPC上に作られます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git clone git@github.com:o2project/steins-gate.git</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-add">3.3. 作業内容を記録するための準備をする</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git add ファイル名</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>作業内容をリポジトリに記録するために準備をするコマンドです。新規に作った、もしくは変更したファイルを「ステージングエリア」と一般的に言われるところに記録します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git add -p ファイル名</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>まとめてやってしまった作業内容を細かく記録することもできます。その場合は<code>git add</code>に<code>-p</code>というオプションを付けます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-rm">3.4. ファイルを削除する</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git rm ファイル名</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>すでにリポジトリにあるファイルを削除するためのコマンドです。削除したいファイルをステージングエリアに記録します。</p>
-</div>
-<div class="paragraph">
-<p><code>git rm</code>を実行した後にこの後説明する<code>git commit</code>を実行することにより、リポジトリから<code>git rm</code>で指定したファイルが削除されます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-commit">3.5. 作業内容を記録する</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git commit</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>作業内容をリポジトリに記録するコマンドです。例えるならば、ゲームでセーブをするようなコマンドです。</p>
-</div>
-<div class="paragraph">
-<p>先ほどの<code>git add</code>でステージングエリアに登録したファイルを、リポジトリに反映することができます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-status">3.6. リポジトリの今の状態を見る</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><code>git add</code>でステージングエリアに追加した作業内容や<code>git rm</code>で削除したファイルの状況や、リポジトリに登録されていないファイルなどが見られるコマンドです。</p>
-</div>
-<div class="paragraph">
-<p>例えば、このリポジトリのとある時の状況を<code>git status</code>で見ると、以下のように表示されます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>On branch master
-Your branch is up-to-date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
-
-        modified:   Ch3_HowToGit/readme.adoc
-
-Untracked files:
-  (use "git add &lt;file&gt;..." to include in what will be committed)
-
-        Ch3_HowToGit/git-status.adoc
-
-no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>「Changes not staged for commit」と書いているところで「modified」となっているのが、「リポジトリに登録されているファイルだが、作業した内容をリポジトリに登録していない状況」のファイルです。</p>
-</div>
-<div class="paragraph">
-<p>また、「Untracked files」となっているのが、「まだリポジトリに登録していない(バージョン管理をしていない)ファイル」となります。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-branch">3.7. ブランチの一覧を見たり、ブランチを作ったりする</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git branch</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>ブランチの一覧表示をおこなったり、新たにブランチを作成するコマンドです。この「ブランチ」という言葉ですが、シュタゲで例えるならば「世界線」となります。</p>
-</div>
-<div class="paragraph">
-<p><code>git branch</code>はブランチの一覧を見たり、新たにブランチを作成したり、ブランチを削除したりすることができます。</p>
-</div>
-<div class="paragraph">
-<p>例えば、現在のブランチが0.409420――秋葉原が電気街となり、フェイリスのお父さんが生きている世界線だとします。</p>
-</div>
-<div class="paragraph">
-<p>0.409420のブランチの作業履歴を見ると以下のようになっています。図の中に「HEAD」という言葉がありますが、これが今作業しているブランチのことを示しています。</p>
+<p>では試しに、すでにあるリポジトリの複製を自分のPC上に作りましょう。SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンのうち、一番左のボタンを押します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-branch.png" alt="ブランチの図">
+<img src="Ch3_HowToGit/img/git-init/git-init-sourcetree-select.png" alt="SourceTreeのボタン">
 </div>
 </div>
 <div class="paragraph">
-<p>ここから、新たなブランチを作るためには下記のコマンドを使います。</p>
+<p>押した後、「リポジトリをクローン」を押すと以下のような画面になります。「ソースパス / URL」の部分に<code>git@github.com:o2project/steins-gate.git</code>を入力して「クローン」を押すと、「steins-gate」というリモートリポジトリの完全なコピーが、自分のPC上に作られます。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>git branch ブランチ名</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>例えば、以下のコマンドを実行すると、0.337187というブランチが作られます。ただし、ブランチが作られるだけで、新たなブランチには移動しません。移動するためには次の節で説明する<code>git checkout</code>というコマンドを使わなければいけません。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git branch 0.337187</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>0.337187というブランチを作った状態で<code>git branch</code>を実行すると、以下のように表示されます。ブランチ名の左横にアスタリスクが付いているのは、現在いるブランチを示しています。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>* 0.409420
-  0.337187</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>また、ブランチを削除するためには下記のコマンドを使います。ブランチを削除するときは、現在作業しているブランチ(この場合だと0.409420)は削除できません。現在作業しているブランチを削除したい場合は<code>git checkout</code>を使って、他のブランチに移動してから、下記のコマンドを実行します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git branch -d ブランチ名</code></pre>
+<img src="Ch3_HowToGit/img/git-clone/git-clone.png" alt="リポジトリを取得しようとしている状態" width="460">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.8. ブランチを切り替える</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git checkout</code></pre>
-</div>
+<h3 id="git-commit">3.3. 作業内容を記録する</h3>
+<div class="paragraph">
+<p>作業内容をリポジトリに記録します。例えるならば、セーブをするようなものです。</p>
 </div>
 <div class="paragraph">
-<p>現在のブランチから別のブランチへ移動するコマンドです。例えるならば、電話レンジ(仮)のような機能を実現するコマンドです。</p>
-</div>
-<div class="paragraph">
-<p><code>git branch</code>の節でも説明しましたが、Gitのブランチは一つの世界線です。<code>git branch</code>だけでは世界線を移動することはできませんでしたが、この<code>git checkout</code>は世界線を移動したり、現在の世界線の過去に戻る(タイムリープする)ということができます。</p>
-</div>
-<div class="sect3">
-<h4 id="__6">3.8.1. ブランチを移動する方法</h4>
-<div class="paragraph">
-<p>現在のブランチは0.409420ということは<code>git branch</code>の時に説明しました。また、先ほど0.337187というブランチを作ったので、現在の作業履歴は以下のようになっています。</p>
+<p>新規に作ったファイルの場合、最初は以下のように表示されています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-checkout-moved-branch-before.png" alt="ブランチの図">
+<img src="Ch3_HowToGit/img/git-commit/git-add-before.png" alt="変更したファイルにチェックを付ける前" width="460">
 </div>
 </div>
 <div class="paragraph">
-<p>では、0.337187というブランチに移動します。ブランチを移動するには以下のようにコマンドを実行します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git checkout 0.337187</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>これで0.337187というブランチに移動しました。今作業しているブランチを示すHEADは0.337187を指し示しています。</p>
+<p>ここでチェックを付けると「ステージングエリア」と一般的に言われるところに移動します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-checkout-moved-branch-after.png" alt="git checkout 0.337187を実行した後の状態">
+<img src="Ch3_HowToGit/img/git-commit/git-add-after.png" alt="変更したファイルにチェックを付けた後" width="460">
 </div>
 </div>
 <div class="paragraph">
-<p>この状態で<code>git branch</code>を実行すると、以下のように表示されます。現在作業している0.337187というブランチの左横にアスタリスクが付きました。</p>
+<p>この状態で画面の下部にあるコミットメッセージというところに任意のメッセージを入力します。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>  0.409420
-* 0.337187</code></pre>
+<img src="Ch3_HowToGit/img/git-commit/git-commit-before.png" alt="コミットメッセージを入力する前" width="460">
 </div>
+</div>
+<div class="paragraph">
+<p>これで「コミット」ボタンを押すと、作業したファイルがリポジトリに記録されます。2回目以降は画面上部にある「コミット」ボタンを押すとコミットメッセージを入力する画面になります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-commit/git-commit-after.png" alt="コミットした後" width="460">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-reset">3.9. 変更をリセットする</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git reset</code></pre>
-</div>
+<h3 id="git-branch">3.4. ブランチの一覧を見たり、ブランチを作ったりする</h3>
+<div class="paragraph">
+<p>ブランチの一覧表示をおこなったり、新たにブランチを作ったりします。この「ブランチ」という言葉ですが、シュタゲで例えるならば「世界線」となります。</p>
 </div>
 <div class="paragraph">
-<p>作業した内容を無かったことにするコマンドです。例えるならば、タイムリープのようなコマンドです。</p>
-</div>
-<div class="paragraph">
-<p>先ほど、<code>git checkout</code>のコマンドを実行して、0.337187というブランチに移動しました。このブランチでいくつか作業をした結果、作業履歴は以下のようになりました。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>commit 20100813b
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Fri Aug 13 19:46:00 2010 +0900
-
-    SERNの襲撃によりまゆりが死んでしまった…
-
-commit 20100813a
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Fri Aug 13 14:00:00 2010 +0900
-
-    助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう
-
-commit 20100811
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 11 22:00:00 2010 +0900
-
-    「おまえは知りすぎた」という文面とともに人形の首の画像が送られてきた
-
-commit 20100810b
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Tue Aug 10 21:00:00 2010 +0900
-
-    紅莉栖の提案で電話レンジ(仮)をタイムリープマシンにすることを決めた
-
-commit 20100810a
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 04 20:00:00 2010 +0900
-
-    ラボとSERNが直通回線で繋がっていることをダルが発見した。これでLHCを操作することができる</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>この作業履歴を図にすると下記の図になります。</p>
+<p>例えば、現在のブランチが「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」だとします。その世界線で鈴羽を引き止めるために、岡部がDメールを送信しました。その場合、作業履歴は以下のようになります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-reset-before.png" alt="git checkout 0.337187でいくつか作業した後の状態">
+<img src="Ch3_HowToGit/img/git-branch/git-branch-before.png" alt="新たなブランチを作る前" width="460">
 </div>
 </div>
 <div class="paragraph">
-<p>ここでHEADが指し示している、「SERNの襲撃によりまゆりが死んでしまった…」という作業を無かったことにし、紅莉栖がタイムリープマシンを完成させた履歴に戻ります。戻るためには以下のようなコマンドを実行します。</p>
+<p>ここから「鈴羽を引き止めるためにDメールを送った後の世界線」に移動します。SourceTreeの上部にある「ブランチ」を押すと、ブランチ名を入力する画面が表示されます。ここで新規ブランチのところに任意の名前を入力します。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>git reset --soft HEAD^
-git reset --soft 20100813b #コミット番号を指定</code></pre>
+<img src="Ch3_HowToGit/img/git-branch/git-branch-name.png" alt="ブランチ名を決めているところ" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチに移動している状態です。世界線変動が起きました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-branch/git-branch-after.png" alt="ブランチを作った後" width="460">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-checkout">3.5. ブランチを切り替える</h3>
+<div class="paragraph">
+<p>現在のブランチから別のブランチへ移動します。例えるならば、Dメールを送った結果世界線変動が起こった状態を任意のタイミングでおこせるものです。。</p>
+</div>
+<div class="paragraph">
+<p>前の節でも書きましたが、Gitのブランチは「世界線」です。Steins;GateではDメールによる世界線変動は世界の状況に影響を及ぼしてましたが、Gitでは副作用なしに世界線移動ができます。</p>
+</div>
+<div class="paragraph">
+<p>切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックする事により、ブランチを切り替える事ができます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-checkout/git-checkout.png" alt="ブランチを移動した後" width="460">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-reset">3.6. 変更をリセットする</h3>
+<div class="paragraph">
+<p>作業した内容を無かったことにします。例えるならば、タイムリープのようなものです。</p>
+</div>
+<div class="paragraph">
+<p>鈴羽を引き止めた世界線でいくつか作業をした結果、作業履歴が以下のようになりました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-reset/git-reset-before.png" alt="鈴羽を引き止めた世界線でいくつか作業した後の状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>ここで最新の作業履歴である、「SERNの襲撃によりまゆりが死んでしまった…」という作業を無かったことにし、紅莉栖がタイムリープマシンを完成させたところにタイムリープします。タイムリープするためには、戻したい作業履歴の1つ前の作業履歴を右クリックで選択し、「このコミットまで "ブランチ名" を元に戻す」を選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-reset/git-reset-right-click.png" alt="git resetをおこなおうとしている状態" width="460">
 </div>
 </div>
 <div class="paragraph">
@@ -1042,97 +902,12 @@ git reset --soft 20100813b #コミット番号を指定</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-reset-after.png" alt="git reset --soft HEAD^を実行した後の状態">
-</div>
-</div>
-<div class="paragraph">
-<p>なお、<code>git reset --soft</code>は作業履歴は消えますが、ファイルなどには作業した結果が残ります。その作業した結果も一緒に無かったことにしたい場合は、<code>git reset --hard</code>というコマンドを実行します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git reset --hard HEAD^
-git reset --hard 20100813b #コミット番号を指定</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>注意点として、<code>git reset --hard</code>はやり直しができない、つまり無かったことにしたことを、無かったことにしたいということはできません。なので、注意深くコマンドを実行する必要があります。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-merge">3.10. 別のブランチでの作業内容を取り込む</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git merge</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>別ブランチの作業内容を現在のブランチに取り込むコマンドです。例えるならば、世界線を収束させるコマンドです。</p>
-</div>
-<div class="paragraph">
-<p><code>git reset</code>で作業内容を無かったことにした後、再び0.337187でいくつか作業をおこない、作業履歴が以下のようになりました。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="Ch3_HowToGit/img/git-merge-before.png" alt="0.337187でいくつか作業をした例">
-</div>
-</div>
-<div class="paragraph">
-<p>この状態では、0.409420のブランチは"「助手の脅迫に屈せず鈴羽を尾行せよ！」というDメールを送信した"という作業が一番新しい作業となってます。</p>
-</div>
-<div class="paragraph">
-<p>また、0.337187のブランチは"タイムマシンの修理を終えて鈴羽が過去に跳躍したが、Mr. ブラウンから鈴羽が失敗したという手紙を受け取った…"という作業が一番新しい作業となっています。</p>
-</div>
-<div class="paragraph">
-<p>その0.337187での作業結果を、0.409420のブランチに反映させたいときに以下のコマンドを実行します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git checkout 0.409420
-git merge 0.337187</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><code>git merge</code>をおこなった後は、以下のように0.409420のブランチに、0.337187のブランチでの作業内容が統合されています。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="Ch3_HowToGit/img/git-merge-after.png" alt="マージした後の0.409420の状態">
+<img src="Ch3_HowToGit/img/git-reset/git-reset-after.png" alt="git resetをした後の状態" width="460">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-log">3.11. 作業履歴を見る</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git log</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>今までの作業履歴を見ることができるコマンドです。例えるならば、ゲームシステムになりますがバックログ(今まで流れた文章を見る機能)を実現するコマンドです。</p>
-</div>
-<div class="paragraph">
-<p><code>git reset</code>の節で以下のようなログが出てきたと思います。これは<code>git log</code>というコマンドを実行した時の結果表示を模したものとなります。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>commit 20100810a
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date: Wed Aug 10 20:00:00 2010 +0900
-
-    ラボとSERNが直通回線で繋がっていることをダルが発見した。これでLHCを操作することができる</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>このように、<code>git reset</code>などに必要なコミット番号や、誰が作業者なのか、いつ作業がおこなわれたのか、その作業では何がおこなわれたのかという履歴を、<code>git log</code>というコマンドを実行することにより見ることができます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-rebase">3.12. 作業履歴を改変する</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git rebase -i</code></pre>
-</div>
-</div>
+<h3 id="git-rebase">3.7. 作業履歴を改変する</h3>
 <div class="paragraph">
 <p>作業履歴を改変するコマンドです。</p>
 </div>
@@ -1141,345 +916,192 @@ Date: Wed Aug 10 20:00:00 2010 +0900
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-rebase-before.png" alt="まゆりが何度も死んでしまった時の作業履歴">
-</div>
-</div>
-<div class="paragraph">
-<p>この時に先ほど説明した<code>git log</code>に<code>--oneline</code>というオプションを付けて実行すると、以下のような作業履歴を見ることができます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>$ git log --oneline
-95f4c50 タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
-e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
-6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
-a2fffd8 助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう</code></pre>
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-message-edit-before.png" alt="まゆりが何度も死んでしまった時の作業履歴" width="460">
 </div>
 </div>
 <div class="sect3">
-<h4 id="__7">3.12.1. コミットメッセージを変更する</h4>
+<h4 id="__6">3.7.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
-<p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、一番上で「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっています。これを修正します。そのためにまずは以下のコマンドを実行します。</p>
+<p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、最新の作業履歴が「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっているので修正します。直したい対象の1つ前の作業履歴を右クリックで選択し、「"コミット番号" の子を対話形式でリベース」を選択します。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>git rebase -i HEAD^</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>すると以下の画面が表示されます。ここで「pick」となっているところを、「reword」に変更します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>pick cdd5e0d タクシーで逃げようとしたら、ラウンダー追ってきてまゆりが刺されて死んだ
-
-# Rebase a2fffd8..cdd5e0d onto a2fffd8
-#
-# Commands:
-#  p, pick = use commit
-#  r, reword = use commit, but edit the commit message
-#  e, edit = use commit, but stop for amending
-#  s, squash = use commit, but meld into previous commit
-#  f, fixup = like "squash", but discard this commit's log message
-#  x, exec = run command (the rest of the line) using shell
-#
-# These lines can be re-ordered; they are executed from top to bottom.
-#
-# If you remove a line here THAT COMMIT WILL BE LOST.
-#
-# However, if you remove everything, the rebase will be aborted.
-#
-# Note that empty commits are commented out</code></pre>
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-message-edit-select.png" alt="対話形式でリベースを選択している状態" width="460">
 </div>
 </div>
 <div class="paragraph">
-<p>すると、コミットメッセージを編集できます。ここでは「が」を付け加えて保存します。</p>
+<p>すると、対象となる作業履歴が表示されるので、コミットメッセージを直したい作業履歴を選び、下部の「Edit message」を押します。すると、下記の図のようにコミットメッセージを編集する画面が表示されます。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
-
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and an empty message aborts the commit.
-# rebase in progress; onto e9ad957
-# You are currently editing a commit while rebasing branch 'master' on 'e9ad957'.
-#
-# Changes to be committed:
-#       modified:   test.txt
-#</code></pre>
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-message-edit-now.png" alt="コミットメッセージを編集している状態" width="460">
 </div>
 </div>
 <div class="paragraph">
-<p>コミットメッセージを編集した後、改めて<code>git log --oneline</code>を実行すると、一番上のコミットメッセージが修正されていることが確認できます。</p>
+<p>任意のコミットメッセージを書いた後、「OK」ボタンを押すとコミットメッセージが修正されます。</p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>d1b661b タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
-e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
-6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
-a2fffd8 助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう</code></pre>
+<img src="Ch3_HowToGit/img/git-rebase/git-reset-message-edit-after.png" alt="コミットメッセージを編集し終えた状態" width="460">
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__8">3.12.2. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="__7">3.7.2. 複数の作業履歴を一つにまとめる</h4>
 <div class="paragraph">
-<p>次に、まゆりが死んだという複数の履歴を一つにまとめます。一つにまとめるには上記の作業履歴の状態の場合、以下のコマンドのどちらかを実行します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git rebase -i HEAD^^^^
-git rebase -i a2fffd8</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>少し解説をします。<code>HEAD^^^^</code>というのは、この場合現在の変更内容から数えて、四つ前の変更内容を指します。つまりこの場合は、<code>a2fffd8</code>の変更内容を指すことになります。下はそのまま<code>a2fffd8</code>の変更内容を指しています。</p>
-</div>
-<div class="paragraph">
-<p>いずれかのコマンドを実行すると以下のような編集画面が表示されます。この画面では対象となる作業履歴に対して、どういう変更を加えるかという情報が書かれています。画面上部では作業履歴が、画面下部ではどのような変更を加えられるかの説明が書かれています。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>pick 6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
-pick c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
-pick e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-pick 95f4c50 タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
-
-# Rebase a2fffd8..95f4c50 onto a2fffd8
-#
-# Commands:
-#  p, pick = use commit
-#  r, reword = use commit, but edit the commit message
-#  e, edit = use commit, but stop for amending
-#  s, squash = use commit, but meld into previous commit
-#  f, fixup = like "squash", but discard this commit's log message
-#  x, exec = run command (the rest of the line) using shell
-#
-# These lines can be re-ordered; they are executed from top to bottom.
-#
-# If you remove a line here THAT COMMIT WILL BE LOST.
-#
-# However, if you remove everything, the rebase will be aborted.
-#
-# Note that empty commits are commented out</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>では、最初以外の作業履歴でpickとなっているところを、squashと書き換えてみます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>pick 6a8c951 萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
-squash c8101be まゆりがラウンダーが運転する車に轢かれて死んでしまった
-squash e9ad957 地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-squash 95f4c50 タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
-(以下略)</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>そうするとpickとした変更内容に、squashとした変更内容がまとめられます。この状態で編集画面上で保存をおこなうと、新たなコミットメッセージを入力するための画面が表示されます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code># This is a combination of 4 commits.
-# The first commit's message is:
-萌郁とラウンダー達の襲撃により、まゆりが撃たれて死んでしまった
-
-# This is the 2nd commit message:
-
-まゆりがラウンダーが運転する車に轢かれて死んでしまった
-
-# This is the 3rd commit message:
-
-地下鉄を使って逃げようとしたら、綯がまゆりに抱きつこうとしてその反動でまゆりが電車に轢かれた
-
-# This is the 4th commit message:
-
-タクシーで逃げようとしたら、ラウンダーが追ってきてまゆりが刺されて死んだ
-
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and an empty message aborts the commit.
-# rebase in progress; onto a2fffd8
-# You are currently editing a commit while rebasing branch 'master' on 'a2fffd8'.
-#
-# Changes to be committed:
-#       modified:   test.txt
-#</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>このように、最初は各作業ごとのコミットメッセージが表示されていますが、今回はこれらを使わず新しいコミットメッセージを入力します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>萌郁やラウンダー達の手によりまゆりが死んでしまった
-
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and an empty message aborts the commit.
-# rebase in progress; onto a2fffd8
-# You are currently editing a commit while rebasing branch 'master' on 'a2fffd8'.
-#
-# Changes to be committed:
-#       modified:   test.txt
-#</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>これにより、改めて<code>git log</code>で作業履歴を表示すると、以下のように表示されると思います。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>commit cdd5e0d0b86e16d08f51a57f19e035ba4f43cd59
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date:   Fri Aug 13 19:46:00 2010 +0900
-
-    萌郁やラウンダー達の手によりまゆりが死んでしまった
-
-commit a2fffd83ac8265b52668694bc9669e8f2bf099b2
-Author: Kyouma Hououin &lt;sg-epk@jtk93.x29.jp&gt;
-Date:   Fri Aug 13 14:00:00 2010 +0900
-
-    助手がタイムリープマシンを完成させた。あまりに危険なので、実験はせず世間に公表して手放そう</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>図にすると以下のようになります。作業履歴をまとめる前に比べ、かなり簡素になっていることが分かります。</p>
+<p>次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の1つ前の作業履歴を右クリックで選択し、「"コミット番号" の子を対話形式でリベース」を選択します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-rebase-after.png" alt="作業履歴をまとめた後の作業履歴">
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-squash-right-click.png" alt="git rebase squashするべく親となるコミットを選択している状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>今回は4つの作業履歴を対象としました。ここから作業履歴をまとめるには「Squash with previous」を3回押します。「まとめる作業履歴の数 - 1回、Squash with previousを押す」と覚えるといいかもしれません。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-squash-before.png" alt="git rebase squashしようとしている状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>その後、まとめた作業履歴のコミットメッセージを編集するために「Edit message」を押します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-squash-message-edit.png" alt="コミットをまとめた後コミットメッセージを編集している状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>これで、作業履歴がまとめられました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-rebase/git-rebase-squash-after.png" alt="git rebase squashした状態" width="460">
 </div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-remote">3.13. 新たなリモートリポジトリを追加する</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git remote add</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>今までは一人でGitを使ってきました。ですが、ラボメンと作業を共同でおこなう場合、リモートリポジトリと呼ばれる共用のリポジトリが必要となってきます。そのリモートリポジトリを登録するコマンドが、<code>git remote add</code>です。</p>
-</div>
-<div class="paragraph">
-<p>例えば、以下のコマンドを実行すると、以降は<code>origin</code>という名前で、<code>origin</code>以降に指定したURLにアクセスできます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git remote add origin git@github.com:o2project/steins-git.git</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>このoriginという名前は<code>git remote rename</code>というコマンドで変えることができます。以下の例では、originをsteins-gateという名前に変更する事ができます。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git remote rename origin steins-gate</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>他にも<code>git remote rm</code>という登録したリモートリポジトリを削除するコマンドや<code>git remote set-url</code>という登録したリモートリポジトリのURLを変えるコマンドがあります。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-fetch">3.14. リモートリポジトリの情報を最新のものにする</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git fetch</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><code>git clone</code>で自分のPC上にリモートリポジトリの複製を作りましたが、リモートリポジトリは岡部以外にもラボメン達が変更を加えます。例えば、電話レンジ(仮)をタイムリープマシンに改造する作業の時は、紅莉栖とダルが、リポジトリに変更を加えます。</p>
-</div>
-<div class="paragraph">
-<p>そうした変更をリモートリポジトリから取得するのが<code>git fetch</code>となります。</p>
-</div>
-<div class="paragraph">
-<p>なお、あくまでリモートリポジトリの情報を最新にするコマンドであり、自分のPC上のリポジトリにリモートリポジトリの作業内容が取り込まれるわけではありません。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-pull">3.15. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git pull</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込むコマンドとなります。</p>
-</div>
-<div class="paragraph">
-<p>先ほど<code>git rebase</code>のところで、最終的に以下のような作業履歴になっていました。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="Ch3_HowToGit/img/git-rebase-after.png" alt="作業履歴をまとめた後の作業履歴">
-</div>
-</div>
-<div class="paragraph">
-<p>しかし、岡部以外にもラボメンは作業しています。実際に、今回は紅莉栖が作業していました。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="Ch3_HowToGit/img/git-pull-before.png" alt="紅莉栖が作業している">
-</div>
-</div>
-<div class="paragraph">
-<p>ここで<code>git pull</code>をおこなう事により、origin/0.337187の情報が更新され、また、その情報が自分のPC上のリポジトリにマージされます。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="Ch3_HowToGit/img/git-pull-after.png" alt="自分のPC上のリポジトリとリモートリポジトリの同期をとった">
-</div>
-</div>
-<div class="paragraph">
-<p>先ほどの<code>git fetch</code>とは違い、自分のPC上のリポジトリにリモートリポジトリの作業内容が取り込まれます。<code>git fetch</code>と<code>git merge</code>を同時におこなっているコマンドと言えます。つまり、以下のコマンドを実行したのと同じ事を<code>git pull</code>ではおこなっています。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git fetch
-git merge origin/0.337187</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-push">3.16. リモートリポジトリに作業内容を送る</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git push</code></pre>
-</div>
-</div>
+<h3 id="git-push">3.8. リモートリポジトリに作業内容を送る</h3>
 <div class="paragraph">
 <p>自分がおこなった作業内容を、リモートリポジトリに送信するコマンドです。</p>
 </div>
 <div class="paragraph">
-<p><code>git pull</code>のところで、紅莉栖はマイフォークが欲しいということを岡部に伝えました。その後に岡部はタイムリープし、紅莉栖にタイムリープしてきた事を伝えましたが、なかなか信じてくれません。</p>
+<p>今まで岡部は、まゆりを助けるために何度もタイムリープをし奮闘してきましたが、その事は他のラボメンは知りません。奮闘している事を知らないままタイムリープマシンを壊そうとしても、紅莉栖に止められるのはしかたない事です。</p>
 </div>
 <div class="paragraph">
-<p>そこで岡部は、「今助手が欲しいものはマイフォーク」という事を伝え、タイムリープしてきた事を信じさせました。それを作業履歴に表すと以下のようになります。</p>
+<p>なので、他のラボメン(今回の場合だと紅莉栖)に今まで岡部がしてきた作業内容を伝える必要があります。その手段がこれからおこなう事です。</p>
+</div>
+<div class="paragraph">
+<p>まずは、画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。この例では、全てのブランチをプッシュしていますが、普段使う分には現在のブランチのみプッシュしたほうが良いです。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-push-before.png" alt="git push前">
+<img src="Ch3_HowToGit/img/git-push/git-push-branch-select.png" alt="git push前" width="460">
 </div>
 </div>
 <div class="paragraph">
-<p>この状態では、まだ自分のPC上にしか「紅莉栖が今欲しい物はマイフォーク」と言った作業履歴がありません。リモートリポジトリにも紅莉栖に言ったという作業履歴を反映させるためには、以下のコマンドを実行します。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>git push origin 0.337187</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>このコマンドを実行する事により、リモートリポジトリにも紅莉栖に言ったという作業履歴が反映されます。</p>
+<p>プッシュが終わり、作業履歴に「origin/ブランチ名」という文字が表示されるようになりました。これで作業内容をリモートリポジトリに送ることができ、紅莉栖にも今までおこなってきた事が伝わりました。なお「origin」というのは、リモートリポジトリの事を指しています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Ch3_HowToGit/img/git-push-after.png" alt="git push後">
+<img src="Ch3_HowToGit/img/git-push/git-push-after.png" alt="git push後" width="460">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-pull">3.9. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
+<div class="paragraph">
+<p>他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込むコマンドとなります。</p>
+</div>
+<div class="paragraph">
+<p>リモートリポジトリでは、岡部以外にもラボメンが作業しています。この例だと、紅莉栖が、岡部の様子がおかしいのでタイムリープしてきたかどうか聞いていたり、マイフォークが欲しいという事を言ったという事を記録していたりします。</p>
+</div>
+<div class="paragraph">
+<p>自分のPC上のリポジトリ(鈴羽を引き止めた世界線)に比べ、リモートリポジトリ(origin/鈴羽を引き止めた世界線)が2つ進んでいます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-pull/git-pull-before.png" alt="紅莉栖が作業している" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>ここで、画面上部の「プル」を押します。たいていの場合は表示された画面内の「OK」を押せば大丈夫です。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-pull/git-pull-select.png" alt="pullしてくるブランチを選んでいる状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>「OK」を押す事により、リモートリポジトリと自分のPC上の作業履歴が同期されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-pull/git-pull-after.png" alt="自分のPC上のリポジトリとリモートリポジトリの同期をとった" width="460">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-merge">3.10. 別のブランチでの作業内容を取り込む</h3>
+<div class="paragraph">
+<p>別ブランチの作業内容を現在のブランチに取り込みます。例えるならば、世界線を収束させるコマンドです。</p>
+</div>
+<div class="paragraph">
+<p>鈴羽を引き止めた世界線で作業をした結果、鈴羽がタイムトラベルに失敗し、「失敗した失敗した失敗した失敗した失敗した」と何度も書いた手紙を書き残し自殺してしまいました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-before.png" alt="鈴羽を引き止めた世界線でいくつか作業をした例" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>そんなできごとを無かったことにするため、世界線を変動させ、鈴羽を引き止めないようにします。そのためにまず「秋葉原から萌えが消えた世界線」のブランチへ移動します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-branch-change.png" alt="秋葉原から萌えが消えた世界線に移動した" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>移動した結果、Dメールを送った状態が最新の状態となっています。ここから「鈴羽を引き止めた世界線」でおこなってきた作業を「秋葉原から萌えが消えた世界線」に統合します。方法としては、統合したいブランチを右クリックして、「"統合するブランチ名" を "統合させたいブランチ名" へマージ」を選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-select.png" alt="マージ対象のブランチを選択している状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>選択すると、確認メッセージが表示されるので、「確認する」を押します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-confirm.png" alt="マージする際の確認メッセージ" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>すると、「秋葉原から萌えが消えた世界線」に「鈴羽を引き止めた世界線」でおこなってきた作業履歴が統合された状態になります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-uncommit.png" alt="マージした後の状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>ただし、まだコミットはしていない状態なのでコミットをします。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-commit-message.png" alt="マージした際のコミットメッセージを書いている状態" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>コミットが完了しました。このようにDメールを送るように、ブランチ同士を統合する事ができます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-merge/git-merge-after.png" alt="マージが完了した状態" width="460">
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -1498,7 +1120,7 @@ git merge origin/0.337187</code></pre>
 
 </div>
 <div class="sect2">
-<h3 id="__9">参考にした資料</h3>
+<h3 id="__8">参考にした資料</h3>
 <div class="paragraph">
 <p>本書を書くにあたって、参考にした資料の一覧となります。本書を読み、よりGitについて知りたいと感じた時には以下のサイトや書籍を見てみるといいでしょう。</p>
 </div>
@@ -1522,7 +1144,7 @@ git merge origin/0.337187</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="__10">書籍</h4>
+<h4 id="__9">書籍</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1544,7 +1166,7 @@ git merge origin/0.337187</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.1.3<br>
-Last updated 2014-07-28 02:48:56 UTC
+Last updated 2014-07-31 02:49:58 UTC
 </div>
 </div>
 </body>
