@@ -1,3 +1,42 @@
+## 0.2.0 (2014-08-01)
+
+
+#### Bug Fixes
+
+* **index.adoc:** PDFで章番号がずれてしまっていたので、いっそ出力しないことにした ([23970cb9](https://github.com/o2project/steins-git/commit/23970cb9db68f648b5f74e947951dbaf0c74d1c9))
+
+
+#### New and Edit
+
+* **Ch0:** はじめにを執筆した ([7791a00c](https://github.com/o2project/steins-git/commit/7791a00c5ecbbf0d1f54d9309533ae2500acd6a1))
+* **Ch3:**
+  * Gitのコマンドを説明する順序を変更した ([5b83289d](https://github.com/o2project/steins-git/commit/5b83289d8dce84bb532a2b49586f58d7c5463cdc))
+  * 説明しないものを省いた ([1dec8710](https://github.com/o2project/steins-git/commit/1dec8710b9107bb7edfe5c9f22436a1638282e88))
+  * SourceTreeを使った説明に切り替えたことにより、説明しなくなったgit addやgit log、git rmの節を削除 ([5b38932c](https://github.com/o2project/steins-git/commit/5b38932c034f43a50e80a59a1847f07735b84427))
+  * リモートリポジトリに関するコマンドの説明を書き始めた ([a20c88aa](https://github.com/o2project/steins-git/commit/a20c88aaf11c95051b50c8001a1dc59d54361fed))
+* **Ch4:** あとがきのアウトラインを書いた ([612b60e7](https://github.com/o2project/steins-git/commit/612b60e7c832909b3c06b2534b70860c4acd12e6))
+* **git-branch:** git branchについての説明を書きかえた ([a165b1d2](https://github.com/o2project/steins-git/commit/a165b1d2f833378c4b4a2a6bb3c7a971112c539c))
+* **git-checkout:** git checkoutの説明を書きかえた ([952846ae](https://github.com/o2project/steins-git/commit/952846ae6d48be48ea51414071d77f21ae215800))
+* **git-clone:**
+  * git cloneの説明を書き換えた ([ecb49790](https://github.com/o2project/steins-git/commit/ecb49790833c5d60ff01c87311e2ed70789719d2))
+  * git cloneをSourceTreeを使って説明する形に書き換えた ([e6032cfa](https://github.com/o2project/steins-git/commit/e6032cfac01e945a1afd9a4fdbdf2dce5c33cfe5))
+  * git cloneについて書いた ([628009cb](https://github.com/o2project/steins-git/commit/628009cb704486516c5f9d22f580ef6ca2925717))
+* **git-commit:** git commitに関する説明を書き直した ([82e7239f](https://github.com/o2project/steins-git/commit/82e7239f2ba658282bd8976fa9a6fddc77d8e225))
+* **git-fetch:**
+  * git fetchは説明しない事にしたので削除 ([a6c31dc3](https://github.com/o2project/steins-git/commit/a6c31dc3c886c6a5db843d07c7810da2a4c0f02a))
+  * git fetchについて書いた ([5c8cb22d](https://github.com/o2project/steins-git/commit/5c8cb22d3922904c37b916a5f85cd813d9a0650a))
+* **git-init:**
+  * 文章の表現を変更 ([1196d5e0](https://github.com/o2project/steins-git/commit/1196d5e0e2b80425780f7984f04218233cfb9d8a))
+  * git initについてSourceTreeを使った形に書きかえた ([ee8b0d08](https://github.com/o2project/steins-git/commit/ee8b0d08c99fffd1c3b192092a42f86769e78a91))
+* **git-pull:** git pullについて書いた ([c2f657a7](https://github.com/o2project/steins-git/commit/c2f657a7c3cd2dbe1c41a09c699e3aa0bd8643e3))
+* **git-push:** git pushについて書いた ([c2f1e901](https://github.com/o2project/steins-git/commit/c2f1e9019d3dfd210f5efabc84585146de564642))
+* **git-remote:**
+  * 一人でGitを使い始めて、後から共同作業するという場面があまりないので、git remoteに関する説明は削除 ([8d64622c](https://github.com/o2project/steins-git/commit/8d64622c19e75e9065e293ec02224b494b6834d9))
+  * git remoteについて書いた ([152b1569](https://github.com/o2project/steins-git/commit/152b15695439795e429a82dda2043a38d8ee9918))
+* **git-start:** SourceTreeのインストールと設定方法を紹介する章を追加 ([a577779c](https://github.com/o2project/steins-git/commit/a577779c83415f20bc62cce8dfbc6e3c7dd6fdb7))
+* **git-status:** git statusに関する説明を削除 ([41145404](https://github.com/o2project/steins-git/commit/4114540440d788ffc0bf8b61fa4efceca05355c0))
+
+
 ### 0.1.3 (2014-07-27)
 
 
