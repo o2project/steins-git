@@ -8,8 +8,9 @@ endif::[]
 
 ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使いかたを知りたいという人もいるでしょう。
 
-この章では、Gitの使いかたとして、Gitを使う上で必要なGitのコマンドについてSteins;Gateに例えて説明していきます。
+この章では、Gitの使いかたとして https://www.atlassian.com/ja/software/sourcetree/overview[SourceTree] というソフトウェアを用いて、いろんな操作方法を書いていきます。
 
+include::git-start.adoc[]
 include::git-init.adoc[]
 include::git-clone.adoc[]
 include::git-commit.adoc[]
