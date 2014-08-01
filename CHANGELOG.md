@@ -1,3 +1,20 @@
+### 0.2.1 (2014-08-01)
+
+
+#### Bug Fixes
+
+* **All:**
+  * s/無い/ない/g ([0dfbdd01](https://github.com/o2project/steins-git/commit/0dfbdd01e18d1aadb47dd1b85faf73974b3b291a))
+  * s/時/とき/g ([bf5dd423](https://github.com/o2project/steins-git/commit/bf5dd42367424edbc6599efe4494c7987a635f17))
+  * s/事/こと/g ([14962e79](https://github.com/o2project/steins-git/commit/14962e793a9933949eab2e6c401dd403450e37bf))
+
+
+#### New and Edit
+
+* **All:** ラボメンの表記を統一 #75 ([22d09a03](https://github.com/o2project/steins-git/commit/22d09a03c775cca8ce0402f8a62078b09ec4f601))
+* **Ch0:** 謝辞に感謝したい人を追加した ([c8b68881](https://github.com/o2project/steins-git/commit/c8b688815feb4a40b4fd955d5d6aeef00a383f1a))
+
+
 ## 0.2.0 (2014-08-01)
 
 
