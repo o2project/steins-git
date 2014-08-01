@@ -28,6 +28,6 @@ image::img/git-merge/git-merge-uncommit.png[マージした後の状態, 460]
 
 image::img/git-merge/git-merge-commit-message.png[マージした際のコミットメッセージを書いている状態, 460]
 
-コミットが完了しました。このようにDメールを送るように、ブランチ同士を統合する事ができます。
+コミットが完了しました。このようにDメールを送るように、ブランチ同士を統合することができます。
 
 image::img/git-merge/git-merge-after.png[マージが完了した状態, 460]
