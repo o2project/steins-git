@@ -1,7 +1,7 @@
 [[easy-to-start]]
 == 手軽に始められる
 
-例えば、自分のPC上だけでバージョン管理をしたいと思った時に、SVNはGitに比べると始める際の手順が増えます。
+例えば、自分のPC上だけでバージョン管理をしたいと思ったときに、SVNはGitに比べると始める際の手順が増えます。
 
 SVNでバージョン管理を始める際の手順は、 http://www.hyuki.com/techinfo/svninit.html[Subversionの基礎練習] や http://tracpath.com/bootcamp/learning_subversion.html[Subversion の基礎勉強 - Subversion によるバージョン管理 — バージョン管理システム入門(初心者向け)] を参照してください。
 

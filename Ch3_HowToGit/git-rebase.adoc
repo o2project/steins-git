@@ -6,7 +6,7 @@
 
 例として、電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃により、まゆりが殺されてしまった後の作業履歴を示します。
 
-image::img/git-rebase/git-rebase-message-edit-before.png[まゆりが何度も死んでしまった時の作業履歴, 460]
+image::img/git-rebase/git-rebase-message-edit-before.png[まゆりが何度も死んでしまったときの作業履歴, 460]
 
 === コミットメッセージを変更する
 
