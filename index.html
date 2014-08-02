@@ -634,7 +634,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>これをSteins;Gateのゲームに例えると、データをセーブする場所を間違えて、消したくないセーブデータが消えたという経験がある人もいると思います。</p>
 </div>
 <div class="paragraph">
-<p>実際に自分は、フェイリスエンドを見るために残しておいたデータに、るかエンドに進むように進めたデータを上書きしてしまい、鈴羽エンドへ分岐するデータから再びフェイリスエンドへ分岐するところまでやり直したということがありました。地味につらかったです。</p>
+<p>実際に自分は、ラボメンの個別エンディングを見るために残しておいたデータに、誤って別のデータを上書きしてしまい、再度やり直したということがありました。地味につらかったです。</p>
 </div>
 </div>
 <div class="sect3">
@@ -650,10 +650,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>このように、ファイル名を変更するというバージョン管理では、多人数でファイルを編集したいときに困ることになります。</p>
 </div>
 <div class="paragraph">
-<p>また、内容を前のものに戻しづらかったり、戻せないということが往々にして起きるため、例えばセーブデータを上書きしてしまったときに、再度やり直し…ということがおきます。</p>
+<p>また、内容を前のものに戻しづらかったり、戻せないということが往々にして起きるため、例えば誤ったファイルに上書きしてしまったときに、再度やり直し…ということがおきます。</p>
 </div>
 <div class="paragraph">
-<p>そこで、この書籍のテーマであるGitが登場します。Gitは「分散型」といわれるバージョン管理システムです。</p>
+<p>そこで、この書籍のテーマであるGitが登場します。Gitはバージョン管理システムの中でも「分散型バージョン管理システム」といわれるものです。</p>
 </div>
 <div class="sect3">
 <h4 id="_git">1.2.1. Gitの概要</h4>
@@ -661,19 +661,22 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>Gitは分散型バージョン管理システムの一つです。分散型バージョン管理システムにはGit以外にも「Mercurial」「Bazaar」などがありますが、この書籍では特に触れません。</p>
 </div>
 <div class="paragraph">
-<p>Gitは自分のPC上に「リポジトリ」があり、自分の手元で作業内容を記録していくことができます。この作業内容の記録という行為は「コミット(commit)」と呼ばれています。</p>
+<p>Gitは「リポジトリ」という「ファイルのスナップショット<span class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</span>が保管されている場所」があります。スナップショットを保存する方法ですが、Gitには「コミット<span class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</span>」という、スナップショットを任意のタイミングで保存する機能があります。それによって、自分がおこなった作業を記録することができます。</p>
 </div>
 <div class="paragraph">
-<p>他人と作業内容を共有する場合は、ネットワーク上に共有用のリポジトリを用意しておき、そこへ自分の作業内容を送信します。この作業内容の送信という行為は「プッシュ(push)」と呼ばれています。</p>
+<p>この「コミット」ですが、Steins;Gateで例えるとゲームシステムになるのですが「セーブ」といえます。そして「セーブデータ」が「リポジトリ」です。ただし、Gitの場合はセーブデータの任意の場所に戻ることができます。Steins;Gateで例えると、特定のエンディングに進もうとしてセーブしておいたデータに誤って別のデータをセーブしてしまっても、戻すことができます。</p>
+</div>
+<div class="paragraph">
+<p>また、他人と作業内容を共有する場合は、他の人も見られる場所に共有のリポジトリを用意しておき、そこへ自分の作業内容を送信します。作業内容の送信をすることを「プッシュ<span class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</span>」といいます。</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_git_2">1.2.2. Gitの利点</h4>
 <div class="paragraph">
-<p>Gitでは、ファイルで編集した内容を編集前の状態に戻したいといったときでも、<code>git checkout [ファイル名]</code>というコマンドを実行することにより、手軽に戻すことができます。またこれにより、ファイルに日付などを追加してコピーしてから編集ということをしなくて済むので、編集すべきファイルがどれなのか分からないというのが無くなります。</p>
+<p>Gitの概要でも書きましたが、作業した内容を作業前の状態に戻したいといったときでも、「チェックアウト<span class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</span>」という機能を使えば、手軽に戻すことができます。またこれにより、ファイルに日付などを追加してコピーしてから編集ということをしなくて済むので、編集すべきファイルがどれなのか分からないというのが無くなります。</p>
 </div>
 <div class="paragraph">
-<p>また、多人数での編集も<code>git pull</code>という、「自分のPC上のリポジトリにリモートリポジトリの最新の内容を反映する」コマンドを実行することにより、他の人が変更した点も自分の作業したファイルに取り込めます。</p>
+<p>また、多人数での編集も「プル<span class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</span>」という、「自分のPC上のリポジトリにリモートリポジトリの最新の内容を反映する」機能を使うことより、他の人が変更した点も自分の作業したファイルに取り込めます。</p>
 </div>
 <div class="paragraph">
 <p>そのため、同じファイルを編集したためにどちらかの編集内容が消える…ということが少なくなります。これで岡部と紅莉栖も喧嘩しなくなるでしょう。</p>
@@ -749,13 +752,16 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="sect2">
 <h3 id="git-start">3.1. SourceTreeのインストールと設定</h3>
 <div class="paragraph">
-<p>Gitを使うには、まずSourceTreeというソフトウェアをダウンロードします。ダウンロードは以下のURLからおこなえます。</p>
+<p>Gitを使うには、まずSourceTreeというソフトウェアをダウンロードします。</p>
+</div>
+<div class="paragraph">
+<p>ダウンロードは以下のURLからおこなえます。SourceTreeはWindowsとMac OS Xに対応しています。</p>
 </div>
 <div class="paragraph">
 <p><a href="https://www.atlassian.com/ja/software/sourcetree/overview">https://www.atlassian.com/ja/software/sourcetree/overview</a></p>
 </div>
 <div class="paragraph">
-<p>SourceTreeはWindowsとMac OS Xに対応しています。SourceTreeを例えるのであれば「世界線を観測でき、かつ世界線改変や世界線収束などができるもの」という感じです。ちなみに、Gitを扱えるソフトウェアの中では一番見やすいソフトウェアだと個人的に思っています。</p>
+<p>SourceTreeを例えるのであれば「世界線を観測でき、かつ世界線改変や世界線収束などができるもの」。つまり、ダイバージェンスメーターとタイムマシンをあわせもったものという感じです。ちなみに、Gitを扱えるソフトウェアの中では一番見やすいソフトウェアだと個人的に思っています。</p>
 </div>
 <div class="paragraph">
 <p>SourceTreeのダウンロードが終わったら、次にインストールと設定をおこないます。WindowsとMac OS Xそれぞれ説明が分かりやすいページがあるので、そのページを紹介しておきます。</p>
@@ -1263,10 +1269,28 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 </div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. ソースコードなどを任意のタイミングで抜き出したもの。詳しくは <a href="http://e-words.jp/w/E382B9E3838AE38383E38397E382B7E383A7E38383E38388.html">http://e-words.jp/w/E382B9E3838AE38383E38397E382B7E383A7E38383E38388.html</a> を参照してください。
+</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a>. 第三章の「作業内容を記録する」で解説しています。
+</div>
+<div class="footnote" id="_footnote_3">
+<a href="#_footnoteref_3">3</a>. 第三章の「リモートリポジトリに作業内容を送る」で解説しています。
+</div>
+<div class="footnote" id="_footnote_4">
+<a href="#_footnoteref_4">4</a>. 第三章の「作業内容を無かったことにする」で解説しています。
+</div>
+<div class="footnote" id="_footnote_5">
+<a href="#_footnoteref_5">5</a>. 第三章の「リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む」で解説しています。
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
 Version 0.2.1<br>
-Last updated 2014-08-02 04:38:44 UTC
+Last updated 2014-08-02 15:00:26 UTC
 </div>
 </div>
 </body>
