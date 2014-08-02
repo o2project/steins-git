@@ -387,8 +387,8 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#chapter2-why-git">2. Chapter.2 - なぜGitを使うのか</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#easy-to-start">2.1. 手軽に始められる</a></li>
-<li><a href="#not-need-network-connection">2.2. ネットワーク接続がいらない</a></li>
+<li><a href="#not-need-network-connection">2.1. ネットワーク接続がいらない</a></li>
+<li><a href="#trend">2.2. 流行っている</a></li>
 <li><a href="#try-out-a-local-repository">2.3. ローカルリポジトリでいろいろと試せる</a></li>
 </ul>
 </li>
@@ -676,7 +676,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>Gitの概要でも書きましたが、作業した内容を作業前の状態に戻したいといったときでも、「チェックアウト<span class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</span>」という機能を使えば、手軽に戻すことができます。またこれにより、ファイルに日付などを追加してコピーしてから編集ということをしなくて済むので、編集すべきファイルがどれなのか分からないというのが無くなります。</p>
 </div>
 <div class="paragraph">
-<p>また、多人数での編集も「プル<span class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</span>」という、「自分のPC上のリポジトリにリモートリポジトリの最新の内容を反映する」機能を使うことより、他の人が変更した点も自分の作業したファイルに取り込めます。</p>
+<p>また、多人数での編集も「プル<span class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</span>」という、「自分のPC上のリポジトリにネットワーク上にあるリポジトリの最新の内容を反映する」機能を使うことより、他の人が変更した点も自分の作業したファイルに取り込めます。</p>
 </div>
 <div class="paragraph">
 <p>そのため、同じファイルを編集したためにどちらかの編集内容が消える…ということが少なくなります。これで岡部と紅莉栖も喧嘩しなくなるでしょう。</p>
@@ -693,27 +693,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>バージョン管理システムには、分散型バージョン管理システムといわれるGitなど以外にも、集中型バージョン管理システムといわれるSVNなどがあります。</p>
 </div>
 <div class="paragraph">
-<p>では、その集中型バージョン管理システムより、なぜ、分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。</p>
+<p>その集中型バージョン管理システムより、なぜ分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。</p>
 </div>
 <div class="sect2">
-<h3 id="easy-to-start">2.1. 手軽に始められる</h3>
+<h3 id="not-need-network-connection">2.1. ネットワーク接続がいらない</h3>
 <div class="paragraph">
-<p>例えば、自分のPC上だけでバージョン管理をしたいと思ったときに、SVNはGitに比べると始める際の手順が増えます。</p>
-</div>
-<div class="paragraph">
-<p>SVNでバージョン管理を始める際の手順は、 <a href="http://www.hyuki.com/techinfo/svninit.html">Subversionの基礎練習</a> や <a href="http://tracpath.com/bootcamp/learning_subversion.html">Subversion の基礎勉強 - Subversion によるバージョン管理 — バージョン管理システム入門(初心者向け)</a> を参照してください。</p>
-</div>
-<div class="paragraph">
-<p>Gitは、<code>git init</code>というコマンドを実行するだけで、自分のPC上でGitによるバージョン管理ができるようになります。</p>
-</div>
-<div class="paragraph">
-<p>なお、共同で作業する場合に、Gitの場合であれば <a href="https://github.com/">GitHub</a> を、SVNの場合であれば <a href="http://sourceforge.jp/">SourceForge.JP</a> を使うと手軽に共用リポジトリを使えるようになります。また、この場合はGitとSVNどちらもほぼ同じ手順で共同作業を始めることができます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="not-need-network-connection">2.2. ネットワーク接続がいらない</h3>
-<div class="paragraph">
-<p>Gitはネットワーク上にあるリポジトリを使わなかったり、他の人と作業内容を共有しなくてもいい環境であれば、ネットワーク接続はいりません。これは作業内容の記録や作業内容の履歴を見るという、作業をする上で多くやることが高速にできるということです。</p>
+<p>Gitはネットワーク上にあるリポジトリを使わなかったり、他の人と作業内容を共有しなくてもいい環境であれば、ネットワーク接続はいりません。これは作業内容の記録(コミット)や世界線移動(ブランチ<span class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</span>移動)という、作業をする上で多くやることが高速にできるということです。</p>
 </div>
 <div class="paragraph">
 <p>SVNを他の人と共有する形で使っていた場合、手元にリポジトリがなく、ネットワーク上にだけリポジトリがあります。そのため、ネットワークにつなげない環境では作業内容の記録や作業内容の履歴を見るといったことができなくなります。</p>
@@ -726,15 +711,67 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
+<h3 id="trend">2.2. 流行っている</h3>
+<div class="paragraph">
+<p>SVNに比べ、Gitは流行っています。流行っているということは、それだけ皆が使いノウハウもでてきやすい状況にあるということです。といっても、言葉だけでは流行っているというのが説得力がないので、流行っていることを示すデータをいくつか紹介します。(スクリーンショットは2014年8月3日のものです)</p>
+</div>
+<div class="paragraph">
+<p>まずはじめに、Googleトレンドで日本におけるGit、SVN、Subversion(SVNの正式名称)の人気度の動向を調べた結果です。<span class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</span></p>
+</div>
+<div class="paragraph">
+<p>ここではGitが登場した2005年4月から2014年7月までのグラフを掲載していますが、2013年あたりからSVNとGitの人気度が逆転し、Gitはなお右肩上がりになっています。今後もこの傾向は変わらないと思います。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch2_WhyGit/img/google-trend.png" alt="Googleトレンド" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>次にQiita<span class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</span>という、プログラミングやソフトウェア開発時に使うツールなどの情報を投稿するサイトがあるのですが、そこでSVNとSubversionを検索した結果<span class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnote_9" title="View footnote.">9</a>]</span><span class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</span>が以下の通りになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch2_WhyGit/img/qiita-svn.png" alt="QiitaでSVNを検索した結果" width="350">
+</div>
+</div>
+<div class="paragraph">
+<p>次に、Gitを検索した結果<span class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnote_11" title="View footnote.">11</a>]</span>です。SVNと比べ、まさにケタ違いの投稿数とフォロワー数(タグの新着の投稿を追っている人達)となります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch2_WhyGit/img/qiita-git.png" alt="QiitaでGitを検索した結果" width="300">
+</div>
+</div>
+<div class="paragraph">
+<p>次にStack Overflow<span class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnote_12" title="View footnote.">12</a>]</span>という、プログラミングやソフトウェア開発時に使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<span class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnote_13" title="View footnote.">13</a>]</span>でSVNを検索した結果が以下の通りになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch2_WhyGit/img/stackoverflow-svn.png" alt="Stack OverflowでSVNを検索した結果" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>次に、Gitを検索した結果です。SVNに比べ、タグが付けられた数が2倍以上となっています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch2_WhyGit/img/stackoverflow-git.png" alt="Stack OverflowでGitを検索した結果" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>以上のことから、SVNはGitに比べ流行っていると言えます。</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="try-out-a-local-repository">2.3. ローカルリポジトリでいろいろと試せる</h3>
 <div class="paragraph">
-<p>SVNは、リポジトリが共有のリポジトリしかないため、コマンドを気軽に試せる環境とは言えないです。</p>
+<p>SVNは、リポジトリが共有のリポジトリしかないため、SVNの機能を気軽に試せる環境とは言えないです。</p>
 </div>
 <div class="paragraph">
-<p>Gitは、手元にリポジトリがあるため、知らないGitのコマンドでも作業内容の送信さえおこなわなければ、気軽に試すことができます。手元のリポジトリがどうにもならなくなってしまった状態になってしまっても、再度共有リポジトリを手元にコピーすれば、元通りになります。</p>
+<p>Gitは、自分のPC上にリポジトリを作れるので、そこでGitの機能を気軽に試すことができます。また、共有のリポジトリから「クローン<span class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnote_14" title="View footnote.">14</a>]</span>」して、自分のPC上に共有のリポジトリのコピーを作った際に、自分のPC上のリポジトリ上でテストした結果、どうにもならなくなってしまった状態になってしまっても、ふたたび共有のリポジトリを手元にクローンすれば何もなかったかのように元通りになります。</p>
 </div>
 <div class="paragraph">
-<p>例えばまゆりやるかが何か役に立ちたいと思って、岡部や紅莉栖からGitの使いかたを教えてもらうとなったときに、実際にGitのコマンドを試せることになります。</p>
+<p>そのため、例えばまゆりやるかが何か役に立ちたいと思って、岡部や紅莉栖からGitの使いかたを教えてもらうとなったときに、実際にGitの機能を試せることになります。</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -876,7 +913,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="sect2">
 <h3 id="git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</h3>
 <div class="paragraph">
-<p>ブランチの一覧表示をおこなったり、新たにブランチを作ったりします。この「ブランチ」という言葉ですが、シュタゲで例えるならば「世界線」となります。</p>
+<p>ブランチの一覧表示をおこなったり、新たにブランチを作ったりします。この「ブランチ」という言葉ですが、シュタゲで例えるならば「世界線」となります。「HEAD」という「自分が今どのブランチ(世界線)にいるのか分かるファイル」があり、それはさながらダイバージェンスメーターと言えるでしょう。</p>
 </div>
 <div class="paragraph">
 <p>例えば、現在のブランチが「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」だとします。その世界線で鈴羽を引き止めるために、岡部がDメールを送信しました。その場合、作業履歴は以下のようになります。</p>
@@ -1286,11 +1323,38 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="footnote" id="_footnote_5">
 <a href="#_footnoteref_5">5</a>. 第三章の「リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む」で解説しています。
 </div>
+<div class="footnote" id="_footnote_6">
+<a href="#_footnoteref_6">6</a>. 第三章の「ブランチの一覧を見たり、ブランチを作ったりする」で解説しています。
+</div>
+<div class="footnote" id="_footnote_7">
+<a href="#_footnoteref_7">7</a>. <a href="http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m">http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m</a>
+</div>
+<div class="footnote" id="_footnote_8">
+<a href="#_footnoteref_8">8</a>. <a href="http://qiita.com/">http://qiita.com/</a>
+</div>
+<div class="footnote" id="_footnote_9">
+<a href="#_footnoteref_9">9</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=svn">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=svn</a>
+</div>
+<div class="footnote" id="_footnote_10">
+<a href="#_footnoteref_10">10</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion</a>
+</div>
+<div class="footnote" id="_footnote_11">
+<a href="#_footnoteref_11">11</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git</a>
+</div>
+<div class="footnote" id="_footnote_12">
+<a href="#_footnoteref_12">12</a>. <a href="http://stackoverflow.com/">http://stackoverflow.com/</a>
+</div>
+<div class="footnote" id="_footnote_13">
+<a href="#_footnoteref_13">13</a>. <a href="http://stackoverflow.com/tags">http://stackoverflow.com/tags</a>
+</div>
+<div class="footnote" id="_footnote_14">
+<a href="#_footnoteref_14">14</a>. 第三章の「すでにあるリモートリポジトリを使ってバージョン管理を始める」で解説しています。
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 0.2.1<br>
-Last updated 2014-08-02 15:03:22 UTC
+Last updated 2014-08-02 16:51:27 UTC
 </div>
 </div>
 </body>
