@@ -243,7 +243,7 @@
     Page layout
   -->
 
-  <xsl:param name="paper.type">A4</xsl:param> <!-- alternative size is USletter -->
+  <xsl:param name="paper.type">B5</xsl:param> <!-- alternative size is USletter -->
   <xsl:param name="headers.on.blank.pages">1</xsl:param>
   <xsl:param name="footers.on.blank.pages">1</xsl:param>
   <xsl:param name="page.margin.top">10mm</xsl:param> <!-- top margin of page -->
