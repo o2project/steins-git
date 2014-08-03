@@ -1,4 +1,4 @@
-[[github-bitbacket]]
+[[github-bitbucket]]
 
 ## GitHubとBitbucketについて
 
@@ -8,9 +8,9 @@
 
 ちなみに、この書籍もGitHubで管理されています。footnote:[https://github.com/o2project/steins-git]
 
-## GitHubとBitbacket共通の仕組み
+## GitHubとBitbucket共通の仕組み
 
-GitHubとBitbacketどちらにも、IssuesやFork、Pull Requestという仕組みがあります。それらの仕組みについて説明します。
+GitHubとBitbucketどちらにも、IssuesやFork、Pull Requestという仕組みがあります。それらの仕組みについて説明します。
 
 ### Issues
 
@@ -22,7 +22,7 @@ Steins;Gateで言うならば、鈴羽がタイムマシンが壊れているこ
 
 ### Fork
 
-GitHubやBitbacket上で公開されているリポジトリを自分のリポジトリとして複製する機能です。公開されているリポジトリについては、全てForkができます。
+GitHubやBitbucket上で公開されているリポジトリを自分のリポジトリとして複製する機能です。公開されているリポジトリについては、全てForkができます。
 
 リポジトリに対して何か変更を加えたい、例えば、機能を追加したいなどや、説明書に誤字を見つけたので修正したいといったときに、Forkをして、自分の手元で変更を加えます。
 

@@ -2,6 +2,6 @@
 = あとがき
 :imagesdir: Ch4_PostScript/
 
-include::github-bitbacket.adoc[]
+include::github-bitbucket.adoc[]
 include::reference.adoc[]
 include::author.adoc[]
