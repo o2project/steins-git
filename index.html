@@ -401,7 +401,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#git-commit">3.4. 作業内容を記録する</a></li>
 <li><a href="#git-checkout-file">3.5. 作業内容を無かったことにする</a></li>
 <li><a href="#git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.7. ブランチを切り替える</a></li>
+<li><a href="#git-checkout">3.7. ブランチを切りかえる</a></li>
 <li><a href="#git-reset">3.8. 変更をリセットする</a></li>
 <li><a href="#git-rebase">3.9. 作業履歴を改変する</a></li>
 <li><a href="#git-push">3.10. リモートリポジトリに作業内容を送る</a></li>
@@ -412,8 +412,8 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#chapter4-PostScript">あとがき</a></li>
 <li>
 <ul class="sectlevel2">
-<li><a href="#github-bitbacket">GitHubとBitbucketについて</a></li>
-<li><a href="#_github_bitbacket">GitHubとBitbacket共通の仕組み</a></li>
+<li><a href="#github-bitbucket">GitHubとBitbucketについて</a></li>
+<li><a href="#_github_bitbucket">GitHubとBitbucket共通の仕組み</a></li>
 <li><a href="#reference">参考にした資料</a></li>
 <li><a href="#__9">作者</a></li>
 </ul>
@@ -976,7 +976,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.7. ブランチを切り替える</h3>
+<h3 id="git-checkout">3.7. ブランチを切りかえる</h3>
 <div class="paragraph">
 <p>現在のブランチから別のブランチへ移動します。例えるならば、Dメールを送った結果世界線変動が起こった状態を任意のタイミングでおこせるものです。。</p>
 </div>
@@ -984,7 +984,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>前の節でも書きましたが、Gitのブランチは「世界線」です。Steins;GateではDメールによる世界線変動は世界の状況に影響を及ぼしてましたが、Gitでは副作用なしに世界線移動ができます。</p>
 </div>
 <div class="paragraph">
-<p>切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックすることにより、ブランチを切り替えることができます。以下の図では「鈴羽を引き止めた世界線」から「萌郁がIBN5100を手に入れた世界線」に移動しています。</p>
+<p>切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックすることにより、ブランチを切りかえることができます。以下の図では「鈴羽を引き止めた世界線」から「萌郁がIBN5100を手に入れた世界線」に移動しています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1228,7 +1228,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <h2 id="chapter4-PostScript">あとがき</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="github-bitbacket">GitHubとBitbucketについて</h3>
+<h3 id="github-bitbucket">GitHubとBitbucketについて</h3>
 <div class="paragraph">
 <p>「リモートリポジトリ」というキーワードが書籍中に何度か出てきました。このリモートリポジトリですが、例えばラボメンと共同で何か作業する(タイムリープマシンを作るなど)ときは必須になってきます。ですが、サーバーを用意してGitを設定して…という手順をおこなうのは面倒なものです。</p>
 </div>
@@ -1240,14 +1240,14 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="_github_bitbacket">GitHubとBitbacket共通の仕組み</h3>
+<h3 id="_github_bitbucket">GitHubとBitbucket共通の仕組み</h3>
 <div class="paragraph">
-<p>GitHubとBitbacketどちらにも、IssuesやFork、Pull Requestという仕組みがあります。それらの仕組みについて説明します。</p>
+<p>GitHubとBitbucketどちらにも、IssuesやFork、Pull Requestという仕組みがあります。それらの仕組みについて説明します。</p>
 </div>
 <div class="sect3">
 <h4 id="_issues">Issues</h4>
 <div class="paragraph">
-<p>リポジトリにある物のバグやマイルストーン(目標)などを管理するものです。バグドラッキングシステムといわれるものです。</p>
+<p>リポジトリにある物のバグやマイルストーン(目標)などを管理するものです。バグトラッキングシステムといわれるものです。</p>
 </div>
 <div class="paragraph">
 <p>例えば、リポジトリにあるコードが何か予期しない動きをしたときなどにバグ報告をしたり、新しい機能を追加するときにマイルストーン管理をおこなうことができます。</p>
@@ -1259,7 +1259,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="sect3">
 <h4 id="_fork">Fork</h4>
 <div class="paragraph">
-<p>GitHubやBitbacket上で公開されているリポジトリを自分のリポジトリとして複製する機能です。公開されているリポジトリについては、全てForkができます。</p>
+<p>GitHubやBitbucket上で公開されているリポジトリを自分のリポジトリとして複製する機能です。公開されているリポジトリについては、全てForkができます。</p>
 </div>
 <div class="paragraph">
 <p>リポジトリに対して何か変更を加えたい、例えば、機能を追加したいなどや、説明書に誤字を見つけたので修正したいといったときに、Forkをして、自分の手元で変更を加えます。</p>
@@ -1467,7 +1467,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="footer">
 <div id="footer-text">
 Version 0.2.1<br>
-Last updated 2014-08-03 15:45:50 UTC
+Last updated 2014-08-03 15:54:08 UTC
 </div>
 </div>
 </body>
