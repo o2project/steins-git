@@ -10,8 +10,8 @@
 
 まずは、画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。この例では、全てのブランチをプッシュしていますが、普段使う分には現在のブランチのみプッシュしたほうが良いです。
 
-image::img/git-push/git-push-branch-select.png[git push前, 460]
+image::img/git-push-branch-select.jpg[git push前, 460]
 
 プッシュが終わり、作業履歴に「origin/ブランチ名」という文字が表示されるようになりました。これで作業内容をリモートリポジトリに送ることができ、紅莉栖にも今までおこなってきたことが伝わりました。なお「origin」というのは、リモートリポジトリのことを指しています。
 
-image::img/git-push/git-push-after.png[git push後, 460]
+image::img/git-push-after.jpg[git push後, 460]

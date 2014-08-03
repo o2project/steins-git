@@ -7,22 +7,22 @@ SVNに比べ、Gitは流行っています。流行っているということ�
 
 ここではGitが登場した2005年4月から、2014年7月までのグラフを掲載していますが、2013年あたりからSVNとGitの人気度が逆転し、Gitはなお右肩上がりになっています。今後もこの傾向は変わらないと思います。
 
-image::img/google-trend.png[Googleトレンド, 460]
+image::img/google-trend.jpg[Googleトレンド, 460]
 
 次にQiitafootnote:[http://qiita.com/]という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこでSVNとSubversionを検索した結果footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=svn]footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=subversion]が以下の通りになります。
 
-image::img/qiita-svn.png[QiitaでSVNを検索した結果, 350]
+image::img/qiita-svn.jpg[QiitaでSVNを検索した結果, 350]
 
 次に、Gitを検索した結果footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=git]です。SVNと比べ、まさにケタ違いの投稿数とフォロワー数(タグの新着の投稿を追っている人達)となります。
 
-image::img/qiita-git.png[QiitaでGitを検索した結果, 300]
+image::img/qiita-git.jpg[QiitaでGitを検索した結果, 300]
 
 次にStack Overflowfootnote:[http://stackoverflow.com/]という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索footnote:[http://stackoverflow.com/tags]でSVNを検索した結果が以下の通りになります。
 
-image::img/stackoverflow-svn.png[Stack OverflowでSVNを検索した結果, 460]
+image::img/stackoverflow-svn.jpg[Stack OverflowでSVNを検索した結果, 460]
 
 次に、Gitを検索した結果です。SVNに比べ、タグが付けられた数が2倍以上となっています。
 
-image::img/stackoverflow-git.png[Stack OverflowでGitを検索した結果, 460]
+image::img/stackoverflow-git.jpg[Stack OverflowでGitを検索した結果, 460]
 
 以上のことから、SVNはGitに比べて流行っていると言えます。
