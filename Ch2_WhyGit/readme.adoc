@@ -12,4 +12,8 @@ endif::[]
 
 include::not-need-network-connection.adoc[]
 include::trend.adoc[]
+
+// <<< PAGE BREAK PDFのみ
+<<<
+
 include::try-out-a-local-repository.adoc[]

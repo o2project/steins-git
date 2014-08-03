@@ -9,6 +9,9 @@ SVNに比べ、Gitは流行っています。流行っているということ�
 
 image::img/google-trend.jpg[Googleトレンド, 360]
 
+// <<< PAGE BREAK PDFのみ
+<<<
+
 次にQiitafootnote:[http://qiita.com/]という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこでSVNとSubversionを検索した結果footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=svn]footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=subversion]が以下の通りになります。
 
 image::img/qiita-svn.jpg[QiitaでSVNを検索した結果, 250]

@@ -1,6 +1,7 @@
 = [WIP] Steins;Git
-:author: kubosho
-:authorinitials: kubosho
+kubosho
+:authorinitials: kubosho_
+{bookversion}, 2014/8/4
 :keywords: Git, Steins;Gate
 :revnumber: {bookversion}
 :source: https://github.com/o2project/steins-git
