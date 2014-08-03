@@ -8,7 +8,7 @@ endif::[]
 
 ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使いかたを知りたいという人もいるでしょう。
 
-この章では、Gitの使いかたとして https://www.atlassian.com/ja/software/sourcetree/overview[SourceTree] というソフトウェアを用いて、いろんな操作方法を書いていきます。
+この章では、Gitの使いかたとしてSourceTreefootnote:[https://www.atlassian.com/ja/software/sourcetree/overview]というソフトウェアを用いて、いろんな操作方法を書いていきます。
 
 include::git-start.adoc[]
 include::git-init.adoc[]
