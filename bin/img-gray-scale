@@ -2,7 +2,7 @@
 
 declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
 
-for img in `ls $parentDir/Ch*/img/*.png`
+for img in `ls $parentDir/Ch*/img/*.jpg`
 do
     mogrify -type GrayScale $img
 done
