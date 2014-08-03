@@ -1,9 +1,9 @@
 {
-  "name": "steins-git",
+  "name": "Steins;Git",
   "description": "Steins;Gateを用いてGitを解説する薄い本",
   "version": "0.2.1",
   "author": "O2 Project",
-  "license": "CC-BY-NC 4.0",
+  "license": "CC-BY-NC 2.1 JP",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
