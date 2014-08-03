@@ -10,10 +10,7 @@
 
 ## 謝辞
 
-@kyo_agofootnote:[https://twitter.com/kyo_ago/]の下記のツイートにより、本書を書こうと思いました。
-
-> 今日の飲み会を一言でいうと「シュタゲで分かるgithub」
-> 2012年4月21日footnote:[https://twitter.com/kyo_ago/status/193703522351595522]
+@kyo_agofootnote:[https://twitter.com/kyo_ago/]の下記のツイートにより、本書を書こうと思いましたfootnote:[ちなみに「Steins;Git」という言葉をたどると、@ruedapが2011年6月29日にしたツイートが最初かと思われます https://twitter.com/ruedap/status/82250750268420096]。
 
 > 結局「シュタゲで覚えるgit」って誰も書かなかったんですか？
 > 2013年12月19日footnote:[https://twitter.com/kyo_ago/status/413586733008044032]
