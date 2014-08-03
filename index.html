@@ -399,13 +399,14 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#_git_3">3.2. Gitによるバージョン管理を始める</a></li>
 <li><a href="#git-clone">3.3. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
 <li><a href="#git-commit">3.4. 作業内容を記録する</a></li>
-<li><a href="#git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.6. ブランチを切り替える</a></li>
-<li><a href="#git-reset">3.7. 変更をリセットする</a></li>
-<li><a href="#git-rebase">3.8. 作業履歴を改変する</a></li>
-<li><a href="#git-push">3.9. リモートリポジトリに作業内容を送る</a></li>
-<li><a href="#git-pull">3.10. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
-<li><a href="#git-merge">3.11. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-checkout-file">3.5. 作業内容を無かったことにする</a></li>
+<li><a href="#git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
+<li><a href="#git-checkout">3.7. ブランチを切り替える</a></li>
+<li><a href="#git-reset">3.8. 変更をリセットする</a></li>
+<li><a href="#git-rebase">3.9. 作業履歴を改変する</a></li>
+<li><a href="#git-push">3.10. リモートリポジトリに作業内容を送る</a></li>
+<li><a href="#git-pull">3.11. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
+<li><a href="#git-merge">3.12. 別のブランチでの作業内容を取り込む</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-PostScript">あとがき</a></li>
@@ -914,7 +915,40 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.5. ブランチの一覧を見たり、ブランチを作ったりする</h3>
+<h3 id="git-checkout-file">3.5. 作業内容を無かったことにする</h3>
+<div class="paragraph">
+<p>作業内容をリポジトリに登録する前に無かったことにします。</p>
+</div>
+<div class="paragraph">
+<p>ダルにメールをした後、岡部は秋葉原UPXで紅莉栖のタイムマシン理論についての講義を受けましたが、そこでのディスカッションで紅莉栖に完全に論破されてしまいました。</p>
+</div>
+<div class="paragraph">
+<p>そんな論破されたということを無かったことにしたいところですが、Gitであれば無かったことにできます。方法としては、変更を無かったことにしたい対象のファイルを右クリックで選択し「リセット」を選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-checkout-file/git-checkout-file.png" alt="作業内容をなかったことにする" width="460">
+</div>
+</div>
+<div class="paragraph">
+<p>変更を本当に破棄していいかという画面がでてくるので「OK」を押します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-checkout-file/git-checkout-file-confirm.png" alt="作業内容をなかったことにするか確認がされる" width="420">
+</div>
+</div>
+<div class="paragraph">
+<p>これで、紅莉栖に論破されたということが無かったことになりました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Ch3_HowToGit/img/git-commit/git-commit-after.png" alt="コミットした後" width="460">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</h3>
 <div class="paragraph">
 <p>ブランチの一覧表示をおこなったり、新たにブランチを作ったりします。この「ブランチ」という言葉ですが、シュタゲで例えるならば「世界線」となります。「HEAD」という「自分が今どのブランチ(世界線)にいるのか分かるファイル」があり、それはさながらダイバージェンスメーターと言えるでしょう。</p>
 </div>
@@ -944,7 +978,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.6. ブランチを切り替える</h3>
+<h3 id="git-checkout">3.7. ブランチを切り替える</h3>
 <div class="paragraph">
 <p>現在のブランチから別のブランチへ移動します。例えるならば、Dメールを送った結果世界線変動が起こった状態を任意のタイミングでおこせるものです。。</p>
 </div>
@@ -961,7 +995,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-reset">3.7. 変更をリセットする</h3>
+<h3 id="git-reset">3.8. 変更をリセットする</h3>
 <div class="paragraph">
 <p>作業した内容を無かったことにします。例えるならば、タイムリープのようなものです。</p>
 </div>
@@ -991,7 +1025,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rebase">3.8. 作業履歴を改変する</h3>
+<h3 id="git-rebase">3.9. 作業履歴を改変する</h3>
 <div class="paragraph">
 <p>作業履歴を改変するコマンドです。</p>
 </div>
@@ -1004,7 +1038,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__6">3.8.1. コミットメッセージを変更する</h4>
+<h4 id="__6">3.9.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
 <p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、最新の作業履歴が「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっているので修正します。直したい対象の1つ前の作業履歴を右クリックで選択し、「"コミット番号" の子を対話形式でリベース」を選択します。</p>
 </div>
@@ -1031,7 +1065,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect3">
-<h4 id="__7">3.8.2. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="__7">3.9.2. 複数の作業履歴を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の1つ前の作業履歴を右クリックで選択し、「"コミット番号" の子を対話形式でリベース」を選択します。</p>
 </div>
@@ -1067,7 +1101,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-push">3.9. リモートリポジトリに作業内容を送る</h3>
+<h3 id="git-push">3.10. リモートリポジトリに作業内容を送る</h3>
 <div class="paragraph">
 <p>自分がおこなった作業内容を、リモートリポジトリに送信するコマンドです。</p>
 </div>
@@ -1095,7 +1129,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-pull">3.10. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
+<h3 id="git-pull">3.11. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
 <div class="paragraph">
 <p>他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込むコマンドとなります。</p>
 </div>
@@ -1128,7 +1162,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.11. 別のブランチでの作業内容を取り込む</h3>
+<h3 id="git-merge">3.12. 別のブランチでの作業内容を取り込む</h3>
 <div class="paragraph">
 <p>別ブランチの作業内容を現在のブランチに取り込みます。例えるならば、世界線を収束させるコマンドです。</p>
 </div>
@@ -1393,7 +1427,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="footer">
 <div id="footer-text">
 Version 0.2.1<br>
-Last updated 2014-08-03 00:44:59 UTC
+Last updated 2014-08-03 01:44:13 UTC
 </div>
 </div>
 </body>
