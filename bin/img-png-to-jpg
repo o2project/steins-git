@@ -1,0 +1,13 @@
+#!/bin/bash
+
+declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
+
+imageDir=$parentDir/Ch3_HowToGit/img
+files=$parentDir/Ch*/img/*.png
+filename=''
+
+for img in `ls $files`
+do
+    filename=`basename $img .png`
+    convert $imageDir/$filename.png $imageDir/$filename.jpg
+done
