@@ -6,36 +6,36 @@
 
 例として、電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃により、まゆりが殺されてしまった後の作業履歴を示します。下記の図では「ラウンダーが追ってきて、まゆりが刺されて死んだ」ことが最新の履歴となっています。
 
-image::img/git-rebase-message-edit-before.jpg[まゆりが何度も死んでしまったときの作業履歴, 460]
+image::img/git-rebase-message-edit-before.jpg[まゆりが何度も死んでしまったときの作業履歴, 360]
 
 === コミットメッセージを変更する
 
 では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、最新の作業履歴が「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっているので修正します。直したい対象の1つ前の作業履歴を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選択します。
 
-image::img/git-rebase-message-edit-select.jpg[対話形式でリベースを選択している状態, 460]
+image::img/git-rebase-message-edit-select.jpg[対話形式でリベースを選択している状態, 360]
 
 すると、対象となる作業履歴が表示されるので、コミットメッセージを直したい作業履歴を選び、下部の「Edit message」を押します。すると、下記の図のようにコミットメッセージを編集する画面が表示されます。
 
-image::img/git-rebase-message-edit-now.jpg[コミットメッセージを編集している状態, 460]
+image::img/git-rebase-message-edit-now.jpg[コミットメッセージを編集している状態, 360]
 
 任意のコミットメッセージを書いた後「OK」ボタンを押すとコミットメッセージが修正されます。
 
-image::img/git-rebase-message-edit-after.jpg[コミットメッセージを編集し終えた状態, 460]
+image::img/git-rebase-message-edit-after.jpg[コミットメッセージを編集し終えた状態, 360]
 
 === 複数の作業履歴を一つにまとめる
 
 次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の1つ前の作業履歴を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選択します。
 
-image::img/git-rebase-squash-right-click.jpg[git rebase squashするべく親となるコミットを選択している状態, 460]
+image::img/git-rebase-squash-right-click.jpg[git rebase squashするべく親となるコミットを選択している状態, 360]
 
 今回は4つの作業履歴を対象としました。ここから作業履歴をまとめるには「Squash with previous」を3回押します。「まとめる作業履歴の数 - 1回、Squash with previousを押す」と覚えるといいかもしれません。
 
-image::img/git-rebase-squash-before.jpg[git rebase squashしようとしている状態, 460]
+image::img/git-rebase-squash-before.jpg[git rebase squashしようとしている状態, 360]
 
 その後、まとめた作業履歴のコミットメッセージを編集するために「Edit message」を押します。
 
-image::img/git-rebase-squash-message-edit.jpg[コミットをまとめた後コミットメッセージを編集している状態, 460]
+image::img/git-rebase-squash-message-edit.jpg[コミットをまとめた後コミットメッセージを編集している状態, 360]
 
 これで、作業履歴がまとめられました。
 
-image::img/git-rebase-squash-after.jpg[git rebase squashした状態, 460]
+image::img/git-rebase-squash-after.jpg[git rebase squashした状態, 360]

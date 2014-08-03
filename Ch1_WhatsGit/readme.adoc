@@ -3,7 +3,7 @@
 :imagesdir: Ch1_WhatsGit/
 
 ifeval::["{backend}" != "html5"]
-image::img/mayuri.jpg[まゆり]
+image::img/mayuri.jpg[まゆり, 360]
 endif::[]
 
 Gitについて触れる前に、バージョン管理システムについて説明します。

@@ -3,7 +3,7 @@
 :imagesdir: Ch2_WhyGit/
 
 ifeval::["{backend}" != "html5"]
-image::img/daru.jpg[ダル]
+image::img/daru.jpg[ダル, 360]
 endif::[]
 
 バージョン管理システムには、分散型バージョン管理システムといわれるGitなど以外にも、集中型バージョン管理システムといわれるSVNなどがあります。
