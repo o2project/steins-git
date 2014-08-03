@@ -29,7 +29,7 @@
 * **Ch3:**
   * Gitのコマンドを説明する順序を変更した ([5b83289d](https://github.com/o2project/steins-git/commit/5b83289d8dce84bb532a2b49586f58d7c5463cdc))
   * 説明しないものを省いた ([1dec8710](https://github.com/o2project/steins-git/commit/1dec8710b9107bb7edfe5c9f22436a1638282e88))
-  * SourceTreeを使った説明に切り替えたことにより、説明しなくなったgit addやgit log、git rmの節を削除 ([5b38932c](https://github.com/o2project/steins-git/commit/5b38932c034f43a50e80a59a1847f07735b84427))
+  * SourceTreeを使った説明に切りかえたことにより、説明しなくなったgit addやgit log、git rmの節を削除 ([5b38932c](https://github.com/o2project/steins-git/commit/5b38932c034f43a50e80a59a1847f07735b84427))
   * リモートリポジトリに関するコマンドの説明を書き始めた ([a20c88aa](https://github.com/o2project/steins-git/commit/a20c88aaf11c95051b50c8001a1dc59d54361fed))
 * **Ch4:** あとがきのアウトラインを書いた ([612b60e7](https://github.com/o2project/steins-git/commit/612b60e7c832909b3c06b2534b70860c4acd12e6))
 * **Ch4:** あとがきを執筆した ([bce7edd0](https://github.com/o2project/steins-git/commit/bce7edd074eb860df904e96776cb833e456bad25))
