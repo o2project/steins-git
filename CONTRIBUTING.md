@@ -17,7 +17,7 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
   
 ## Steins;Gitの執筆方針について
 
-Steins;Gitは、「Gitの使い方を、Steins;Gateの世界観を通して説明する」書籍です。「Steins;Gateのストーリーの流れに沿って、Gitの説明をする」書籍ではありません。
+Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を通して説明する」書籍です。「Steins;Gateのストーリーの流れに沿って、Gitの説明をする」書籍ではありません。
 
 簡潔に書くと「シュタゲ本」というよりは「技術書」よりです。
 
