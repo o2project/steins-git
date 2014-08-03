@@ -48,7 +48,7 @@ def build_asciidoc_to_html(src, output)
 end
 
 def build_asciidoc_to_pdf(src, output)
-  sh "bundle exec asciidoctor -a lang=en -a bookversion=`node ./bin/bookversion` \
+  sh "bundle exec asciidoctor -a lang=ja -a bookversion=`node ./bin/bookversion` \
   -a icons=font -b docbook \
   -o #{output} #{src}"
   sh "./bin/build-pdf #{output}"

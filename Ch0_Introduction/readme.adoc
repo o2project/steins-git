@@ -13,10 +13,10 @@
 @kyo_agofootnote:[https://twitter.com/kyo_ago/]の下記のツイートにより、本書を書こうと思いました。
 
 > 今日の飲み会を一言でいうと「シュタゲで分かるgithub」
-> https://twitter.com/kyo_ago/status/193703522351595522[2012年4月21日]
+> 2012年4月21日footnote:[https://twitter.com/kyo_ago/status/193703522351595522]
 
 > 結局「シュタゲで覚えるgit」って誰も書かなかったんですか？
-> https://twitter.com/kyo_ago/status/413586733008044032[2013年12月19日]
+> 2013年12月19日footnote:[https://twitter.com/kyo_ago/status/413586733008044032]
 
 @kyo_agoには#SteinsGitfootnote:[https://twitter.com/search?f=realtime&q=%23SteinsGit]というTwitterのハッシュタグを通じていろいろと助言をいただいたり、@watildefootnote:[https://twitter.com/watilde]と一緒にレビュー会というのを開いていただきました。
 
