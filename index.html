@@ -802,7 +802,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p><a href="https://www.atlassian.com/ja/software/sourcetree/overview">https://www.atlassian.com/ja/software/sourcetree/overview</a></p>
 </div>
 <div class="paragraph">
-<p>SourceTreeを例えるのであれば「世界線を観測でき、かつ世界線改変や世界線収束などができるもの」。つまり、ダイバージェンスメーターとタイムマシンをあわせもったものという感じです。ちなみに、Gitを扱えるソフトウェアの中では一番見やすいソフトウェアだと個人的に思っています。</p>
+<p>SourceTreeを例えるのであれば「作業履歴が積み重なった世界線を観測でき、かつ世界線改変や世界線収束などができるもの」。つまり、リーディングシュタイナー・ダイバージェンスメーター・タイムマシンをあわせもったものという感じです。ちなみに、Gitを扱えるソフトウェアの中では一番見やすいソフトウェアだと個人的に思っています。</p>
 </div>
 <div class="paragraph">
 <p>SourceTreeのダウンロードが終わったら、次にインストールと設定をおこないます。WindowsとMac OS Xそれぞれ説明が分かりやすいページがあるので、そのページを紹介しておきます。</p>
@@ -855,6 +855,9 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 <div class="paragraph">
 <p>その前にリモートリポジトリについて、少し説明をします。リモートリポジトリとは、自分のPC上のリポジトリ以外にあるリポジトリのことをいいます。「自分のPC上のリポジトリ以外」ですが「インターネット上や誰かのPC上にあるリポジトリ」のことをいいます。</p>
+</div>
+<div class="paragraph">
+<p>他の章で「ネットワーク上のリポジトリ」という言葉がでてきてましたが、これは「リモートリポジトリ」と同じ意味です。</p>
 </div>
 <div class="paragraph">
 <p>このリモートリポジトリから自分のPC上にコピーを作るのがこれから説明する手順です。この手順をおこなうことにより、最初から他の人(例えばラボメンなど)と共同でタイムリープマシンを使って作業をおこなえる体制が整います。</p>
@@ -913,6 +916,9 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <img src="Ch3_HowToGit/img/git-commit/git-commit-after.png" alt="コミットした後" width="460">
 </div>
 </div>
+<div class="paragraph">
+<p>ちなみに、上記の図で「ラベル」のところに「HEAD」という文字がありますが、これは「今どのブランチにいるかを判別する情報」です。つまりダイバージェンスメーターのようなものです。</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="git-checkout-file">3.5. 作業内容を無かったことにする</h3>
@@ -969,7 +975,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="paragraph">
-<p>「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチに移動している状態です。世界線変動が起きました。</p>
+<p>「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動している状態です。世界線変動を起こした状態といえます。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -986,7 +992,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>前の節でも書きましたが、Gitのブランチは「世界線」です。Steins;GateではDメールによる世界線変動は世界の状況に影響を及ぼしてましたが、Gitでは副作用なしに世界線移動ができます。</p>
 </div>
 <div class="paragraph">
-<p>切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックすることにより、ブランチを切り替えることができます。</p>
+<p>切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックすることにより、ブランチを切り替えることができます。以下の図では「鈴羽を引き止めた世界線」から「萌郁がIBN5100を手に入れた世界線」に移動しています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1000,7 +1006,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>作業した内容を無かったことにします。例えるならば、タイムリープのようなものです。</p>
 </div>
 <div class="paragraph">
-<p>鈴羽を引き止めた世界線でいくつか作業をした結果、作業履歴が以下のようになりました。</p>
+<p>鈴羽を引き止めた世界線でいくつか作業をした結果、作業履歴が以下のようになりました。最新の作業履歴は「SERNの襲撃によりまゆりが死んでしまった…」となっています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1030,7 +1036,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>作業履歴を改変するコマンドです。</p>
 </div>
 <div class="paragraph">
-<p>例として、電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃により、まゆりが殺されてしまった後の作業履歴を示します。</p>
+<p>例として、電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃により、まゆりが殺されてしまった後の作業履歴を示します。下記の図では「ラウンダーが追ってきて、まゆりが刺されて死んだ」ことが最新の履歴となっています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1137,7 +1143,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>リモートリポジトリでは、岡部以外にもラボメンが作業しています。この例だと、紅莉栖が、岡部の様子がおかしいのでタイムリープしてきたかどうか聞いていたり、マイフォークが欲しいということを言ったということを記録していたりします。</p>
 </div>
 <div class="paragraph">
-<p>自分のPC上のリポジトリ(鈴羽を引き止めた世界線)に比べ、リモートリポジトリ(origin/鈴羽を引き止めた世界線)が2つ進んでいます。</p>
+<p>その場合、自分のPC上のリポジトリ(鈴羽を引き止めた世界線)に比べ、リモートリポジトリ(origin/鈴羽を引き止めた世界線)が2つ進んでいます。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1167,7 +1173,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>別ブランチの作業内容を現在のブランチに取り込みます。例えるならば、世界線を収束させるコマンドです。</p>
 </div>
 <div class="paragraph">
-<p>鈴羽を引き止めた世界線で作業をした結果、鈴羽がタイムトラベルに失敗し「失敗した失敗した失敗した失敗した失敗した」と何度も書いた手紙を書き残し自殺してしまいました。</p>
+<p>鈴羽を引き止めた世界線で作業をした結果、鈴羽がタイムトラベルに失敗し「失敗した失敗した失敗した失敗した失敗した」と何度も書いた手紙を書き残し自殺してしまいました。その結果、岡部は天王寺裕吾からその鈴羽が書いた手紙を受け取ることになります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1207,7 +1213,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 </div>
 <div class="paragraph">
-<p>ただし、まだコミットはしていない状態なのでコミットをします。</p>
+<p>ただし、まだコミットはしていない状態なのでコミットをします。ここではコミットメッセージを「尾行は中止前のメールはSERNの罠というメールを送信した」としています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1253,6 +1259,9 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 <div class="paragraph">
 <p>例えば、リポジトリにあるコードが何か予期しない動きをしたときなどにバグ報告をしたり、新しい機能を追加するときにマイルストーン管理をおこなうことができます。</p>
+</div>
+<div class="paragraph">
+<p>Steins;Gateで言うならば、鈴羽がタイムマシンが壊れていることに気づき、そのことをIssuesに追加し、ダルが対応するという感じです。</p>
 </div>
 </div>
 <div class="sect3">
@@ -1466,7 +1475,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="footer">
 <div id="footer-text">
 Version 0.2.1<br>
-Last updated 2014-08-03 02:42:59 UTC
+Last updated 2014-08-03 03:26:22 UTC
 </div>
 </div>
 </body>
