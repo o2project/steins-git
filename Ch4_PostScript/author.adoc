@@ -2,6 +2,6 @@
 
 ## 作者
 
-- 執筆者: @kubosho_footnote:[https://twitter.com/kubosho_]
-- 雑務: @fruitsnoodlefootnote:[https://twitter.com/kinkin1228]
-- 表紙・各章のイラスト: GiantRobotfootnote:[http://www.pixiv.net/member_illust.php?id=1223059]
+- 執筆: @kubosho_footnote:[https://github.com/kubosho]
+- アシスタント: fruitsnoodlefootnote:[https://github.com/fruitsnoodle]
+- 表紙・各章のイラスト: GiantRobotfootnote:[pixivID:1223059]
