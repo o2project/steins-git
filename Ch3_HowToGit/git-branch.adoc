@@ -12,6 +12,6 @@ image::img/git-branch/git-branch-before.png[新たなブランチを作る前, 4
 
 image::img/git-branch/git-branch-name.png[ブランチ名を決めているところ, 460]
 
-「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチに移動している状態です。世界線変動が起きました。
+「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動している状態です。世界線変動を起こした状態といえます。
 
 image::img/git-branch/git-branch-after.png[ブランチを作った後, 460]
