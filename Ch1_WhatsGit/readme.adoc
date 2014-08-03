@@ -1,5 +1,5 @@
 [[chapter1-what-is-git]]
-= Chapter.1 - バージョン管理とはなにか
+= 第一章 - バージョン管理とはなにか
 :imagesdir: Ch1_WhatsGit/
 
 ifeval::["{backend}" != "html5"]

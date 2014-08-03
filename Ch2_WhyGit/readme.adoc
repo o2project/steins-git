@@ -1,5 +1,5 @@
 [[chapter2-why-git]]
-= Chapter.2 - なぜGitを使うのか
+= 第二章 - なぜGitを使うのか
 :imagesdir: Ch2_WhyGit/
 
 ifeval::["{backend}" != "html5"]

@@ -1,5 +1,5 @@
 [[chapter3-how-to-git]]
-= Chapter.3 - Gitの使いかた
+= 第三章 - Gitの使いかた
 :imagesdir: Ch3_HowToGit/
 
 ifeval::["{backend}" != "html5"]
