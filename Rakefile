@@ -43,11 +43,13 @@ def directory_copy(src, dist)
 end
 
 def build_asciidoc_to_html(src, output)
+  sh "cp -r public build/"
   sh "bundle exec asciidoctor -a bookversion=`node ./bin/bookversion` \
   -a icons=font -o #{output} #{src}"
 end
 
 def build_asciidoc_to_pdf(src, output)
+  sh "cp -r public build/"
   sh "bundle exec asciidoctor -a lang=ja -a bookversion=`node ./bin/bookversion` \
   -a icons=font -b docbook \
   -o #{output} #{src}"
