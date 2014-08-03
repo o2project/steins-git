@@ -1,3 +1,53 @@
+## 1.0.0 (2014-08-04)
+
+
+#### Bug Fixes
+
+* **All:**
+  * PDF版にのみいい感じに折り返しを入れた ([62addbbb](https://github.com/o2project/steins-git/commit/62addbbbb233160e5aa4473080dfbfae1cc5f130))
+  * 書籍サイズ変更にともない、画像がはみ出していた部分があったのを修正 ([86cbcd06](https://github.com/o2project/steins-git/commit/86cbcd063231412b059b00fa30f1ec6daac090a9))
+  * s/bitbacket/bitbucket/g ([6212589c](https://github.com/o2project/steins-git/commit/6212589c2f06ed28b45ebe10e26c7245ad5ffe8a))
+  * s/バグドラッキング/バグトラッキング/g #98 ([cfad3739](https://github.com/o2project/steins-git/commit/cfad37390c28b220eeaa529bf04d061f85c83c66))
+  * s/切り替え/切りかえ/g #99 ([263c0cda](https://github.com/o2project/steins-git/commit/263c0cdac50f24627d157e3f15d78737ffc500f6))
+  * 各種変更をほどこした ([fb8aec93](https://github.com/o2project/steins-git/commit/fb8aec934ef64df84686a4a72f51e71941512239))
+  * 説明が足りていない部分が多々あったので説明を追加した ([5f3089c6](https://github.com/o2project/steins-git/commit/5f3089c6b2cebf4e87b50e995c5f5abd69658b9e))
+  * かぎかっこの前の「、」を全て消した ([18a06fb1](https://github.com/o2project/steins-git/commit/18a06fb16b70e57386217399f17b2a92acb3673d))
+  * 脚注の書き方で、footnote:[]という記法を使ったほうが良い箇所においてはfootnote:[]を使うようにした ([dcb830c1](https://github.com/o2project/steins-git/commit/dcb830c158362fd28f82104524f5246723243e0a))
+* **Ch0:** GiantRobotさんのリンク先を変更 ([59296512](https://github.com/o2project/steins-git/commit/592965126941b0af675cd92880ae937ca24effb6))
+* **Ch4:** fruitsnoodleとGiantRobotさんのリンク先変更 ([9350abfb](https://github.com/o2project/steins-git/commit/9350abfbc9588a697eea865d24ca903c336765c8))
+* **fo-pdf:**
+  * captionの文字サイズを0ptにすることで擬似的に表示させないようにした ([85c7d8d8](https://github.com/o2project/steins-git/commit/85c7d8d8696c4c240bd9e20ad0dc5c66b05e6a91))
+  * 目次部分の文字色を黒くした ([4511d133](https://github.com/o2project/steins-git/commit/4511d13330172a5e945ff5e7f11206acdb8ce4e5))
+* **git-checkout:** 「。」が1つ多かったのを修正 #96 ([425bd9d9](https://github.com/o2project/steins-git/commit/425bd9d9c9bdebfbf344383b1ff9f3ee56849449))
+* **git-checkout-file:** Windowsの場合は「リセット」という単語は「破棄」になっていることを書いた #94 ([8d51c9f0](https://github.com/o2project/steins-git/commit/8d51c9f0a16783abf0361d2a1b429be61d6f25a0))
+* **git-clone:** リモートリポジトリに関する説明がなかったので追加した #89 ([22a23bcf](https://github.com/o2project/steins-git/commit/22a23bcffded470d5a94a1c0c809064389b4eb3a))
+* **git-clone.png:** なぜかバージョン管理されていなかったので追加 ([d0a8b1b9](https://github.com/o2project/steins-git/commit/d0a8b1b9c3fe192b52cfebb4d059224a28ba90a7))
+* **git-init:** リポジトリを作る際の画像でユーザー名をrintarou.oにした ([b972c7f0](https://github.com/o2project/steins-git/commit/b972c7f0a5f8b5403a8dc13c63d532dddab8692e))
+* **git-start:** 世界線とはの説明がなかったので「作業履歴が積み重なった世界線」という形で説明した #86 ([3462b8e5](https://github.com/o2project/steins-git/commit/3462b8e5077340821fcaf94b7907c7c7a7658e4f))
+* **imgs:** 画像をグレースケール化した #83 ([2f4957a1](https://github.com/o2project/steins-git/commit/2f4957a1f4fa02bdf4d77959ee4808bdce771895))
+* **index:** [WIP]を外した ([a639e84d](https://github.com/o2project/steins-git/commit/a639e84d15e827a7f33cd5017e834d9a7648ef3e))
+* **package.json:** 名前が正式名称になっていなかったのと、ライセンスが古いままだったのを修正 ([d348a131](https://github.com/o2project/steins-git/commit/d348a131ae003c1fd717491a34477dc679e92be2))
+
+
+#### New and Edit
+
+* **Ch1:** Gitについて勘違いしていた記述があったので修正。またコマンドラインベースで説明していた名残を消した #84 ([1d887fcb](https://github.com/o2project/steins-git/commit/1d887fcbdfd50ff42369e4fa8b0145d95d97cd45))
+* **Ch2:** なぜGitを使うのかの章を全面的に書きなおした ([b4c1d69d](https://github.com/o2project/steins-git/commit/b4c1d69d093fa74cf6967c36ca23cdc2eadb4ae1))
+* **git-checkout-file:** 作業内容を無かったことにするの節を追加 ([2194ac01](https://github.com/o2project/steins-git/commit/2194ac01f159a180cd4a2f5714bcda6ae9d3dedf))
+* **git-commit:** HEADについて「ダイバージェンスメーター」のようなものという説明を追加した ([815e2523](https://github.com/o2project/steins-git/commit/815e2523c64d1d7a68b276bfabc5073da10e1671))
+* **not-need-network-connection:** ネットワーク接続していない時の作業内容は、ネットワーク接続した後にネットワーク上のリポジトリに送ることができる旨を描いた #85 ([561d4ac9](https://github.com/o2project/steins-git/commit/561d4ac9203dba71f9e79973f0cc2c541bd2702c))
+
+
+#### Features
+
+* **HTML:** HTML版の見た目を変えるためdocinfo.htmlを用意し、CSSも追加した ([14ee7d35](https://github.com/o2project/steins-git/commit/14ee7d35931c3bf3c1692f11f645c84f200531bb))
+* **PDF:** PDFの用紙サイズをB5にした ([6bb49c76](https://github.com/o2project/steins-git/commit/6bb49c7633d31985fa645c6cbfa8a604eda4efac))
+* **img-gray-scale:** 画像をグレースケール変換するシェルスクリプトを追加 ([11703b7f](https://github.com/o2project/steins-git/commit/11703b7f06463316668c326a424d438da23c2443))
+* **img-png-to-jpg:** 画像をJPEGに変換するスクリプトを作った(作りは雑) ([5dc1ccdf](https://github.com/o2project/steins-git/commit/5dc1ccdf53272cf8369b1fc3651b162336649b87))
+* **imgs:** 画像をグレースケール化した ([142dac4a](https://github.com/o2project/steins-git/commit/142dac4a709713789f931d3c735a59719bab9674))
+* **pdf:** PDF出力時に文字色などを黒にするためfopubからdocbook-xslをコピーしてきた ([0dd14fed](https://github.com/o2project/steins-git/commit/0dd14fedc8a12d316de79ac7b35b77051534e1b5))
+
+
 ### 0.2.1 (2014-08-01)
 
 
