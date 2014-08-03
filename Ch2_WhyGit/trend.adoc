@@ -9,7 +9,7 @@ SVNに比べ、Gitは流行っています。流行っているということ�
 
 image::img/google-trend.png[Googleトレンド, 460]
 
-次にQiitafootnote:[http://qiita.com/]という、プログラミングやソフトウェア開発時に使うツールなどの情報を投稿するサイトがあるのですが、そこでSVNとSubversionを検索した結果footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=svn]footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=subversion]が以下の通りになります。
+次にQiitafootnote:[http://qiita.com/]という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこでSVNとSubversionを検索した結果footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=svn]footnote:[http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=subversion]が以下の通りになります。
 
 image::img/qiita-svn.png[QiitaでSVNを検索した結果, 350]
 
@@ -17,7 +17,7 @@ image::img/qiita-svn.png[QiitaでSVNを検索した結果, 350]
 
 image::img/qiita-git.png[QiitaでGitを検索した結果, 300]
 
-次にStack Overflowfootnote:[http://stackoverflow.com/]という、プログラミングやソフトウェア開発時に使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索footnote:[http://stackoverflow.com/tags]でSVNを検索した結果が以下の通りになります。
+次にStack Overflowfootnote:[http://stackoverflow.com/]という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索footnote:[http://stackoverflow.com/tags]でSVNを検索した結果が以下の通りになります。
 
 image::img/stackoverflow-svn.png[Stack OverflowでSVNを検索した結果, 460]
 
