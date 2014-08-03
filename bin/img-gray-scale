@@ -1,0 +1,8 @@
+#!/bin/bash
+
+declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
+
+for img in `ls $parentDir/Ch*/img/*.png`
+do
+    mogrify -type GrayScale $img
+done
