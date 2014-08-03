@@ -278,7 +278,7 @@
     <fo:block text-align-last="justify" end-indent="{$toc.indent.width}pt"
               last-line-end-indent="-{$toc.indent.width}pt">
       <fo:inline keep-with-next.within-line="always">
-        <fo:basic-link internal-destination="{$id}" color="#005498">
+        <fo:basic-link internal-destination="{$id}" color="#222222">
           <!-- Chapter titles should be bold. -->
           <!--
           <xsl:choose>
@@ -303,7 +303,7 @@
                    leader-alignment="reference-area"
                    keep-with-next.within-line="always"/>
           <xsl:text> </xsl:text>
-          <fo:basic-link internal-destination="{$id}" color="#005498">
+          <fo:basic-link internal-destination="{$id}" color="#222222">
             <fo:page-number-citation ref-id="{$id}"/>
         </fo:basic-link>
       </fo:inline>
