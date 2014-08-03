@@ -1,4 +1,4 @@
-= [WIP] Steins;Git
+= Steins;Git
 kubosho
 :authorinitials: kubosho_
 {bookversion}, 2014/8/4
