@@ -1,3 +1,11 @@
+### 1.0.1 (2014-08-05)
+
+
+#### Features
+
+* **Ch0:** Gitのロゴを追加 ([16ba1356](https://github.com/o2project/steins-git/commit/16ba1356e16a860cc55dbd2c1f5e998d321720e1))
+
+
 ## 1.0.0 (2014-08-04)
 
 
