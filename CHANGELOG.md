@@ -1,3 +1,11 @@
+### 1.0.2 (2014-08-05)
+
+
+#### New and Edit
+
+* **Ch2:** ネットワーク接続がいらないという節の文章の表現を変更 ([f0c4fcac](https://github.com/o2project/steins-git/commit/f0c4fcacd8a76e53ceb28d1530aef31fe2a82d99))
+
+
 ### 1.0.1 (2014-08-05)
 
 
