@@ -2,6 +2,8 @@
 = はじめに
 :imagesdir: Ch0_Introduction/
 
+image::img/git-logo.jpg[Gitのロゴ, 180]
+
 本書は「Gitの使い方を、Steins;Gateの世界観を通して説明する」ことを目的にして執筆しました。
 
 本書の目標としては「Steins;Gateのアニメを全話見た人や、ゲームで全てのエンディングを見た人で、Gitに触れたことがない、もしくは触り始めたばかりという人が、Gitの使い方を知るきっかけになる」ということです。
@@ -21,7 +23,7 @@ Gitterfootnote:[https://gitter.im/o2project/steins-git]というチャットサ�
 
 また、@GeckoTangfootnote:[https://twitter.com/GeckoTang]には誤字の指摘をいただきました。
 
-その他にも「シュタゲで分かるGit」をテーマにした「Steins;Git」という薄い本をC86(コミックマーケット86)で頒布します(予定)footnote:[http://blog.o2p.jp/2014/07/23/c86-steins-git.html]という記事を公開した際に、期待する声や欲しいという声をあげてくださった皆さんには、執筆を頑張る気力をもらいました
+その他にも「シュタゲで分かるGit」をテーマにした「Steins;Git」という薄い本をC86(コミックマーケット86)で頒布しますfootnote:[http://blog.o2p.jp/2014/07/23/c86-steins-git.html]という記事を公開した際に、期待する声や欲しいという声をあげてくださった皆さんには、執筆を頑張る気力をもらいました
 
 そして忘れてはいけないのが、今回進捗管理だったり、イラスト発注だったり、印刷業者への確認だったり、レビューだったり、さまざまな作業をしてくれたfruitsnoodlefootnote:[https://github.com/fruitsnoodle]と、表紙と各章のイラストを描いてくれたGiantRobotfootnote:[pixivID:1223059]さんです。
 
