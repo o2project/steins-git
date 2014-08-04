@@ -2,7 +2,7 @@
 
 ## 作者
 
-- 執筆: @kubosho_footnote:[https://github.com/kubosho]
+- 執筆: @kubosho_footnote:[https://github.com/kubosho]<ta2@o2p.jp>
 - アシスタント: fruitsnoodlefootnote:[https://github.com/fruitsnoodle]
 - 表紙・各章のイラスト: GiantRobotfootnote:[pixivID:1223059]
 - 発行所: 日光企画
