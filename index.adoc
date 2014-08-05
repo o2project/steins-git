@@ -14,6 +14,14 @@ kubosho
 ifeval::["{backend}" == "html5"]
 
 =====
+C86(2014/8/17(日) 西地区"な"ブロック-11b)で頒布する「Steins;Git」のHTML版です。
+=====
+
+=====
+書籍版のほうには、表紙と各章ごとにラボメンのイラストが入ります。また、PDF版やEPUB版などのダウンロードリンクも載せる予定です。
+=====
+
+=====
 icon:twitter[2x, link=https://twitter.com/search?f=realtime&q=%23SteinsGit] この書籍のハッシュタグは https://twitter.com/search?f=realtime&q=%23SteinsGit[#SteinsGit] です。
 =====
 
