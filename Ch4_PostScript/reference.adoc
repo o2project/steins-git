@@ -14,6 +14,7 @@
 
 ### 書籍
 
+- シュタインズ・ゲート公式資料集footnote:[http://www.amazon.co.jp/dp/4047263745]
 - 入門gitfootnote:[http://www.amazon.co.jp/dp/427406767X]
 - 開発効率をUPする Git逆引き入門footnote:[http://www.amazon.co.jp/dp/4863541465]
 - GitHub実践入門 Pull Requestによる開発の変革footnote:[http://www.amazon.co.jp/dp/477416366X/]
