@@ -3,9 +3,9 @@ Steins;Git
 
 [![Build Status](https://travis-ci.org/o2project/steins-git.svg?branch=master)](https://travis-ci.org/o2project/steins-git) [![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git)
 
-C86(日曜日 西地区"な"ブロック-11b)にて頒布予定の、GitをSteins;Gateを使って説明する薄い本です。
+C86(日曜日 西地区"な"ブロック-11b)にて頒布する、Steins;Gateの世界観を使ってGit説明する薄い本です。
 
-http://o2project.github.io/steins-git より見ることができます。ただし、**ページ容量が10MBを超えています** ので注意してください。
+http://o2project.github.io/steins-git より見ることができます。ただし、**ページ容量が6MBを超えています** ので注意してください。
 
 ## ローカルで確認する
 
@@ -42,7 +42,7 @@ grunt server
 
 表紙のイラストや各章ごとのイラストは、下記のクレジットを"必ず"含めてください。
 
-`(C) GiantRobot / pixiv ID 1223059`
+`(C) GiantRobot(pixivID:1223059)`
 
 ---
 
