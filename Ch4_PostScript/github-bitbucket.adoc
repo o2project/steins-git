@@ -4,7 +4,7 @@
 
 「リモートリポジトリ」というキーワードが書籍中に何度か出てきました。このリモートリポジトリですが、例えばラボメンと共同で何か作業する(タイムリープマシンを作るなど)ときは必須になってきます。ですが、サーバーを用意してGitを設定して…という手順をおこなうのは面倒なものです。
 
-なので、Gitの仕組みを使って、自分達が作ったプログラムコードやデザインデータなどを共有できるサービスがいくつか出てきました。それがこれから紹介するGitHubfootnote:[https://github.com/]とBitbucketfootnote:[https://www.atlassian.com/ja/software/bitbucket/overview]になります。　
+なので、Gitの仕組みを使って、自分達が作ったプログラムコードやデザインデータなどを共有できるサービスがいくつか出てきました。それがこれから紹介するGitHubfootnote:[\https://github.com/]とBitbucketfootnote:[\https://www.atlassian.com/ja/software/bitbucket/overview]になります。　
 
 ちなみに、この書籍もGitHubで管理されています。footnote:[https://github.com/o2project/steins-git]
 
