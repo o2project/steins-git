@@ -56,6 +56,10 @@ def build_asciidoc_to_pdf(src, output)
   sh "./bin/build-pdf #{output}"
 end
 
+def build_asciidoc_to_epub(src)
+  sh "bundle exec asciidoctor-epub3 -D build #{src}"
+end
+
 def push_to_target_branch(repo, branch)
   sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
 
@@ -94,6 +98,19 @@ namespace :generate do
     puts "Done!"
     puts 'Generate PDF...'
     build_asciidoc_to_pdf SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_XML_FILE}"
+    puts "Done!"
+  end
+
+  task :epub do
+    puts 'Each section img directory recursively copy to under build directory...'
+    directory_copy './img', "#{OUTPUT_DIRECTORY}/img"
+    directory_copy 'Ch0_Introduction/img', "#{OUTPUT_DIRECTORY}/Ch0_Introduction/img"
+    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
+    directory_copy 'Ch2_WhyGit/img', "#{OUTPUT_DIRECTORY}/Ch2_WhyGit/img"
+    directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
+    puts "Done!"
+    puts 'Generate EPUB...'
+    build_asciidoc_to_epub SRC_FILE
     puts "Done!"
   end
 end
