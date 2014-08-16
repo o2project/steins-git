@@ -16,4 +16,4 @@ image::ch3/git-checkout-file-confirm.jpg[作業内容をなかったことにす
 
 これで、紅莉栖に論破されたということが無かったことになりました。
 
-image::ch3/git-commit-after.jpg[コミットした後, 360]
+image::ch3/git-checkout-file-after.jpg[論破されたことを無かったことにした後, 360]

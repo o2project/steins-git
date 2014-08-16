@@ -12,7 +12,7 @@
 
 では試しに、すでにあるリポジトリの複製を自分のPC上に作りましょう。SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンのうち、一番左のボタンを押します。
 
-image::ch3/git-init-sourcetree-select.jpg[SourceTreeのボタン]
+image::ch3/git-clone-sourcetree-select.jpg[SourceTreeのボタン]
 
 押した後「リポジトリをクローン」を押すと以下のような画面になります。「ソースパス / URL」の部分に `\git@github.com:o2project/steins-gate.git` を入力して「クローン」を押すと「steins-gate」というリモートリポジトリの完全なコピーが、自分のPC上に作られます。
 
