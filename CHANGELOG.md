@@ -1,3 +1,21 @@
+## 1.1.0 (2014-08-16)
+
+
+#### Bug Fixes
+
+* **.gitignore:** 画像を置く場所を変更したのに伴って、ignoreするパスも変更した ([f2bfd723](https://github.com/o2project/steins-git/commit/f2bfd72326a1737f9b45c26d72e8a728234b5a8e))
+* **All:**
+  * inline code literalの破壊的変更に追従した ([45c48c83](https://github.com/o2project/steins-git/commit/45c48c83dfbd298174ee09f9d06ad73d307e902e))
+  * PDF出力でエラーが出てしまっていたのでURLをエスケープするようにした ([930986cc](https://github.com/o2project/steins-git/commit/930986cc6488625d496c36e1421e90bb3b972855))
+* **images:** 画像を置く場所が、今までのところだとEPUB出力時に都合が悪かったので、./images以下にまとめて置くようにした ([9efce50a](https://github.com/o2project/steins-git/commit/9efce50af8c04a1d1cdad800bd893b13f62b9457))
+
+
+#### Features
+
+* **Gemfile:** EPUB形式で出力するためにasciidoctor-epub3を追加 ([51813977](https://github.com/o2project/steins-git/commit/518139773b3c5317249e8fc01c58e5058c808ccf))
+* **Rakefile:** EPUB出力に対応した ([01e79c41](https://github.com/o2project/steins-git/commit/01e79c41044601b9a58edbc021bcb47293255d86))
+
+
 ### 1.0.2 (2014-08-05)
 
 
