@@ -57,7 +57,11 @@ def build_asciidoc_to_pdf(src, output)
 end
 
 def build_asciidoc_to_epub(src)
-  sh "bundle exec asciidoctor-epub3 -D build #{src}"
+  sh "bundle exec asciidoctor-epub3 -D build -a ebook-validate #{src}"
+end
+
+def build_asciidoc_to_mobi(src)
+  sh "bundle exec asciidoctor-epub3 -D build -a ebook-format=kf8 #{src}"
 end
 
 def push_to_target_branch(repo, branch)
