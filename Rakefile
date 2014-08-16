@@ -106,6 +106,15 @@ namespace :generate do
     build_asciidoc_to_epub SRC_FILE
     puts "Done!"
   end
+
+  task :mobi do
+    puts 'Copy images to build directory...'
+    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    puts "Done!"
+    puts 'Generate Mobi...'
+    build_asciidoc_to_mobi SRC_FILE
+    puts "Done!"
+  end
 end
 
 task :publish do
