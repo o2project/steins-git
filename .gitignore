@@ -5,7 +5,7 @@ node_modules
 .idea
 .DS_Store
 
-img/steins-git.jpg
-Ch1_WhatsGit/img/mayuri.jpg
-Ch2_WhyGit/img/daru.jpg
-Ch3_HowToGit/img/labmem.jpg
+images/cover.jpg
+images/ch1/mayuri.jpg
+images/ch2/daru.jpg
+images/ch3/labmem.jpg
