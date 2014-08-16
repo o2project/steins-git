@@ -6,7 +6,7 @@
 :revnumber: {bookversion}
 :revdate: 2014/8/16
 :source: https://github.com/o2project/steins-git
-:imagesdir: ./images
+:imagesdir: images
 :front-cover-image: image:cover.jpg[Steins;Git,1050,1600]
 :lang: ja
 :icons: font
