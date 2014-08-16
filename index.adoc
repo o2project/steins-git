@@ -1,6 +1,6 @@
 = Steins;Git
-:author: kubosho_
-:authorinitials: kubosho_
+kubosho_
+:authorinitials:
 :username: kubosho_
 :keywords: Git, Steins;Gate
 :revnumber: {bookversion}
