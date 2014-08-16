@@ -8,12 +8,12 @@
 
 そんな論破されたということを無かったことにしたいところですが、Gitであれば無かったことにできます。方法としては、変更を無かったことにしたい対象のファイルを右クリックで選択し「リセット(Windowsの場合は破棄)」を選択します。
 
-image::img/git-checkout-file.jpg[作業内容をなかったことにする, 360]
+image::ch3/git-checkout-file.jpg[作業内容をなかったことにする, 360]
 
 変更を本当に破棄していいかという画面がでてくるので「OK」を押します。
 
-image::img/git-checkout-file-confirm.jpg[作業内容をなかったことにするか確認がされる, 360]
+image::ch3/git-checkout-file-confirm.jpg[作業内容をなかったことにするか確認がされる, 360]
 
 これで、紅莉栖に論破されたということが無かったことになりました。
 
-image::img/git-commit-after.jpg[コミットした後, 360]
+image::ch3/git-commit-after.jpg[コミットした後, 360]

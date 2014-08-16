@@ -1,8 +1,7 @@
 [[chapter0-introduction]]
 = はじめに
-:imagesdir: Ch0_Introduction/
 
-image::img/git-logo.jpg[Gitのロゴ, 180]
+image::ch0/git-logo.jpg[Gitのロゴ, 180]
 
 本書は「Gitの使い方を、Steins;Gateの世界観を通して説明する」ことを目的にして執筆しました。
 

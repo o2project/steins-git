@@ -1,9 +1,8 @@
 [[chapter1-what-is-git]]
 = 第一章 - バージョン管理とはなにか
-:imagesdir: Ch1_WhatsGit/
 
 ifeval::["{backend}" != "html5"]
-image::img/mayuri.jpg[まゆり, 360]
+image::ch1/mayuri.jpg[まゆり, 360]
 endif::[]
 
 Gitについて触れる前に、バージョン管理システムについて説明します。

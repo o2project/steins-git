@@ -77,11 +77,8 @@ end
 
 namespace :generate do
   task :html do
-    puts 'Each section img directory recursively copy to under build directory...'
-    directory_copy 'Ch0_Introduction/img', "#{OUTPUT_DIRECTORY}/Ch0_Introduction/img"
-    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
-    directory_copy 'Ch2_WhyGit/img', "#{OUTPUT_DIRECTORY}/Ch2_WhyGit/img"
-    directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
+    puts 'Copy images to build directory...'
+    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
     puts "Done!"
     puts 'Generate HTML...'
     build_asciidoc_to_html SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_HTML_FILE}"
@@ -89,12 +86,8 @@ namespace :generate do
   end
 
   task :pdf do
-    puts 'Each section img directory recursively copy to under build directory...'
-    directory_copy './img', "#{OUTPUT_DIRECTORY}/img"
-    directory_copy 'Ch0_Introduction/img', "#{OUTPUT_DIRECTORY}/Ch0_Introduction/img"
-    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
-    directory_copy 'Ch2_WhyGit/img', "#{OUTPUT_DIRECTORY}/Ch2_WhyGit/img"
-    directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
+    puts 'Copy images to build directory...'
+    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
     puts "Done!"
     puts 'Generate PDF...'
     build_asciidoc_to_pdf SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_XML_FILE}"
@@ -102,12 +95,8 @@ namespace :generate do
   end
 
   task :epub do
-    puts 'Each section img directory recursively copy to under build directory...'
-    directory_copy './img', "#{OUTPUT_DIRECTORY}/img"
-    directory_copy 'Ch0_Introduction/img', "#{OUTPUT_DIRECTORY}/Ch0_Introduction/img"
-    directory_copy 'Ch1_WhatsGit/img', "#{OUTPUT_DIRECTORY}/Ch1_WhatsGit/img"
-    directory_copy 'Ch2_WhyGit/img', "#{OUTPUT_DIRECTORY}/Ch2_WhyGit/img"
-    directory_copy 'Ch3_HowToGit/img', "#{OUTPUT_DIRECTORY}/Ch3_HowToGit/img"
+    puts 'Copy images to build directory...'
+    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
     puts "Done!"
     puts 'Generate EPUB...'
     build_asciidoc_to_epub SRC_FILE

@@ -1,6 +1,5 @@
 [[chapter4-PostScript]]
 = あとがき
-:imagesdir: Ch4_PostScript/
 
 include::github-bitbucket.adoc[]
 include::reference.adoc[]
