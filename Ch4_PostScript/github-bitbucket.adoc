@@ -1,6 +1,6 @@
 [[github-bitbucket]]
 
-## GitHubとBitbucketについて
+=== GitHubとBitbucketについて
 
 「リモートリポジトリ」というキーワードが書籍中に何度か出てきました。このリモートリポジトリですが、例えばラボメンと共同で何か作業する(タイムリープマシンを作るなど)ときは必須になってきます。ですが、サーバーを用意してGitを設定して…という手順をおこなうのは面倒なものです。
 
@@ -8,11 +8,11 @@
 
 ちなみに、この書籍もGitHubで管理されています。footnote:[https://github.com/o2project/steins-git]
 
-## GitHubとBitbucket共通の仕組み
+=== GitHubとBitbucket共通の仕組み
 
 GitHubとBitbucketどちらにも、IssuesやFork、Pull Requestという仕組みがあります。それらの仕組みについて説明します。
 
-### Issues
+==== Issues
 
 リポジトリにある物のバグやマイルストーン(目標)などを管理するものです。バグトラッキングシステムといわれるものです。
 
@@ -20,13 +20,13 @@ GitHubとBitbucketどちらにも、IssuesやFork、Pull Requestという仕組�
 
 Steins;Gateで言うならば、鈴羽がタイムマシンが壊れていることに気づき、そのことをIssuesに追加し、ダルが対応するという感じです。
 
-### Fork
+==== Fork
 
 GitHubやBitbucket上で公開されているリポジトリを自分のリポジトリとして複製する機能です。公開されているリポジトリについては、全てForkができます。
 
 リポジトリに対して何か変更を加えたい、例えば、機能を追加したいなどや、説明書に誤字を見つけたので修正したいといったときに、Forkをして、自分の手元で変更を加えます。
 
-### Pull Request
+==== Pull Request
 
 Forkした後にリポジトリに対し独自に変更を加えたものを、Fork元のリポジトリに取り込んでもらうように希望する機能です。
 

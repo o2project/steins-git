@@ -1,5 +1,5 @@
 [[chapter0-introduction]]
-= はじめに
+== はじめに
 
 image::ch0/git-logo.jpg[Gitのロゴ, 180]
 
@@ -9,7 +9,7 @@ image::ch0/git-logo.jpg[Gitのロゴ, 180]
 
 そのため、Gitの全ての機能の説明をしません。自分が普段使うことが多い機能を中心に書いています。
 
-## 謝辞
+=== 謝辞
 
 @kyo_agofootnote:[+https://twitter.com/kyo_ago/+]の下記のツイートにより、本書を書こうと思いましたfootnote:[ちなみに「Steins;Git」という言葉をたどると、@ruedapが2011年6月29日にしたツイートが最初かと思われます https://twitter.com/ruedap/status/82250750268420096]。
 
@@ -31,7 +31,7 @@ Gitterfootnote:[\https://gitter.im/o2project/steins-git]というチャットサ
 // <<< PAGE BREAK PDFのみ
 <<<
 
-## 本書の構成
+=== 本書の構成
 
 本書は全三章とあとがきから成り立っています。
 

@@ -1,5 +1,5 @@
 [[chapter4-PostScript]]
-= あとがき
+== あとがき
 
 include::github-bitbucket.adoc[]
 include::reference.adoc[]

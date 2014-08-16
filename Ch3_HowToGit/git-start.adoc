@@ -1,6 +1,6 @@
 [[git-start]]
 
-## SourceTreeのインストールと設定
+=== SourceTreeのインストールと設定
 
 Gitを使うには、まずSourceTreeというソフトウェアをダウンロードします。
 

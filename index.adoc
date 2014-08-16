@@ -56,8 +56,6 @@ icon:github[2x, link=https://github.com/o2project/steins-git] リポジトリは
 
 endif::[]
 
-:leveloffset: 1
-
 // <<< PAGE BREAK PDFのみ
 <<<
 

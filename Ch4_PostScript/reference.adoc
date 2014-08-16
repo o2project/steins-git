@@ -1,10 +1,10 @@
 [[reference]]
 
-## 参考にした資料
+=== 参考にした資料
 
 本書を書くにあたって、参考にした資料の一覧となります。本書を読み、よりGitについて知りたいと感じたときには以下のサイトや書籍を見てみるといいでしょう。
 
-### Webサイト
+==== Webサイト
 
 - Gitチュートリアルとトレーニング| Atlassianfootnote:[https://www.atlassian.com/ja/git/tutorial]
 - イラストでわかる！git入門の入門 : アシアルブログfootnote:[http://blog.asial.co.jp/894]
@@ -12,7 +12,7 @@
 - 初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIGfootnote:[http://liginc.co.jp/web/tool/79390]
 - 「そもそもGitって何？」、「GitとGitHubは何が違うの？」にシンプルに答えるよ - Six Apart ブログfootnote:[http://blog.sixapart.jp/2014-03/mttips-02-what-is-git.html]
 
-### 書籍
+==== 書籍
 
 - シュタインズ・ゲート公式資料集footnote:[http://www.amazon.co.jp/dp/4047263745]
 - 入門gitfootnote:[http://www.amazon.co.jp/dp/427406767X]
