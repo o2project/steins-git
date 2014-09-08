@@ -5,7 +5,7 @@ Steins;Git
 [![Gemnasium](http://img.shields.io/gemnasium/o2project/steins-git.svg?style=flat-square)](https://gemnasium.com/o2project/steins-git)
 [![Gitter chat](http://img.shields.io/badge/discuss-Gitter-brightgreen.svg?style=flat-square)](https://gitter.im/o2project/steins-git)
 
-C86(日曜日 西地区"な"ブロック-11b)にて頒布する、Steins;Gateの世界観を使ってGit説明する薄い本です。
+C86(2014/8/16(日) 西地区"な"ブロック-11b)にて頒布した「Gitの使い方を、Steins;Gateの世界観を通して説明する」薄い本です。
 
 http://o2project.github.io/steins-git より見ることができます。ただし、**ページ容量が6MBを超えています** ので注意してください。
 
