@@ -1,7 +1,9 @@
 Steins;Git
 ===========
 
-[![Build Status](https://travis-ci.org/o2project/steins-git.svg?branch=master)](https://travis-ci.org/o2project/steins-git) [![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git)
+[![Build Status](http://img.shields.io/travis/o2project/steins-git.svg?style=flat-square)](https://travis-ci.org/o2project/steins-git)
+[![Gemnasium](http://img.shields.io/gemnasium/o2project/steins-git.svg?style=flat-square)](https://gemnasium.com/o2project/steins-git)
+[![Gitter chat](http://img.shields.io/badge/discuss-Gitter-brightgreen.svg?style=flat-square)](https://gitter.im/o2project/steins-git)
 
 C86(日曜日 西地区"な"ブロック-11b)にて頒布する、Steins;Gateの世界観を使ってGit説明する薄い本です。
 
