@@ -1,3 +1,22 @@
+## 1.2.0 (2014-09-09)
+
+
+#### Bug Fixes
+
+* **All:** leveloffsetの設定を削除したのにともない、見出しのレベルを見直した ([bb6e7c76](https://github.com/o2project/steins-git/commit/bb6e7c768a16f38daeda9f09555018938ca4fbd7))
+* **epub:** epubcheckでDuplicate resouceのwarningが出ていたのを修正した ([acb0c29d](https://github.com/o2project/steins-git/commit/acb0c29de4e2537f8dd5c51d792d0f42f66ddf1c))
+* **index:**
+  * PDFへ出力する際に、余計なものを出力しないようにした ([bf8bf37c](https://github.com/o2project/steins-git/commit/bf8bf37c3d70fea5f3ba013d907d50e8fc99eba8))
+  * epubcheckerでエラーが出たため、画像のパス指定から「./」を削除した ([85ab0eb8](https://github.com/o2project/steins-git/commit/85ab0eb8bfefcf14615f46ecfb992460f4825501))
+* **package.json:** パッケージ名がInvalidになってしまい、npm update時にエラーになっていたのを修正 ([e1962954](https://github.com/o2project/steins-git/commit/e1962954890d6e45d692ac4c6c3cf9e012a74b97))
+* **trend:** "の"が一つ多かったのを修正 fix #109 ([da1a8426](https://github.com/o2project/steins-git/commit/da1a8426b5f62dfd40ed349895d434d29e29cc4c))
+
+
+#### Features
+
+* **Rakefile:** mobi形式での出力に対応した ([97642101](https://github.com/o2project/steins-git/commit/97642101985de7dadaca9675d16a028f0fbf3d34))
+
+
 ## 1.1.0 (2014-08-16)
 
 
