@@ -24,7 +24,7 @@ grunt server
 
 ## 貢献したい
 
-[![Gitter chat](https://badges.gitter.im/o2project/steins-git.png)](https://gitter.im/o2project/steins-git) に意見などどうぞ。
+[![Gitter chat](http://img.shields.io/badge/discuss-Gitter-brightgreen.svg?style=flat-square)](https://gitter.im/o2project/steins-git) に意見などどうぞ。
 
 [CONTRIBUTING.md](CONTRIBUTING.md "CONTRIBUTING.md")も、ガイドラインなど書いてあるので参考にしてみてください。
 
