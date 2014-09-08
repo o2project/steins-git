@@ -1,9 +1,10 @@
-build
 .bundle
-vendor
-node_modules
 .idea
 .DS_Store
+build
+vendor
+node_modules
+kindlegen
 
 images/cover.jpg
 images/ch1/mayuri.jpg
