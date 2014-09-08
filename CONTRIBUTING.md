@@ -10,11 +10,7 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
   - 各種調査
 - [GiantRobot](http://www.pixiv.net/member_illust.php?id=1223059)
   - 表紙・各章の挿絵担当
-  
-## Steins;Gitのレビュー期限について
 
-印刷会社へ入稿する期限との兼ね合い上、 *2014/7/30(水)* までとします。
-  
 ## Steins;Gitの執筆方針について
 
 Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を通して説明する」書籍です。「Steins;Gateのストーリーの流れに沿って、Gitの説明をする」書籍ではありません。
