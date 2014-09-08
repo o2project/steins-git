@@ -3,8 +3,8 @@ GEM
   specs:
     addressable (2.3.6)
     asciidoctor (1.5.0)
-    asciidoctor-epub3 (1.0.0.alpha.1)
-      asciidoctor (>= 1.5.0.rc.2, < 1.6.0)
+    asciidoctor-epub3 (1.0.0.alpha.3)
+      asciidoctor (>= 1.5.0, < 1.6.0)
       gepub (~> 0.6.9.2)
       thread_safe (~> 0.3.4)
     backports (3.6.0)
@@ -62,7 +62,7 @@ GEM
       typhoeus (~> 0.6, >= 0.6.8)
     typhoeus (0.6.9)
       ethon (>= 0.7.1)
-    websocket (1.2.0)
+    websocket (1.2.1)
 
 PLATFORMS
   ruby
