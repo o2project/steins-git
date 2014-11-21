@@ -1,18 +1,8 @@
-[[chapter2-why-git]]
-== 第二章 - なぜGitを使うのか
+第二章 - なぜGitを使うのか
+==========================
 
-ifeval::["{backend}" != "html5"]
-image::ch2/daru.jpg[ダル, 360]
-endif::[]
+![ダル](images/ch2/daru.jpg)
 
 バージョン管理システムには、分散型バージョン管理システムといわれるGitなど以外にも、集中型バージョン管理システムといわれるSVNなどがあります。
 
 その集中型バージョン管理システムより、なぜ分散型バージョン管理システムのGitを使ったほうがいいのか、そのメリットを解説していきます。
-
-include::not-need-network-connection.adoc[]
-include::trend.adoc[]
-
-// <<< PAGE BREAK PDFのみ
-<<<
-
-include::try-out-a-local-repository.adoc[]
