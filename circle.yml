@@ -1,6 +1,11 @@
 machine:
   ruby:
     version: 2.1.2
+  environment:
+    GIT_COMMITTER_NAME:  kubosho
+    GIT_COMMITTER_EMAIL: ta2+github@o2p.jp
+    GIT_AUTHOR_NAME:     kubosho
+    GIT_AUTHOR_EMAIL:    ta2+github@o2p.jp
 
 test:
   pre:
