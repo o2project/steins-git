@@ -1,0 +1,41 @@
+[[chapter0-introduction]]
+== はじめに
+
+image::ch0/git-logo.jpg[Gitのロゴ, 180]
+
+本書は「Gitの使い方を、Steins;Gateの世界観を通して説明する」ことを目的にして執筆しました。
+
+本書の目標としては「Steins;Gateのアニメを全話見た人や、ゲームで全てのエンディングを見た人で、Gitに触れたことがない、もしくは触り始めたばかりという人が、Gitの使い方を知るきっかけになる」ということです。
+
+そのため、Gitの全ての機能の説明をしません。自分が普段使うことが多い機能を中心に書いています。
+
+=== 謝辞
+
+@kyo_agofootnote:[+https://twitter.com/kyo_ago/+]の下記のツイートにより、本書を書こうと思いましたfootnote:[ちなみに「Steins;Git」という言葉をたどると、@ruedapが2011年6月29日にしたツイートが最初かと思われます https://twitter.com/ruedap/status/82250750268420096]。
+
+> 結局「シュタゲで覚えるgit」って誰も書かなかったんですか？
+> 2013年12月19日footnote:[https://twitter.com/kyo_ago/status/413586733008044032]
+
+@kyo_agoには#SteinsGitfootnote:[\https://twitter.com/search?f=realtime&q=%23SteinsGit]というTwitterのハッシュタグを通じていろいろと助言をいただいたり、@watildefootnote:[https://twitter.com/watilde]と一緒にレビュー会というのを開いていただきました。
+
+Gitterfootnote:[\https://gitter.im/o2project/steins-git]というチャットサービス上では、yosiwofootnote:[\https://github.com/yosiwo]さんに構成について助言をもらいました。
+
+また、@GeckoTangfootnote:[https://twitter.com/GeckoTang]には誤字の指摘をいただきました。
+
+その他にも「シュタゲで分かるGit」をテーマにした「Steins;Git」という薄い本をC86(コミックマーケット86)で頒布しますfootnote:[http://blog.o2p.jp/2014/07/23/c86-steins-git.html]という記事を公開した際に、期待する声や欲しいという声をあげてくださった皆さんには、執筆を頑張る気力をもらいました
+
+そして忘れてはいけないのが、今回進捗管理だったり、イラスト発注だったり、印刷業者への確認だったり、レビューだったり、さまざまな作業をしてくれたfruitsnoodlefootnote:[+https://github.com/fruitsnoodle+]と、表紙と各章のイラストを描いてくれたGiantRobotfootnote:[pixivID:1223059]さんです。
+
+本当にありがとうございます。
+
+// <<< PAGE BREAK PDFのみ
+<<<
+
+=== 本書の構成
+
+本書は全三章とあとがきから成り立っています。
+
+1. 第一章では、バージョン管理とは何かということから説明し、その中でGitがどんな特徴を持っているかについて説明します。
+2. 第二章では、バージョン管理システムの中でも、なぜGitを使うのかというのを利点を提示して説明します。
+3. 第三章では、Gitで自分がよく使う機能について説明します。
+4. あとがきでは、Gitをラボメンで使うなど、複数人で使う場合に、その助けとなるサービスを紹介します。また、本書を書くにあたって参照したサイトや書籍を紹介します。
