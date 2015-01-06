@@ -1,0 +1,25 @@
+machine:
+  ruby:
+    version: 2.1.2
+
+test:
+  pre:
+    - rake setup
+  override:
+    - rake generate:html
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - rake publish
+
+general:
+  branches:
+    ignore:
+      - gh-pages
+      - /release\/.*/
+
+notify:
+  webhooks:
+    - url: https://webhooks.gitter.im/e/27b1fcce7376ca15fd91
