@@ -1,7 +1,7 @@
 Steins;Git
 ===========
 
-[![Build Status](http://img.shields.io/travis/o2project/steins-git.svg?style=flat-square)](https://travis-ci.org/o2project/steins-git)
+[![Circle CI](https://circleci.com/gh/o2project/steins-git.svg?style=svg)](https://circleci.com/gh/o2project/steins-git)
 [![Gemnasium](http://img.shields.io/gemnasium/o2project/steins-git.svg?style=flat-square)](https://gemnasium.com/o2project/steins-git)
 [![Gitter chat](http://img.shields.io/badge/discuss-Gitter-brightgreen.svg?style=flat-square)](https://gitter.im/o2project/steins-git)
 
