@@ -7,8 +7,12 @@ test:
     - rake setup
   override:
     - rake generate:html
-  post:
-    - rake publish
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - rake publish
 
 general:
   branches:
