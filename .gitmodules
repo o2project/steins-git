@@ -1,0 +1,3 @@
+[submodule "bin/fopub"]
+	path = bin/fopub
+	url = https://github.com/asciidoctor/asciidoctor-fopub.git
