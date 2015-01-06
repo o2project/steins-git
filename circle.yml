@@ -12,7 +12,7 @@ deployment:
   production:
     branch: master
     commands:
-      - rake publish
+      - ./bin/publish-gh-pages.sh
 
 general:
   branches:
