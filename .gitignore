@@ -3,6 +3,7 @@
 vendor/
 node_modules/
 build/
+dist/
 
 bin/kindlegen
 .DS_Store

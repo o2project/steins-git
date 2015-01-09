@@ -21,8 +21,11 @@
   "homepage": "https://github.com/o2project/steins-git",
   "devDependencies": {
     "browser-sync": "^1.8.3",
+    "del": "^1.1.1",
     "gulp": "^3.8.10",
+    "gulp-copy": "0.0.2",
     "gulp-exec": "^2.1.1",
-    "gulp-load-plugins": "^0.8.0"
+    "gulp-load-plugins": "^0.8.0",
+    "vinyl-paths": "^1.0.0"
   }
 }

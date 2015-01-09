@@ -4,11 +4,15 @@
 var gulp = require("gulp");
 var $ = require("gulp-load-plugins")();
 
+var del = require("del");
 var fs = require("fs");
 var path = require("path");
 var exec = require("child_process").exec;
+var vinylPaths = require('vinyl-paths');
 var browserSync = require("browser-sync");
 var reload = browserSync.reload;
+
+//////////////////////////////////////////////////
 
 gulp.task("md2re", function() {
   var destDirName = "build/review/";
@@ -36,13 +40,54 @@ gulp.task("md2re", function() {
   });
 });
 
+//////////////////////////////////////////////////
+
+gulp.task("re2html", function() {
+  var destDirName = "build/html/";
+
+  exec("bundle exec review-compile --footnotetext --chapterlink --target=html --all",
+    function(error, stdout, stderr) {
+      if (!error) {
+        return;
+      }
+
+      console.error(error);
+    }
+  );
+});
+
+//////////////////////////////////////////////////
+
+gulp.task("copy:html", function() {
+  var destDirName = "build/html/";
+  var dir = path.join(__dirname, destDirName);
+
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+
+  return gulp.src("./*.html")
+    .pipe($.copy(destDirName));
+});
+
+//////////////////////////////////////////////////
+
+gulp.task("del:html", function() {
+  return gulp.src("./*.html")
+    .pipe(vinylPaths(del));
+});
+
+//////////////////////////////////////////////////
+
 gulp.task("test", function() {
 });
+
+//////////////////////////////////////////////////
 
 gulp.task("serve", function() {
   browserSync({
     notify: false,
-    server: "./preview/"
+    server: "./dist/"
   });
 
   gulp.watch([""], ["", reload]);
