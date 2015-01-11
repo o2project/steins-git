@@ -9,9 +9,9 @@ machine:
 
 test:
   pre:
-    - rake setup
-  override:
-    - rake generate:html
+    - npm run md2re
+  overload:
+    - npm test
 
 deployment:
   production:

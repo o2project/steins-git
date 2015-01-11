@@ -5,7 +5,9 @@
   "author": "O2 Project",
   "license": "CC-BY-NC 2.1 JP",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "md2re": "gulp md2re",
+    "re2html": "gulp re2html",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "gulp-copy": "0.0.2",
     "gulp-exec": "^2.1.1",
     "gulp-load-plugins": "^0.8.0",
+    "spellcheck-tech-word-textlint-rule": "^2.0.1",
+    "textlint": "^1.4.3",
     "vinyl-paths": "^1.0.0"
   }
 }
