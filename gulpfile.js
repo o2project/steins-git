@@ -15,7 +15,7 @@ var reload = browserSync.reload;
 //////////////////////////////////////////////////
 
 gulp.task("md2re", function() {
-  var destDirName = "build/review/";
+  var destDirName = "build/";
   var dir = path.join(__dirname, destDirName);
 
   if (!fs.existsSync(dir)) {
@@ -43,8 +43,6 @@ gulp.task("md2re", function() {
 //////////////////////////////////////////////////
 
 gulp.task("re2html", function() {
-  var destDirName = "build/html/";
-
   return exec("bundle exec review-compile --footnotetext --chapterlink --target=html --all",
     function(error, stdout, stderr) {
       if (!error) {
@@ -59,7 +57,7 @@ gulp.task("re2html", function() {
 //////////////////////////////////////////////////
 
 gulp.task("copy:html", function() {
-  var destDirName = "build/html/";
+  var destDirName = "build/";
   var dir = path.join(__dirname, destDirName);
 
   if (!fs.existsSync(dir)) {

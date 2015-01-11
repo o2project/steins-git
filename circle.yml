@@ -10,7 +10,7 @@ machine:
 test:
   pre:
     - npm run md2re
-  overload:
+  override:
     - npm test
 
 deployment:
