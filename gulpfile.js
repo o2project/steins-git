@@ -36,14 +36,10 @@ gulp.task("md2re", function(cb) {
 
 //////////////////////////////////////////////////
 
-gulp.task("re2html", function() {
-  return exec("bundle exec review-compile --footnotetext --chapterlink --target=html --all",
-    function(error, stdout, stderr) {
-      if (!error) {
-        return;
-      }
-
-      console.error(error);
+gulp.task("re2html", function(cb) {
+  exec("bundle exec review-compile --footnotetext --chapterlink --target=html --all",
+    function(err, stdout, stderr) {
+      cb(err);
     }
   );
 });
