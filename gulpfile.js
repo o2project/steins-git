@@ -14,7 +14,7 @@ var reload = browserSync.reload;
 
 //////////////////////////////////////////////////
 
-gulp.task("md2re", function() {
+gulp.task("md2re", function(cb) {
   var destDirName = "build/";
   var dir = path.join(__dirname, destDirName);
 
@@ -28,16 +28,10 @@ gulp.task("md2re", function() {
     var srcDir = "source/Ch" + a + "_*/*.md";
     var destDir = destDirName + "ch" + a + ".re";
 
-    return exec("bundle exec md2review " + srcDir + ">" + destDir,
-      function(error, stdout, stderr) {
-        if (!error) {
-          return;
-        }
-
-        console.error(error);
-      }
-    );
+    exec("bundle exec md2review " + srcDir + ">" + destDir);
   });
+
+  cb();
 });
 
 //////////////////////////////////////////////////
