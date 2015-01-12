@@ -6,7 +6,7 @@
   "license": "CC-BY-NC 2.1 JP",
   "scripts": {
     "md2re": "gulp md2re",
-    "re2html": "gulp re2html",
+    "re2html": "gulp re2html && gulp copy:html && gulp del:html",
     "test": "gulp test"
   },
   "repository": {
