@@ -8,8 +8,6 @@ machine:
     GIT_AUTHOR_EMAIL:    ta2@o2p.jp
 
 test:
-  pre:
-    - npm run md2re
   override:
     - npm test
 

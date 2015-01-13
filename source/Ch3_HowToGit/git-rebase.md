@@ -28,15 +28,13 @@ message」を押します。すると、下記の図のようにコミットメ�
 次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の1つ前の作業履歴を右クリックで選択し「"コミット番号"
 の子を対話形式でリベース」を選択します。
 
-![git rebase
-squashするべく親となるコミットを選択している状態](images/ch3/git-rebase-squash-right-click.jpg)
+![git rebase squashするべく親となるコミットを選択している状態](images/ch3/git-rebase-squash-right-click.jpg)
 
 今回は4つの作業履歴を対象としました。ここから作業履歴をまとめるには「Squash
 with previous」を3回押します。「まとめる作業履歴の数 - 1回、Squash with
 previousを押す」と覚えるといいかもしれません。
 
-![git rebase
-squashしようとしている状態](images/ch3/git-rebase-squash-before.jpg)
+![git rebase squashしようとしている状態](images/ch3/git-rebase-squash-before.jpg)
 
 その後、まとめた作業履歴のコミットメッセージを編集するために「Edit
 message」を押します。
