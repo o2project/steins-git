@@ -29,6 +29,7 @@
     "gulp-exec": "^2.1.1",
     "gulp-load-plugins": "^0.8.0",
     "spellcheck-tech-word-textlint-rule": "^2.0.1",
+    "technical-word-rules": "^1.1.0",
     "textlint": "^1.4.3",
     "vinyl-paths": "^1.0.0"
   }

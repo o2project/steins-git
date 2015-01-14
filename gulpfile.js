@@ -1,4 +1,3 @@
-/* jshint node: true */
 "use strict";
 
 var gulp = require("gulp");
@@ -68,7 +67,7 @@ gulp.task("del:html", function() {
 //////////////////////////////////////////////////
 
 gulp.task("test", function(cb) {
-  var textlintCmd = "./node_modules/.bin/textlint --rulesdir ./node_modules/spellcheck-tech-word-textlint-rule source/Ch*/*.md";
+  var textlintCmd = "./node_modules/.bin/textlint --rulesdir ./lint-rule/ source/Ch*/*.md";
 
   exec(textlintCmd, function(err, stdout, stderr) {
     console.log(stdout);
