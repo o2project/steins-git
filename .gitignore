@@ -1,10 +1,13 @@
-.bundle
-.idea
+.bundle/
+.idea/
+vendor/
+node_modules/
+build/
+dist/
+
+bin/kindlegen
 .DS_Store
-build
-vendor
-node_modules
-kindlegen
+npm-debug.log
 
 images/cover.jpg
 images/ch1/mayuri.jpg

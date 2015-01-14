@@ -1,0 +1,10 @@
+PREDEF:
+  - build/ch0.re
+
+CHAPS:
+  - build/ch1.re
+  - build/ch2.re
+  - build/ch3.re
+
+POSTDEF:
+  - build/ch4.re

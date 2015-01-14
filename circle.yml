@@ -8,10 +8,8 @@ machine:
     GIT_AUTHOR_EMAIL:    ta2@o2p.jp
 
 test:
-  pre:
-    - rake setup
   override:
-    - rake generate:html
+    - npm test
 
 deployment:
   production:
