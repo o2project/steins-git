@@ -1,6 +1,6 @@
 "use strict";
 
-var dictionaryItems = require("../node_modules/technical-word-rules");
+var dictionaryItems = require("technical-word-rules");
 
 /**
  * @param {RuleContext} context

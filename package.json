@@ -28,8 +28,7 @@
     "gulp-copy": "0.0.2",
     "gulp-exec": "^2.1.1",
     "gulp-load-plugins": "^0.8.0",
-    "spellcheck-tech-word-textlint-rule": "^2.0.1",
-    "technical-word-rules": "^1.1.0",
+    "technical-word-rules": "git://github.com/azu/technical-word-rules",
     "textlint": "^1.4.3",
     "vinyl-paths": "^1.0.0"
   }
