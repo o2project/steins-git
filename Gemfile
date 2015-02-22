@@ -1,5 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "review"
-gem "md2review"
-gem "epubcheck"
+gem 'asciidoctor'
+gem 'asciidoctor-epub3'
+gem 'epubcheck'
+gem 'travis'

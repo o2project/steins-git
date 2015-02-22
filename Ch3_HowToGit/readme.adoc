@@ -1,0 +1,23 @@
+[[chapter3-how-to-git]]
+== 第三章 - Gitの使いかた
+
+ifeval::["{backend}" != "html5"]
+image::ch3/labmem.jpg[ラボメン, 360]
+endif::[]
+
+ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使いかたを知りたいという人もいるでしょう。
+
+この章では、Gitの使いかたとしてSourceTreefootnote:[https://www.atlassian.com/ja/software/sourcetree/overview]というソフトウェアを用いて、いろんな操作方法を書いていきます。
+
+include::git-start.adoc[]
+include::git-init.adoc[]
+include::git-clone.adoc[]
+include::git-commit.adoc[]
+include::git-checkout-file.adoc[]
+include::git-branch.adoc[]
+include::git-checkout.adoc[]
+include::git-reset.adoc[]
+include::git-rebase.adoc[]
+include::git-push.adoc[]
+include::git-pull.adoc[]
+include::git-merge.adoc[]
