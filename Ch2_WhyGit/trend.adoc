@@ -28,4 +28,4 @@ image::ch2/stackoverflow-svn.jpg[Stack OverflowでSVNを検索した結果, 360]
 
 image::ch2/stackoverflow-git.jpg[Stack OverflowでGitを検索した結果, 360]
 
-以上のことから、SVNはGitに比べて流行っていると言えます。
+以上のことから、GitはSVNに比べて流行っていると言えます。
