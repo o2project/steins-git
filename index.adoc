@@ -4,7 +4,7 @@ kubosho_
 :username: kubosho_
 :keywords: Git, Steins;Gate
 :revnumber: {bookversion}
-:revdate: 2014/9/9
+:revdate: {docdate}
 :source: https://github.com/o2project/steins-git
 :imagesdir: images
 :front-cover-image: image:cover.jpg[Steins;Git,1050,1600]
