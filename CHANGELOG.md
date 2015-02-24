@@ -1,3 +1,18 @@
+## 1.3.0 (2015-02-24)
+
+
+#### Bug Fixes
+
+* **Ch2:** Fix typo #117 ([7929de7d](https://github.com/o2project/steins-git/commit/7929de7d1f5872044c01feb7587a0744ac1a2744))
+
+
+#### Features
+
+* **All:**
+  * 原稿の管理を別リポジトリにした ([5ce90670](https://github.com/o2project/steins-git/commit/5ce9067077a21e506c228caf2ea941ee689d56b9))
+  * PDF用のスタイル指定ファイルを別リポジトリにした ([6522d144](https://github.com/o2project/steins-git/commit/6522d144a3295d1c959c097597df970c6d860c69))
+
+
 ## 1.2.0 (2014-09-09)
 
 
