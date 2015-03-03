@@ -4,6 +4,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-25380313-6', 'auto');
+ga('require', 'linkid', 'linkid.js');
 ga('send', 'pageview');
 
 window.addEventListener("hashchange", function hashChange() {
