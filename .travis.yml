@@ -1,4 +1,6 @@
 language: ruby
+cache: apt
+sudo: false
 
 branches:
   only:
