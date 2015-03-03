@@ -4,13 +4,15 @@
 #### Bug Fixes
 
 * **Ch2:** Fix typo #117 ([7929de7d](https://github.com/o2project/steins-git/commit/7929de7d1f5872044c01feb7587a0744ac1a2744))
+  * 「SVNはGitに比べて流行っていると言えます」 -> 「GitはSVNに比べて流行っていると言えます」
 
 
 #### Features
 
 * **All:**
-  * 原稿の管理を別リポジトリにした ([5ce90670](https://github.com/o2project/steins-git/commit/5ce9067077a21e506c228caf2ea941ee689d56b9))
-  * PDF用のスタイル指定ファイルを別リポジトリにした ([6522d144](https://github.com/o2project/steins-git/commit/6522d144a3295d1c959c097597df970c6d860c69))
+  * 原稿の管理を別リポジトリにした ([5ce90670](https://github.com/o2project/steins-git/commit/5ce9067077a21e506c228caf2ea941ee689d56b9), [1d451142](https://github.com/o2project/steins-git/commit/1d4511426c850ced4777c8d1789aaf4a08c79f09), [eb564469](https://github.com/o2project/steins-git/commit/eb564469acc83f9704498f67b050ad43c5ca8dae))
+  * PDF用のスタイル指定ファイルを別リポジトリにした ([6522d144](https://github.com/o2project/steins-git/commit/6522d144a3295d1c959c097597df970c6d860c69), [c4a3c848](https://github.com/o2project/steins-git/commit/c4a3c84891fb8f65ea00b8d6a5eb8a3dd3d067b6), [faacfdd5](https://github.com/o2project/steins-git/commit/faacfdd51ed7b6f8e06a5da8dab082765e7a16e9))
+* **Ch2:** Gitの読み方について書いた fix #118 ([eac9d3eb](https://github.com/o2project/steins-git/commit/eac9d3eb58ff1a2254895bbd719cc57a8f9ebfee))
 
 
 ## 1.2.0 (2014-09-09)
