@@ -1,13 +1,13 @@
 [[chapter3-how-to-git]]
-== 第三章 - Gitの使いかた
+== 第三章 - Gitの使い方
 
 ifeval::["{backend}" != "html5"]
 image::ch3/labmem.jpg[ラボメン, 360]
 endif::[]
 
-ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使いかたを知りたいという人もいるでしょう。
+ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使い方を知りたいという人もいるでしょう。
 
-この章では、Gitの使いかたとしてSourceTreefootnote:[https://www.atlassian.com/ja/software/sourcetree/overview]というソフトウェアを用いて、いろんな操作方法を書いていきます。
+この章では、Gitの使い方としてSourceTreefootnote:[https://www.atlassian.com/ja/software/sourcetree/overview]というソフトウェアを用いて、いろんな操作方法を書いていきます。
 
 include::git-start.adoc[]
 include::git-init.adoc[]
