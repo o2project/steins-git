@@ -22,7 +22,7 @@ script:
   - rake generate:html
 
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake publish > /dev/null'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "$GH_TOKEN" ] && rake publish > /dev/null'
 
 notifications:
   webhooks:
