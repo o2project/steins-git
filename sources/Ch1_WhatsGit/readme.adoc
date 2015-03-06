@@ -1,5 +1,5 @@
 [[chapter1-what-is-git]]
-== 第一章 - バージョン管理とはなにか
+== 第一章 - 改変管理のデュバス
 
 ifeval::["{backend}" != "html5"]
 image::ch1/mayuri.jpg[まゆり, 360]
