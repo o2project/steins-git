@@ -5,11 +5,10 @@ ifeval::["{backend}" != "html5"]
 image::ch3/labmem.jpg[ラボメン, 360]
 endif::[]
 
-ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使い方を知りたいという人もいるでしょう。
+この章では、実際にGitの様々な操作方法をSourceTreefootnote:[https://www.atlassian.com/ja/software/sourcetree/overview]やGitHub for Macfootnote:[+https://mac.github.com/+]footnote:[Windows版は https://windows.github.com/]というソフトウェアを使って書いていきます。
 
-この章では、Gitの使い方としてSourceTreefootnote:[https://www.atlassian.com/ja/software/sourcetree/overview]というソフトウェアを用いて、いろんな操作方法を書いていきます。
-
-include::git-start.adoc[]
+include::sourcetree-settings.adoc[]
+include::githubapp-settings.adoc[]
 include::git-init.adoc[]
 include::git-clone.adoc[]
 include::git-commit.adoc[]
