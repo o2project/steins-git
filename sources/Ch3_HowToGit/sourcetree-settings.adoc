@@ -1,0 +1,16 @@
+[[sourcetree-settings]]
+
+=== SourceTreeのインストールと設定
+
+Gitを使うために、SourceTreeというソフトウェアをダウンロードします。
+
+ダウンロードは以下のURLからおこなえます。SourceTreeはWindowsとMac OS Xに対応しています。
+
+`https://www.atlassian.com/ja/software/sourcetree/overview`
+
+SourceTreeを例えるのであれば「作業履歴が積み重なった世界線を観測でき、かつ世界線改変や世界線収束などができるもの」。つまり、リーディングシュタイナー・ダイバージェンスメーター・タイムマシンを併せ持つ物という感じです。
+
+SourceTreeのダウンロードが終わったら、次にインストールと設定をおこないます。WindowsとMac OS Xそれぞれ説明が分かりやすいページがあるので、そのページを紹介しておきます。
+
+- Windows: http://blog.aotak.me/post/67349113824/sourcetree-tutorial-1[あおたくノート • SourceTreeとGitではじめるバージョン管理 #1]
+- Mac OS X: http://www.backlog.jp/git-guide/intro/intro2_1.html[Gitのインストール【チュートリアル1 Gitの基本】 | サルでもわかるGit入門 〜バージョン管理を使いこなそう〜]
