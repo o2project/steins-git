@@ -9,3 +9,8 @@ h2 {
 h3 {
     border-bottom: 1px solid #aaa;
 }
+
+.pocket-btn {
+  display: inline-block;
+  vertical-align: top;
+}
