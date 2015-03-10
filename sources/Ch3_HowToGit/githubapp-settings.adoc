@@ -2,9 +2,7 @@
 
 === GitHub for Windows(Mac)のインストールと設定
 
-Gitを使うために、GitHub for Windows(Mac)というソフトウェアをダウンロードします。
-
-ダウンロードは以下のURLからおこなえます。
+GitHub for Windows(Mac)のダウンロードは以下のURLからおこなえます。ダウンロードするためのURLが一緒だったSourceTreeとは違い、Windows版とMac版でダウンロードするためのURLが違います。
 
 - Windows: `https://windows.github.com/`
 - Mac OS X: `https://mac.github.com/`
