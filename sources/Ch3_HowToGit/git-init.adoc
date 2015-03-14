@@ -20,7 +20,7 @@ image::ch3/git-init-empty.jpg[リポジトリが作られた状態, 360]
 
 ==== GitHub for Windows(Mac)でのやり方
 
-GitHub for Windows(Mac)を起動すると、左上に「＋」ボタンがあるのでそれを押して、表示された画面の「Create」というのを押します。
+GitHub for Windows(Mac)を起動すると、左上に「＋」ボタンがあるので、それを押して表示された画面の「Create」というのを押します。
 
 image::ch3/git-init/github-app/plus.jpg[「＋」ボタンを押した後「Create」を押している様子, 360]
 

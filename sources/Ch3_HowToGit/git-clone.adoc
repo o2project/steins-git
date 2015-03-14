@@ -21,3 +21,17 @@ image::ch3/git-clone-sourcetree-select.jpg[SourceTreeのボタン]
 image::ch3/git-clone.jpg[リポジトリを取得しようとしている状態, 360]
 
 ==== GitHub for Windows(Mac)でのやり方
+
+GitHub for Windows(Mac)を起動すると、左上に「＋」ボタンがあるので、それを押して表示された画面の「Clone」というのを押します。
+
+「Clone」を押した後、リポジトリを見つけるための検索窓が表示されます。そこで目的のリポジトリ名を入力して見つかったら「Clone [リポジトリ名]」というボタンを押します。
+
+image::ch3/git-clone/github-app/git-clone-before.jpg[クローンする対象のリポジトリを絞り込んでいるところ, 360]
+
+「Clone [リポジトリ名]」というボタンを押すと、保存先のディレクトリやリポジトリ名を決める画面が表示されます。
+
+image::ch3/git-clone/github-app/git-clone-save.jpg[クローンするリポジトリの名前を決めているところ, 360]
+
+いろいろと情報を入力し終えると、リモートリポジトリが自分のPC上にクローンされます。
+
+image::ch3/git-clone/github-app/git-clone-after.jpg[クローンした後, 360]
