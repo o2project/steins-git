@@ -13,3 +13,11 @@
 image::ch3/git-checkout.jpg[ブランチを移動した後, 360]
 
 ==== GitHub for Windows(Mac)でのやり方
+
+現在のブランチ名が表示されている箇所をクリックすると、切りかえ可能なブランチの一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。
+
+image::ch3/git-checkout/github-app/git-branch-list.jpg[ブランチ一覧を表示している図, 360]
+
+ここでは「鈴羽を引き止めた世界線」から「萌郁がIBN5100を手に入れた世界線」に移動しています。
+
+image::ch3/git-checkout/github-app/git-checkout-after.jpg[ブランチを移動した後の図, 360]
