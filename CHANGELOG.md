@@ -1,3 +1,70 @@
+## 2.0.0 (2015-03-16)
+
+
+#### Bug Fixes
+
+* **distributed-revision-control:** PDFに出力する際にエラーが出ていたのを修正 ([45252240](https://github.com/o2project/steins-git/commit/452522402429849a45a7c97892963c8957a9fb90))
+* **travis:** Pull Requestされた際に`rake publish`が実行されていたのを修正 ([be46e33f](https://github.com/o2project/steins-git/commit/be46e33f5f3ee86b2b48da20d80ec803ef0f2770))
+
+
+#### New and Edit
+
+* **Ch*:** 各章のタイトルをSteins;Gateらしくした #107 ([74a09fef](https://github.com/o2project/steins-git/commit/74a09fef5261dfd91f99215b3a41c88705d4c32c))
+* **Ch3:**
+  * **git-settings:** * SourceTreeとGitHub Appのインストールと設定について書いた ([f8fd4bb5](https://github.com/o2project/steins-git/commit/f8fd4bb57f603b0e52acc334c362d541931a6c2d))
+  * **git-settings:** * GitHub Appの設定方法について書いた ([721fbb69](https://github.com/o2project/steins-git/commit/721fbb69ec97c6b1f23cafaa4d0dd689d40b6fa7))
+  * **git-settings:** * 「SourceTreeのやり方」と「GitHub for Windows(Mac)」でのやり方という見出しを追加 ([513e8498](https://github.com/o2project/steins-git/commit/513e84981d5cc5cf26e78cf222b890731c4a4350))
+  * **git-branch:** git branchをGitHub Appでやる方法を書いた ([e2d0cc85](https://github.com/o2project/steins-git/commit/e2d0cc8540439b77be083977c0b17b13d530891b))
+  * **git-checkout:** git checkout [branch名]をGitHub Appでやる方法を書いた ([d7eaf1ce](https://github.com/o2project/steins-git/commit/d7eaf1ce9fba5e621505af4dcf075ffb934ae45d))
+  * **git-checkout-file:** git checkout .をGitHub Appでやる方法を書いた ([62db2370](https://github.com/o2project/steins-git/commit/62db2370be7cddd48bba5a27dbf3a71a0e3fe8e0))
+  * **git-commit:** git commitをGitHub Appでやる方法を書いた ([7f67bc26](https://github.com/o2project/steins-git/commit/7f67bc2619114e5c8b0d9ade86ee377aeed18488))
+  * **git-commit:** GitHub for Windows(Mac)でのコミット方法を書いた ([f1a38d91](https://github.com/o2project/steins-git/commit/f1a38d91b42710ef02b4c8e2f512803dda9efdbd))
+  * **git-init:** git initをGitHub Appでやる方法を書いた ([b2f77d04](https://github.com/o2project/steins-git/commit/b2f77d04525308d6d992bfa899dee30666372d1c))
+  * **git-sync:** GitHub Appの「Sync」ボタンの説明を追加した ([97054a1f](https://github.com/o2project/steins-git/commit/97054a1fc57e0696bc5563ef3aabd0724983602f))
+
+
+#### Features
+
+* **index:** Pocketボタンを追加 ([17b5f92e](https://github.com/o2project/steins-git/commit/17b5f92e4d091bf912e9b1980ec5d8131b6fa0b0), [2e79c003](https://github.com/o2project/steins-git/commit/2e79c003dbced3734acb31477c15ea84b4da51b9))
+* **package.json:** npm run-scriptsを定義した ([ae3d0fe8](https://github.com/o2project/steins-git/commit/ae3d0fe88cc20982dd6302dc0d6e6ff9b62f5c98))
+* **setup:** package.jsonで各種インストールをおこなうようにしたのでsetup.shを削除 ([641c0dfc](https://github.com/o2project/steins-git/commit/641c0dfc91b316d49ad9bfd43f7d86114e4f5e28))
+
+
+### 1.3.1 (2015-03-16)
+
+
+#### Bug Fixes
+
+* **distributed-revision-control:** PDFに出力する際にエラーが出ていたのを修正 ([45252240](https://github.com/o2project/steins-git/commit/452522402429849a45a7c97892963c8957a9fb90))
+* **travis:** Pull Requestされた際に`rake publish`が実行されていたのを修正 ([be46e33f](https://github.com/o2project/steins-git/commit/be46e33f5f3ee86b2b48da20d80ec803ef0f2770))
+
+
+#### New and Edit
+
+* **Ch*:** 各章のタイトルをSteins;Gateらしくした #107 ([74a09fef](https://github.com/o2project/steins-git/commit/74a09fef5261dfd91f99215b3a41c88705d4c32c))
+* **Ch3:**
+  * SourceTreeとGitHub Appのインストールと設定について書いた ([f8fd4bb5](https://github.com/o2project/steins-git/commit/f8fd4bb57f603b0e52acc334c362d541931a6c2d))
+  * GitHub Appの設定方法について書いた ([721fbb69](https://github.com/o2project/steins-git/commit/721fbb69ec97c6b1f23cafaa4d0dd689d40b6fa7))
+  * 「SourceTreeのやり方」と「GitHub for Windows(Mac)」でのやり方という見出しを追加 ([513e8498](https://github.com/o2project/steins-git/commit/513e84981d5cc5cf26e78cf222b890731c4a4350))
+* **git-branch:** git branchをGitHub Appでやる方法を書いた ([e2d0cc85](https://github.com/o2project/steins-git/commit/e2d0cc8540439b77be083977c0b17b13d530891b))
+* **git-checkout:** git checkout [branch名]をGitHub Appでやる方法を書いた ([d7eaf1ce](https://github.com/o2project/steins-git/commit/d7eaf1ce9fba5e621505af4dcf075ffb934ae45d))
+* **git-checkout-file:** git checkout .をGitHub Appでやる方法を書いた ([62db2370](https://github.com/o2project/steins-git/commit/62db2370be7cddd48bba5a27dbf3a71a0e3fe8e0))
+* **git-commit:**
+  * git commitをGitHub Appでやる方法を書いた ([7f67bc26](https://github.com/o2project/steins-git/commit/7f67bc2619114e5c8b0d9ade86ee377aeed18488))
+  * GitHub for Windows(Mac)でのコミット方法を書いた ([f1a38d91](https://github.com/o2project/steins-git/commit/f1a38d91b42710ef02b4c8e2f512803dda9efdbd))
+* **git-init:** git initをGitHub Appでやる方法を書いた ([b2f77d04](https://github.com/o2project/steins-git/commit/b2f77d04525308d6d992bfa899dee30666372d1c))
+* **git-sync:** GitHub Appの「Sync」ボタンの説明を追加した ([97054a1f](https://github.com/o2project/steins-git/commit/97054a1fc57e0696bc5563ef3aabd0724983602f))
+
+
+#### Features
+
+* **index:**
+  * Pocketボタンを追加 ([17b5f92e](https://github.com/o2project/steins-git/commit/17b5f92e4d091bf912e9b1980ec5d8131b6fa0b0))
+  * Pocketボタンを追加 ([2e79c003](https://github.com/o2project/steins-git/commit/2e79c003dbced3734acb31477c15ea84b4da51b9))
+* **package.json:** npm run-scriptsを定義した ([ae3d0fe8](https://github.com/o2project/steins-git/commit/ae3d0fe88cc20982dd6302dc0d6e6ff9b62f5c98))
+* **setup:** package.jsonで各種インストールをおこなうようにしたのでsetup.shを削除 ([641c0dfc](https://github.com/o2project/steins-git/commit/641c0dfc91b316d49ad9bfd43f7d86114e4f5e28))
+
+
 ## 1.3.0 (2015-02-24)
 
 
