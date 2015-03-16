@@ -28,11 +28,7 @@ Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を通して説明�
 
 ## Steins;Gitの様々なやりとりについて
 
-何か決めないといけないだったり、執筆の際は、[Issues](https://github.com/o2project/steins-git/issues?state=open)からIssueを立ててやりとりをします。
-
-気軽に何か言いたい場合は、[Gitter](https://gitter.im/o2project/steins-git)というチャットサービスを使います。
-
-やりとりにURLを持たせたい(=リポジトリ内外からリンクする可能性がある)ものはIssues、それ以外はGitterという使い分けにするつもりです。
+何か決めないといけなかったり、新規に執筆する際は、[Issues](https://github.com/o2project/steins-git/issues?state=open)からIssueを立てて、そのIssue内でやりとりをします。
 
 ## 新たな章や節を追加する際のガイドライン
 
