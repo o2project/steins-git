@@ -13,11 +13,11 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
 
 ## Steins;Gitの執筆方針について
 
-Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を通して説明する」書籍です。「Steins;Gateのストーリーの流れに沿って、Gitの説明をする」書籍ではありません。
+Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を使って説明する」書籍です。「Steins;Gateのストーリーの流れに沿って、Gitの説明をする」書籍ではありません。
 
 簡潔に書くと「シュタゲ本」というよりは「技術書」よりです。
 
-とはいえ、今回のコミケのジャンル的には「ギャルゲー内のSteins;Gate枠」なので、なるべくSteins;Gateを絡めていこうとは思っています。
+とはいえ、なるべくSteins;Gateを絡めていきたいですし、全体の雰囲気もSteins;Gateっぽくしたいとは思っています。
 
 ## Steins;Gitの対象読者について
 
@@ -50,7 +50,7 @@ Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を通して説明�
 - Ch*/img
   - 各章や節で使う画像が格納されています。
 
-## ローカルでプレビューしたい場合について
+## 自分のPC上でSteins;Gitを確認したい場合について
 
 [README.md](https://github.com/o2project/steins-git/blob/master/README.md)をご覧ください。
 
