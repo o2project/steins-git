@@ -1,5 +1,5 @@
 [[chapter3-how-to-git]]
-== 第三章 - Gitの使い方
+== 第三章 - 率先躬行のサインポスト
 
 ifeval::["{backend}" != "html5"]
 image::ch3/labmem.jpg[ラボメン, 360]
