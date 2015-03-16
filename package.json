@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/o2project/steins-git",
   "scripts": {
-    "setup": "npm install && bundle install",
+    "setup": "npm install && bundle install --path vendor/bundle",
     "serve": "grunt server",
     "open": "grunt server-open"
   },
