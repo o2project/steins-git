@@ -1,0 +1,15 @@
+[[git-sync]]
+
+=== GitHub for Windows(Mac)でリモートリポジトリと同期する
+
+GitHub for Windows(Mac)では画面の右上に「Sync」というボタンがあります。
+
+これは、他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込みつつ、自分のPC上でリポジトリに対して変更した点がある場合はそれをリモートリポジトリに送信します。
+
+つまり「git push」と「git pull」を同時におこなうものと考えれば良いでしょう。
+
+image::ch3/git-sync/git-sync-before.jpg[, 360]
+
+「Sync」を押すと「Sync」ボタンがあった場所に、同期の進捗を表すバーが表示されます。
+
+image::ch3/git-sync/git-sync-after.jpg[, 360]
