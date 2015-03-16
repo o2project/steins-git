@@ -10,6 +10,8 @@
 
 image::ch3/git-pull-before.jpg[紅莉栖が作業している, 360]
 
+==== SourceTreeでのやり方
+
 ここで、画面上部の「プル」を押します。たいていの場合は表示された画面内の「OK」を押せば大丈夫です。
 
 image::ch3/git-pull-select.jpg[pullしてくるブランチを選んでいる状態, 360]
@@ -17,4 +19,3 @@ image::ch3/git-pull-select.jpg[pullしてくるブランチを選んでいる状
 「OK」を押すことにより、リモートリポジトリと自分のPC上の作業履歴が同期されます。
 
 image::ch3/git-pull-after.jpg[自分のPC上のリポジトリとリモートリポジトリの同期をとった, 360]
-

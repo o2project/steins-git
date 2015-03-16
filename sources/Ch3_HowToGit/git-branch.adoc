@@ -8,10 +8,24 @@
 
 image::ch3/git-branch-before.jpg[新たなブランチを作る前, 360]
 
-ここから「鈴羽を引き止めるためにDメールを送った後の世界線」に移動します。SourceTreeの上部にある「ブランチ」を押すと、ブランチ名を入力する画面が表示されます。ここで新規ブランチのところに任意の名前を入力します。
+この状態からSourceTreeとGitHub for WIndows(Mac)を使って「鈴羽を引き止めるためにDメールを送った後の世界線」に移動します。
+
+==== SourceTreeでのやり方
+
+SourceTreeの上部にある「ブランチ」を押すと、ブランチ名を入力する画面が表示されます。ここで新規ブランチのところに任意の名前を入力します。
 
 image::ch3/git-branch-name.jpg[ブランチ名を決めているところ, 360]
 
 「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動している状態です。世界線変動を起こした状態といえます。
 
 image::ch3/git-branch-after.jpg[ブランチを作った後, 360]
+
+==== GitHub for Windows(Mac)でのやり方
+
+現在のブランチ名が書かれている左横に「線が分岐していて分岐先に＋が書かれているボタン」があります。そのボタンを押すと「Create New Branch」という画面が表示されるので、ブランチ名やどのブランチを元に分岐させるのかというのを選択します。
+
+image::ch3/git-branch/github-app/branch-create-before.jpg[「Create New Branch」という画面が表示されている状態, 360]
+
+「Create New Branch」という画面でいろいろと情報入力した後「Create Branch」というボタンを押すことにより、新しいブランチが作られます。
+
+image::ch3/git-branch/github-app/branch-create-after.jpg[新規ブランチが作られた図, 360]

@@ -10,6 +10,8 @@
 
 このリモートリポジトリから自分のPC上にコピーを作るのがこれから説明する手順です。この手順をおこなうことにより、最初から他の人(例えばラボメンなど)と共同でタイムリープマシンを使って作業をおこなえる体制が整います。
 
+==== SourceTreeでのやり方
+
 では試しに、すでにあるリポジトリの複製を自分のPC上に作りましょう。SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンのうち、一番左のボタンを押します。
 
 image::ch3/git-clone-sourcetree-select.jpg[SourceTreeのボタン]
@@ -17,3 +19,19 @@ image::ch3/git-clone-sourcetree-select.jpg[SourceTreeのボタン]
 押した後「リポジトリをクローン」を押すと以下のような画面になります。「ソースパス / URL」の部分に `\git@github.com:o2project/steins-gate.git` を入力して「クローン」を押すと「steins-gate」というリモートリポジトリの完全なコピーが、自分のPC上に作られます。
 
 image::ch3/git-clone.jpg[リポジトリを取得しようとしている状態, 360]
+
+==== GitHub for Windows(Mac)でのやり方
+
+GitHub for Windows(Mac)を起動すると、左上に「＋」ボタンがあるので、それを押して表示された画面の「Clone」というのを押します。
+
+「Clone」を押した後、リポジトリを見つけるための検索窓が表示されます。そこで目的のリポジトリ名を入力して見つかったら「Clone [リポジトリ名]」というボタンを押します。
+
+image::ch3/git-clone/github-app/git-clone-before.jpg[クローンする対象のリポジトリを絞り込んでいるところ, 360]
+
+「Clone [リポジトリ名]」というボタンを押すと、保存先のディレクトリやリポジトリ名を決める画面が表示されます。
+
+image::ch3/git-clone/github-app/git-clone-save.jpg[クローンするリポジトリの名前を決めているところ, 360]
+
+いろいろと情報を入力し終えると、リモートリポジトリが自分のPC上にクローンされます。
+
+image::ch3/git-clone/github-app/git-clone-after.jpg[クローンした後, 360]
