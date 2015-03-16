@@ -447,18 +447,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#chapter3-how-to-git">3. 第三章 - 率先躬行のサインポスト</a>
 <ul class="sectlevel2">
-<li><a href="#git-start">3.1. SourceTreeのインストールと設定</a></li>
-<li><a href="#_gitによるバージョン管理を始める">3.2. Gitによるバージョン管理を始める</a></li>
-<li><a href="#git-clone">3.3. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
-<li><a href="#git-commit">3.4. 作業内容を記録する</a></li>
-<li><a href="#git-checkout-file">3.5. 作業内容を無かったことにする</a></li>
-<li><a href="#git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
-<li><a href="#git-checkout">3.7. ブランチを切りかえる</a></li>
-<li><a href="#git-reset">3.8. 変更をリセットする</a></li>
-<li><a href="#git-rebase">3.9. 作業履歴を改変する</a></li>
-<li><a href="#git-push">3.10. リモートリポジトリに作業内容を送る</a></li>
-<li><a href="#git-pull">3.11. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
-<li><a href="#git-merge">3.12. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#sourcetree-settings">3.1. SourceTreeのインストールと設定</a></li>
+<li><a href="#_github_for_windows_mac_のインストールと設定">3.2. GitHub for Windows(Mac)のインストールと設定</a></li>
+<li><a href="#git-init">3.3. Gitによるバージョン管理を始める</a></li>
+<li><a href="#git-clone">3.4. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
+<li><a href="#git-commit">3.5. 作業内容を記録する</a></li>
+<li><a href="#git-checkout-file">3.6. 作業内容を無かったことにする</a></li>
+<li><a href="#git-branch">3.7. ブランチの一覧を見たり、ブランチを作ったりする</a></li>
+<li><a href="#git-checkout">3.8. ブランチを切りかえる</a></li>
+<li><a href="#git-reset">3.9. 変更をリセットする</a></li>
+<li><a href="#git-rebase">3.10. 作業履歴を改変する</a></li>
+<li><a href="#git-push">3.11. リモートリポジトリに作業内容を送る</a></li>
+<li><a href="#git-pull">3.12. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</a></li>
+<li><a href="#git-merge">3.13. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-sync">3.14. GitHub for Windows(Mac)でリモートリポジトリと同期する</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-PostScript">あとがき</a>
@@ -833,24 +835,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="chapter3-how-to-git">3. 第三章 - 率先躬行のサインポスト</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>ここまでGitとはなにか、なぜGitを使うのかについて説明してきました。もしかしたら、そろそろGitの使い方を知りたいという人もいるでしょう。</p>
-</div>
-<div class="paragraph">
-<p>この章では、Gitの使い方としてSourceTree<span class="footnote">[<a id="_footnoteref_29" class="footnote" href="#_footnote_29" title="View footnote.">29</a>]</span>というソフトウェアを用いて、いろんな操作方法を書いていきます。</p>
+<p>この章では、実際にGitの様々な操作方法をSourceTree<span class="footnote">[<a id="_footnoteref_29" class="footnote" href="#_footnote_29" title="View footnote.">29</a>]</span>やGitHub for Mac<span class="footnote">[<a id="_footnoteref_30" class="footnote" href="#_footnote_30" title="View footnote.">30</a>]</span><span class="footnote">[<a id="_footnoteref_31" class="footnote" href="#_footnote_31" title="View footnote.">31</a>]</span>というソフトウェアを使って書いていきます。</p>
 </div>
 <div class="sect2">
-<h3 id="git-start">3.1. SourceTreeのインストールと設定</h3>
+<h3 id="sourcetree-settings">3.1. SourceTreeのインストールと設定</h3>
 <div class="paragraph">
-<p>Gitを使うには、まずSourceTreeというソフトウェアをダウンロードします。</p>
-</div>
-<div class="paragraph">
-<p>ダウンロードは以下のURLからおこなえます。SourceTreeはWindowsとMac OS Xに対応しています。</p>
+<p>SourceTreeのダウンロードは以下のURLからおこなえます。SourceTreeはWindowsとMac OS Xに対応しています。</p>
 </div>
 <div class="paragraph">
 <p><code><a href="https://www.atlassian.com/ja/software/sourcetree/overview" class="bare">https://www.atlassian.com/ja/software/sourcetree/overview</a></code></p>
-</div>
-<div class="paragraph">
-<p>SourceTreeを例えるのであれば「作業履歴が積み重なった世界線を観測でき、かつ世界線改変や世界線収束などができるもの」。つまり、リーディングシュタイナー・ダイバージェンスメーター・タイムマシンをあわせもったものという感じです。ちなみに、Gitを扱えるソフトウェアの中では一番見やすいソフトウェアだと個人的に思っています。</p>
 </div>
 <div class="paragraph">
 <p>SourceTreeのダウンロードが終わったら、次にインストールと設定をおこないます。WindowsとMac OS Xそれぞれ説明が分かりやすいページがあるので、そのページを紹介しておきます。</p>
@@ -867,12 +860,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_gitによるバージョン管理を始める">3.2. Gitによるバージョン管理を始める</h3>
+<h3 id="_github_for_windows_mac_のインストールと設定">3.2. GitHub for Windows(Mac)のインストールと設定</h3>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)のダウンロードは以下のURLからおこなえます。ダウンロードするためのURLが一緒だったSourceTreeとは違い、Windows版とMac版でダウンロードするためのURLが違います。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows: <code><a href="https://windows.github.com/" class="bare">https://windows.github.com/</a></code></p>
+</li>
+<li>
+<p>Mac OS X: <code><a href="https://mac.github.com/" class="bare">https://mac.github.com/</a></code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)のダウンロードが終わったら、次にインストールと設定をおこないます。GitHub for Mac限定になってしまうのですが、インストール後の設定や使い方について書いた記事があるので紹介しておきます。</p>
+</div>
+<div class="paragraph">
+<p><a href="http://blog.kubosho.com/entry/how-to-github-for-mac">GitHub for Macのインストール後の設定と使い方 - I&#8217;m kubosho_</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-init">3.3. Gitによるバージョン管理を始める</h3>
 <div class="paragraph">
 <p>任意のフォルダでGitによるバージョン管理ができるようにします。例えるならば、未来ガジェット研究所でタイムリープマシンが作られた状態にするものです。</p>
 </div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方">3.3.1. SourceTreeでのやり方</h4>
 <div class="paragraph">
-<p>SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンのうち、一番左のボタンを押します。</p>
+<p>SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンの内、一番左のボタンを押します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -888,7 +905,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>作成ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。ただし、まだ何も作業内容がないので、過去に戻ったり改変したりということはできません。</p>
+<p>作成ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。ただし、まだ何も作業履歴が無いので、過去に戻ったり改変したりということはできません。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -896,8 +913,31 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方">3.3.2. GitHub for Windows(Mac)でのやり方</h4>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)を起動すると、左上に「＋」ボタンがあるので、それを押して表示された画面の「Create」というのを押します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-init/github-app/plus.jpg" alt="「＋」ボタンを押した後「Create」を押している様子" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>「Create」を押すと「Name」と「Local Path」を入力する欄が表示されるので、「Name」にはリポジトリの名前を「Local Path」にはリポジトリを保存しておきたいフォルダの名前を入力します。</p>
+</div>
+<div class="paragraph">
+<p>それぞれ入力して「Create Repository」ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。ただし、やはり作業履歴が何も無いので、過去に戻ったり改変したりということはできません。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-init/github-app/done.jpg" alt="「リポジトリを作った後の画面" width="360">
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-clone">3.3. すでにあるリモートリポジトリを使ってバージョン管理を始める</h3>
+<h3 id="git-clone">3.4. すでにあるリモートリポジトリを使ってバージョン管理を始める</h3>
 <div class="paragraph">
 <p>すでにあるリモートリポジトリを使ってGitによるバージョン管理を始められるようにします。具体的には、リモートリポジトリの完全なコピーを自分のPC上に作ります。</p>
 </div>
@@ -910,6 +950,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>このリモートリポジトリから自分のPC上にコピーを作るのがこれから説明する手順です。この手順をおこなうことにより、最初から他の人(例えばラボメンなど)と共同でタイムリープマシンを使って作業をおこなえる体制が整います。</p>
 </div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_2">3.4.1. SourceTreeでのやり方</h4>
 <div class="paragraph">
 <p>では試しに、すでにあるリポジトリの複製を自分のPC上に作りましょう。SourceTreeを起動すると、以下のようなボタンがあると思います。これらのボタンのうち、一番左のボタンを押します。</p>
 </div>
@@ -927,13 +969,46 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_2">3.4.2. GitHub for Windows(Mac)でのやり方</h4>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)を起動すると、左上に「＋」ボタンがあるので、それを押して表示された画面の「Clone」というのを押します。</p>
+</div>
+<div class="paragraph">
+<p>「Clone」を押した後、リポジトリを見つけるための検索窓が表示されます。そこで目的のリポジトリ名を入力して見つかったら「Clone [リポジトリ名]」というボタンを押します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-clone/github-app/git-clone-before.jpg" alt="クローンする対象のリポジトリを絞り込んでいるところ" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>「Clone [リポジトリ名]」というボタンを押すと、保存先のディレクトリやリポジトリ名を決める画面が表示されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-clone/github-app/git-clone-save.jpg" alt="クローンするリポジトリの名前を決めているところ" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>いろいろと情報を入力し終えると、リモートリポジトリが自分のPC上にクローンされます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-clone/github-app/git-clone-after.jpg" alt="クローンした後" width="360">
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-commit">3.4. 作業内容を記録する</h3>
+<h3 id="git-commit">3.5. 作業内容を記録する</h3>
 <div class="paragraph">
 <p>作業内容をリポジトリに記録します。例えるならば、セーブをするようなものです。</p>
 </div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_3">3.5.1. SourceTreeでのやり方</h4>
 <div class="paragraph">
-<p>新規に作ったファイルの場合、最初は以下のように表示されています。</p>
+<p>SourceTreeでは、ファイルを新しく作ると以下のように表示されます。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -941,7 +1016,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>ここでチェックを付けると「ステージングエリア」と一般的に言われるところに移動します。</p>
+<p>ここでチェックを付けると「ステージングエリア」と一般的に言われるところにファイルが移動します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -957,7 +1032,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>これで「コミット」ボタンを押すと、作業したファイルがリポジトリに記録されます。2回目以降は画面上部にある「コミット」ボタンを押すとコミットメッセージを入力する画面になります。</p>
+<p>これで「コミット」ボタンを押すと、ファイルの作業内容がリポジトリに記録されます。2回目以降は画面上部にある「コミット」ボタンを押すとコミットメッセージを入力する画面になります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -968,8 +1043,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>ちなみに、上記の図で「ラベル」のところに「HEAD」という文字がありますが、これは「今どのブランチにいるかを判別する情報」です。つまりダイバージェンスメーターのようなものです。</p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_3">3.5.2. GitHub for Windows(Mac)でのやり方</h4>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)では、ファイルを新しく作ると以下のように表示されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-commit/github-app/git-commit-before.jpg" alt="追加したファイルをコミットする前" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)の場合「ステージングエリア」にファイルを移動する必要はなく、いきなりGitHub for Windows(Mac)の下部でコミットメッセージを書くことができます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-commit/github-app/git-commit-message.jpg" alt="コミットメッセージを入力している最中" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>コミットメッセージを書いて「Commit to master」というボタンを押すことにより、ファイルの作業内容がリポジトリに記録されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-commit/github-app/git-commit-after.jpg" alt="コミットした後" width="360">
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-checkout-file">3.5. 作業内容を無かったことにする</h3>
+<h3 id="git-checkout-file">3.6. 作業内容を無かったことにする</h3>
 <div class="paragraph">
 <p>作業内容をリポジトリに登録する前に無かったことにします。</p>
 </div>
@@ -977,7 +1080,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>ダルにメールをした後、岡部は秋葉原UPXで紅莉栖のタイムマシン理論についての講義を受けましたが、そこでのディスカッションで紅莉栖に完全に論破されてしまいました。</p>
 </div>
 <div class="paragraph">
-<p>そんな論破されたということを無かったことにしたいところですが、Gitであれば無かったことにできます。方法としては、変更を無かったことにしたい対象のファイルを右クリックで選択し「リセット(Windowsの場合は破棄)」を選択します。</p>
+<p>そんな論破されたということを無かったことにしたいところですが、Gitであれば無かったことにできます。</p>
+</div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_4">3.6.1. SourceTreeでのやり方</h4>
+<div class="paragraph">
+<p>方法としては、変更を無かったことにしたい対象のファイルを右クリックで選択し「リセット(Windowsの場合は破棄)」を選択します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1001,8 +1109,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_4">3.6.2. GitHub for Windows(Mac)でのやり方</h4>
+<div class="paragraph">
+<p>作業内容を無かったことにしたい対象のファイルを右クリックで選択し「Discard Changes」を選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout-file/github-app/git-checkout-before.jpg" alt="作業内容を無かったことにしようとしているところ" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>作業内容を無かったことに本当にするかという画面が表示されるので、良い場合は「Discard Changes」を押します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout-file/github-app/git-checkout-confirm.jpg" alt="作業内容を無かったことにするか確認ダイアログが表示される" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>これで、紅莉栖に論破されたということが無かったことになりました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout-file/github-app/git-checkout-after.jpg" alt="作業内容が無かったことにされた" width="360">
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-branch">3.6. ブランチの一覧を見たり、ブランチを作ったりする</h3>
+<h3 id="git-branch">3.7. ブランチの一覧を見たり、ブランチを作ったりする</h3>
 <div class="paragraph">
 <p>ブランチの一覧表示をおこなったり、新たにブランチを作ったりします。この「ブランチ」という言葉ですが、シュタゲで例えるならば「世界線」となります。「HEAD」という「自分が今どのブランチ(世界線)にいるのか分かるファイル」があり、それはさながらダイバージェンスメーターと言えるでしょう。</p>
 </div>
@@ -1015,7 +1151,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>ここから「鈴羽を引き止めるためにDメールを送った後の世界線」に移動します。SourceTreeの上部にある「ブランチ」を押すと、ブランチ名を入力する画面が表示されます。ここで新規ブランチのところに任意の名前を入力します。</p>
+<p>この状態からSourceTreeとGitHub for WIndows(Mac)を使って「鈴羽を引き止めるためにDメールを送った後の世界線」に移動します。</p>
+</div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_5">3.7.1. SourceTreeでのやり方</h4>
+<div class="paragraph">
+<p>SourceTreeの上部にある「ブランチ」を押すと、ブランチ名を入力する画面が表示されます。ここで新規ブランチのところに任意の名前を入力します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1031,14 +1172,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_5">3.7.2. GitHub for Windows(Mac)でのやり方</h4>
+<div class="paragraph">
+<p>現在のブランチ名が書かれている左横に「線が分岐していて分岐先に＋が書かれているボタン」があります。そのボタンを押すと「Create New Branch」という画面が表示されるので、ブランチ名やどのブランチを元に分岐させるのかというのを選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/github-app/branch-create-before.jpg" alt="「Create New Branch」という画面が表示されている状態" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>「Create New Branch」という画面でいろいろと情報入力した後「Create Branch」というボタンを押すことにより、新しいブランチが作られます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/github-app/branch-create-after.jpg" alt="新規ブランチが作られた図" width="360">
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-checkout">3.7. ブランチを切りかえる</h3>
+<h3 id="git-checkout">3.8. ブランチを切りかえる</h3>
 <div class="paragraph">
 <p>現在のブランチから別のブランチへ移動します。例えるならば、Dメールを送った結果世界線変動が起こった状態を任意のタイミングでおこせるものです。</p>
 </div>
 <div class="paragraph">
 <p>前の節でも書きましたが、Gitのブランチは「世界線」です。Steins;GateではDメールによる世界線変動は世界の状況に影響を及ぼしてましたが、Gitでは副作用なしに世界線移動ができます。</p>
 </div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_6">3.8.1. SourceTreeでのやり方</h4>
 <div class="paragraph">
 <p>切りかえ方としては簡単で、左側にあるブランチのところから、ブランチ名をダブルクリックすることにより、ブランチを切りかえることができます。以下の図では「鈴羽を引き止めた世界線」から「萌郁がIBN5100を手に入れた世界線」に移動しています。</p>
 </div>
@@ -1048,8 +1211,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_6">3.8.2. GitHub for Windows(Mac)でのやり方</h4>
+<div class="paragraph">
+<p>現在のブランチ名が表示されている箇所をクリックすると、切りかえ可能なブランチの一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout/github-app/git-branch-list.jpg" alt="ブランチ一覧を表示している図" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>ここでは「鈴羽を引き止めた世界線」から「萌郁がIBN5100を手に入れた世界線」に移動しています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout/github-app/git-checkout-after.jpg" alt="ブランチを移動した後の図" width="360">
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-reset">3.8. 変更をリセットする</h3>
+<h3 id="git-reset">3.9. 変更をリセットする</h3>
 <div class="paragraph">
 <p>作業した内容を無かったことにします。例えるならば、タイムリープのようなものです。</p>
 </div>
@@ -1079,7 +1262,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rebase">3.9. 作業履歴を改変する</h3>
+<h3 id="git-rebase">3.10. 作業履歴を改変する</h3>
 <div class="paragraph">
 <p>作業履歴を改変するコマンドです。</p>
 </div>
@@ -1092,7 +1275,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_コミットメッセージを変更する">3.9.1. コミットメッセージを変更する</h4>
+<h4 id="_コミットメッセージを変更する">3.10.1. コミットメッセージを変更する</h4>
 <div class="paragraph">
 <p>では初めに、コミットメッセージを変更します。先ほどの作業履歴のうち、最新の作業履歴が「ラウンダー追ってきて」と、間に「が」が足りないメッセージになってしまっているので修正します。直したい対象の1つ前の作業履歴を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選択します。</p>
 </div>
@@ -1119,7 +1302,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_複数の作業履歴を一つにまとめる">3.9.2. 複数の作業履歴を一つにまとめる</h4>
+<h4 id="_複数の作業履歴を一つにまとめる">3.10.2. 複数の作業履歴を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の1つ前の作業履歴を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選択します。</p>
 </div>
@@ -1155,7 +1338,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-push">3.10. リモートリポジトリに作業内容を送る</h3>
+<h3 id="git-push">3.11. リモートリポジトリに作業内容を送る</h3>
 <div class="paragraph">
 <p>自分がおこなった作業内容を、リモートリポジトリに送信するコマンドです。</p>
 </div>
@@ -1165,6 +1348,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>なので、他のラボメン(今回の場合だと紅莉栖)に今まで岡部がしてきた作業内容を伝える必要があります。その手段がこれからおこなうことです。</p>
 </div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_7">3.11.1. SourceTreeでのやり方</h4>
 <div class="paragraph">
 <p>まずは、画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。この例では、全てのブランチをプッシュしていますが、普段使う分には現在のブランチのみプッシュしたほうが良いです。</p>
 </div>
@@ -1182,8 +1367,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_7">3.11.2. GitHub for Windows(Mac)でのやり方</h4>
+
+</div>
+</div>
 <div class="sect2">
-<h3 id="git-pull">3.11. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
+<h3 id="git-pull">3.12. リモートリポジトリの変更内容を自分のPC上のリポジトリに取り込む</h3>
 <div class="paragraph">
 <p>他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込むコマンドとなります。</p>
 </div>
@@ -1198,6 +1388,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-pull-before.jpg" alt="紅莉栖が作業している" width="360">
 </div>
 </div>
+<div class="sect3">
+<h4 id="_sourcetreeでのやり方_8">3.12.1. SourceTreeでのやり方</h4>
 <div class="paragraph">
 <p>ここで、画面上部の「プル」を押します。たいていの場合は表示された画面内の「OK」を押せば大丈夫です。</p>
 </div>
@@ -1215,8 +1407,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+</div>
 <div class="sect2">
-<h3 id="git-merge">3.12. 別のブランチでの作業内容を取り込む</h3>
+<h3 id="git-merge">3.13. 別のブランチでの作業内容を取り込む</h3>
 <div class="paragraph">
 <p>別ブランチの作業内容を現在のブランチに取り込みます。例えるならば、世界線を収束させるコマンドです。</p>
 </div>
@@ -1276,6 +1469,31 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-merge-after.jpg" alt="マージが完了した状態" width="360">
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="git-sync">3.14. GitHub for Windows(Mac)でリモートリポジトリと同期する</h3>
+<div class="paragraph">
+<p>GitHub for Windows(Mac)では画面の右上に「Sync」というボタンがあります。</p>
+</div>
+<div class="paragraph">
+<p>これは、他の人がおこなった変更をリモートリポジトリから取得し、自分のPC上のリポジトリに取り込みつつ、自分のPC上でリポジトリに対して変更した点がある場合はそれをリモートリポジトリに送信します。</p>
+</div>
+<div class="paragraph">
+<p>つまり「git push」と「git pull」を同時におこなうものと考えれば良いでしょう。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-sync/git-sync-before.jpg" alt="git sync before" width="360">
+</div>
+</div>
+<div class="paragraph">
+<p>「Sync」を押すと「Sync」ボタンがあった場所に、同期の進捗を表すバーが表示されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-sync/git-sync-after.jpg" alt="git sync after" width="360">
+</div>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1289,10 +1507,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>「リモートリポジトリ」というキーワードが書籍中に何度か出てきました。このリモートリポジトリですが、例えばラボメンと共同で何か作業する(タイムリープマシンを作るなど)ときは必須になってきます。ですが、サーバーを用意してGitを設定して…という手順をおこなうのは面倒なものです。</p>
 </div>
 <div class="paragraph">
-<p>なので、Gitの仕組みを使って、自分達が作ったプログラムコードやデザインデータなどを共有できるサービスがいくつか出てきました。それがこれから紹介するGitHub<span class="footnote">[<a id="_footnoteref_30" class="footnote" href="#_footnote_30" title="View footnote.">30</a>]</span>とBitbucket<span class="footnote">[<a id="_footnoteref_31" class="footnote" href="#_footnote_31" title="View footnote.">31</a>]</span>になります。　</p>
+<p>なので、Gitの仕組みを使って、自分達が作ったプログラムコードやデザインデータなどを共有できるサービスがいくつか出てきました。それがこれから紹介するGitHub<span class="footnote">[<a id="_footnoteref_32" class="footnote" href="#_footnote_32" title="View footnote.">32</a>]</span>とBitbucket<span class="footnote">[<a id="_footnoteref_33" class="footnote" href="#_footnote_33" title="View footnote.">33</a>]</span>になります。　</p>
 </div>
 <div class="paragraph">
-<p>ちなみに、この書籍もGitHubで管理されています。<span class="footnote">[<a id="_footnoteref_32" class="footnote" href="#_footnote_32" title="View footnote.">32</a>]</span></p>
+<p>ちなみに、この書籍もGitHubで管理されています。<span class="footnote">[<a id="_footnoteref_34" class="footnote" href="#_footnote_34" title="View footnote.">34</a>]</span></p>
 </div>
 </div>
 <div class="sect2">
@@ -1347,19 +1565,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Gitチュートリアルとトレーニング| Atlassian<span class="footnote">[<a id="_footnoteref_33" class="footnote" href="#_footnote_33" title="View footnote.">33</a>]</span></p>
+<p>Gitチュートリアルとトレーニング| Atlassian<span class="footnote">[<a id="_footnoteref_35" class="footnote" href="#_footnote_35" title="View footnote.">35</a>]</span></p>
 </li>
 <li>
-<p>イラストでわかる！git入門の入門 : アシアルブログ<span class="footnote">[<a id="_footnoteref_34" class="footnote" href="#_footnote_34" title="View footnote.">34</a>]</span></p>
+<p>イラストでわかる！git入門の入門 : アシアルブログ<span class="footnote">[<a id="_footnoteref_36" class="footnote" href="#_footnote_36" title="View footnote.">36</a>]</span></p>
 </li>
 <li>
-<p>Git - Book<span class="footnote">[<a id="_footnoteref_35" class="footnote" href="#_footnote_35" title="View footnote.">35</a>]</span></p>
+<p>Git - Book<span class="footnote">[<a id="_footnoteref_37" class="footnote" href="#_footnote_37" title="View footnote.">37</a>]</span></p>
 </li>
 <li>
-<p>初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG<span class="footnote">[<a id="_footnoteref_36" class="footnote" href="#_footnote_36" title="View footnote.">36</a>]</span></p>
+<p>初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG<span class="footnote">[<a id="_footnoteref_38" class="footnote" href="#_footnote_38" title="View footnote.">38</a>]</span></p>
 </li>
 <li>
-<p>「そもそもGitって何？」、「GitとGitHubは何が違うの？」にシンプルに答えるよ - Six Apart ブログ<span class="footnote">[<a id="_footnoteref_37" class="footnote" href="#_footnote_37" title="View footnote.">37</a>]</span></p>
+<p>「そもそもGitって何？」、「GitとGitHubは何が違うの？」にシンプルに答えるよ - Six Apart ブログ<span class="footnote">[<a id="_footnoteref_39" class="footnote" href="#_footnote_39" title="View footnote.">39</a>]</span></p>
 </li>
 </ul>
 </div>
@@ -1369,16 +1587,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>シュタインズ・ゲート公式資料集<span class="footnote">[<a id="_footnoteref_38" class="footnote" href="#_footnote_38" title="View footnote.">38</a>]</span></p>
+<p>シュタインズ・ゲート公式資料集<span class="footnote">[<a id="_footnoteref_40" class="footnote" href="#_footnote_40" title="View footnote.">40</a>]</span></p>
 </li>
 <li>
-<p>入門git<span class="footnote">[<a id="_footnoteref_39" class="footnote" href="#_footnote_39" title="View footnote.">39</a>]</span></p>
+<p>入門git<span class="footnote">[<a id="_footnoteref_41" class="footnote" href="#_footnote_41" title="View footnote.">41</a>]</span></p>
 </li>
 <li>
-<p>開発効率をUPする Git逆引き入門<span class="footnote">[<a id="_footnoteref_40" class="footnote" href="#_footnote_40" title="View footnote.">40</a>]</span></p>
+<p>開発効率をUPする Git逆引き入門<span class="footnote">[<a id="_footnoteref_42" class="footnote" href="#_footnote_42" title="View footnote.">42</a>]</span></p>
 </li>
 <li>
-<p>GitHub実践入門 Pull Requestによる開発の変革<span class="footnote">[<a id="_footnoteref_41" class="footnote" href="#_footnote_41" title="View footnote.">41</a>]</span></p>
+<p>GitHub実践入門 Pull Requestによる開発の変革<span class="footnote">[<a id="_footnoteref_43" class="footnote" href="#_footnote_43" title="View footnote.">43</a>]</span></p>
 </li>
 </ul>
 </div>
@@ -1389,13 +1607,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>執筆: kubosho_<span class="footnote">[<a id="_footnoteref_42" class="footnote" href="#_footnote_42" title="View footnote.">42</a>]</span></p>
+<p>執筆: kubosho_<span class="footnote">[<a id="_footnoteref_44" class="footnote" href="#_footnote_44" title="View footnote.">44</a>]</span></p>
 </li>
 <li>
-<p>アシスタント: fruitsnoodle<span class="footnote">[<a id="_footnoteref_43" class="footnote" href="#_footnote_43" title="View footnote.">43</a>]</span></p>
+<p>アシスタント: fruitsnoodle<span class="footnote">[<a id="_footnoteref_45" class="footnote" href="#_footnote_45" title="View footnote.">45</a>]</span></p>
 </li>
 <li>
-<p>表紙・各章のイラスト: GiantRobot<span class="footnote">[<a id="_footnoteref_44" class="footnote" href="#_footnote_44" title="View footnote.">44</a>]</span></p>
+<p>表紙・各章のイラスト: GiantRobot<span class="footnote">[<a id="_footnoteref_46" class="footnote" href="#_footnote_46" title="View footnote.">46</a>]</span></p>
 </li>
 <li>
 <p>発行所: 日光企画</p>
@@ -1452,7 +1670,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="#_footnoteref_11">11</a>. pixivID:1223059
 </div>
 <div class="footnote" id="_footnote_12">
-<a href="#_footnoteref_12">12</a>. <a href="http://dictionary.reference.com/browse/git" class="bare">http://dictionary.reference.com/browse/git</a>
+<a href="#_footnoteref_12">12</a>. http://dictionary.reference.com/browse/git
 </div>
 <div class="footnote" id="_footnote_13">
 <a href="#_footnoteref_13">13</a>. <a href="http://ja.wikipedia.org/wiki/Git#.E5.90.8D.E5.89.8D.E3.81.AE.E7.94.B1.E6.9D.A5" class="bare">http://ja.wikipedia.org/wiki/Git#.E5.90.8D.E5.89.8D.E3.81.AE.E7.94.B1.E6.9D.A5</a>
@@ -1506,55 +1724,61 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="#_footnoteref_29">29</a>. <a href="https://www.atlassian.com/ja/software/sourcetree/overview" class="bare">https://www.atlassian.com/ja/software/sourcetree/overview</a>
 </div>
 <div class="footnote" id="_footnote_30">
-<a href="#_footnoteref_30">30</a>. https://github.com/
+<a href="#_footnoteref_30">30</a>. https://mac.github.com/
 </div>
 <div class="footnote" id="_footnote_31">
-<a href="#_footnoteref_31">31</a>. https://www.atlassian.com/ja/software/bitbucket/overview
+<a href="#_footnoteref_31">31</a>. Windows版は <a href="https://windows.github.com/" class="bare">https://windows.github.com/</a>
 </div>
 <div class="footnote" id="_footnote_32">
-<a href="#_footnoteref_32">32</a>. <a href="https://github.com/o2project/steins-git" class="bare">https://github.com/o2project/steins-git</a>
+<a href="#_footnoteref_32">32</a>. https://github.com/
 </div>
 <div class="footnote" id="_footnote_33">
-<a href="#_footnoteref_33">33</a>. <a href="https://www.atlassian.com/ja/git/tutorial" class="bare">https://www.atlassian.com/ja/git/tutorial</a>
+<a href="#_footnoteref_33">33</a>. https://www.atlassian.com/ja/software/bitbucket/overview
 </div>
 <div class="footnote" id="_footnote_34">
-<a href="#_footnoteref_34">34</a>. <a href="http://blog.asial.co.jp/894" class="bare">http://blog.asial.co.jp/894</a>
+<a href="#_footnoteref_34">34</a>. <a href="https://github.com/o2project/steins-git" class="bare">https://github.com/o2project/steins-git</a>
 </div>
 <div class="footnote" id="_footnote_35">
-<a href="#_footnoteref_35">35</a>. <a href="http://git-scm.com/book/ja/" class="bare">http://git-scm.com/book/ja/</a>
+<a href="#_footnoteref_35">35</a>. <a href="https://www.atlassian.com/ja/git/tutorial" class="bare">https://www.atlassian.com/ja/git/tutorial</a>
 </div>
 <div class="footnote" id="_footnote_36">
-<a href="#_footnoteref_36">36</a>. <a href="http://liginc.co.jp/web/tool/79390" class="bare">http://liginc.co.jp/web/tool/79390</a>
+<a href="#_footnoteref_36">36</a>. <a href="http://blog.asial.co.jp/894" class="bare">http://blog.asial.co.jp/894</a>
 </div>
 <div class="footnote" id="_footnote_37">
-<a href="#_footnoteref_37">37</a>. <a href="http://blog.sixapart.jp/2014-03/mttips-02-what-is-git.html" class="bare">http://blog.sixapart.jp/2014-03/mttips-02-what-is-git.html</a>
+<a href="#_footnoteref_37">37</a>. <a href="http://git-scm.com/book/ja/" class="bare">http://git-scm.com/book/ja/</a>
 </div>
 <div class="footnote" id="_footnote_38">
-<a href="#_footnoteref_38">38</a>. <a href="http://www.amazon.co.jp/dp/4047263745" class="bare">http://www.amazon.co.jp/dp/4047263745</a>
+<a href="#_footnoteref_38">38</a>. <a href="http://liginc.co.jp/web/tool/79390" class="bare">http://liginc.co.jp/web/tool/79390</a>
 </div>
 <div class="footnote" id="_footnote_39">
-<a href="#_footnoteref_39">39</a>. <a href="http://www.amazon.co.jp/dp/427406767X" class="bare">http://www.amazon.co.jp/dp/427406767X</a>
+<a href="#_footnoteref_39">39</a>. <a href="http://blog.sixapart.jp/2014-03/mttips-02-what-is-git.html" class="bare">http://blog.sixapart.jp/2014-03/mttips-02-what-is-git.html</a>
 </div>
 <div class="footnote" id="_footnote_40">
-<a href="#_footnoteref_40">40</a>. <a href="http://www.amazon.co.jp/dp/4863541465" class="bare">http://www.amazon.co.jp/dp/4863541465</a>
+<a href="#_footnoteref_40">40</a>. <a href="http://www.amazon.co.jp/dp/4047263745" class="bare">http://www.amazon.co.jp/dp/4047263745</a>
 </div>
 <div class="footnote" id="_footnote_41">
-<a href="#_footnoteref_41">41</a>. <a href="http://www.amazon.co.jp/dp/477416366X/" class="bare">http://www.amazon.co.jp/dp/477416366X/</a>
+<a href="#_footnoteref_41">41</a>. <a href="http://www.amazon.co.jp/dp/427406767X" class="bare">http://www.amazon.co.jp/dp/427406767X</a>
 </div>
 <div class="footnote" id="_footnote_42">
-<a href="#_footnoteref_42">42</a>. <a href="https://github.com/kubosho" class="bare">https://github.com/kubosho</a>
+<a href="#_footnoteref_42">42</a>. <a href="http://www.amazon.co.jp/dp/4863541465" class="bare">http://www.amazon.co.jp/dp/4863541465</a>
 </div>
 <div class="footnote" id="_footnote_43">
-<a href="#_footnoteref_43">43</a>. <a href="https://github.com/fruitsnoodle" class="bare">https://github.com/fruitsnoodle</a>
+<a href="#_footnoteref_43">43</a>. <a href="http://www.amazon.co.jp/dp/477416366X/" class="bare">http://www.amazon.co.jp/dp/477416366X/</a>
 </div>
 <div class="footnote" id="_footnote_44">
-<a href="#_footnoteref_44">44</a>. pixivID:1223059
+<a href="#_footnoteref_44">44</a>. <a href="https://github.com/kubosho" class="bare">https://github.com/kubosho</a>
+</div>
+<div class="footnote" id="_footnote_45">
+<a href="#_footnoteref_45">45</a>. <a href="https://github.com/fruitsnoodle" class="bare">https://github.com/fruitsnoodle</a>
+</div>
+<div class="footnote" id="_footnote_46">
+<a href="#_footnoteref_46">46</a>. pixivID:1223059
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.3.0<br>
-Last updated 2015-03-16 01:06:53 UTC
+Last updated 2015-03-16 01:07:06 UTC
 </div>
 </div>
 </body>
