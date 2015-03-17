@@ -1,7 +1,7 @@
 <redpen-conf lang="ja">
     <validators>
         <validator name="SentenceLength">
-            <property name="max_len" value="100"/>
+            <property name="max_len" value="120"/>
         </validator>
         <validator name="KatakanaEndHyphen"/>
         <validator name="KatakanaSpellCheck"/>
