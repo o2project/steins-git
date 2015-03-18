@@ -3,7 +3,6 @@
         <validator name="SentenceLength">
             <property name="max_len" value="120"/>
         </validator>
-        <validator name="KatakanaEndHyphen"/>
         <validator name="KatakanaSpellCheck"/>
         <validator name="SectionLength">
             <property name="max_num" value="1500"/>
