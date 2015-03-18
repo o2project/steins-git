@@ -1,4 +1,5 @@
 [[chapter0-introduction]]
+
 == はじめに
 
 image::ch0/git-logo.jpg[Gitのロゴ, 180]
