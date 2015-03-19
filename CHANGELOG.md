@@ -1,3 +1,12 @@
+### 2.0.2 (2015-03-20)
+
+
+#### Bug Fixes
+
+* **All:** 文章でおかしいところを修正 ([ac51764d](https://github.com/o2project/steins-git/commit/ac51764dbd8364f75e79c491f898b79adaf4a9c3))
+* **images:** PDFなどで挿絵が表示されていなかったのを修正 ([0f37f9d8](https://github.com/o2project/steins-git/commit/0f37f9d8a3ccf24f0cdb1595afd1b5c84f2d491e))
+
+
 ### 2.0.1 (2015-03-19)
 
 
