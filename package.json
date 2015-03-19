@@ -1,7 +1,7 @@
 {
   "name": "SteinsGit",
   "description": "Steins;Gateを用いてGitを解説する薄い本",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "author": "O2 Project",
   "license": "CC-BY-NC 2.1 JP",
   "scripts": {

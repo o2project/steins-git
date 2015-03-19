@@ -1,3 +1,11 @@
+## 2.1.0 (2015-03-20)
+
+
+#### Features
+
+* **PDF:** PDF版の見た目を改善した ([3db43730](https://github.com/o2project/steins-git/commit/3db437302e56ce26a488691b983eaa2f61ec076e))
+
+
 ### 2.0.2 (2015-03-20)
 
 
