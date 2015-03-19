@@ -17,6 +17,9 @@ module.exports = function(grunt) {
         shell: {
             generateHtml: {
                 command: 'rake generate:html'
+            },
+            proofreading: {
+                command: 'rake generate:docbook && pandoc -f docbook -t markdown -o ./build/steins-git.md ./build/steins-git.xml && redpen -c ./conf/redpen-conf-ja.xml ./build/steins-git.md'
             }
         },
 

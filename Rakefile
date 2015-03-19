@@ -42,6 +42,12 @@ def directory_copy(src, dist)
   FileUtils.copy_entry src, dist
 end
 
+def build_asciidoc(src, output)
+  sh "cp -r public build/"
+  sh "bundle exec asciidoctor -a lang=ja -a bookversion=`node ./bin/bookversion` \
+  -a icons=font -b docbook -o #{output} #{src}"
+end
+
 def build_asciidoc_to_html(src, output)
   sh "cp -r public build/"
   sh "bundle exec asciidoctor -a bookversion=`node ./bin/bookversion` \
@@ -87,6 +93,15 @@ namespace :generate do
     puts 'Generate HTML...'
     build_asciidoc_to_html SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_HTML_FILE}"
     puts "Done! => #{OUTPUT_HTML_FILE}"
+  end
+
+  task :docbook do
+    puts 'Copy images to build directory...'
+    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    puts "Done!"
+    puts 'Generate DocBook...'
+    build_asciidoc SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_XML_FILE}"
+    puts "Done! => #{OUTPUT_XML_FILE}"
   end
 
   task :pdf do
