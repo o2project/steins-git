@@ -1,7 +1,9 @@
 = Steins;Git
-kubosho_
-:authorinitials:
-:username: kubosho_
+:numbered!:
+:docinfo1:
+:toc2:
+
+:author: kubosho_
 :keywords: Git, Steins;Gate
 :revnumber: {bookversion}
 :revdate: {docdate}
@@ -10,9 +12,6 @@ kubosho_
 :front-cover-image: image:illustration/cover.jpg[Steins;Git,1050,1600]
 :lang: ja
 :icons: font
-:docinfo1:
-:numbered!:
-:toc2:
 
 ifeval::["{backend}" == "html5"]
 
@@ -88,7 +87,7 @@ include::sources/Ch3_HowToGit/readme.adoc[]
 
 <<<
 
-// あどがきではナンバリングをおこなわない
+// あとがきではナンバリングをおこなわない
 :numbered!:
 
 include::sources/Ch4_PostScript/readme.adoc[]

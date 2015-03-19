@@ -10,11 +10,11 @@
   exclude-result-prefixes="db">
   <!--
     The absolute URL imports point to system-wide locations by way of this /etc/xml/catalog entry:
-  
+
       <rewriteURI
         uriStartString="http://docbook.sourceforge.net/release/xsl/current"
         rewritePrefix="file:///usr/share/sgml/docbook/xsl-stylesheets-%docbook-style-xsl-version%"/>
-  
+
     %docbook-style-xsl-version% represents the version installed on the system.
   -->
   <xsl:import href="http://docbook.sourceforge.net/release/xsl/current/fo/docbook.xsl"/>
@@ -121,9 +121,9 @@
     <xsl:attribute name="space-before.optimum">0</xsl:attribute>
     <xsl:attribute name="space-before.minimum">0</xsl:attribute>
     <xsl:attribute name="space-before.maximum">0</xsl:attribute>
-    <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
-    <xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
-    <xsl:attribute name="space-after.maximum">1.2em</xsl:attribute>
+    <xsl:attribute name="space-after.optimum">0.8em</xsl:attribute>
+    <xsl:attribute name="space-after.minimum">0.6em</xsl:attribute>
+    <xsl:attribute name="space-after.maximum">1em</xsl:attribute>
     <!--
     <xsl:attribute name="color"><xsl:value-of select="$text.color"/></xsl:attribute>
     -->
@@ -246,14 +246,14 @@
   <xsl:param name="paper.type">B5</xsl:param> <!-- alternative size is USletter -->
   <xsl:param name="headers.on.blank.pages">1</xsl:param>
   <xsl:param name="footers.on.blank.pages">1</xsl:param>
-  <xsl:param name="page.margin.top">10mm</xsl:param> <!-- top margin of page -->
-  <xsl:param name="page.margin.bottom">10mm</xsl:param> <!-- top margin of page -->
+  <xsl:param name="page.margin.top">8mm</xsl:param> <!-- top margin of page -->
+  <xsl:param name="page.margin.bottom">8mm</xsl:param> <!-- top margin of page -->
   <xsl:param name="page.margin.inner">20mm</xsl:param> <!-- side margin of page (left, towards binding) -->
   <xsl:param name="page.margin.outer">20mm</xsl:param> <!-- side margin of page (right, away from binding) -->
   <xsl:param name="body.margin.top">15mm</xsl:param> <!-- top margin of content -->
   <xsl:param name="body.margin.bottom">15mm</xsl:param> <!-- bottom margin of content -->
-  <xsl:param name="body.margin.inner">4mm</xsl:param> <!-- side margin of content (left, towards binding) -->
-  <xsl:param name="body.margin.outer">6mm</xsl:param> <!-- side margin of content (right, away from binding) -->
+  <xsl:param name="body.margin.inner">0</xsl:param> <!-- side margin of content (left, towards binding) -->
+  <xsl:param name="body.margin.outer">0</xsl:param> <!-- side margin of content (right, away from binding) -->
   <xsl:param name="body.start.indent">0</xsl:param> <!-- text indentation -->
   <xsl:param name="body.end.indent">0</xsl:param> <!-- text recess from right -->
   <xsl:param name="region.before.extent">10mm</xsl:param> <!-- height of page header -->
@@ -333,7 +333,6 @@
 
   <xsl:attribute-set name="formal.title.properties">
     <xsl:attribute name="color"><xsl:value-of select="$caption.color"/></xsl:attribute>
-    <xsl:attribute name="font-size"><xsl:value-of select="0"/><xsl:text>pt</xsl:text></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:template match="*" mode="admon.graphic.width">
@@ -376,7 +375,7 @@
     <xsl:attribute name="padding-top">18pt</xsl:attribute>
     <xsl:attribute name="padding-bottom">0</xsl:attribute>
   </xsl:attribute-set>
- 
+
   <xsl:attribute-set name="sidebar.title.properties">
     <xsl:attribute name="font-family"><xsl:value-of select="$title.fontset"/></xsl:attribute>
     <xsl:attribute name="font-weight"><xsl:value-of select="$header.font-weight"/></xsl:attribute>
@@ -724,7 +723,7 @@
         <xsl:value-of select="substring($titleStr,string-length($titleStr),1)"/>
       </xsl:if>
     </xsl:variable>
-  
+
     <fo:inline font-weight="bold"
                color="{$caption.color}"
                keep-with-next.within-line="always">
@@ -775,12 +774,12 @@
   </xsl:attribute-set>
 
   <xsl:attribute-set name="variablelist.term.properties">
-    <xsl:attribute name="font-weight">bold</xsl:attribute> 
+    <xsl:attribute name="font-weight">bold</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:template name="itemizedlist.label.markup">
     <xsl:param name="itemsymbol" select="'disc'"/>
-  
+
     <xsl:choose>
       <xsl:when test="$itemsymbol='none'"></xsl:when>
       <xsl:when test="$itemsymbol='circle'">&#x25E6;</xsl:when>
@@ -848,12 +847,12 @@
     <fo:block xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center" font-size="14.4pt" space-before="1in" font-family="{$title.fontset}">
       <xsl:call-template name="gentext">
         <xsl:with-param name="key" select="'Revision'"/>
-      </xsl:call-template> 
+      </xsl:call-template>
       <xsl:call-template name="gentext.space"/>
       <xsl:apply-templates select="db:revnumber | revnumber" mode="titlepage.mode"/>
     </fo:block>
     <fo:block xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center" font-size="14.4pt" font-family="{$title.fontset}">
-      <xsl:apply-templates select="db:date | date" mode="titlepage.mode"/> 
+      <xsl:apply-templates select="db:date | date" mode="titlepage.mode"/>
     </fo:block>
   </xsl:template>
 

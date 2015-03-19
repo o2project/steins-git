@@ -7,4 +7,8 @@ include::github-bitbucket.adoc[]
 <<<
 
 include::reference.adoc[]
+
+// <<< PAGE BREAK PDFのみ
+<<<
+
 include::author.adoc[]

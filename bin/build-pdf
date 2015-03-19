@@ -4,9 +4,9 @@ declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
 SRC_FILE=${parentDir}/$1
 
 ${parentDir}/fopub/bin/fopub -t ${parentDir}/styles "${SRC_FILE}" \
--param body.font.family VL-Gothic-Regular \
+-param body.font.family AozoraMinchoRegular \
 -param dingbat.font.family VL-Gothic-Regular \
 -param monospace.font.family VL-Gothic-Regular \
--param sans.font.family VL-Gothic-Regular \
+-param sans.font.family AozoraMinchoRegular \
 -param title.font.family VL-Gothic-Regular \
 -param alignment left
