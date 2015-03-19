@@ -2,5 +2,9 @@
 == あとがき
 
 include::github-bitbucket.adoc[]
+
+// <<< PAGE BREAK PDFのみ
+<<<
+
 include::reference.adoc[]
 include::author.adoc[]
