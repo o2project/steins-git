@@ -7,7 +7,7 @@ kubosho_
 :revdate: {docdate}
 :source: https://github.com/o2project/steins-git
 :imagesdir: images
-:front-cover-image: image:cover.jpg[Steins;Git,1050,1600]
+:front-cover-image: image:illustration/cover.jpg[Steins;Git,1050,1600]
 :lang: ja
 :icons: font
 :docinfo1:

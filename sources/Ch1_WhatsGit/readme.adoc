@@ -3,7 +3,7 @@
 == 第一章 - 改変管理のデュバス
 
 ifeval::["{backend}" != "html5"]
-image::ch1/mayuri.jpg[まゆり, 360]
+image::illustration/mayuri.jpg[まゆり, 360]
 endif::[]
 
 Gitに触れる前に、バージョン管理について説明します。

@@ -4,12 +4,8 @@ vendor/
 node_modules/
 build/
 dist/
+images/illustration/
 
 bin/kindlegen
 .DS_Store
 npm-debug.log
-
-images/cover.jpg
-images/ch1/mayuri.jpg
-images/ch2/daru.jpg
-images/ch3/labmem.jpg
