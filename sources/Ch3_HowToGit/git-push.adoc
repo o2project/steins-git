@@ -22,6 +22,6 @@ image::ch3/git-push-branch-select.jpg[git push 前, 360]
 
 作業内容をリモートリポジトリに送ったとともに、紅莉栖にも今までの作業内容が伝わりました。
 
-ちなみに「origin」というのは、リモートリポジトリのことを指しています。
+ちなみに「origin」というのは、リモートリポジトリの事を指しています。
 
 image::ch3/git-push-after.jpg[git push 後, 360]

@@ -14,6 +14,6 @@ image::ch3/git-pull-before.jpg[紅莉栖が作業している, 360]
 
 image::ch3/git-pull-select.jpg[pull してくるブランチを選んでいる状態, 360]
 
-「OK」を押すことにより、リモートリポジトリと自分の PC 上の作業内容が同期されます。
+「OK」を押す事により、リモートリポジトリと自分の PC 上の作業内容が同期されます。
 
 image::ch3/git-pull-after.jpg[自分の PC 上のリポジトリとリモートリポジトリの同期をとった, 360]

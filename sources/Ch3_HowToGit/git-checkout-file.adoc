@@ -32,4 +32,4 @@ image::ch3/git-checkout-file/github-app/git-checkout-confirm.jpg[作業内容を
 
 これで、紅莉栖に論破されたという事が無くなりました。
 
-image::ch3/git-checkout-file/github-app/git-checkout-after.jpg[作業内容が無かったことにされた, 360]
+image::ch3/git-checkout-file/github-app/git-checkout-after.jpg[作業内容が無かった事にされた, 360]
