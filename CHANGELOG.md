@@ -1,3 +1,21 @@
+### 2.0.1 (2015-03-19)
+
+
+#### New and Edit
+
+* **All:** こと -> 事 ([f02f3df6](https://github.com/o2project/steins-git/commit/f02f3df6d8700e17ab8e6753f118c53106705401))
+* **Ch0:** 「はじめに」の章を校正した ([3d331f24](https://github.com/o2project/steins-git/commit/3d331f2465c97743753ee43fa14f88031c095bf8))
+* **Ch1:** 「改変管理のデュバス」の章を校正した ([6658a537](https://github.com/o2project/steins-git/commit/6658a537fd08e9adc0e84916bad403ecdebca1c2))
+* **Ch2:** 「一問一答のコンクルージョン」の章を校正した ([998b9622](https://github.com/o2project/steins-git/commit/998b9622fc35973ef7f11fb49fac152139357e2e), [72de6df6](https://github.com/o2project/steins-git/commit/72de6df671f9601960e681bc6ad6fed0253cfd84), [7b5f3e48](https://github.com/o2project/steins-git/commit/7b5f3e48cf8548cfc42a12d2b7c0251df4ddf177))
+* **Ch3:** 「率先躬行のサインポスト」の章を校正した ([06b8c1fe](https://github.com/o2project/steins-git/commit/06b8c1feb7cd507424f0180e59f6210a9703a302))
+* **Ch4:** 「あとがき」を校正した ([75e61454](https://github.com/o2project/steins-git/commit/75e61454068e684b51f067e1662db449252720ed))
+
+
+#### Features
+
+* **All:** RedPenで文章の校正ができる環境を整えた ([c39dafa5](https://github.com/o2project/steins-git/commit/c39dafa5bdefc08e181b3fd52d220b956a9b8696))
+
+
 ## 2.0.0 (2015-03-16)
 
 
@@ -59,8 +77,7 @@
 #### Features
 
 * **index:**
-  * Pocketボタンを追加 ([17b5f92e](https://github.com/o2project/steins-git/commit/17b5f92e4d091bf912e9b1980ec5d8131b6fa0b0))
-  * Pocketボタンを追加 ([2e79c003](https://github.com/o2project/steins-git/commit/2e79c003dbced3734acb31477c15ea84b4da51b9))
+  * Pocketボタンを追加 ([17b5f92e](https://github.com/o2project/steins-git/commit/17b5f92e4d091bf912e9b1980ec5d8131b6fa0b0), [2e79c003](https://github.com/o2project/steins-git/commit/2e79c003dbced3734acb31477c15ea84b4da51b9)
 * **package.json:** npm run-scriptsを定義した ([ae3d0fe8](https://github.com/o2project/steins-git/commit/ae3d0fe88cc20982dd6302dc0d6e6ff9b62f5c98))
 * **setup:** package.jsonで各種インストールをおこなうようにしたのでsetup.shを削除 ([641c0dfc](https://github.com/o2project/steins-git/commit/641c0dfc91b316d49ad9bfd43f7d86114e4f5e28))
 
@@ -329,4 +346,3 @@
 * **nitro:** Steins;Gateのゲーム画面をリサイズ+著作権表示を追加するスクリプトを追加 ([bc781881](https://github.com/o2project/steins-git/commit/bc78188125f168bb4e51aa08c8ec1d2bbab42ce3))
 * **pdf:** PDFで出力できるようにした ([b6c117b4](https://github.com/o2project/steins-git/commit/b6c117b42d41230b5abced70a76b4ff708a7cd77))
 * **setup.sh:** 初期設定用の実行ファイルを追加 ([1a084e32](https://github.com/o2project/steins-git/commit/1a084e328cb3646f560e293245f4ff3a126923e3))
-
