@@ -22,7 +22,13 @@ image::ch3/git-clone/source-tree/button-select.jpg[SourceTree のボタン]
 
 ボタンを押すといくつか選択肢が表示されますが、その中の「リポジトリをクローン」を選択します。すると、リポジトリを保存するディレクトリや、名前を決める画面が表示されます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-clone/source-tree/repository-select.jpg[リポジトリを取得しようとしている状態, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-clone/source-tree/repository-select.jpg[リポジトリを取得しようとしている状態, 540]
+endif::[]
 
 「ソースパス / URL」の部分に `\git@github.com:o2project/steins-gate.git` を入力して「クローン」を押すと、GitHub 上にある「steins-gate」というリポジトリが自分の PC 上にコピーされます。
 
@@ -32,12 +38,30 @@ GitHub for Windows (Mac) を起動すると、左上に「＋」ボタンがあ�
 
 「Clone」を押した後、リポジトリを見つけるための検索窓が表示されます。そこにリポジトリの名前を入力して、目的のものが見つかったら「Clone [リポジトリ名]」というボタンを押します。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-clone/github-app/git-clone-before.jpg[クローンする対象のリポジトリを絞り込んでいるところ, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-clone/github-app/git-clone-before.jpg[クローンする対象のリポジトリを絞り込んでいるところ, 540]
+endif::[]
 
 「Clone [リポジトリ名]」というボタンを押すと、リポジトリを保存するディレクトリや名前を決める画面が表示されます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-clone/github-app/git-clone-save.jpg[クローンするリポジトリの名前を決めているところ, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-clone/github-app/git-clone-save.jpg[クローンするリポジトリの名前を決めているところ]
+endif::[]
 
 それぞれ入力して「Enter」を押せば、リモートリポジトリが自分の PC 上にコピーされます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-clone/github-app/git-clone-after.jpg[リポジトリを自分の PC 上にコピーした後, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-clone/github-app/git-clone-after.jpg[リポジトリを自分の PC 上にコピーした後, 540]
+endif::[]

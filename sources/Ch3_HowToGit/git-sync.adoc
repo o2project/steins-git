@@ -8,8 +8,20 @@ GitHub for Windows (Mac) では画面の右上に「Sync」というボタンが
 
 つまり「git push」と「git pull」を同時におこなうものと考えれば良いでしょう。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-sync/git-sync-before.jpg[Sync を押す前, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-sync/git-sync-before.jpg[Sync を押す前, 540]
+endif::[]
 
 「Sync」を押すと「Sync」ボタンがあった場所に、同期の進捗を表すバーが表示されます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-sync/git-sync-after.jpg[Sync を押して同期をしている, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-sync/git-sync-after.jpg[Sync を押して同期をしている, 540]
+endif::[]

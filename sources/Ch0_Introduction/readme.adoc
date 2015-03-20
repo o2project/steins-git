@@ -2,7 +2,13 @@
 
 == はじめに
 
-image::ch0/git-logo.jpg[Gitのロゴ, 180]
+ifeval::["{backend}" != "html5"]
+image::ch0/git-logo.jpg[Git のロゴ, 180]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch0/git-logo.jpg[Git のロゴ, 270]
+endif::[]
 
 本書は「Git の使い方を Steins;Gate の世界観を通して説明する」事を目的にして執筆しました。
 
