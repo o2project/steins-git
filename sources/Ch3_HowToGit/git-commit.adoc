@@ -8,19 +8,44 @@
 
 リポジトリ内にファイルを新しく作成した場合 SourceTree 上ではファイル名の横に「？」が付く形で表示されます。これは、ファイルがまだバージョン管理されてない事を示しています。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/source-tree/add-before.jpg[変更したファイルにチェックを付ける前, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/source-tree/add-before.jpg[変更したファイルにチェックを付ける前, 540]
+endif::[]
 
 この状態でファイル名の左横にあるチェックボックスにチェックを付けると「ステージングエリア」といわれるところにファイルが移動します。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/source-tree/add-after.jpg[変更したファイルにチェックを付けた後, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/source-tree/add-after.jpg[変更したファイルにチェックを付けた後, 540]
+endif::[]
 
 移動した状態で、画面の下部にある「コミットメッセージ」と書かれている場所に任意のメッセージを入力します。
 
+
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/source-tree/commit-before.jpg[コミットメッセージを入力する前, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/source-tree/commit-before.jpg[コミットメッセージを入力する前, 540]
+endif::[]
 
 入力した後「コミット」ボタンを押すと、作業した内容がリポジトリに記録されます。なお、初回以降は画面上部にある「コミット」ボタンを押す事により、メッセージを入力できます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/source-tree/commit-after.jpg[コミットした後, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/source-tree/commit-after.jpg[コミットした後, 540]
+endif::[]
 
 ちなみに、コミットメッセージなどが表示されている場所の「ラベル」部分に「HEAD」という記載がありますが、これは「現時点でどのブランチにいるかを判別する情報」です。つまり、世界線の観測ができているという事で、これを例えるならば、ダイバージェンスメーターです。
 
@@ -28,12 +53,30 @@ image::ch3/git-commit/source-tree/commit-after.jpg[コミットした後, 360]
 
 GitHub for Windows (Mac) では、リポジトリ内にファイルを新しく作成した場合、画面上部に「1 Change」と表示され、またファイル名の横にあるチェックボックスにチェックが付いた状態になります。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/github-app/git-commit-before.jpg[追加したファイルをコミットする前, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/github-app/git-commit-before.jpg[追加したファイルをコミットする前, 540]
+endif::[]
 
 GitHub for Windows (Mac) の場合「ステージングエリア」にファイルを移動する必要はなく、いきなり GitHub for Windows (Mac) の画面下部でコミットメッセージを書く事ができます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/github-app/git-commit-message.jpg[コミットメッセージを入力している最中, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/github-app/git-commit-message.jpg[コミットメッセージを入力している最中, 540]
+endif::[]
 
 コミットメッセージを書いて「Commit to master」というボタンを押すと、作業した内容がリポジトリに記録されます。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/github-app/git-commit-after.jpg[コミットした後, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-commit/github-app/git-commit-after.jpg[コミットした後, 540]
+endif::[]

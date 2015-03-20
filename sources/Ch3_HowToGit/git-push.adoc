@@ -16,7 +16,13 @@
 
 以下の画像では、全てのブランチをプッシュしていますが、実際は現在のブランチのみプッシュしたほうが良いです。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-push-branch-select.jpg[git push 前, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-push-branch-select.jpg[git push 前, 540]
+endif::[]
 
 プッシュが終わり、作業内容の一覧に「origin/ブランチ名」という文字が表示されるようになりました。
 
@@ -24,4 +30,10 @@ image::ch3/git-push-branch-select.jpg[git push 前, 360]
 
 ちなみに「origin」というのは、リモートリポジトリの事を指しています。
 
+ifeval::["{backend}" != "html5"]
 image::ch3/git-push-after.jpg[git push 後, 360]
+endif::[]
+
+ifeval::["{backend}" == "html5"]
+image::ch3/git-push-after.jpg[git push 後, 540]
+endif::[]
