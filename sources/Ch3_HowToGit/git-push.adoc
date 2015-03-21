@@ -17,7 +17,7 @@
 以下の画像では、全てのブランチをプッシュしていますが、実際は現在のブランチのみプッシュしたほうが良いです。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-push-branch-select.jpg[git push 前, 360]
+image::ch3/git-push-branch-select.jpg[git push 前, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -31,7 +31,7 @@ endif::[]
 ちなみに「origin」というのは、リモートリポジトリの事を指しています。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-push-after.jpg[git push 後, 360]
+image::ch3/git-push-after.jpg[git push 後, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]

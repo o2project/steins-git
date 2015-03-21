@@ -7,7 +7,7 @@
 電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃もしくは他の要因により、まゆりが何度も死んでしまった状態の最新の作業内容ですが「ラウンダー追ってきて、まゆりが刺されて死んだ」となっています。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/message-edit-before.jpg[まゆりが何度も死んでしまったときの作業内容, 360]
+image::ch3/git-rebase/source-tree/message-edit-before.jpg[まゆりが何度も死んでしまったときの作業内容, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -21,7 +21,7 @@ endif::[]
 先ほどの最新の作業内容を記録したコミットが「ラウンダー追ってきて」と、間に「が」が足りないメッセージになっています。これを修正するため、直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/message-edit-select.jpg[対話形式でリベースを選択している状態, 360]
+image::ch3/git-rebase/source-tree/message-edit-select.jpg[対話形式でリベースを選択している状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -31,7 +31,7 @@ endif::[]
 すると、対象となる作業内容が表示されるので、コミットメッセージを直したい作業内容を選び、画面下部の「Edit message」を押します。すると、コミットメッセージを編集する画面が表示されます。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/message-edit-now.jpg[コミットメッセージを編集している状態, 360]
+image::ch3/git-rebase/source-tree/message-edit-now.jpg[コミットメッセージを編集している状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -41,7 +41,7 @@ endif::[]
 任意のコミットメッセージを書いた後「OK」ボタンを押すとコミットメッセージが修正されます。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/message-edit-after.jpg[コミットメッセージを編集し終えた状態, 360]
+image::ch3/git-rebase/source-tree/message-edit-after.jpg[コミットメッセージを編集し終えた状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -53,7 +53,7 @@ endif::[]
 次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/squash-right-click.jpg[git rebase squash するべく親となるコミットを選択している状態, 360]
+image::ch3/git-rebase/source-tree/squash-right-click.jpg[git rebase squash するべく親となるコミットを選択している状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -63,7 +63,7 @@ endif::[]
 今回は四つの作業内容を対象としました。ここから作業内容をまとめるには「Squash with previous」を三回押します。「まとめる作業内容の数 - 一回 Squash with previous を押す」と覚えるといいかもしれません。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/squash-before.jpg[git rebase squash しようとしている状態, 360]
+image::ch3/git-rebase/source-tree/squash-before.jpg[git rebase squash しようとしている状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -73,7 +73,7 @@ endif::[]
 その後、まとめた作業内容のコミットメッセージを編集するために「Edit message」を押します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/squash-message-edit.jpg[コミットをまとめた後コミットメッセージを編集している状態, 360]
+image::ch3/git-rebase/source-tree/squash-message-edit.jpg[コミットをまとめた後コミットメッセージを編集している状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -83,7 +83,7 @@ endif::[]
 これで、まゆりが死んだと書かれた複数の履歴がまとめられました。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-rebase/source-tree/squash-after.jpg[git rebase squashした状態, 360]
+image::ch3/git-rebase/source-tree/squash-after.jpg[git rebase squashした状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]

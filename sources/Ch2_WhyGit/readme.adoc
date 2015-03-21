@@ -3,7 +3,7 @@
 == 第二章 - 一問一答のコンクルージョン
 
 ifeval::["{backend}" != "html5"]
-image::illustration/daru.jpg[ダル, 360]
+image::illustration/daru.jpg[ダル, 380]
 endif::[]
 
 バージョン管理システムには「分散型バージョン管理システム」といわれる Git (とその他)以外にも「集中型バージョン管理システム」といわれる Subversion (SVN) などがあります。

@@ -11,7 +11,7 @@ SVN と比較すると、Git は流行しています。つまり、それだけ
 ここでは Git が登場した2005年4月から2014年7月までのグラフを掲載していますが、2013年あたりから SVN と Git の人気度が逆転し、Git は今なお右肩上がりになっています。今後もこの傾向は変わらないと考えられます。
 
 ifeval::["{backend}" != "html5"]
-image::ch2/google-trend.jpg[Googleトレンド, 360]
+image::ch2/google-trend.jpg[Googleトレンド, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -41,7 +41,7 @@ endif::[]
 最後に Stack Overflowfootnote:[\http://stackoverflow.com/]という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索footnote:[\http://stackoverflow.com/tags]で SVN を検索した結果が以下の通りになります。
 
 ifeval::["{backend}" != "html5"]
-image::ch2/stackoverflow-svn.jpg[Stack Overflow で SVN を検索した結果, 360]
+image::ch2/stackoverflow-svn.jpg[Stack Overflow で SVN を検索した結果, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -51,7 +51,7 @@ endif::[]
 次に Git を検索した結果です。SVN に比べ、タグが付けられた数が二倍以上となっています。
 
 ifeval::["{backend}" != "html5"]
-image::ch2/stackoverflow-git.jpg[Stack Overflow で Git を検索した結果, 360]
+image::ch2/stackoverflow-git.jpg[Stack Overflow で Git を検索した結果, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]

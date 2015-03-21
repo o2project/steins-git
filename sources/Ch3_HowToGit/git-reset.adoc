@@ -11,7 +11,7 @@
 話を戻しますが「鈴羽を引き止めた世界線」でいくつか作業をした結果、履歴が以下のようになりました。最新の作業内容は「SERN の襲撃によりまゆりが死んでしまった…」となっています。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-reset-before.jpg[鈴羽を引き止めた世界線でいくつか作業した後の状態, 360]
+image::ch3/git-reset-before.jpg[鈴羽を引き止めた世界線でいくつか作業した後の状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -23,7 +23,7 @@ endif::[]
 タイムリープするためには、戻したい作業内容の一つ前の作業内容を右クリックで選択し「このコミットまで "ブランチ名" を元に戻す」を選択します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-reset-right-click.jpg[git resetをおこなおうとしている状態, 360]
+image::ch3/git-reset-right-click.jpg[git resetをおこなおうとしている状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -33,7 +33,7 @@ endif::[]
 これで、作業内容から「SERN の襲撃によりまゆりが死んでしまった…」というのが消えました。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-reset-after.jpg[git resetをした後の状態, 360]
+image::ch3/git-reset-after.jpg[git resetをした後の状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]

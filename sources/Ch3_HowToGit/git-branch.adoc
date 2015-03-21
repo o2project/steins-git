@@ -11,7 +11,7 @@
 「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」で鈴羽を引き止めるために、岡部が D メールを送信しました。ここまでの作業内容は以下のようになります。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-branch/source-tree/before.jpg[新たなブランチを作る前, 360]
+image::ch3/git-branch/source-tree/before.jpg[新たなブランチを作る前, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -25,7 +25,7 @@ endif::[]
 SourceTree の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-branch/source-tree/name.jpg[ブランチ名を決めているところ, 360]
+image::ch3/git-branch/source-tree/name.jpg[ブランチ名を決めているところ, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -35,7 +35,7 @@ endif::[]
 「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-branch/source-tree/after.jpg[ブランチを作った後, 360]
+image::ch3/git-branch/source-tree/after.jpg[ブランチを作った後, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -49,7 +49,7 @@ endif::[]
 このボタンを押すと「Create New Branch」という画面が表示され、そこには「Name」と「From」の二つの項目があります。「Name」には任意の名前を入力し「From」では分岐元のブランチを選択します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-branch/github-app/branch-create-before.jpg[「Create New Branch」という画面が表示されている状態, 360]
+image::ch3/git-branch/github-app/branch-create-before.jpg[「Create New Branch」という画面が表示されている状態, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -59,7 +59,7 @@ endif::[]
 それぞれ情報を入力した後「Create Branch」というボタンを押す事により、新しいブランチが作られます。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-branch/github-app/branch-create-after.jpg[新規ブランチが作られた図, 360]
+image::ch3/git-branch/github-app/branch-create-after.jpg[新規ブランチが作られた図, 380]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
