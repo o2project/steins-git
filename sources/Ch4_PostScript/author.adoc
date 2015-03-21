@@ -4,9 +4,16 @@
 
 - 執筆: kubosho_footnote:[https://github.com/kubosho]
 - アシスタント: fruitsnoodlefootnote:[https://github.com/fruitsnoodle]
-- 表紙・各章のイラスト: GiantRobotfootnote:[pixivID:1223059]
-- 発行所: 日光企画
+- 表紙・各章のイラスト: GiantRobotfootnote:[pixivID: 1223059]
+- 発行所: 日光企画footnote:[http://www.nikko-pc.com/]
 
-=== Gitのロゴについて
+ifeval::["{backend}" != "html5"]
+=== 使用しているフォント
+
+- あおぞら明朝 (本文など)footnote:[http://blueskis.wktk.so/AozoraMincho/]
+- 源真ゴシック (見出し部分など)footnote:[http://jikasei.me/font/genshin/]
+endif::[]
+
+=== Git のロゴについて
 
 - Git Logo by Jason Long is licensed under the Creative Commons Attribution 3.0 Unported License.

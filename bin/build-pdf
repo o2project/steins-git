@@ -5,8 +5,8 @@ SRC_FILE=${parentDir}/$1
 
 ${parentDir}/fopub/bin/fopub -t ${parentDir}/styles "${SRC_FILE}" \
 -param body.font.family AozoraMinchoRegular \
--param dingbat.font.family VL-Gothic-Regular \
--param monospace.font.family VL-Gothic-Regular \
+-param dingbat.font.family GenShinGothic-P-Normal \
+-param monospace.font.family GenShinGothic-P-Normal \
 -param sans.font.family AozoraMinchoRegular \
--param title.font.family VL-Gothic-Regular \
+-param title.font.family GenShinGothic-P-Normal \
 -param alignment left
