@@ -88,7 +88,7 @@ end
 namespace :generate do
   task :html do
     puts 'Copy images to build directory...'
-    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    directory_copy './images', "#{OUTPUT_DIRECTORY}images"
     puts "Done!"
     puts 'Generate HTML...'
     build_asciidoc_to_html SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_HTML_FILE}"
@@ -97,7 +97,7 @@ namespace :generate do
 
   task :docbook do
     puts 'Copy images to build directory...'
-    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    directory_copy './images', "#{OUTPUT_DIRECTORY}images"
     puts "Done!"
     puts 'Generate DocBook...'
     build_asciidoc SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_XML_FILE}"
@@ -106,7 +106,7 @@ namespace :generate do
 
   task :pdf do
     puts 'Copy images to build directory...'
-    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    directory_copy './images', "#{OUTPUT_DIRECTORY}images"
     puts "Done!"
     puts 'Generate PDF...'
     build_asciidoc_to_pdf SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_XML_FILE}"
@@ -115,7 +115,7 @@ namespace :generate do
 
   task :epub do
     puts 'Copy images to build directory...'
-    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    directory_copy './images', "#{OUTPUT_DIRECTORY}images"
     puts "Done!"
     puts 'Generate EPUB...'
     build_asciidoc_to_epub SRC_FILE
@@ -124,7 +124,7 @@ namespace :generate do
 
   task :mobi do
     puts 'Copy images to build directory...'
-    directory_copy './images', "#{OUTPUT_DIRECTORY}/images"
+    directory_copy './images', "#{OUTPUT_DIRECTORY}images"
     puts "Done!"
     puts 'Generate Mobi...'
     build_asciidoc_to_mobi SRC_FILE
