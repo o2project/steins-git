@@ -31,7 +31,11 @@ module.exports = function(grunt) {
                 }
             },
             html: {
-                files: ['build/**/*.html'],
+                files: ['build/**/*.html']
+            },
+            css: {
+                files: ['public/**/*.css'],
+                tasks: ['shell:generateHtml']
             },
             adoc: {
                 files: [
