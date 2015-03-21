@@ -444,8 +444,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#chapter2-why-git">2. 第二章 - 一問一答のコンクルージョン</a>
 <ul class="sectlevel2">
-<li><a href="#not-need-network-connection">2.1. ネットワーク接続がいらない</a></li>
-<li><a href="#trend">2.2. 流行っている</a></li>
+<li><a href="#trend">2.1. 流行っている</a></li>
+<li><a href="#not-need-network-connection">2.2. ネットワーク接続がいらない</a></li>
 <li><a href="#try-out-a-local-repository">2.3. 自分の PC 上にあるリポジトリでいろいろ試せる</a></li>
 </ul>
 </li>
@@ -457,10 +457,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#git-clone">3.4. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
 <li><a href="#git-commit">3.5. 作業内容を記録する</a></li>
 <li><a href="#git-checkout-file">3.6. 作業内容を無かった事にする</a></li>
-<li><a href="#git-branch">3.7. ブランチの一覧を見たり、新たにブランチを作る</a></li>
-<li><a href="#git-checkout">3.8. ブランチを移動する</a></li>
-<li><a href="#git-reset">3.9. 作業内容をリセットする</a></li>
-<li><a href="#git-rebase">3.10. 作業内容を改変する</a></li>
+<li><a href="#git-reset">3.7. 作業内容をリセットする</a></li>
+<li><a href="#git-rebase">3.8. 作業内容を改変する</a></li>
+<li><a href="#git-checkout">3.9. ブランチを移動する</a></li>
+<li><a href="#git-branch">3.10. ブランチの一覧を見たり、新たにブランチを作る</a></li>
 <li><a href="#git-push">3.11. リモートリポジトリに作業内容を送る</a></li>
 <li><a href="#git-pull">3.12. リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む</a></li>
 <li><a href="#git-merge">3.13. 別のブランチでの作業内容を取り込む</a></li>
@@ -784,12 +784,67 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>集中型バージョン管理システムより、なぜ分散型バージョン管理システムの Git を使ったほうがいいのか、メリットを解説していきます。</p>
 </div>
 <div class="sect2">
-<h3 id="not-need-network-connection">2.1. ネットワーク接続がいらない</h3>
+<h3 id="trend">2.1. 流行っている</h3>
+<div class="paragraph">
+<p>SVN と比較すると、Git は流行しています。つまり、それだけ皆が使いノウハウが出やすい状況にあります。</p>
+</div>
+<div class="paragraph">
+<p>といっても、言葉だけでは説得力がありません。なので、流行している事を示すデータをいくつか紹介します。なお、これから出てくるスクリーンショットは2014年8月3日に撮られたものです。</p>
+</div>
+<div class="paragraph">
+<p>はじめに Google トレンドで日本における Git・SVN・Subversion の人気度の動向を調べた結果<span class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnote_20" title="View footnote.">20</a>]</span>です。</p>
+</div>
+<div class="paragraph">
+<p>ここでは Git が登場した2005年4月から2014年7月までのグラフを掲載していますが、2013年あたりから SVN と Git の人気度が逆転し、Git は今なお右肩上がりになっています。今後もこの傾向は変わらないと考えられます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch2/google-trend.jpg" alt="Googleトレンド" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>次に Qiita<span class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnote_21" title="View footnote.">21</a>]</span> という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこで SVN と Subversion を検索した結果<span class="footnote">[<a id="_footnoteref_22" class="footnote" href="#_footnote_22" title="View footnote.">22</a>]</span><span class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnote_23" title="View footnote.">23</a>]</span>が以下の通りになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch2/qiita-svn.jpg" alt="QiitaでSVNを検索した結果" width="375">
+</div>
+</div>
+<div class="paragraph">
+<p>次に Git を検索した結果<span class="footnote">[<a id="_footnoteref_24" class="footnote" href="#_footnote_24" title="View footnote.">24</a>]</span>です。SVN と比べ、まさにケタ違いの投稿数とフォロワー(タグの新着の投稿を追っている人達)となります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch2/qiita-git.jpg" alt="QiitaでGitを検索した結果" width="300">
+</div>
+</div>
+<div class="paragraph">
+<p>最後に Stack Overflow<span class="footnote">[<a id="_footnoteref_25" class="footnote" href="#_footnote_25" title="View footnote.">25</a>]</span>という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<span class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnote_26" title="View footnote.">26</a>]</span>で SVN を検索した結果が以下の通りになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch2/stackoverflow-svn.jpg" alt="Stack Overflow で SVN を検索した結果" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>次に Git を検索した結果です。SVN に比べ、タグが付けられた数が二倍以上となっています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch2/stackoverflow-git.jpg" alt="Stack Overflow で Git を検索した結果" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>以上の事から、Git は SVN に比べて流行っていると言えます。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="not-need-network-connection">2.2. ネットワーク接続がいらない</h3>
 <div class="paragraph">
 <p>Git はネットワーク上にあるリポジトリを使わなかったり、もし使っていたとしても自分の手元で作業内容を記録する時はネットワークの接続は必要ありません。</p>
 </div>
 <div class="paragraph">
-<p>つまり、作業内容の記録(コミット)や世界線移動(ブランチ<span class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnote_20" title="View footnote.">20</a>]</span>移動)という、作業をする上で多くおこなう事が高速にできる事を意味します。</p>
+<p>つまり、作業内容の記録(コミット)や世界線移動(ブランチ<span class="footnote">[<a id="_footnoteref_27" class="footnote" href="#_footnote_27" title="View footnote.">27</a>]</span>移動)という、作業をする上で多くおこなう事が高速にできる事を意味します。</p>
 </div>
 <div class="paragraph">
 <p>SVN を他の人と共有する形で使っていた場合、手元にリポジトリがなく、ネットワーク上にのみリポジトリがある状態になります。</p>
@@ -808,61 +863,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p>これで、岡部はいついかなる場所でも未来ガジェットのアイデアを書く事ができます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trend">2.2. 流行っている</h3>
-<div class="paragraph">
-<p>SVN と比較すると、Git は流行しています。つまり、それだけ皆が使いノウハウが出やすい状況にあります。</p>
-</div>
-<div class="paragraph">
-<p>といっても、言葉だけでは説得力がありません。なので、流行している事を示すデータをいくつか紹介します。なお、これから出てくるスクリーンショットは2014年8月3日に撮られたものです。</p>
-</div>
-<div class="paragraph">
-<p>はじめに Google トレンドで日本における Git・SVN・Subversion の人気度の動向を調べた結果<span class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnote_21" title="View footnote.">21</a>]</span>です。</p>
-</div>
-<div class="paragraph">
-<p>ここでは Git が登場した2005年4月から2014年7月までのグラフを掲載していますが、2013年あたりから SVN と Git の人気度が逆転し、Git は今なお右肩上がりになっています。今後もこの傾向は変わらないと考えられます。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch2/google-trend.jpg" alt="Googleトレンド" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>次に Qiita<span class="footnote">[<a id="_footnoteref_22" class="footnote" href="#_footnote_22" title="View footnote.">22</a>]</span> という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこで SVN と Subversion を検索した結果<span class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnote_23" title="View footnote.">23</a>]</span><span class="footnote">[<a id="_footnoteref_24" class="footnote" href="#_footnote_24" title="View footnote.">24</a>]</span>が以下の通りになります。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch2/qiita-svn.jpg" alt="QiitaでSVNを検索した結果" width="375">
-</div>
-</div>
-<div class="paragraph">
-<p>次に Git を検索した結果<span class="footnote">[<a id="_footnoteref_25" class="footnote" href="#_footnote_25" title="View footnote.">25</a>]</span>です。SVN と比べ、まさにケタ違いの投稿数とフォロワー(タグの新着の投稿を追っている人達)となります。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch2/qiita-git.jpg" alt="QiitaでGitを検索した結果" width="300">
-</div>
-</div>
-<div class="paragraph">
-<p>最後に Stack Overflow<span class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnote_26" title="View footnote.">26</a>]</span>という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<span class="footnote">[<a id="_footnoteref_27" class="footnote" href="#_footnote_27" title="View footnote.">27</a>]</span>で SVN を検索した結果が以下の通りになります。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch2/stackoverflow-svn.jpg" alt="Stack Overflow で SVN を検索した結果" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>次に Git を検索した結果です。SVN に比べ、タグが付けられた数が二倍以上となっています。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch2/stackoverflow-git.jpg" alt="Stack Overflow で Git を検索した結果" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>以上の事から、Git は SVN に比べて流行っていると言えます。</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1209,113 +1209,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.7. ブランチの一覧を見たり、新たにブランチを作る</h3>
-<div class="paragraph">
-<p>ブランチの一覧を見たり、新たにブランチを作ったりします。「ブランチ」は例えるならば「世界線」となります。</p>
-</div>
-<div class="paragraph">
-<p>また、リポジトリには「HEAD」という「自分が今どのブランチ(世界線)にいるのか分かるファイル」があり、それはダイバージェンスメーターだと言えるでしょう。</p>
-</div>
-<div class="paragraph">
-<p>では、ブランチを移動する方法を説明していきます。なお、現在のブランチは「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」だとします。</p>
-</div>
-<div class="paragraph">
-<p>「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」で鈴羽を引き止めるために、岡部が D メールを送信しました。ここまでの作業内容は以下のようになります。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-branch/source-tree/before.jpg" alt="新たなブランチを作る前" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>この状態から SourceTree もしくは GitHub for Windows (Mac) を使って「鈴羽を引き止めるために D メールを送信した後の世界線」に移動します。</p>
-</div>
-<div class="sect3">
-<h4 id="_sourcetree_でのやり方_5">3.7.1. SourceTree でのやり方</h4>
-<div class="paragraph">
-<p>SourceTree の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-branch/source-tree/name.jpg" alt="ブランチ名を決めているところ" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-branch/source-tree/after.jpg" alt="ブランチを作った後" width="540">
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_github_for_windows_mac_でのやり方_5">3.7.2. GitHub for Windows (Mac) でのやり方</h4>
-<div class="paragraph">
-<p>現在のブランチ名が書かれている左横に「線が分岐していて分岐先に＋が書かれているボタン」があります。</p>
-</div>
-<div class="paragraph">
-<p>このボタンを押すと「Create New Branch」という画面が表示され、そこには「Name」と「From」の二つの項目があります。「Name」には任意の名前を入力し「From」では分岐元のブランチを選択します。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-branch/github-app/branch-create-before.jpg" alt="「Create New Branch」という画面が表示されている状態" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>それぞれ情報を入力した後「Create Branch」というボタンを押す事により、新しいブランチが作られます。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-branch/github-app/branch-create-after.jpg" alt="新規ブランチが作られた図" width="540">
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-checkout">3.8. ブランチを移動する</h3>
-<div class="paragraph">
-<p>現在のブランチから別のブランチへ移動します。例えるならば D メールを送った結果、世界線変動が起こった状態を、任意のタイミングで起こせるというものです。</p>
-</div>
-<div class="paragraph">
-<p>Git のブランチは「世界線」です。D メールによる世界線変動は、世界の状況に影響を及ぼしてましたが、Git ではそういった副作用が無く世界線の移動ができます。</p>
-</div>
-<div class="sect3">
-<h4 id="_sourcetree_でのやり方_6">3.8.1. SourceTree でのやり方</h4>
-<div class="paragraph">
-<p>移動の方法は簡単で、画面左端に表示されているブランチ一覧から、移動したいブランチの名前をダブルクリックする事により、ブランチを移動できます。</p>
-</div>
-<div class="paragraph">
-<p>以下の図では「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-checkout.jpg" alt="ブランチを移動した後" width="540">
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_github_for_windows_mac_でのやり方_6">3.8.2. GitHub for Windows (Mac) でのやり方</h4>
-<div class="paragraph">
-<p>現在のブランチが表示されている箇所をクリックすると、移動可能なブランチの一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-checkout/github-app/git-branch-list.jpg" alt="ブランチ一覧を表示している図" width="540">
-</div>
-</div>
-<div class="paragraph">
-<p>ここでは「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ch3/git-checkout/github-app/git-checkout-after.jpg" alt="ブランチを移動した後の図" width="540">
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="git-reset">3.9. 作業内容をリセットする</h3>
+<h3 id="git-reset">3.7. 作業内容をリセットする</h3>
 <div class="paragraph">
 <p>作業内容を無かった事にします。例えるならば、タイムリープのようなものです。</p>
 </div>
@@ -1354,7 +1248,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rebase">3.10. 作業内容を改変する</h3>
+<h3 id="git-rebase">3.8. 作業内容を改変する</h3>
 <div class="paragraph">
 <p>作業内容を改変します。例えるならば、タイムリープマシンを使って過去の作業をやり直す感じです。</p>
 </div>
@@ -1367,7 +1261,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_コミットメッセージを修正する">3.10.1. コミットメッセージを修正する</h4>
+<h4 id="_コミットメッセージを修正する">3.8.1. コミットメッセージを修正する</h4>
 <div class="paragraph">
 <p>まず始めに、コミットメッセージを修正してみます。</p>
 </div>
@@ -1397,7 +1291,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_複数の作業内容を一つにまとめる">3.10.2. 複数の作業内容を一つにまとめる</h4>
+<h4 id="_複数の作業内容を一つにまとめる">3.8.2. 複数の作業内容を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。</p>
 </div>
@@ -1428,6 +1322,112 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="imageblock">
 <div class="content">
 <img src="images/ch3/git-rebase/source-tree/squash-after.jpg" alt="git rebase squashした状態" width="540">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-checkout">3.9. ブランチを移動する</h3>
+<div class="paragraph">
+<p>現在のブランチから別のブランチへ移動します。例えるならば D メールを送った結果、世界線変動が起こった状態を、任意のタイミングで起こせるというものです。</p>
+</div>
+<div class="paragraph">
+<p>Git のブランチは「世界線」です。D メールによる世界線変動は、世界の状況に影響を及ぼしてましたが、Git ではそういった副作用が無く世界線の移動ができます。</p>
+</div>
+<div class="sect3">
+<h4 id="_sourcetree_でのやり方_5">3.9.1. SourceTree でのやり方</h4>
+<div class="paragraph">
+<p>移動の方法は簡単で、画面左端に表示されているブランチ一覧から、移動したいブランチの名前をダブルクリックする事により、ブランチを移動できます。</p>
+</div>
+<div class="paragraph">
+<p>以下の図では「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout.jpg" alt="ブランチを移動した後" width="540">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_5">3.9.2. GitHub for Windows (Mac) でのやり方</h4>
+<div class="paragraph">
+<p>現在のブランチが表示されている箇所をクリックすると、移動可能なブランチの一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout/github-app/git-branch-list.jpg" alt="ブランチ一覧を表示している図" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>ここでは「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-checkout/github-app/git-checkout-after.jpg" alt="ブランチを移動した後の図" width="540">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-branch">3.10. ブランチの一覧を見たり、新たにブランチを作る</h3>
+<div class="paragraph">
+<p>ブランチの一覧を見たり、新たにブランチを作ったりします。「ブランチ」は例えるならば「世界線」となり、ブランチを作るという事は「世界線の観測」になります。</p>
+</div>
+<div class="paragraph">
+<p>また、リポジトリには「HEAD」という「自分が今どのブランチ(世界線)にいるのか分かるファイル」があり、それはダイバージェンスメーターだと言えるでしょう。</p>
+</div>
+<div class="paragraph">
+<p>では、ブランチを作る方法を説明していきます。なお、現在のブランチは「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」だとします。</p>
+</div>
+<div class="paragraph">
+<p>「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」で鈴羽を引き止めるために、岡部が D メールを送信しました。ここまでの作業内容は以下のようになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/source-tree/before.jpg" alt="新たなブランチを作る前" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>この状態から SourceTree もしくは GitHub for Windows (Mac) を使って「鈴羽を引き止めるために D メールを送信した後の世界線」というブランチを作ります。</p>
+</div>
+<div class="sect3">
+<h4 id="_sourcetree_でのやり方_6">3.10.1. SourceTree でのやり方</h4>
+<div class="paragraph">
+<p>SourceTree の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/source-tree/name.jpg" alt="ブランチ名を決めているところ" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/source-tree/after.jpg" alt="ブランチを作った後" width="540">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_github_for_windows_mac_でのやり方_6">3.10.2. GitHub for Windows (Mac) でのやり方</h4>
+<div class="paragraph">
+<p>現在のブランチ名が書かれている左横に「線が分岐していて分岐先に＋が書かれているボタン」があります。</p>
+</div>
+<div class="paragraph">
+<p>このボタンを押すと「Create New Branch」という画面が表示され、そこには「Name」と「From」の二つの項目があります。「Name」には任意の名前を入力し「From」では分岐元のブランチを選択します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/github-app/branch-create-before.jpg" alt="「Create New Branch」という画面が表示されている状態" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>それぞれ情報を入力した後「Create Branch」というボタンを押す事により、新しいブランチが作られます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-branch/github-app/branch-create-after.jpg" alt="新規ブランチが作られた図" width="540">
 </div>
 </div>
 </div>
@@ -1805,28 +1805,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="#_footnoteref_19">19</a>. 第三章の「リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む」で解説しています。
 </div>
 <div class="footnote" id="_footnote_20">
-<a href="#_footnoteref_20">20</a>. 第三章の「ブランチの一覧を見たり、ブランチを作ったりする」で解説しています。
+<a href="#_footnoteref_20">20</a>. <a href="http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m" class="bare">http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m</a>
 </div>
 <div class="footnote" id="_footnote_21">
-<a href="#_footnoteref_21">21</a>. <a href="http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m" class="bare">http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m</a>
+<a href="#_footnoteref_21">21</a>. http://qiita.com/
 </div>
 <div class="footnote" id="_footnote_22">
-<a href="#_footnoteref_22">22</a>. http://qiita.com/
+<a href="#_footnoteref_22">22</a>. http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=svn
 </div>
 <div class="footnote" id="_footnote_23">
-<a href="#_footnoteref_23">23</a>. http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=svn
+<a href="#_footnoteref_23">23</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion" class="bare">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion</a>
 </div>
 <div class="footnote" id="_footnote_24">
-<a href="#_footnoteref_24">24</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion" class="bare">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion</a>
+<a href="#_footnoteref_24">24</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git" class="bare">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git</a>
 </div>
 <div class="footnote" id="_footnote_25">
-<a href="#_footnoteref_25">25</a>. <a href="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git" class="bare">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git</a>
+<a href="#_footnoteref_25">25</a>. http://stackoverflow.com/
 </div>
 <div class="footnote" id="_footnote_26">
-<a href="#_footnoteref_26">26</a>. http://stackoverflow.com/
+<a href="#_footnoteref_26">26</a>. http://stackoverflow.com/tags
 </div>
 <div class="footnote" id="_footnote_27">
-<a href="#_footnoteref_27">27</a>. http://stackoverflow.com/tags
+<a href="#_footnoteref_27">27</a>. 第三章の「ブランチの一覧を見たり、ブランチを作ったりする」で解説しています。
 </div>
 <div class="footnote" id="_footnote_28">
 <a href="#_footnoteref_28">28</a>. 第三章の「すでにあるリモートリポジトリを使ってバージョン管理を始める」で解説しています。
@@ -1886,7 +1886,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 2.1.0<br>
-Last updated 2015-03-21 03:50:37 UTC
+Last updated 2015-03-21 09:22:34 UTC
 </div>
 </div>
 </body>
