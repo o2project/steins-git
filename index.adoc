@@ -1,4 +1,4 @@
-= Steins;Git
+= Steins;Git 第二版
 :numbered!:
 :docinfo1:
 :toc2:
@@ -16,15 +16,11 @@
 ifeval::["{backend}" == "html5"]
 
 =====
-C86(2014/8/16(日) 西地区"な"ブロック-11b)にて頒布した「Gitの使い方を、Steins;Gateの世界観を通して説明する」本、「Steins;Git」のHTML版です。
+「Gitの使い方を、Steins;Gateの世界観を使って説明する」Steins;GitのHTMLプレビュー版です。
 =====
 
 =====
-2015/3/28(土)のコミケットスペシャル6にて第二版を頒布予定です。またその後に少量ですが委託も行う予定です。
-
-++++
-<blockquote class="twitter-tweet" lang="ja"><p>やりました <a href="http://t.co/BoLgK0I64K">pic.twitter.com/BoLgK0I64K</a></p>&mdash; KUBOTA Shota (@kubosho_) <a href="https://twitter.com/kubosho_/status/567353756115664897">2015, 2月 16</a></blockquote>
-++++
+2015/3/28(土)の「コミケットスペシャル6"M-62a"」にて第二版を頒布予定です。またその後に少量ですが委託も行う予定です。なお、初版はC86(2014/8/16(日) 西な-11b)にて頒布しました。
 =====
 
 =====
