@@ -10,8 +10,8 @@ endif::[]
 
 集中型バージョン管理システムより、なぜ分散型バージョン管理システムの Git を使ったほうがいいのか、メリットを解説していきます。
 
-include::not-need-network-connection.adoc[]
 include::trend.adoc[]
+include::not-need-network-connection.adoc[]
 
 // <<< PAGE BREAK PDFのみ
 <<<
