@@ -19,13 +19,13 @@ include::git-checkout-file.adoc[]
 include::git-diff.adoc[]
 include::git-branch.adoc[]
 include::git-reset.adoc[]
+
+// <<< PAGE BREAK (PDF のみ)
+<<<
+
 include::git-rebase.adoc[]
 include::git-checkout.adoc[]
 include::git-push.adoc[]
 include::git-pull.adoc[]
 include::git-merge.adoc[]
-
-// <<< PAGE BREAK (PDF のみ)
-<<<
-
 include::git-sync.adoc[]

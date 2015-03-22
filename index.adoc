@@ -85,8 +85,6 @@ include::sources/Ch2_WhyGit/readme.adoc[]
 
 include::sources/Ch3_HowToGit/readme.adoc[]
 
-<<<
-
 // あとがきではナンバリングをおこなわない
 :numbered!:
 
