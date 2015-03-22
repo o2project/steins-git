@@ -1,3 +1,26 @@
+## 2.2.0 (2015-03-22)
+
+
+#### Bug Fixes
+
+* **Ch3:** 第三章の時系列がおかしくなっていたのを修正 ([0f02ab62](https://github.com/o2project/steins-git/commit/0f02ab6257c8e5f5eb15de7dc56e9522bd02f60c))
+* **HTML:** 長い英語の文字列(URL)があったせいでウインドウ幅が狭いデバイスでは見にくくなっていたのを修正 ([73b52c09](https://github.com/o2project/steins-git/commit/73b52c096d197849512a55803d0cef567404f34e))
+* **images:** HTMLプレビュー版で画像が小さく表示されていた問題を解決した ([a29e7f40](https://github.com/o2project/steins-git/commit/a29e7f40014c9a2a490bc396a37657635e16745e))
+
+
+#### New and Edit
+
+* **git-branch:** ブランチに関する説明が不適当だったので直した ([f2a92c4b](https://github.com/o2project/steins-git/commit/f2a92c4bd7943f510ebe9902206e3287e06b7f67))
+* **git-diff:** `git diff` の方法を追加した ([e65f7e5b](https://github.com/o2project/steins-git/commit/e65f7e5b5420eb25ec09be2846c9f33efbe45eb2))
+
+
+#### Features
+
+* **PDF:**
+  * PDF版の見た目を調整 ([2ada9861](https://github.com/o2project/steins-git/commit/2ada9861575326346e91a9ae8e75c56fde0214cf), [0ebb7da3](https://github.com/o2project/steins-git/commit/0ebb7da367be9b9ce1b748ff452248c8a28a8379))
+  * PDFなどで使うフォントをVLゴシックから源真ゴシックに変更した ([743e2056](https://github.com/o2project/steins-git/commit/743e20569e8f3dd196330b03f7ea3b329937b1e3))
+
+
 ## 2.1.0 (2015-03-20)
 
 
