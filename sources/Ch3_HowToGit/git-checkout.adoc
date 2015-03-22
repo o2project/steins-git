@@ -13,19 +13,22 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 以下の図では「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout.jpg[ブランチを移動した後, 380]
+image::ch3/git-checkout.jpg[ブランチを移動した後, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
 image::ch3/git-checkout.jpg[ブランチを移動した後, 540]
 endif::[]
 
+// <<< PAGE BREAK (PDF のみ)
+<<<
+
 ==== GitHub for Windows (Mac) でのやり方
 
 現在のブランチが表示されている箇所をクリックすると、移動可能なブランチの一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout/github-app/git-branch-list.jpg[ブランチ一覧を表示している図, 380]
+image::ch3/git-checkout/github-app/git-branch-list.jpg[ブランチ一覧を表示している図, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -35,7 +38,7 @@ endif::[]
 ここでは「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout/github-app/git-checkout-after.jpg[ブランチを移動した後の図, 380]
+image::ch3/git-checkout/github-app/git-checkout-after.jpg[ブランチを移動した後の図, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]

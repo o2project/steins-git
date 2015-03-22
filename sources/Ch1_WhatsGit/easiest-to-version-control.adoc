@@ -7,7 +7,7 @@
 Steins;Gate で例えると「各章のフォーントリガーがキーになるところでデータをセーブしておく」という手法を使った事がある人はいると思います。
 
 ifeval::["{backend}" != "html5"]
-image::ch1/nitro-steins-gate_load.jpg[Steins;Gate ロード画面, 380]
+image::ch1/nitro-steins-gate_load.jpg[Steins;Gate ロード画面, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -25,7 +25,7 @@ endif::[]
 例えば、未来ガジェットのアイデアをひらめいてメモしたいとき、以下の画像で示しているようなファイル管理方法の場合だと、岡部は「はて…どれに書き込めばよかったかな」と困るでしょう。
 
 ifeval::["{backend}" != "html5"]
-image::ch1/gadget_idea.jpg[未来ガジェットのアイデアをあちこちに書いてしまった例, 380]
+image::ch1/gadget_idea.jpg[未来ガジェットのアイデアをあちこちに書いてしまった例, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]

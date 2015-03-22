@@ -3,7 +3,7 @@
 == 第三章 - 率先躬行のサインポスト
 
 ifeval::["{backend}" != "html5"]
-image::illustration/labmem.jpg[ラボメン, 380]
+image::illustration/labmem.jpg[ラボメン, 360]
 endif::[]
 
 これまで、Git とは何かという事や Git を使う理由について説明してきました。
@@ -23,4 +23,8 @@ include::git-checkout.adoc[]
 include::git-push.adoc[]
 include::git-pull.adoc[]
 include::git-merge.adoc[]
+
+// <<< PAGE BREAK (PDF のみ)
+<<<
+
 include::git-sync.adoc[]

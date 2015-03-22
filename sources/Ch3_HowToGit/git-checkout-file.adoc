@@ -8,10 +8,10 @@
 
 ==== SourceTree でのやり方
 
-方法としては、作業内容を無かった事にしたい対象のファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。
+方法としては、作業内容を無かった事にするファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout-file/source-tree/before.jpg[作業内容を無かった事にする, 380]
+image::ch3/git-checkout-file/source-tree/before.jpg[作業内容を無かった事にする, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -21,7 +21,7 @@ endif::[]
 変更を本当に破棄していいか確認の画面が表示されるので「OK」を押します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout-file/source-tree/confirm.jpg[作業内容を無かった事にするか確認がされる, 380]
+image::ch3/git-checkout-file/source-tree/confirm.jpg[作業内容を無かった事にするか確認がされる, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -31,7 +31,7 @@ endif::[]
 これで、紅莉栖に論破されたという事が無くなりました。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout-file/source-tree/after.jpg[論破された事を無くした後, 380]
+image::ch3/git-checkout-file/source-tree/after.jpg[論破された事を無くした後, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
@@ -40,30 +40,33 @@ endif::[]
 
 ==== GitHub for Windows (Mac) でのやり方
 
-作業内容を無かった事にしたい対象のファイルを右クリックで選択し「Discard Changes」を選択します。
+作業内容を無かった事にするファイルを右クリックで選択し「Discard Changes」を選択します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout-file/github-app/git-checkout-before.jpg[作業内容を無かった事にする, 380]
+image::ch3/git-checkout-file/github-app/git-checkout-before.jpg[作業内容を無かった事にする, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
 image::ch3/git-checkout-file/github-app/git-checkout-before.jpg[作業内容を無かった事にする, 540]
 endif::[]
 
-作業内容を無かった事にするか確認の画面が表示されるので、良い場合は「Discard Changes」を押します。
+変更を本当に破棄していいか確認の画面が表示されるので「Discard Changes」を押します。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout-file/github-app/git-checkout-confirm.jpg[作業内容を無かった事にするか確認画面が表示される, 380]
+image::ch3/git-checkout-file/github-app/git-checkout-confirm.jpg[作業内容を無かった事にするか確認画面が表示される, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
 image::ch3/git-checkout-file/github-app/git-checkout-confirm.jpg[作業内容を無かった事にするか確認画面が表示される, 540]
 endif::[]
 
+// <<< PAGE BREAK (PDF のみ)
+<<<
+
 これで、紅莉栖に論破されたという事が無くなりました。
 
 ifeval::["{backend}" != "html5"]
-image::ch3/git-checkout-file/github-app/git-checkout-after.jpg[作業内容が無かった事にされた, 380]
+image::ch3/git-checkout-file/github-app/git-checkout-after.jpg[作業内容が無かった事にされた, 360]
 endif::[]
 
 ifeval::["{backend}" == "html5"]
