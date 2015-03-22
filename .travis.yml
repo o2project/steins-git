@@ -1,6 +1,6 @@
 language: ruby
-cache: apt
 sudo: false
+cache: bundler
 
 branches:
   only:
