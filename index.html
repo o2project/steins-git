@@ -461,14 +461,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#git-clone">3.4. すでにあるリモートリポジトリを使ってバージョン管理を始める</a></li>
 <li><a href="#git-commit">3.5. 作業内容を記録する</a></li>
 <li><a href="#git-checkout-file">3.6. 作業内容を無かった事にする</a></li>
-<li><a href="#git-branch">3.7. ブランチの一覧を見たり、新たにブランチを作る</a></li>
-<li><a href="#git-reset">3.8. 作業内容をリセットする</a></li>
-<li><a href="#git-rebase">3.9. 作業内容を改変する</a></li>
-<li><a href="#git-checkout">3.10. ブランチを移動する</a></li>
-<li><a href="#git-push">3.11. リモートリポジトリに作業内容を送る</a></li>
-<li><a href="#git-pull">3.12. リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む</a></li>
-<li><a href="#git-merge">3.13. 別のブランチでの作業内容を取り込む</a></li>
-<li><a href="#git-sync">3.14. GitHub for Windows (Mac) でリモートリポジトリと同期する</a></li>
+<li><a href="#git-diff">3.7. 作業内容の差分を見る</a></li>
+<li><a href="#git-branch">3.8. ブランチの一覧を見たり、新たにブランチを作る</a></li>
+<li><a href="#git-reset">3.9. 作業内容をリセットする</a></li>
+<li><a href="#git-rebase">3.10. 作業内容を改変する</a></li>
+<li><a href="#git-checkout">3.11. ブランチを移動する</a></li>
+<li><a href="#git-push">3.12. リモートリポジトリに作業内容を送る</a></li>
+<li><a href="#git-pull">3.13. リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む</a></li>
+<li><a href="#git-merge">3.14. 別のブランチでの作業内容を取り込む</a></li>
+<li><a href="#git-sync">3.15. GitHub for Windows (Mac) でリモートリポジトリと同期する</a></li>
 </ul>
 </li>
 <li><a href="#chapter4-PostScript">あとがき</a>
@@ -868,7 +869,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>これで、岡部はいついかなる場所でも未来ガジェットのアイデアを書く事ができます。</p>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="try-out-a-local-repository">2.3. 自分の PC 上にあるリポジトリでいろいろ試せる</h3>
@@ -1160,7 +1160,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_sourcetree_でのやり方_4">3.6.1. SourceTree でのやり方</h4>
 <div class="paragraph">
-<p>方法としては、作業内容を無かった事にしたい対象のファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。</p>
+<p>方法としては、作業内容を無かった事にするファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1187,7 +1187,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_github_for_windows_mac_でのやり方_4">3.6.2. GitHub for Windows (Mac) でのやり方</h4>
 <div class="paragraph">
-<p>作業内容を無かった事にしたい対象のファイルを右クリックで選択し「Discard Changes」を選択します。</p>
+<p>作業内容を無かった事にするファイルを右クリックで選択し「Discard Changes」を選択します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1195,13 +1195,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>作業内容を無かった事にするか確認の画面が表示されるので、良い場合は「Discard Changes」を押します。</p>
+<p>変更を本当に破棄していいか確認の画面が表示されるので「Discard Changes」を押します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/ch3/git-checkout-file/github-app/git-checkout-confirm.jpg" alt="作業内容を無かった事にするか確認画面が表示される" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="paragraph">
 <p>これで、紅莉栖に論破されたという事が無くなりました。</p>
 </div>
@@ -1213,7 +1214,33 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-branch">3.7. ブランチの一覧を見たり、新たにブランチを作る</h3>
+<h3 id="git-diff">3.7. 作業内容の差分を見る</h3>
+<div class="paragraph">
+<p>作業内容の差分を見ます。例えるならば、岡部が、まゆりが死んだ理由を前回まゆりが死んだ理由と比較し、そこから試行錯誤するようなものです。</p>
+</div>
+<div class="paragraph">
+<p>SourceTree と GitHub for Windows (Mac) のどちらでも、特定の作業内容を選択する事で、その作業内容の一つ前の作業内容と比べてどのような変更をしたのか見る事ができます。</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>SourceTree では、以下のような見た目になります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-diff/source-tree/diff.jpg" alt="SourceTree で作業内容の差分を見ている例" width="540">
+</div>
+</div>
+<div class="paragraph">
+<p>GitHub for Windows (Mac) では、以下のような見た目になります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ch3/git-diff/github-app/diff.jpg" alt="GitHub for Windows (Mac) で作業内容の差分を見ている例" width="540">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="git-branch">3.8. ブランチの一覧を見たり、新たにブランチを作る</h3>
 <div class="paragraph">
 <p>ブランチの一覧を見たり、新たにブランチを作ったりします。「ブランチ」は例えるならば「世界線」となり、ブランチを作るという事は「世界線の観測」になります。</p>
 </div>
@@ -1235,7 +1262,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>この状態から SourceTree もしくは GitHub for Windows (Mac) を使って「鈴羽を引き止めるために D メールを送信した後の世界線」というブランチを作ります。</p>
 </div>
 <div class="sect3">
-<h4 id="_sourcetree_でのやり方_5">3.7.1. SourceTree でのやり方</h4>
+<h4 id="_sourcetree_でのやり方_5">3.8.1. SourceTree でのやり方</h4>
 <div class="paragraph">
 <p>SourceTree の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。</p>
 </div>
@@ -1254,9 +1281,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_github_for_windows_mac_でのやり方_5">3.7.2. GitHub for Windows (Mac) でのやり方</h4>
+<h4 id="_github_for_windows_mac_でのやり方_5">3.8.2. GitHub for Windows (Mac) でのやり方</h4>
 <div class="paragraph">
-<p>現在のブランチ名が書かれている左横に「線が分岐していて分岐先に＋が書かれているボタン」があります。</p>
+<p>現在のブランチ名が書かれている左横に「線が分岐していて分岐先に "＋" が書かれているボタン」があります。</p>
 </div>
 <div class="paragraph">
 <p>このボタンを押すと「Create New Branch」という画面が表示され、そこには「Name」と「From」の二つの項目があります。「Name」には任意の名前を入力し「From」では分岐元のブランチを選択します。</p>
@@ -1277,7 +1304,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-reset">3.8. 作業内容をリセットする</h3>
+<h3 id="git-reset">3.9. 作業内容をリセットする</h3>
 <div class="paragraph">
 <p>作業内容を無かった事にします。例えるならば、タイムリープのようなものです。</p>
 </div>
@@ -1316,7 +1343,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-rebase">3.9. 作業内容を改変する</h3>
+<h3 id="git-rebase">3.10. 作業内容を改変する</h3>
 <div class="paragraph">
 <p>作業内容を改変します。例えるならば、タイムリープマシンを使って過去の作業をやり直す感じです。</p>
 </div>
@@ -1329,7 +1356,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_コミットメッセージを修正する">3.9.1. コミットメッセージを修正する</h4>
+<h4 id="_コミットメッセージを修正する">3.10.1. コミットメッセージを修正する</h4>
 <div class="paragraph">
 <p>まず始めに、コミットメッセージを修正してみます。</p>
 </div>
@@ -1359,7 +1386,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_複数の作業内容を一つにまとめる">3.9.2. 複数の作業内容を一つにまとめる</h4>
+<h4 id="_複数の作業内容を一つにまとめる">3.10.2. 複数の作業内容を一つにまとめる</h4>
 <div class="paragraph">
 <p>次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。</p>
 </div>
@@ -1395,7 +1422,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-checkout">3.10. ブランチを移動する</h3>
+<h3 id="git-checkout">3.11. ブランチを移動する</h3>
 <div class="paragraph">
 <p>現在のブランチから別のブランチへ移動します。例えるならば D メールを送った結果、世界線変動が起こった状態を、任意のタイミングで起こせるというものです。</p>
 </div>
@@ -1403,7 +1430,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Git のブランチは「世界線」です。D メールによる世界線変動は、世界の状況に影響を及ぼしてましたが、Git ではそういった副作用が無く世界線の移動ができます。</p>
 </div>
 <div class="sect3">
-<h4 id="_sourcetree_でのやり方_6">3.10.1. SourceTree でのやり方</h4>
+<h4 id="_sourcetree_でのやり方_6">3.11.1. SourceTree でのやり方</h4>
 <div class="paragraph">
 <p>移動の方法は簡単で、画面左端に表示されているブランチ一覧から、移動したいブランチの名前をダブルクリックする事により、ブランチを移動できます。</p>
 </div>
@@ -1415,9 +1442,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-checkout.jpg" alt="ブランチを移動した後" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect3">
-<h4 id="_github_for_windows_mac_でのやり方_6">3.10.2. GitHub for Windows (Mac) でのやり方</h4>
+<h4 id="_github_for_windows_mac_でのやり方_6">3.11.2. GitHub for Windows (Mac) でのやり方</h4>
 <div class="paragraph">
 <p>現在のブランチが表示されている箇所をクリックすると、移動可能なブランチの一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。</p>
 </div>
@@ -1437,7 +1465,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-push">3.11. リモートリポジトリに作業内容を送る</h3>
+<h3 id="git-push">3.12. リモートリポジトリに作業内容を送る</h3>
 <div class="paragraph">
 <p>自分がした作業内容を、リモートリポジトリに送ります。例えるならば、岡部が紅莉栖にまゆりを助けるべくあれこれしてきた事を共有する感じです。</p>
 </div>
@@ -1451,7 +1479,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>なので、他のラボメン(今回の場合だと紅莉栖)に今まで岡部がしてきた作業内容を伝える必要があります。</p>
 </div>
 <div class="sect3">
-<h4 id="_sourcetree_でのやり方_7">3.11.1. SourceTree でのやり方</h4>
+<h4 id="_sourcetree_でのやり方_7">3.12.1. SourceTree でのやり方</h4>
 <div class="paragraph">
 <p>画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。</p>
 </div>
@@ -1480,7 +1508,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-pull">3.12. リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む</h3>
+<h3 id="git-pull">3.13. リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む</h3>
 <div class="paragraph">
 <p>他人がした変更をリモートリポジトリから取得し、自分の PC 上のリポジトリに取り込みます。</p>
 </div>
@@ -1513,7 +1541,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="git-merge">3.13. 別のブランチでの作業内容を取り込む</h3>
+<h3 id="git-merge">3.14. 別のブランチでの作業内容を取り込む</h3>
 <div class="paragraph">
 <p>別ブランチの作業内容を現在のブランチに取り込みます。例えるならば、世界線を収束させるための作業です。</p>
 </div>
@@ -1579,9 +1607,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-merge/source-tree/after.jpg" alt="マージが完了した状態" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="git-sync">3.14. GitHub for Windows (Mac) でリモートリポジトリと同期する</h3>
+<h3 id="git-sync">3.15. GitHub for Windows (Mac) でリモートリポジトリと同期する</h3>
 <div class="paragraph">
 <p>GitHub for Windows (Mac) では画面の右上に「Sync」というボタンがあります。</p>
 </div>
@@ -1893,7 +1922,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 2.1.0<br>
-Last updated 2015-03-21 11:47:04 UTC
+Last updated 2015-03-22 07:47:49 UTC
 </div>
 </div>
 </body>
