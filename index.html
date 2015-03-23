@@ -995,6 +995,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-init/github-app/plus.jpg" alt="「＋」ボタンを押した後「Create」を押している様子" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="paragraph">
 <p>それぞれ入力して「Create Repository」ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。しかし、やはり今までの作業内容が無いので、過去に戻ったり改変するという事はできません。</p>
 </div>
@@ -1076,6 +1077,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-clone/github-app/git-clone-after.jpg" alt="リポジトリを自分の PC 上にコピーした後" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect2">
@@ -1131,8 +1133,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-commit/github-app/git-commit-before.jpg" alt="追加したファイルをコミットする前" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="paragraph">
-<p>GitHub for Windows (Mac) の場合「ステージングエリア」にファイルを移動する必要はなく、いきなり GitHub for Windows (Mac) の画面下部でコミットメッセージを書く事ができます。</p>
+<p>GitHub for Windows (Mac) の場合「ステージングエリア」にファイルを移動する必要はなく、そのまま画面下部でコミットメッセージを書く事ができます。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1478,13 +1481,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>なので、他のラボメン(今回の場合だと紅莉栖)に今まで岡部がしてきた作業内容を伝える必要があります。</p>
 </div>
-<div class="sect3">
-<h4 id="_sourcetree_でのやり方_7">3.12.1. SourceTree でのやり方</h4>
 <div class="paragraph">
 <p>画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。</p>
-</div>
-<div class="paragraph">
-<p>以下の画像では、全てのブランチをプッシュしていますが、実際は現在のブランチのみプッシュしたほうが良いです。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1492,18 +1490,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>プッシュが終わり、作業内容の一覧に「origin/ブランチ名」という文字が表示されるようになりました。</p>
+<p>プッシュが終わり、作業内容の一覧に「origin/ブランチ名」という文字が表示されるようになりました。なお、「origin」というのは、リモートリポジトリの事を指しています。</p>
 </div>
 <div class="paragraph">
 <p>作業内容をリモートリポジトリに送ったとともに、紅莉栖にも今までの作業内容が伝わりました。</p>
 </div>
-<div class="paragraph">
-<p>ちなみに「origin」というのは、リモートリポジトリの事を指しています。</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="images/ch3/git-push-after.jpg" alt="git push 後" width="540">
-</div>
 </div>
 </div>
 </div>
@@ -1523,8 +1517,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="images/ch3/git-pull-before.jpg" alt="紅莉栖が作業している" width="540">
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="paragraph">
-<p>ここで、画面上部の「プル」を押します。たいていの場合は表示された画面内の「OK」を押せば大丈夫です。</p>
+<p>ここで、画面上部の「プル」を押します。基本は表示された画面内の「OK」を押すだけで良いです。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1532,7 +1527,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>「OK」を押す事により、リモートリポジトリと自分の PC 上の作業内容が同期されます。</p>
+<p>「OK」を押す事により、自分とリモートのリポジトリの作業内容が同期します。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1678,6 +1673,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>リポジトリに対して何か変更を加える場合、例えば機能を追加したい、説明書に誤字を見つけたので修正したい、といったときに Fork をして自分の手元で変更を加えます。</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect3">
 <h4 id="_pull_requests">Pull Requests</h4>
@@ -1920,7 +1916,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 2.2.0<br>
-Last updated 2015-03-22 08:16:15 UTC
+Last updated 2015-03-23 07:14:17 UTC
 </div>
 </div>
 </body>
