@@ -61,7 +61,10 @@ ifeval::["{backend}" == "html5"]
 image::ch3/git-commit/github-app/git-commit-before.jpg[追加したファイルをコミットする前, 540]
 endif::[]
 
-GitHub for Windows (Mac) の場合「ステージングエリア」にファイルを移動する必要はなく、いきなり GitHub for Windows (Mac) の画面下部でコミットメッセージを書く事ができます。
+// <<< PAGE BREAK PDFのみ
+<<<
+
+GitHub for Windows (Mac) の場合「ステージングエリア」にファイルを移動する必要はなく、そのまま画面下部でコミットメッセージを書く事ができます。
 
 ifeval::["{backend}" != "html5"]
 image::ch3/git-commit/github-app/git-commit-message.jpg[コミットメッセージを入力している最中, 360]
