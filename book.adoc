@@ -1,0 +1,36 @@
+= Steins;Git 第二版
+kubosho
+:author: kubosho
+:authorinitials: kubosho
+:keywords: Git, Steins;Gate
+:revnumber: {bookversion}
+:revdate: {docdate}
+:doctype: book
+:source: https://github.com/o2project/steins-git
+:icons: font
+:imagesdir: images
+:numbered!:
+:docinfo1:
+:toc:
+
+include::sources/Ch0_Introduction/readme.adoc[]
+
+<<<
+
+// ナンバリング開始
+:numbered:
+
+include::sources/Ch1_WhatsGit/readme.adoc[]
+
+<<<
+
+include::sources/Ch2_WhyGit/readme.adoc[]
+
+<<<
+
+include::sources/Ch3_HowToGit/readme.adoc[]
+
+// あとがきではナンバリングをおこなわない
+:numbered!:
+
+include::sources/Ch4_PostScript/readme.adoc[]

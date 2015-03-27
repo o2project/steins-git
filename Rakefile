@@ -1,7 +1,9 @@
 SRC_FILE = 'index.adoc'
+BOOK_SRC_FILE = 'book.adoc'
 OUTPUT_DIRECTORY = 'build/'
 OUTPUT_HTML_FILE = 'index.html'
 OUTPUT_XML_FILE = 'steins-git.xml'
+OUTPUT_BOOK_XML_FILE = 'steins-git-book.xml'
 
 REPOSITORY = if ENV['GH_TOKEN']
                'https://$GH_TOKEN@github.com/o2project/steins-git'
@@ -62,14 +64,6 @@ def build_asciidoc_to_pdf(src, output)
   sh "./bin/build-pdf #{output}"
 end
 
-def build_asciidoc_to_epub(src)
-  sh "bundle exec asciidoctor-epub3 -D build -a ebook-validate #{src}"
-end
-
-def build_asciidoc_to_mobi(src)
-  sh "bundle exec asciidoctor-epub3 -D build -a ebook-format=kf8 #{src}"
-end
-
 def push_to_target_branch(repo, branch)
   sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
 
@@ -113,21 +107,12 @@ namespace :generate do
     puts "Done!"
   end
 
-  task :epub do
+  task :book do
     puts 'Copy images to build directory...'
     directory_copy './images', "#{OUTPUT_DIRECTORY}images"
     puts "Done!"
-    puts 'Generate EPUB...'
-    build_asciidoc_to_epub SRC_FILE
-    puts "Done!"
-  end
-
-  task :mobi do
-    puts 'Copy images to build directory...'
-    directory_copy './images', "#{OUTPUT_DIRECTORY}images"
-    puts "Done!"
-    puts 'Generate Mobi...'
-    build_asciidoc_to_mobi SRC_FILE
+    puts 'Generate PDF...'
+    build_asciidoc_to_pdf BOOK_SRC_FILE, "#{OUTPUT_DIRECTORY}#{OUTPUT_BOOK_XML_FILE}"
     puts "Done!"
   end
 end
