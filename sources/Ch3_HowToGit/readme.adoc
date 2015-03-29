@@ -14,19 +14,11 @@ include::sourcetree-settings.adoc[]
 include::githubapp-settings.adoc[]
 include::git-init.adoc[]
 include::git-clone.adoc[]
-
-// <<< PAGE BREAK PDFのみ
-<<<
-
 include::git-commit.adoc[]
 include::git-checkout-file.adoc[]
 include::git-diff.adoc[]
 include::git-branch.adoc[]
 include::git-reset.adoc[]
-
-// <<< PAGE BREAK (PDF のみ)
-<<<
-
 include::git-rebase.adoc[]
 include::git-checkout.adoc[]
 include::git-push.adoc[]

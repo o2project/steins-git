@@ -6,6 +6,9 @@
 
 岡部にとって、論破されたという事は無くしたい事象ですが Git であればそれができます。
 
+// <<< PAGE BREAK PDFのみ
+<<<
+
 ==== SourceTree でのやり方
 
 方法としては、作業内容を無かった事にするファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。
@@ -28,6 +31,9 @@ ifeval::["{backend}" == "html5"]
 image::ch3/git-checkout-file/source-tree/confirm.jpg[作業内容を無かった事にするか確認がされる, 540]
 endif::[]
 
+// <<< PAGE BREAK PDFのみ
+<<<
+
 これで、紅莉栖に論破されたという事が無くなりました。
 
 ifeval::["{backend}" != "html5"]
@@ -37,6 +43,9 @@ endif::[]
 ifeval::["{backend}" == "html5"]
 image::ch3/git-checkout-file/source-tree/after.jpg[論破された事を無くした後, 540]
 endif::[]
+
+// <<< PAGE BREAK PDFのみ
+<<<
 
 ==== GitHub for Windows (Mac) でのやり方
 
@@ -59,9 +68,6 @@ endif::[]
 ifeval::["{backend}" == "html5"]
 image::ch3/git-checkout-file/github-app/git-checkout-confirm.jpg[作業内容を無かった事にするか確認画面が表示される, 540]
 endif::[]
-
-// <<< PAGE BREAK (PDF のみ)
-<<<
 
 これで、紅莉栖に論破されたという事が無くなりました。
 

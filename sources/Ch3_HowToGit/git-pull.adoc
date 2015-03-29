@@ -16,9 +16,6 @@ ifeval::["{backend}" == "html5"]
 image::ch3/git-pull-before.jpg[紅莉栖が作業している, 540]
 endif::[]
 
-// <<< PAGE BREAK PDFのみ
-<<<
-
 ここで、画面上部の「プル」を押します。基本は表示された画面内の「OK」を押すだけで良いです。
 
 ifeval::["{backend}" != "html5"]

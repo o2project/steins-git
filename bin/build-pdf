@@ -3,7 +3,7 @@
 declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
 SRC_FILE=${parentDir}/$1
 
-${parentDir}/fopub/bin/fopub -t ${parentDir}/styles "${SRC_FILE}" \
+${parentDir}/fopub/fopub -t ${parentDir}/styles "${SRC_FILE}" \
 -param body.font.family AozoraMinchoRegular \
 -param dingbat.font.family GenShinGothic-P-Normal \
 -param monospace.font.family GenShinGothic-P-Normal \
