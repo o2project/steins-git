@@ -6,6 +6,7 @@
   "license": "CC-BY-NC 2.1 JP",
   "scripts": {
     "setup": "npm install && bundle install --path vendor/bundle",
+    "build": "grunt shell:generateHtml",
     "serve": "grunt server",
     "open": "grunt server-open",
     "redpen": "grunt shell:proofreading"
