@@ -1,3 +1,20 @@
+### 2.2.1 (2015-06-28)
+
+
+#### Bug Fixes
+
+* **build:** HTML プレビュー版を見るための手順を追加 ([d802c221](https://github.com/o2project/steins-git/commit/d802c22148d6c34f6a00bf83f13e1e92640c799a))
+
+
+#### Features
+
+* **PDF:**
+  * PDF版の出力をより本らしくした ([c08dcdb7](https://github.com/o2project/steins-git/commit/c08dcdb7db0ef80e55bc6129a7d9bed7e8b97941))
+  * 配布用のPDF出力をできるようにした ([01d2b9c6](https://github.com/o2project/steins-git/commit/01d2b9c651a301f159356f45d9c757e2e78f9555))
+* **epub:** EPUB版とmobi版へ変換する機能を削除 ([0ea8c491](https://github.com/o2project/steins-git/commit/0ea8c49121cddeabda21145d9a8a3fc2117dacb0))
+* **pdf:** 総ページ数が64ページになるようにしつつ見た目を調整 ([19c93d89](https://github.com/o2project/steins-git/commit/19c93d893268f18cb72048b4d6f4a8fad833806e))
+
+
 ## 2.2.0 (2015-03-22)
 
 
