@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.2">
+<meta name="generator" content="Asciidoctor 1.5.3">
 <title>Steins;Git 第二版</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
-/* Remove the comments around the @import statement below when using this as a custom stylesheet */
-/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400";*/
+/* Remove comment around @import statement below when using as a custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
 audio,canvas,video{display:inline-block}
 audio:not([controls]){display:none;height:0}
@@ -57,7 +57,6 @@ a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
 img{-ms-interpolation-mode:bicubic}
-#map_canvas img,#map_canvas embed,#map_canvas object,.map_canvas img,.map_canvas embed,.map_canvas object{max-width:none!important}
 .left{float:left!important}
 .right{float:right!important}
 .text-left{text-align:left!important}
@@ -65,10 +64,12 @@ img{-ms-interpolation-mode:bicubic}
 .text-center{text-align:center!important}
 .text-justify{text-align:justify!important}
 .hide{display:none}
-.antialiased,body{-webkit-font-smoothing:antialiased}
-img{display:inline-block;vertical-align:middle}
+body{-webkit-font-smoothing:antialiased}
+img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.spread{width:100%}
 p.lead,.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{font-size:1.21875em;line-height:1.6}
 .subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
 div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
@@ -111,12 +112,14 @@ blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
 h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
-h4{font-size:1.4375em}}table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
 table thead,table tfoot{background:#f7f8f7;font-weight:bold}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+body{tab-size:4}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
@@ -124,7 +127,7 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 *:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
 .keyseq{color:rgba(51,51,51,.8)}
-kbd{display:inline-block;color:rgba(0,0,0,.8);font-size:.75em;line-height:1.4;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:-.15em .15em 0 .15em;padding:.2em .6em .2em .5em;vertical-align:middle;white-space:nowrap}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
 .keyseq kbd:last-child{margin-right:0}
 .menuseq,.menu{color:rgba(0,0,0,.8)}
@@ -155,29 +158,33 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toc ul.sectlevel0>li>a{font-style:italic}
 #toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
 #toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
 #toc a{text-decoration:none}
 #toc a:active{text-decoration:underline}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media only screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
 #toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
-#toc.toc2 #toctitle{margin-top:0;font-size:1.2em}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
 #toc.toc2 ul ul{margin-left:0;padding-left:1em}
 #toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
 body.toc2.toc-right{padding-left:0;padding-right:15em}
-body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
 #toc.toc2{width:20em}
 #toc.toc2 #toctitle{font-size:1.375em}
 #toc.toc2>ul{font-size:.95em}
 #toc.toc2 ul ul{padding-left:1.25em}
-body.toc2.toc-right{padding-left:0;padding-right:20em}}#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
 #footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
 #footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 .sect1{padding-bottom:.625em}
-@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}.sect1+.sect1{border-top:1px solid #efefed}
+@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
+.sect1+.sect1{border-top:1px solid #efefed}
 #content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
 #content h1>a.anchor:before,h2>a.anchor:before,h3>a.anchor:before,#toctitle>a.anchor:before,.sidebarblock>.content>.title>a.anchor:before,h4>a.anchor:before,h5>a.anchor:before,h6>a.anchor:before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
 #content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
@@ -206,7 +213,9 @@ table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inh
 .sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
 .literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
 .literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
-@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
 .listingblock pre.highlightjs{padding:0}
 .listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
 .listingblock pre.prettyprint{border-width:0}
@@ -216,7 +225,7 @@ table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inh
 .listingblock.terminal pre .command:before{content:attr(data-prompt);padding-right:.5em;color:#999}
 .listingblock.terminal pre .command:not([data-prompt]):before{content:"$"}
 table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
-table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
 table.pyhltable td.code{padding-left:.75em;padding-right:0}
 pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
 pre.pygments .lineno{display:inline-block;margin-right:.25em}
@@ -237,13 +246,12 @@ table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
 .verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
 .quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
 .quoteblock .attribution br,.verseblock .attribution br{display:none}
-.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.05em;color:rgba(0,0,0,.6)}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
 .quoteblock.abstract{margin:0 0 1.25em 0;display:block}
 .quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{text-align:left;word-spacing:0}
 .quoteblock.abstract blockquote:before,.quoteblock.abstract blockquote p:first-of-type:before{display:none}
 table.tableblock{max-width:100%;border-collapse:separate}
 table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0}
-table.spread{width:100%}
 table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
 table.grid-all th.tableblock,table.grid-all td.tableblock{border-width:0 1px 1px 0}
 table.grid-all tfoot>tr>th.tableblock,table.grid-all tfoot>tr>td.tableblock{border-width:1px 1px 0 0}
@@ -289,8 +297,8 @@ ol.upperroman{list-style-type:upper-roman}
 ol.lowergreek{list-style-type:lower-greek}
 .hdlist>table,.colist>table{border:0;background:none}
 .hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
-td.hdlist1{padding-right:.75em;font-weight:bold}
-td.hdlist1,td.hdlist2{vertical-align:top}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
 .literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
 .colist>table tr>td:first-of-type{padding:0 .75em;line-height:1}
 .colist>table tr>td:last-of-type{padding:.25em 0}
@@ -303,13 +311,14 @@ td.hdlist1,td.hdlist2{vertical-align:top}
 .image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
 .image.left{margin-right:.625em}
 .image.right{margin-left:.625em}
-a.image{text-decoration:none}
-span.footnote,span.footnoteref{vertical-align:super;font-size:.875em}
-span.footnote a,span.footnoteref a{text-decoration:none}
-span.footnote a:active,span.footnoteref a:active{text-decoration:underline}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em 0;border-width:1px 0 0 0}
-#footnotes .footnote{padding:0 .375em;line-height:1.3;font-size:.875em;margin-left:1.2em;text-indent:-1.2em;margin-bottom:.2em}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;text-indent:-1.05em;margin-bottom:.2em}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
@@ -367,11 +376,10 @@ span.icon>.fa{cursor:default}
 pre .conum[data-value]{position:relative;top:-.125em}
 b.conum *{color:inherit!important}
 .conum:not([data-value]):empty{display:none}
-h1,h2{letter-spacing:-.01em}
-dt,th.tableblock,td.content{text-rendering:optimizeLegibility}
-p,td.content{letter-spacing:-.01em}
-p strong,td.content strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content{font-size:1.0625rem}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -382,9 +390,9 @@ a{color:inherit!important;text-decoration:underline!important}
 a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
 a[href^="http:"]:not(.bare):after,a[href^="https:"]:not(.bare):after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
 abbr[title]:after{content:" (" attr(title) ")"}
-pre,blockquote,tr,img{page-break-inside:avoid}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
 thead{display:table-header-group}
-img{max-width:100%!important}
+svg{max-width:100%}
 p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
 h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
 #toc,.sidebarblock,.exampleblock>.content{background:none!important}
@@ -408,7 +416,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <meta name="description" content="Git を Steins;Gate の世界観を使って説明する本です。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="//o2project.github.io/steins-git/images/share/ogp.jpg">
@@ -589,30 +597,30 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_謝辞">謝辞</h3>
 <div class="paragraph">
-<p>@kyo_ago<span class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</span> の下記のツイートにより、本書を書こうと思いました<span class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</span>。</p>
+<p>@kyo_ago<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup> の下記のツイートにより、本書を書こうと思いました<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup>。</p>
 </div>
 <div class="quoteblock">
 <blockquote>
 <div class="paragraph">
 <p>結局「シュタゲで覚えるgit」って誰も書かなかったんですか？
-2013年12月19日<span class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</span></p>
+2013年12月19日<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup></p>
 </div>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>@kyo_ago には Twitter 上で様々な助言をいただいたり、@watilde<span class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</span> を交えてレビュー会というのをしていただきました。</p>
+<p>@kyo_ago には Twitter 上で様々な助言をいただいたり、@watilde<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup> を交えてレビュー会というのをしていただきました。</p>
 </div>
 <div class="paragraph">
-<p>Gitter<span class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</span> というチャットサービス上では、yosiwo<span class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</span> さんに構成について助言をもらいました。</p>
+<p>Gitter<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup> というチャットサービス上では、yosiwo<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</sup> さんに構成について助言をもらいました。</p>
 </div>
 <div class="paragraph">
-<p>また @GeckoTang<span class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</span> には誤字の指摘をいただきました。</p>
+<p>また @GeckoTang<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</sup> には誤字の指摘をいただきました。</p>
 </div>
 <div class="paragraph">
-<p>「シュタゲで分かるGit」をテーマにした「Steins;Git」という薄い本をC86(コミックマーケット86)で頒布します<span class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</span>という記事を公開した際、期待や実際に欲しいといった声をあげてくださった皆さんには、執筆を頑張る気力をもらいました。</p>
+<p>「シュタゲで分かるGit」をテーマにした「Steins;Git」という薄い本をC86(コミックマーケット86)で頒布します<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</sup>という記事を公開した際、期待や実際に欲しいといった声をあげてくださった皆さんには、執筆を頑張る気力をもらいました。</p>
 </div>
 <div class="paragraph">
-<p>また、進捗管理・イラスト発注・印刷業者への確認・本書のレビューと、さまざまな作業を担ってくれた fruitsnoodle<span class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnote_9" title="View footnote.">9</a>]</span> と、表紙と各章のイラストを描いた GiantRobot<span class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</span> さんには非常に助けられました。</p>
+<p>また、進捗管理・イラスト発注・印刷業者への確認・本書のレビューと、さまざまな作業を担ってくれた fruitsnoodle<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnote_9" title="View footnote.">9</a>]</sup> と、表紙と各章のイラストを描いた GiantRobot<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</sup> さんには非常に助けられました。</p>
 </div>
 <div class="paragraph">
 <p>本当にありがとうございます。</p>
@@ -746,13 +754,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>上記でも書きましたが「Git」は「分散型バージョン管理システム」の一つです。他の分散型バージョン管理システムとして「Mercurial」「Bazaar」などがありますが、この書籍では特に触れません。</p>
 </div>
 <div class="paragraph">
-<p>Git の読み方は「ギット」です。<span class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnote_11" title="View footnote.">11</a>]</span>イギリス英語のスラングで「バカ」「卑劣な」という意味があるそうです。なぜこの名前が付いたかはWikipedia<span class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnote_12" title="View footnote.">12</a>]</span> や、Git FAQ (英語)<span class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnote_13" title="View footnote.">13</a>]</span> を見てみてください。</p>
+<p>Git の読み方は「ギット」です。<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnote_11" title="View footnote.">11</a>]</sup>イギリス英語のスラングで「バカ」「卑劣な」という意味があるそうです。なぜこの名前が付いたかはWikipedia<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnote_12" title="View footnote.">12</a>]</sup> や、Git FAQ (英語)<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnote_13" title="View footnote.">13</a>]</sup> を見てみてください。</p>
 </div>
 <div class="paragraph">
-<p>Git は「リポジトリ」という「ファイルのスナップショット<span class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnote_14" title="View footnote.">14</a>]</span>が保管されている場所」があります。</p>
+<p>Git は「リポジトリ」という「ファイルのスナップショット<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnote_14" title="View footnote.">14</a>]</sup>が保管されている場所」があります。</p>
 </div>
 <div class="paragraph">
-<p>スナップショットを保存する方法ですが、Git には「コミット<span class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnote_15" title="View footnote.">15</a>]</span>」という「スナップショットを任意のタイミングで保存する機能」があります。その機能を使う事により、自分がした作業を記録する事ができます。</p>
+<p>スナップショットを保存する方法ですが、Git には「コミット<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnote_15" title="View footnote.">15</a>]</sup>」という「スナップショットを任意のタイミングで保存する機能」があります。その機能を使う事により、自分がした作業を記録する事ができます。</p>
 </div>
 <div class="paragraph">
 <p>この「コミット」ですが、Steins;Gate のゲームシステムで例えると「セーブ」と言えます。そして「セーブデータ」が「リポジトリ」です。</p>
@@ -764,19 +772,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>また Git で他の人と作業内容を共有したいという場合は、ネットワーク上に共有リポジトリを用意しておき、そこへ自分の作業内容を送信します。</p>
 </div>
 <div class="paragraph">
-<p>作業内容の送信をする機能を「プッシュ<span class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnote_16" title="View footnote.">16</a>]</span>」と言います。</p>
+<p>作業内容の送信をする機能を「プッシュ<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnote_16" title="View footnote.">16</a>]</sup>」と言います。</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_gitの利点">1.2.2. Gitの利点</h4>
 <div class="paragraph">
-<p>Git の概要でも書きましたが、作業した内容を作業前の状態に戻したいといったときでも「チェックアウト<span class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnote_17" title="View footnote.">17</a>]</span>」や「リバート<span class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnote_18" title="View footnote.">18</a>]</span>」という機能を使えば、手軽に戻す事ができます。</p>
+<p>Git の概要でも書きましたが、作業した内容を作業前の状態に戻したいといったときでも「チェックアウト<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnote_17" title="View footnote.">17</a>]</sup>」や「リバート<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnote_18" title="View footnote.">18</a>]</sup>」という機能を使えば、手軽に戻す事ができます。</p>
 </div>
 <div class="paragraph">
 <p>これによりファイルを編集する際に、ファイル名に日付などを追加してからコピーという事をしなくて済むので、編集すべきファイルがどれなのか分からなくなる問題が無くなります。</p>
 </div>
 <div class="paragraph">
-<p>また、多人数での編集も「プル<span class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnote_19" title="View footnote.">19</a>]</span>」という「自分の PC 上のリポジトリに、ネットワーク上にあるリポジトリの最新の内容を反映する機能」を使う事により、他の人が変更した点も取り込めます。</p>
+<p>また、多人数での編集も「プル<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnote_19" title="View footnote.">19</a>]</sup>」という「自分の PC 上のリポジトリに、ネットワーク上にあるリポジトリの最新の内容を反映する機能」を使う事により、他の人が変更した点も取り込めます。</p>
 </div>
 <div class="paragraph">
 <p>なので、同じファイルを編集してしまったために、どちらかの編集内容が消えてしまうという事が少なくなります。これで岡部と紅莉栖も喧嘩しなくなるでしょう。</p>
@@ -804,7 +812,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>といっても、言葉だけでは説得力がありません。なので、流行している事を示すデータをいくつか紹介します。なお、これから出てくるスクリーンショットは2014年8月3日に撮られたものです。</p>
 </div>
 <div class="paragraph">
-<p>はじめに Google トレンドで日本における Git・SVN・Subversion の人気度の動向を調べた結果<span class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnote_20" title="View footnote.">20</a>]</span>です。</p>
+<p>はじめに Google トレンドで日本における Git・SVN・Subversion の人気度の動向を調べた結果<sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnote_20" title="View footnote.">20</a>]</sup>です。</p>
 </div>
 <div class="paragraph">
 <p>ここでは Git が登場した2005年4月から2014年7月までのグラフを掲載していますが、2013年あたりから SVN と Git の人気度が逆転し、Git は今なお右肩上がりになっています。今後もこの傾向は変わらないと考えられます。</p>
@@ -815,7 +823,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>次に Qiita<span class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnote_21" title="View footnote.">21</a>]</span> という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこで SVN と Subversion を検索した結果<span class="footnote">[<a id="_footnoteref_22" class="footnote" href="#_footnote_22" title="View footnote.">22</a>]</span><span class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnote_23" title="View footnote.">23</a>]</span>が以下の通りになります。</p>
+<p>次に Qiita<sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnote_21" title="View footnote.">21</a>]</sup> という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこで SVN と Subversion を検索した結果<sup class="footnote">[<a id="_footnoteref_22" class="footnote" href="#_footnote_22" title="View footnote.">22</a>]</sup><sup class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnote_23" title="View footnote.">23</a>]</sup>が以下の通りになります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -823,7 +831,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>次に Git を検索した結果<span class="footnote">[<a id="_footnoteref_24" class="footnote" href="#_footnote_24" title="View footnote.">24</a>]</span>です。SVN と比べ、まさにケタ違いの投稿数とフォロワー(タグの新着の投稿を追っている人達)となります。</p>
+<p>次に Git を検索した結果<sup class="footnote">[<a id="_footnoteref_24" class="footnote" href="#_footnote_24" title="View footnote.">24</a>]</sup>です。SVN と比べ、まさにケタ違いの投稿数とフォロワー(タグの新着の投稿を追っている人達)となります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -831,7 +839,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>最後に Stack Overflow<span class="footnote">[<a id="_footnoteref_25" class="footnote" href="#_footnote_25" title="View footnote.">25</a>]</span>という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<span class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnote_26" title="View footnote.">26</a>]</span>で SVN を検索した結果が以下の通りになります。</p>
+<p>最後に Stack Overflow<sup class="footnote">[<a id="_footnoteref_25" class="footnote" href="#_footnote_25" title="View footnote.">25</a>]</sup>という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<sup class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnote_26" title="View footnote.">26</a>]</sup>で SVN を検索した結果が以下の通りになります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -856,7 +864,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Git はネットワーク上にあるリポジトリを使わなかったり、もし使っていたとしても自分の手元で作業内容を記録する時はネットワークの接続は必要ありません。</p>
 </div>
 <div class="paragraph">
-<p>つまり、作業内容の記録(コミット)や世界線移動(ブランチ<span class="footnote">[<a id="_footnoteref_27" class="footnote" href="#_footnote_27" title="View footnote.">27</a>]</span>移動)という、作業をする上で多くおこなう事が高速にできる事を意味します。</p>
+<p>つまり、作業内容の記録(コミット)や世界線移動(ブランチ<sup class="footnote">[<a id="_footnoteref_27" class="footnote" href="#_footnote_27" title="View footnote.">27</a>]</sup>移動)という、作業をする上で多くおこなう事が高速にできる事を意味します。</p>
 </div>
 <div class="paragraph">
 <p>SVN を他の人と共有する形で使っていた場合、手元にリポジトリがなく、ネットワーク上にのみリポジトリがある状態になります。</p>
@@ -886,7 +894,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Git は、手軽に自分の PC 上にリポジトリを作れるので、そこで Git の機能を気軽に試す事ができます。</p>
 </div>
 <div class="paragraph">
-<p>また、共有リポジトリから「クローン<span class="footnote">[<a id="_footnoteref_28" class="footnote" href="#_footnote_28" title="View footnote.">28</a>]</span>」して、自分の PC 上に共有リポジトリのコピーを作って、そのリポジトリでいろいろと試した結果、どうにもならない状態になってしまっても、ふたたび共有リポジトリを手元にクローンすれば何もなかったかのように元通りになります。</p>
+<p>また、共有リポジトリから「クローン<sup class="footnote">[<a id="_footnoteref_28" class="footnote" href="#_footnote_28" title="View footnote.">28</a>]</sup>」して、自分の PC 上に共有リポジトリのコピーを作って、そのリポジトリでいろいろと試した結果、どうにもならない状態になってしまっても、ふたたび共有リポジトリを手元にクローンすれば何もなかったかのように元通りになります。</p>
 </div>
 <div class="paragraph">
 <p>そのため、例えばまゆりや、るかが役に立ちたいと思って、岡部や紅莉栖から Git の使い方を教えてもらうとなったときに、岡部や紅莉栖は実際に Git の機能を試しながら教えるという事ができます。</p>
@@ -902,7 +910,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>これまで、Git とは何かという事や Git を使う理由について説明してきました。</p>
 </div>
 <div class="paragraph">
-<p>これらを踏まえ、ここでは実際に Git の様々な操作方法を SourceTree<span class="footnote">[<a id="_footnoteref_29" class="footnote" href="#_footnote_29" title="View footnote.">29</a>]</span>や GitHub for Mac<span class="footnote">[<a id="_footnoteref_30" class="footnote" href="#_footnote_30" title="View footnote.">30</a>]</span><span class="footnote">[<a id="_footnoteref_31" class="footnote" href="#_footnote_31" title="View footnote.">31</a>]</span> というソフトウェアを使用して説明します。</p>
+<p>これらを踏まえ、ここでは実際に Git の様々な操作方法を SourceTree<sup class="footnote">[<a id="_footnoteref_29" class="footnote" href="#_footnote_29" title="View footnote.">29</a>]</sup>や GitHub for Mac<sup class="footnote">[<a id="_footnoteref_30" class="footnote" href="#_footnote_30" title="View footnote.">30</a>]</sup><sup class="footnote">[<a id="_footnoteref_31" class="footnote" href="#_footnote_31" title="View footnote.">31</a>]</sup> というソフトウェアを使用して説明します。</p>
 </div>
 <div class="sect2">
 <h3 id="sourcetree-settings">3.1. SourceTree のインストールと設定</h3>
@@ -1652,10 +1660,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>なので、Git の仕組みを使って、自分達が作ったプログラムコードなどを共有できるサービスがいくつか出てきました。</p>
 </div>
 <div class="paragraph">
-<p>その中の一つがこれから紹介する GitHub<span class="footnote">[<a id="_footnoteref_32" class="footnote" href="#_footnote_32" title="View footnote.">32</a>]</span> と Bitbucket<span class="footnote">[<a id="_footnoteref_33" class="footnote" href="#_footnote_33" title="View footnote.">33</a>]</span> になります。　</p>
+<p>その中の一つがこれから紹介する GitHub<sup class="footnote">[<a id="_footnoteref_32" class="footnote" href="#_footnote_32" title="View footnote.">32</a>]</sup> と Bitbucket<sup class="footnote">[<a id="_footnoteref_33" class="footnote" href="#_footnote_33" title="View footnote.">33</a>]</sup> になります。　</p>
 </div>
 <div class="paragraph">
-<p>ちなみに、この書籍も GitHub で管理されています。<span class="footnote">[<a id="_footnoteref_34" class="footnote" href="#_footnote_34" title="View footnote.">34</a>]</span></p>
+<p>ちなみに、この書籍も GitHub で管理されています。<sup class="footnote">[<a id="_footnoteref_34" class="footnote" href="#_footnote_34" title="View footnote.">34</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
@@ -1711,16 +1719,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Gitチュートリアルとトレーニング| Atlassian<span class="footnote">[<a id="_footnoteref_35" class="footnote" href="#_footnote_35" title="View footnote.">35</a>]</span></p>
+<p>Gitチュートリアルとトレーニング| Atlassian<sup class="footnote">[<a id="_footnoteref_35" class="footnote" href="#_footnote_35" title="View footnote.">35</a>]</sup></p>
 </li>
 <li>
-<p>イラストでわかる！git入門の入門 : アシアルブログ<span class="footnote">[<a id="_footnoteref_36" class="footnote" href="#_footnote_36" title="View footnote.">36</a>]</span></p>
+<p>イラストでわかる！git入門の入門 : アシアルブログ<sup class="footnote">[<a id="_footnoteref_36" class="footnote" href="#_footnote_36" title="View footnote.">36</a>]</sup></p>
 </li>
 <li>
-<p>Git - Book<span class="footnote">[<a id="_footnoteref_37" class="footnote" href="#_footnote_37" title="View footnote.">37</a>]</span></p>
+<p>Git - Book<sup class="footnote">[<a id="_footnoteref_37" class="footnote" href="#_footnote_37" title="View footnote.">37</a>]</sup></p>
 </li>
 <li>
-<p>初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG<span class="footnote">[<a id="_footnoteref_38" class="footnote" href="#_footnote_38" title="View footnote.">38</a>]</span></p>
+<p>初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG<sup class="footnote">[<a id="_footnoteref_38" class="footnote" href="#_footnote_38" title="View footnote.">38</a>]</sup></p>
 </li>
 </ul>
 </div>
@@ -1730,16 +1738,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>シュタインズ・ゲート公式資料集<span class="footnote">[<a id="_footnoteref_39" class="footnote" href="#_footnote_39" title="View footnote.">39</a>]</span></p>
+<p>シュタインズ・ゲート公式資料集<sup class="footnote">[<a id="_footnoteref_39" class="footnote" href="#_footnote_39" title="View footnote.">39</a>]</sup></p>
 </li>
 <li>
-<p>入門git<span class="footnote">[<a id="_footnoteref_40" class="footnote" href="#_footnote_40" title="View footnote.">40</a>]</span></p>
+<p>入門git<sup class="footnote">[<a id="_footnoteref_40" class="footnote" href="#_footnote_40" title="View footnote.">40</a>]</sup></p>
 </li>
 <li>
-<p>開発効率をUPする Git逆引き入門<span class="footnote">[<a id="_footnoteref_41" class="footnote" href="#_footnote_41" title="View footnote.">41</a>]</span></p>
+<p>開発効率をUPする Git逆引き入門<sup class="footnote">[<a id="_footnoteref_41" class="footnote" href="#_footnote_41" title="View footnote.">41</a>]</sup></p>
 </li>
 <li>
-<p>GitHub実践入門 Pull Requestによる開発の変革<span class="footnote">[<a id="_footnoteref_42" class="footnote" href="#_footnote_42" title="View footnote.">42</a>]</span></p>
+<p>GitHub実践入門 Pull Requestによる開発の変革<sup class="footnote">[<a id="_footnoteref_42" class="footnote" href="#_footnote_42" title="View footnote.">42</a>]</sup></p>
 </li>
 </ul>
 </div>
@@ -1751,16 +1759,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>執筆: kubosho_<span class="footnote">[<a id="_footnoteref_43" class="footnote" href="#_footnote_43" title="View footnote.">43</a>]</span></p>
+<p>執筆: kubosho_<sup class="footnote">[<a id="_footnoteref_43" class="footnote" href="#_footnote_43" title="View footnote.">43</a>]</sup></p>
 </li>
 <li>
-<p>アシスタント: fruitsnoodle<span class="footnote">[<a id="_footnoteref_44" class="footnote" href="#_footnote_44" title="View footnote.">44</a>]</span></p>
+<p>アシスタント: fruitsnoodle<sup class="footnote">[<a id="_footnoteref_44" class="footnote" href="#_footnote_44" title="View footnote.">44</a>]</sup></p>
 </li>
 <li>
-<p>表紙・各章のイラスト: GiantRobot<span class="footnote">[<a id="_footnoteref_45" class="footnote" href="#_footnote_45" title="View footnote.">45</a>]</span></p>
+<p>表紙・各章のイラスト: GiantRobot<sup class="footnote">[<a id="_footnoteref_45" class="footnote" href="#_footnote_45" title="View footnote.">45</a>]</sup></p>
 </li>
 <li>
-<p>発行所: 日光企画<span class="footnote">[<a id="_footnoteref_46" class="footnote" href="#_footnote_46" title="View footnote.">46</a>]</span></p>
+<p>発行所: 日光企画<sup class="footnote">[<a id="_footnoteref_46" class="footnote" href="#_footnote_46" title="View footnote.">46</a>]</sup></p>
 </li>
 </ul>
 </div>
@@ -1922,7 +1930,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 2.2.1<br>
-Last updated 2015-10-15 14:43:15 UTC
+Last updated 2015-11-12 14:44:21 UTC
 </div>
 </div>
 </body>
