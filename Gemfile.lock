@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.8)
-    asciidoctor (1.5.3)
+    addressable (2.4.0)
+    asciidoctor (1.5.4)
     backports (3.6.7)
     coderay (1.1.0)
     ethon (0.8.0)
@@ -59,4 +59,4 @@ DEPENDENCIES
   travis
 
 BUNDLED WITH
-   1.10.5
+   1.11.2
