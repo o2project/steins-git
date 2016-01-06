@@ -17,7 +17,7 @@ ifeval::["{backend}" == "html5"]
 
 [IMPORTANT]
 =====
-link:http://webcatalog-free.circle.ms/Circle/12334320[C89 3日目東ム39b]でSteins;Gitを既刊として頒布します。詳しい情報はlink:http://c.o2p.jp/c89/[C89の特設サイトをご覧ください]。
+現在link:https://o2p.booth.pm/items/181475[BOOTH]にてSteins;Git電子書籍（PDF）版のダウンロード販売をしています。紙の書籍版は「入荷お知らせメールを受け取る」を押していただけると販売開始するかもしれません。
 =====
 
 =====
