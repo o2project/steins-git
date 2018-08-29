@@ -2,7 +2,7 @@
 
 declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
 
-INPUT_FILES=`ls $parentDir/sources/Ch*/*.adoc`
+INPUT_FILES=`ls $parentDir/old_src/Ch*/*.adoc`
 OUTPUT_DIR=$parentDir/sources/docbook
 
 for input in $INPUT_FILES

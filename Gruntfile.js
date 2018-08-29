@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             },
             adoc: {
                 files: [
-                    'sources/Ch*/*.adoc',
+                    'old_src/Ch*/*.adoc',
                     'index.adoc'
                 ],
                 tasks: ['shell:generateHtml']

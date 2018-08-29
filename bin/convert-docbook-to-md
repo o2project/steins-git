@@ -2,7 +2,7 @@
 
 declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
 
-INPUT_FILES=`ls $parentDir/sources/docbook/**/*.xml`
+INPUT_FILES=`ls $parentDir/old_src/docbook/**/*.xml`
 OUTPUT_DIR=$(pwd)/sources/markdown
 
 for input in $INPUT_FILES
