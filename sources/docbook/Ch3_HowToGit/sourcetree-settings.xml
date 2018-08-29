@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="sourcetree-settings">
+<title>SourceTree のインストールと設定</title>
+<simpara>SourceTree のダウンロードは以下のURLからおこなえます。SourceTree はWindows と Mac OS X に対応しています。</simpara>
+<simpara><literal>https://www.atlassian.com/ja/software/sourcetree/overview</literal></simpara>
+<simpara>SourceTree のダウンロードが終わったら、次にインストールと設定をおこないます。Windows と Mac OS X それぞれ説明が分かりやすいページがあるので、そのページを紹介しておきます。</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Windows: <ulink url="http://blog.aotak.me/post/67349113824/sourcetree-tutorial-1">あおたくノート • SourceTreeとGitではじめるバージョン管理 #1</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Mac OS X: <ulink url="http://www.backlog.jp/git-guide/intro/intro2_1.html">Gitのインストール【チュートリアル1 Gitの基本】 | サルでもわかるGit入門 〜バージョン管理を使いこなそう〜</ulink>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</article>

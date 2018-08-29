@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-commit">
+<title>作業内容を記録する</title>
+<simpara>作業した内容をリポジトリに記録します。例えるならば、Steins;Gate でストーリーを進めた後、セーブをするようなものです。</simpara>
+<section id="_sourcetree_でのやり方">
+<title>SourceTree でのやり方</title>
+<simpara>リポジトリ内にファイルを新しく作成した場合 SourceTree 上ではファイル名の横に「？」が付く形で表示されます。これは、ファイルがまだバージョン管理されてない事を示しています。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/source-tree/add-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>変更したファイルにチェックを付ける前</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>この状態でファイル名の左横にあるチェックボックスにチェックを付けると「ステージングエリア」といわれるところにファイルが移動します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/source-tree/add-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>変更したファイルにチェックを付けた後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>移動した状態で、画面の下部にある「コミットメッセージ」と書かれている場所に任意のメッセージを入力します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/source-tree/commit-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>コミットメッセージを入力する前</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>入力した後「コミット」ボタンを押すと、作業した内容がリポジトリに記録されます。なお、初回以降は画面上部にある「コミット」ボタンを押す事により、メッセージを入力できます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/source-tree/commit-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>コミットした後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>ちなみに、コミットメッセージなどが表示されている場所の「ラベル」部分に「HEAD」という記載がありますが、これは「現時点でどのブランチにいるかを判別する情報」です。つまり、世界線の観測ができているという事で、これを例えるならば、ダイバージェンスメーターです。</simpara>
+</section>
+<section id="_github_for_windows_mac_でのやり方">
+<title>GitHub for Windows (Mac) でのやり方</title>
+<simpara>GitHub for Windows (Mac) では、リポジトリ内にファイルを新しく作成した場合、画面上部に「1 Change」と表示され、またファイル名の横にあるチェックボックスにチェックが付いた状態になります。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/github-app/git-commit-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>追加したファイルをコミットする前</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-pagebreak?></simpara>
+<simpara>GitHub for Windows (Mac) の場合「ステージングエリア」にファイルを移動する必要はなく、そのまま画面下部でコミットメッセージを書く事ができます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/github-app/git-commit-message.jpg"/>
+  </imageobject>
+  <textobject><phrase>コミットメッセージを入力している最中</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>コミットメッセージを書いて「Commit to master」というボタンを押すと、作業した内容がリポジトリに記録されます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-commit/github-app/git-commit-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>コミットした後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</article>

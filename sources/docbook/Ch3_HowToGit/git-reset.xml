@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-reset">
+<title>作業内容をリセットする</title>
+<simpara>作業内容を無かった事にします。例えるならば、タイムリープのようなものです。</simpara>
+<simpara>「作業内容を無かった事にする」と似ていますが、違いとしては「すでにリポジトリに追加した作業内容も無かった事にできる」と「作業内容をリセットしたという事が履歴に残る」があります。</simpara>
+<simpara>「作業内容を無かった事にする」はリーディング・シュタイナーが働かないので記憶から無くなってしまいますが「作業内容をリセットする」はリーディング・シュタイナーが働くため記憶に残る、と例えると分かりやすいかと思います。</simpara>
+<simpara>話を戻しますが「鈴羽を引き止めた世界線」でいくつか作業をした結果、履歴が以下のようになりました。最新の作業内容は「SERN の襲撃によりまゆりが死んでしまった…」となっています。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-reset-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>鈴羽を引き止めた世界線でいくつか作業した後の状態</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>ここで最新の作業内容である「SERN の襲撃によりまゆりが死んでしまった…」という作業を無かった事にして、紅莉栖がタイムリープマシンを完成させたところにタイムリープします。</simpara>
+<simpara>タイムリープするためには、戻したい作業内容の一つ前の作業内容を右クリックで選択し「このコミットまで "ブランチ名" を元に戻す」を選択します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-reset-right-click.jpg"/>
+  </imageobject>
+  <textobject><phrase>git resetをおこなおうとしている状態</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>これで、作業内容から「SERN の襲撃によりまゆりが死んでしまった…」というのが消えました。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-reset-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>git resetをした後の状態</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</article>

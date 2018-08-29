@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="easiest-to-version-control">
+<title>手軽なバージョン管理</title>
+<simpara>手軽かつ、よく使われるバージョン管理の手法として「ファイルに変更をするたびに、ファイルの名前を変更していく」というものがあります。</simpara>
+<simpara>Steins;Gate で例えると「各章のフォーントリガーがキーになるところでデータをセーブしておく」という手法を使った事がある人はいると思います。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch1/nitro-steins-gate_load.jpg"/>
+  </imageobject>
+  <textobject><phrase>Steins;Gate ロード画面</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>このバージョン管理手法の利点としては「手軽である」という事です。</simpara>
+<simpara>ファイルを変更するたびに、エクスプローラーや Finder 上でファイルを選択した状態で Windows  では <literal>F2</literal> Mac では <literal>Enter</literal> を押して名前を編集する事により、手軽にかつ PC を初めて起動した直後でも、ファイルのバージョン管理をおこなう事ができます。</simpara>
+<simpara>しかし、ファイル名を変更するだけのバージョン管理には、問題点が思いつく限りでも三つあります。それらの問題点について一つずつ詳細に書いていきます。</simpara>
+<section id="_どのファイルを更新すればいいのか分からなくなる">
+<title>どのファイルを更新すればいいのか分からなくなる</title>
+<simpara>例えば、未来ガジェットのアイデアをひらめいてメモしたいとき、以下の画像で示しているようなファイル管理方法の場合だと、岡部は「はて…どれに書き込めばよかったかな」と困るでしょう。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch1/gadget_idea.jpg"/>
+  </imageobject>
+  <textobject><phrase>未来ガジェットのアイデアをあちこちに書いてしまった例</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>またこの場合「最終版」という名前が付いたファイルにひらめいたアイデアを書き込んだものの、実は「最新」と書かれているほうが新しかった…という事が起こる可能性が大いにあります。</simpara>
+</section>
+<section id="_内容を前のものに戻しづらい_または戻せない">
+<title>内容を前のものに戻しづらい、または戻せない</title>
+<simpara>岡部がひらめいたアイデアを「最終版」と書かれているファイルに書き込んだ際、それが最新ではないと分かり、元のファイルの状態に戻したいと思いました。</simpara>
+<simpara>しかし、元の状態がどんなものだったか岡部は思い出せず、残しておきたかったアイデアまで削除してしまったり、追記したアイデアを完全に消せていなかったという事が起こりました。</simpara>
+<simpara>この事象は岡部だけではなく、ファイル名を変更するバージョン管理をしている人全員に起こりえる事です。</simpara>
+<simpara>これを Steins;Gate のゲームシステムで例えて言うと、データをセーブする場所を間違えて、消したくないセーブデータが消えたという事になります。</simpara>
+<simpara>このような経験をした事がある人はいると思います。実際に自分も各ヒロインの個別エンディングを見るために残しておいたデータに、誤って別のデータを上書きしてしまい、再度やり直したという事がありました。地味に辛かったです。</simpara>
+</section>
+<section id="_多人数での編集がほぼ不可能">
+<title>多人数での編集がほぼ不可能</title>
+<simpara>岡部が、ひらめいたアイデアを書いたファイルをネットワーク上の共有のディレクトリに保存していたとします。</simpara>
+<simpara>それを紅莉栖が見て、あれこれ書いて保存したと思った矢先、岡部が、紅莉栖が変更する前の状態で共有ディレクトリに保存していたファイルを開いてしまい、新たなアイデアを書いて保存してしまいました。</simpara>
+<simpara>そうした結果、紅莉栖が編集したところは全て消え、岡部が変更したところしか反映されていない……という事になります。おそらくこの事で二人は口喧嘩するでしょう。</simpara>
+</section>
+</section>
+</article>

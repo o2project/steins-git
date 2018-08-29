@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-push">
+<title>リモートリポジトリに作業内容を送る</title>
+<simpara>自分がした作業内容を、リモートリポジトリに送ります。例えるならば、岡部が紅莉栖にまゆりを助けるべくあれこれしてきた事を共有する感じです。</simpara>
+<simpara>今まで、岡部はまゆりを助けるために何度もタイムリープをおこなって奮闘してきましたが、その事を他のラボメンは知りません。</simpara>
+<simpara>奮闘している事を知られないままタイムリープマシンを壊そうとしても、紅莉栖に止められるのはしかたないです。</simpara>
+<simpara>なので、他のラボメン(今回の場合だと紅莉栖)に今まで岡部がしてきた作業内容を伝える必要があります。</simpara>
+<simpara>画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-push-branch-select.jpg"/>
+  </imageobject>
+  <textobject><phrase>git push 前</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>プッシュが終わり、作業内容の一覧に「origin/ブランチ名」という文字が表示されるようになりました。なお、「origin」というのは、リモートリポジトリの事を指しています。</simpara>
+<simpara>作業内容をリモートリポジトリに送ったとともに、紅莉栖にも今までの作業内容が伝わりました。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-push-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>git push 後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</article>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-branch">
+<title>ブランチの一覧を見たり、新たにブランチを作る</title>
+<simpara>ブランチの一覧を見たり、新たにブランチを作ったりします。「ブランチ」は例えるならば「世界線」となり、ブランチを作るという事は「世界線の観測」になります。</simpara>
+<simpara>また、リポジトリには「HEAD」という「自分が今どのブランチ(世界線)にいるのか分かるファイル」があり、それはダイバージェンスメーターだと言えるでしょう。</simpara>
+<simpara>では、ブランチを作る方法を説明していきます。なお、現在のブランチは「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」だとします。</simpara>
+<simpara>「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」で鈴羽を引き止めるために、岡部が D メールを送信しました。ここまでの作業内容は以下のようになります。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-branch/source-tree/before.jpg"/>
+  </imageobject>
+  <textobject><phrase>新たなブランチを作る前</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>この状態から SourceTree もしくは GitHub for Windows (Mac) を使って「鈴羽を引き止めるために D メールを送信した後の世界線」というブランチを作ります。</simpara>
+<section id="_sourcetree_でのやり方">
+<title>SourceTree でのやり方</title>
+<simpara>SourceTree の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-branch/source-tree/name.jpg"/>
+  </imageobject>
+  <textobject><phrase>ブランチ名を決めているところ</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-branch/source-tree/after.jpg"/>
+  </imageobject>
+  <textobject><phrase>ブランチを作った後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section id="_github_for_windows_mac_でのやり方">
+<title>GitHub for Windows (Mac) でのやり方</title>
+<simpara>現在のブランチ名が書かれている左横に「線が分岐していて分岐先に "＋" が書かれているボタン」があります。</simpara>
+<simpara>このボタンを押すと「Create New Branch」という画面が表示され、そこには「Name」と「From」の二つの項目があります。「Name」には任意の名前を入力し「From」では分岐元のブランチを選択します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-branch/github-app/branch-create-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>「Create New Branch」という画面が表示されている状態</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>それぞれ情報を入力した後「Create Branch」というボタンを押す事により、新しいブランチが作られます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-branch/github-app/branch-create-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>新規ブランチが作られた図</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</article>

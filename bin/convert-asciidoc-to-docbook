@@ -1,0 +1,22 @@
+#!/bin/bash
+
+declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
+
+INPUT_FILES=`ls $parentDir/sources/Ch*/*.adoc`
+OUTPUT_DIR=$parentDir/sources/docbook
+
+for input in $INPUT_FILES
+do
+    filename=`basename $input .adoc`
+    dirname=`dirname $input`
+    chapter_dir=`basename $dirname`
+    out_dir=$OUTPUT_DIR/$chapter_dir
+
+    if [ ! -e {$out_dir} ]; then
+        mkdir $out_dir
+    fi
+
+    asciidoc -b docbook $input
+    mv $dirname/$filename.xml $out_dir/$filename.xml
+done
+

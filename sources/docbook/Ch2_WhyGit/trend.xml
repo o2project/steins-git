@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="trend">
+<title>流行っている</title>
+<simpara>SVN と比較すると、Git は流行しています。つまり、それだけ皆が使いノウハウが出やすい状況にあります。</simpara>
+<simpara>といっても、言葉だけでは説得力がありません。なので、流行している事を示すデータをいくつか紹介します。なお、これから出てくるスクリーンショットは2014年8月3日に撮られたものです。</simpara>
+<simpara>はじめに Google トレンドで日本における Git・SVN・Subversion の人気度の動向を調べた結果<footnote><simpara><ulink url="http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m</simpara></footnote>です�">http://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&amp;geo=JP&amp;date=4%2F2005%20112m]です�</ulink>��</simpara>
+<simpara>ここでは Git が登場した2005年4月から2014年7月までのグラフを掲載していますが、2013年あたりから SVN と Git の人気度が逆転し、Git は今なお右肩上がりになっています。今後もこの傾向は変わらないと考えられます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch2/google-trend.jpg"/>
+  </imageobject>
+  <textobject><phrase>Googleトレンド</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>次に Qiita<footnote><simpara>http://qiita.com/</simpara></footnote> という、プログラミングやソフトウェア開発のときに使うツールなどの情報を投稿するサイトがあるのですが、そこで SVN と Subversion を検索した結果<footnote><simpara><ulink url="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=svn</simpara></footnote><footnote><simpara>http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion</simpara></footnote>が以下の通りになります�">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=svn]<footnote><simpara>http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=subversion</simpara></footnote>が以下の通りになります�</ulink>��</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch2/qiita-svn.jpg"/>
+  </imageobject>
+  <textobject><phrase>QiitaでSVNを検索した結果</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>次に Git を検索した結果<footnote><simpara><ulink url="http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git</simpara></footnote>です。SVN">http://qiita.com/search?utf8=%E2%9C%93&amp;sort=rel&amp;q=git]です。SVN</ulink> と比べ、まさにケタ違いの投稿数とフォロワー(タグの新着の投稿を追っている人達)となります。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch2/qiita-git.jpg"/>
+  </imageobject>
+  <textobject><phrase>QiitaでGitを検索した結果</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>最後に Stack Overflow<footnote><simpara><ulink url="http://stackoverflow.com/</simpara></footnote>という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<footnote><simpara>\http://stackoverflow.com/tags</simpara></footnote>�">http://stackoverflow.com/]という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索<footnote><simpara>\http://stackoverflow.com/tags</simpara></footnote>�</ulink>�� SVN を検索した結果が以下の通りになります。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch2/stackoverflow-svn.jpg"/>
+  </imageobject>
+  <textobject><phrase>Stack Overflow で SVN を検索した結果</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>次に Git を検索した結果です。SVN に比べ、タグが付けられた数が二倍以上となっています。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch2/stackoverflow-git.jpg"/>
+  </imageobject>
+  <textobject><phrase>Stack Overflow で Git を検索した結果</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>以上の事から、Git は SVN に比べて流行っていると言えます。</simpara>
+</section>
+</article>

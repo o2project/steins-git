@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-checkout-file">
+<title>作業内容を無かった事にする</title>
+<simpara>岡部は、ダルにメールを送信した後、秋葉原 UPX でタイムマシン理論についての講義を受けましたが、ディスカッションで紅莉栖に完全に論破されてしまいました。</simpara>
+<simpara>岡部にとって、論破されたという事は無くしたい事象ですが Git であればそれができます。</simpara>
+<simpara><?asciidoc-pagebreak?></simpara>
+<section id="_sourcetree_でのやり方">
+<title>SourceTree でのやり方</title>
+<simpara>方法としては、作業内容を無かった事にするファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout-file/source-tree/before.jpg"/>
+  </imageobject>
+  <textobject><phrase>作業内容を無かった事にする</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>変更を本当に破棄していいか確認の画面が表示されるので「OK」を押します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout-file/source-tree/confirm.jpg"/>
+  </imageobject>
+  <textobject><phrase>作業内容を無かった事にするか確認がされる</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-pagebreak?></simpara>
+<simpara>これで、紅莉栖に論破されたという事が無くなりました。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout-file/source-tree/after.jpg"/>
+  </imageobject>
+  <textobject><phrase>論破された事を無くした後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+<section id="_github_for_windows_mac_でのやり方">
+<title>GitHub for Windows (Mac) でのやり方</title>
+<simpara>作業内容を無かった事にするファイルを右クリックで選択し「Discard Changes」を選択します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout-file/github-app/git-checkout-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>作業内容を無かった事にする</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>変更を本当に破棄していいか確認の画面が表示されるので「Discard Changes」を押します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout-file/github-app/git-checkout-confirm.jpg"/>
+  </imageobject>
+  <textobject><phrase>作業内容を無かった事にするか確認画面が表示される</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>これで、紅莉栖に論破されたという事が無くなりました。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout-file/github-app/git-checkout-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>作業内容が無かった事にされた</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</article>
