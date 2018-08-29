@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-sync">
+<title>GitHub for Windows (Mac) でリモートリポジトリと同期する</title>
+<simpara>GitHub for Windows (Mac) では画面の右上に「Sync」というボタンがあります。</simpara>
+<simpara>これは、他の人がした作業内容をリモートリポジトリから取得して自分の PC 上のリポジトリに取り込みつつ、自分の PC 上のリポジトリに作業内容がある場合はそれをリモートリポジトリに送信します。</simpara>
+<simpara>つまり「git push」と「git pull」を同時におこなうものと考えれば良いでしょう。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-sync/git-sync-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>Sync を押す前</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>「Sync」を押すと、同期の進捗を表すバーが表示されます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-sync/git-sync-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>Sync を押して同期をしている</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</article>

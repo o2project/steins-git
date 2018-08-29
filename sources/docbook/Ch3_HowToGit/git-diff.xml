@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-diff">
+<title>作業内容の差分を見る</title>
+<simpara>作業内容の差分を見ます。例えるならば、岡部が、まゆりが死んだ理由を前回まゆりが死んだ理由と比較し、そこから試行錯誤するようなものです。</simpara>
+<simpara>SourceTree と GitHub for Windows (Mac) のどちらでも、特定の作業内容を選択する事で、その作業内容の一つ前の作業内容と比べてどのような変更をしたのか見る事ができます。</simpara>
+<simpara>SourceTree では、以下のような見た目になります。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-diff/source-tree/diff.jpg"/>
+  </imageobject>
+  <textobject><phrase>SourceTree で作業内容の差分を見ている例</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>GitHub for Windows (Mac) では、以下のような見た目になります。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-diff/github-app/diff.jpg"/>
+  </imageobject>
+  <textobject><phrase>GitHub for Windows (Mac) で作業内容の差分を見ている例</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</article>

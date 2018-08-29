@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="chapter4-PostScript">
+<title>あとがき</title>
+<section id="github-bitbucket">
+<title>GitHub と Bitbucket について</title>
+<simpara>「リモートリポジトリ」というキーワードが書籍中に何度か出てきました。</simpara>
+<simpara>このリモートリポジトリですが、例えばラボメンと共同で何か作業する(タイムリープマシンを作るなど)ときは必須になってきます。ですが、サーバーを用意して Git を設定してという手順をするのは面倒です。</simpara>
+<simpara>なので、Git の仕組みを使って、自分達が作ったプログラムコードなどを共有できるサービスがいくつか出てきました。</simpara>
+<simpara>その中の一つがこれから紹介する GitHub<footnote><simpara>https://github.com/</simpara></footnote> と Bitbucket<footnote><simpara>https://www.atlassian.com/ja/software/bitbucket/overview</simpara></footnote> になります。　</simpara>
+<simpara>ちなみに、この書籍も GitHub で管理されています。<footnote><simpara><ulink url="https://github.com/o2project/steins-git">https://github.com/o2project/steins-git</ulink></simpara></footnote></simpara>
+</section>
+<section id="_github_と_bitbucket_共通の機能">
+<title>GitHub と Bitbucket 共通の機能</title>
+<simpara>GitHub と Bitbucket どちらにも Issues・Fork・Pull Requests という機能があります。それらについて説明します。</simpara>
+<section id="_issues">
+<title>Issues</title>
+<simpara>バグやマイルストーン(目標)などを管理するものです。バグトラッキングシステムともいいます。例えるならば、鈴羽がタイムマシンが壊れているのに気づき、その事を Issues に追加し、ダルが対応するという感じです。</simpara>
+<simpara>例えば、リポジトリにあるコードが何か予期しない動きをしたときなどにバグ報告をしたり、新しい機能を追加するときにマイルストーンで管理をする事ができます。</simpara>
+</section>
+<section id="_fork">
+<title>Fork</title>
+<simpara>GitHub や Bitbucket 上で公開されているリポジトリを、自分のリポジトリとしてコピーする機能です。全ての公開されているリポジトリは Fork をする事ができます。</simpara>
+<simpara>リポジトリに対して何か変更を加える場合、例えば機能を追加したい、説明書に誤字を見つけたので修正したい、といったときに Fork をして自分の手元で変更を加えます。</simpara>
+</section>
+<section id="_pull_requests">
+<title>Pull Requests</title>
+<simpara>Fork した後にリポジトリに対して変更を加えたところを、Fork 元のリポジトリに取り込んでもらうように希望する機能です。</simpara>
+<simpara>Git は自分が管理していないリポジトリに何か変更を加えたい場合、変更できる権利が必要になってきます。しかし、やたらと変更できる権利を与えてしまうと、変な変更が加えられてしまう可能性があります。</simpara>
+<simpara>Pull Requests は、元のリポジトリを変更する権利を与えないかわりに、Fork 元のリポジトリに自分が変更を加えたものを取り込んでもらうように希望する機能です。</simpara>
+<simpara>この機能があるので、変更を取り込む作業を Fork 元のリポジトリを変更できる権利を持っている人達に委ねる事ができます。</simpara>
+<simpara>利点としては、Fork 元のリポジトリの管理者は変更できる権利を与えなくて済むのと Fork 先のリポジトリで変更した点を取り込む前に確認できるので、リポジトリに変な変更が加えられてしまうのを防げるという点にあります。</simpara>
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+</section>
+<section id="reference">
+<title>参考にした資料</title>
+<simpara>本書を書くにあたり参考にした資料の一覧となります。本書を読み、より Git について知りたいと感じたときには、以下のサイトや書籍を見てみるといいでしょう。</simpara>
+<section id="_webサイト">
+<title>Webサイト</title>
+<itemizedlist>
+<listitem>
+<simpara>
+Gitチュートリアルとトレーニング| Atlassian<footnote><simpara><ulink url="https://www.atlassian.com/ja/git/tutorial">https://www.atlassian.com/ja/git/tutorial</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+イラストでわかる！git入門の入門 : アシアルブログ<footnote><simpara><ulink url="http://blog.asial.co.jp/894">http://blog.asial.co.jp/894</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Git - Book<footnote><simpara><ulink url="http://git-scm.com/book/ja/">http://git-scm.com/book/ja/</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG<footnote><simpara><ulink url="http://liginc.co.jp/web/tool/79390">http://liginc.co.jp/web/tool/79390</ulink></simpara></footnote>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_書籍">
+<title>書籍</title>
+<itemizedlist>
+<listitem>
+<simpara>
+シュタインズ・ゲート公式資料集<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/4047263745">http://www.amazon.co.jp/dp/4047263745</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+入門git<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/427406767X">http://www.amazon.co.jp/dp/427406767X</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+開発効率をUPする Git逆引き入門<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/4863541465">http://www.amazon.co.jp/dp/4863541465</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+GitHub実践入門 Pull Requestによる開発の変革<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/477416366X">http://www.amazon.co.jp/dp/477416366X</ulink></simpara></footnote>
+</simpara>
+</listitem>
+</itemizedlist>
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+</section>
+<section id="author">
+<title>作者</title>
+<itemizedlist>
+<listitem>
+<simpara>
+執筆: kubosho_<footnote><simpara><ulink url="https://github.com/kubosho">https://github.com/kubosho</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+アシスタント: fruitsnoodle<footnote><simpara><ulink url="https://github.com/fruitsnoodle">https://github.com/fruitsnoodle</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+表紙・各章のイラスト: GiantRobot<footnote><simpara>pixivID: 1223059</simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+発行所: 日光企画<footnote><simpara><ulink url="http://www.nikko-pc.com/">http://www.nikko-pc.com/</ulink></simpara></footnote>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_使用しているフォント">
+<title>使用しているフォント</title>
+<itemizedlist>
+<listitem>
+<simpara>
+あおぞら明朝 (本文など)<footnote><simpara><ulink url="http://blueskis.wktk.so/AozoraMincho/">http://blueskis.wktk.so/AozoraMincho/</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+源真ゴシック (見出し部分など)<footnote><simpara><ulink url="http://jikasei.me/font/genshin/">http://jikasei.me/font/genshin/</ulink></simpara></footnote>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_git_のロゴについて">
+<title>Git のロゴについて</title>
+<itemizedlist>
+<listitem>
+<simpara>
+Git Logo by Jason Long is licensed under the Creative Commons Attribution 3.0 Unported License.
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</article>

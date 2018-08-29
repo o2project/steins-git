@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="githubapp-settings">
+<title>GitHub for Windows (Mac) のインストールと設定</title>
+<simpara>GitHub for Windows (Mac) のダウンロードは以下の URL からできます。SourceTree とは違い OS ごとに URL が違います。</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Windows: <literal>https://windows.github.com/</literal>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Mac OS X: <literal>https://mac.github.com/</literal>
+</simpara>
+</listitem>
+</itemizedlist>
+<simpara>GitHub for Windows (Mac) のダウンロードが終わったら、次にインストールと設定をします。</simpara>
+<simpara>GitHub for Mac 限定になってしまいますが、インストール後の設定や使い方について自分が書いた記事があるので紹介します。</simpara>
+<simpara><ulink url="http://blog.kubosho.com/entry/how-to-github-for-mac">GitHub for Macのインストール後の設定と使い方 - I&#8217;m kubosho_</ulink></simpara>
+</section>
+</article>

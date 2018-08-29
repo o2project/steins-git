@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-clone">
+<title>すでにあるリモートリポジトリを使ってバージョン管理を始める</title>
+<simpara>すでにあるリモートリポジトリを自分の PC 上へコピーし Git によるバージョン管理を始められるようにします。</simpara>
+<simpara>その前に、リモートリポジトリについて少し説明をします。リモートリポジトリとは、自分の PC 以外にあるリポジトリの事を指します。</simpara>
+<simpara>「自分の PC 以外にあるリポジトリ」ですが「インターネット上や誰かの PC 上にあるリポジトリ」を指します。</simpara>
+<simpara>他の章で「ネットワーク上のリポジトリ」という言葉がありましたが、これは「リモートリポジトリ」と同じ意味です。</simpara>
+<simpara>このリモートリポジトリを自分の PC 上にコピーするのがこれから説明する手順です。これにより、例えばラボメンなど、他の人と共同でタイムリープマシンを使って作業ができる体制が整います。</simpara>
+<section id="_sourcetree_でのやり方">
+<title>SourceTree でのやり方</title>
+<simpara>では早速、すでにあるリポジトリのを自分の PC 上に作りましょう。再び SourceTree 上でブックマークウインドウを表示します。</simpara>
+<simpara>そのブックマークウインドウの中で、三つ横並びに表示されているボタンのうち、一番左のボタンを押します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-clone/source-tree/button-select.jpg"/>
+  </imageobject>
+  <textobject><phrase>SourceTree のボタン</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>ボタンを押すといくつか選択肢が表示されますが、その中の「リポジトリをクローン」を選択します。すると、リポジトリを保存するディレクトリや、名前を決める画面が表示されます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-clone/source-tree/repository-select.jpg"/>
+  </imageobject>
+  <textobject><phrase>リポジトリを取得しようとしている状態</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>「ソースパス / URL」の部分に <literal>\git@github.com:o2project/steins-gate.git</literal> を入力して「クローン」を押すと、GitHub 上にある「steins-gate」というリポジトリが自分の PC 上にコピーされます。</simpara>
+</section>
+<section id="_github_for_windows_mac_でのやり方">
+<title>GitHub for Windows (Mac) でのやり方</title>
+<simpara>GitHub for Windows (Mac) を起動すると、左上に「＋」ボタンがあるので、それを押して表示された画面の「Clone」というのを押します。</simpara>
+<simpara>「Clone」を押した後、リポジトリを見つけるための検索窓が表示されます。そこにリポジトリの名前を入力して、目的のものが見つかったら「Clone [リポジトリ名]」というボタンを押します。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-clone/github-app/git-clone-before.jpg"/>
+  </imageobject>
+  <textobject><phrase>クローンする対象のリポジトリを絞り込んでいるところ</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>「Clone [リポジトリ名]」というボタンを押すと、リポジトリを保存するディレクトリや名前を決める画面が表示されます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-clone/github-app/git-clone-save.jpg"/>
+  </imageobject>
+  <textobject><phrase>クローンするリポジトリの名前を決めているところ</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>それぞれ入力して「Enter」を押せば、リモートリポジトリが自分の PC 上にコピーされます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-clone/github-app/git-clone-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>リポジトリを自分の PC 上にコピーした後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</article>

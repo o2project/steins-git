@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="reference">
+<title>参考にした資料</title>
+<simpara>本書を書くにあたり参考にした資料の一覧となります。本書を読み、より Git について知りたいと感じたときには、以下のサイトや書籍を見てみるといいでしょう。</simpara>
+<section id="_webサイト">
+<title>Webサイト</title>
+<itemizedlist>
+<listitem>
+<simpara>
+Gitチュートリアルとトレーニング| Atlassian<footnote><simpara><ulink url="https://www.atlassian.com/ja/git/tutorial">https://www.atlassian.com/ja/git/tutorial</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+イラストでわかる！git入門の入門 : アシアルブログ<footnote><simpara><ulink url="http://blog.asial.co.jp/894">http://blog.asial.co.jp/894</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Git - Book<footnote><simpara><ulink url="http://git-scm.com/book/ja/">http://git-scm.com/book/ja/</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG<footnote><simpara><ulink url="http://liginc.co.jp/web/tool/79390">http://liginc.co.jp/web/tool/79390</ulink></simpara></footnote>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_書籍">
+<title>書籍</title>
+<itemizedlist>
+<listitem>
+<simpara>
+シュタインズ・ゲート公式資料集<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/4047263745">http://www.amazon.co.jp/dp/4047263745</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+入門git<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/427406767X">http://www.amazon.co.jp/dp/427406767X</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+開発効率をUPする Git逆引き入門<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/4863541465">http://www.amazon.co.jp/dp/4863541465</ulink></simpara></footnote>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+GitHub実践入門 Pull Requestによる開発の変革<footnote><simpara><ulink url="http://www.amazon.co.jp/dp/477416366X">http://www.amazon.co.jp/dp/477416366X</ulink></simpara></footnote>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</article>

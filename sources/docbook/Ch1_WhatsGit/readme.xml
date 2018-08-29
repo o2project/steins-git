@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="chapter1-what-is-git">
+<title>第一章 - 改変管理のデュバス</title>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="illustration/mayuri.jpg"/>
+  </imageobject>
+  <textobject><phrase>まゆり</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Gitに触れる前に、バージョン管理について説明します。</simpara>
+<simpara>バージョン管理は「あるプロジェクト内でファイルの変更履歴を記録しておく」事です。</simpara>
+<simpara>変更履歴とは「いつ、何が、誰によって変更された」というのを指し示します。ゲームのセーブデータみたいだなと思った人はだいたい合っています。</simpara>
+<simpara>バージョン管理には、Git や Subversion(SVN) といった、バージョン管理のために作られたものを使う手法から、単純にファイル名を変更していくだけの手軽なものまであります。</simpara>
+<simpara>では、まずは「単純にファイル名を変更していくだけの手軽な方法」について説明していきます。</simpara>
+<section id="easiest-to-version-control">
+<title>手軽なバージョン管理</title>
+<simpara>手軽かつ、よく使われるバージョン管理の手法として「ファイルに変更をするたびに、ファイルの名前を変更していく」というものがあります。</simpara>
+<simpara>Steins;Gate で例えると「各章のフォーントリガーがキーになるところでデータをセーブしておく」という手法を使った事がある人はいると思います。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch1/nitro-steins-gate_load.jpg"/>
+  </imageobject>
+  <textobject><phrase>Steins;Gate ロード画面</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>このバージョン管理手法の利点としては「手軽である」という事です。</simpara>
+<simpara>ファイルを変更するたびに、エクスプローラーや Finder 上でファイルを選択した状態で Windows  では <literal>F2</literal> Mac では <literal>Enter</literal> を押して名前を編集する事により、手軽にかつ PC を初めて起動した直後でも、ファイルのバージョン管理をおこなう事ができます。</simpara>
+<simpara>しかし、ファイル名を変更するだけのバージョン管理には、問題点が思いつく限りでも三つあります。それらの問題点について一つずつ詳細に書いていきます。</simpara>
+<section id="_どのファイルを更新すればいいのか分からなくなる">
+<title>どのファイルを更新すればいいのか分からなくなる</title>
+<simpara>例えば、未来ガジェットのアイデアをひらめいてメモしたいとき、以下の画像で示しているようなファイル管理方法の場合だと、岡部は「はて…どれに書き込めばよかったかな」と困るでしょう。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch1/gadget_idea.jpg"/>
+  </imageobject>
+  <textobject><phrase>未来ガジェットのアイデアをあちこちに書いてしまった例</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>またこの場合「最終版」という名前が付いたファイルにひらめいたアイデアを書き込んだものの、実は「最新」と書かれているほうが新しかった…という事が起こる可能性が大いにあります。</simpara>
+</section>
+<section id="_内容を前のものに戻しづらい_または戻せない">
+<title>内容を前のものに戻しづらい、または戻せない</title>
+<simpara>岡部がひらめいたアイデアを「最終版」と書かれているファイルに書き込んだ際、それが最新ではないと分かり、元のファイルの状態に戻したいと思いました。</simpara>
+<simpara>しかし、元の状態がどんなものだったか岡部は思い出せず、残しておきたかったアイデアまで削除してしまったり、追記したアイデアを完全に消せていなかったという事が起こりました。</simpara>
+<simpara>この事象は岡部だけではなく、ファイル名を変更するバージョン管理をしている人全員に起こりえる事です。</simpara>
+<simpara>これを Steins;Gate のゲームシステムで例えて言うと、データをセーブする場所を間違えて、消したくないセーブデータが消えたという事になります。</simpara>
+<simpara>このような経験をした事がある人はいると思います。実際に自分も各ヒロインの個別エンディングを見るために残しておいたデータに、誤って別のデータを上書きしてしまい、再度やり直したという事がありました。地味に辛かったです。</simpara>
+</section>
+<section id="_多人数での編集がほぼ不可能">
+<title>多人数での編集がほぼ不可能</title>
+<simpara>岡部が、ひらめいたアイデアを書いたファイルをネットワーク上の共有のディレクトリに保存していたとします。</simpara>
+<simpara>それを紅莉栖が見て、あれこれ書いて保存したと思った矢先、岡部が、紅莉栖が変更する前の状態で共有ディレクトリに保存していたファイルを開いてしまい、新たなアイデアを書いて保存してしまいました。</simpara>
+<simpara>そうした結果、紅莉栖が編集したところは全て消え、岡部が変更したところしか反映されていない……という事になります。おそらくこの事で二人は口喧嘩するでしょう。</simpara>
+</section>
+</section>
+<section id="distributed-revision-control">
+<title>分散型バージョン管理システム「Git」について</title>
+<simpara>このように「ファイル名を変更するだけのバージョン管理」では、多人数でファイルを編集したいときに困る事になります。</simpara>
+<simpara>また、内容を前のものに戻しづらい・戻せないという事が起こりやすいため、紅莉栖と岡部で作業したところが被ってしまい片方の変更点が消えた結果、どちらかが作業をやり直し……という事が起きます。</simpara>
+<simpara>そこで、この書籍のテーマである「Git」が登場します。「Git」は「分散型バージョン管理システム」といわれるものです。</simpara>
+<section id="_gitの概要">
+<title>Gitの概要</title>
+<simpara>上記でも書きましたが「Git」は「分散型バージョン管理システム」の一つです。他の分散型バージョン管理システムとして「Mercurial」「Bazaar」などがありますが、この書籍では特に触れません。</simpara>
+<simpara>Git の読み方は「ギット」です。<footnote><simpara><literal><ulink url="http://dictionary.reference.com/browse/git</literal></simpara></footnote>イギリス英語のスラングで「バカ」「卑劣な」という意味があるそうです。なぜこの名前が付いたかはWikipediafootnote:">http://ja.wikipedia.org/wiki/Git#.E5.90.8D.E5.89.8D.E3.81.AE.E7.94.B1.E6.9D.A5</ulink> や、Git FAQ (英語)<footnote><simpara><ulink url="https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F">https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F</ulink></simpara></footnote> を見てみてください。</simpara>
+<simpara>Git は「リポジトリ」という「ファイルのスナップショット<footnote><simpara>ソースコードなどを任意のタイミングで抜き出したもの。詳しくは <ulink url="http://e-words.jp/w/E382B9E3838AE38383E38397E382B7E383A7E38383E38388.html">http://e-words.jp/w/E382B9E3838AE38383E38397E382B7E383A7E38383E38388.html</ulink> を参照してください。</simpara></footnote>が保管されている場所」があります。</simpara>
+<simpara>スナップショットを保存する方法ですが、Git には「コミット<footnote><simpara>第三章の「作業内容を記録する」で解説しています。</simpara></footnote>」という「スナップショットを任意のタイミングで保存する機能」があります。その機能を使う事により、自分がした作業を記録する事ができます。</simpara>
+<simpara>この「コミット」ですが、Steins;Gate のゲームシステムで例えると「セーブ」と言えます。そして「セーブデータ」が「リポジトリ」です。</simpara>
+<simpara>ただし Git の場合は、セーブデータの任意の場所に戻る事ができます。それは「特定のエンディングに進もうとしてセーブしておいたデータに、誤って別のデータをセーブしてしまっても元に戻せる」という事を意味します。</simpara>
+<simpara>また Git で他の人と作業内容を共有したいという場合は、ネットワーク上に共有リポジトリを用意しておき、そこへ自分の作業内容を送信します。</simpara>
+<simpara>作業内容の送信をする機能を「プッシュ<footnote><simpara>第三章の「リモートリポジトリに作業内容を送る」で解説しています。</simpara></footnote>」と言います。</simpara>
+</section>
+<section id="_gitの利点">
+<title>Gitの利点</title>
+<simpara>Git の概要でも書きましたが、作業した内容を作業前の状態に戻したいといったときでも「チェックアウト<footnote><simpara>第三章の「作業内容を無かった事にする」で解説しています。</simpara></footnote>」や「リバート<footnote><simpara>リバートについてはこの記事が詳しいです。「Gitを使いこなそう！知っておくと便利な使い方　～Tower2・SourceTree～ – ICS LAB <ulink url="http://ics-web.jp/lab/archives/3184">http://ics-web.jp/lab/archives/3184</ulink> 」</simpara></footnote>」という機能を使えば、手軽に戻す事ができます。</simpara>
+<simpara>これによりファイルを編集する際に、ファイル名に日付などを追加してからコピーという事をしなくて済むので、編集すべきファイルがどれなのか分からなくなる問題が無くなります。</simpara>
+<simpara>また、多人数での編集も「プル<footnote><simpara>第三章の「リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む」で解説しています。</simpara></footnote>」という「自分の PC 上のリポジトリに、ネットワーク上にあるリポジトリの最新の内容を反映する機能」を使う事により、他の人が変更した点も取り込めます。</simpara>
+<simpara>なので、同じファイルを編集してしまったために、どちらかの編集内容が消えてしまうという事が少なくなります。これで岡部と紅莉栖も喧嘩しなくなるでしょう。</simpara>
+</section>
+</section>
+</section>
+</article>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2018-08-29</date>
+</articleinfo>
+<section id="git-checkout">
+<title>ブランチを移動する</title>
+<simpara>現在のブランチから別のブランチへ移動します。例えるならば D メールを送った結果、世界線変動が起こった状態を、任意のタイミングで起こせるというものです。</simpara>
+<simpara>Git のブランチは「世界線」です。D メールによる世界線変動は、世界の状況に影響を及ぼしてましたが、Git ではそういった副作用が無く世界線の移動ができます。</simpara>
+<simpara><?asciidoc-pagebreak?></simpara>
+<section id="_sourcetree_でのやり方">
+<title>SourceTree でのやり方</title>
+<simpara>移動の方法は簡単で、画面左端に表示されているブランチ一覧から、移動したいブランチの名前をダブルクリックする事により、ブランチを移動できます。</simpara>
+<simpara>以下の図では「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout.jpg"/>
+  </imageobject>
+  <textobject><phrase>ブランチを移動した後</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+<section id="_github_for_windows_mac_でのやり方">
+<title>GitHub for Windows (Mac) でのやり方</title>
+<simpara>現在のブランチの名前部分をクリックするとブランチ一覧が表示されます。「Filter」と書かれているところではブランチの絞り込み検索ができます。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout/github-app/git-branch-list.jpg"/>
+  </imageobject>
+  <textobject><phrase>ブランチ一覧を表示している図</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-pagebreak?></simpara>
+<simpara>ここでは「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」に移動しています。</simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="ch3/git-checkout/github-app/git-checkout-after.jpg"/>
+  </imageobject>
+  <textobject><phrase>ブランチを移動した後の図</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</article>
