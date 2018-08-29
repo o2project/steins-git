@@ -69,24 +69,24 @@ endif::[]
 // <<< PAGE BREAK PDFのみ
 <<<
 
-include::sources/Ch0_Introduction/readme.adoc[]
+include::old_src/Ch0_Introduction/readme.adoc[]
 
 <<<
 
 // ナンバリング開始
 :numbered:
 
-include::sources/Ch1_WhatsGit/readme.adoc[]
+include::old_src/Ch1_WhatsGit/readme.adoc[]
 
 <<<
 
-include::sources/Ch2_WhyGit/readme.adoc[]
+include::old_src/Ch2_WhyGit/readme.adoc[]
 
 <<<
 
-include::sources/Ch3_HowToGit/readme.adoc[]
+include::old_src/Ch3_HowToGit/readme.adoc[]
 
 // あとがきではナンバリングをおこなわない
 :numbered!:
 
-include::sources/Ch4_PostScript/readme.adoc[]
+include::old_src/Ch4_PostScript/readme.adoc[]
