@@ -34,5 +34,5 @@ Gitter というチャットサービス上では、yosiwo さんに構成につ
 3. 第三章では、自分が Git でよく使う機能について、SourceTree と GitHub for Windows (Mac) というソフトウェアを用いて説明します。
 4. あとがきでは、ラボメン内で使うなど Git を複数人で使用する際に、その助けとなるサービスを紹介します。また、本書を書くにあたって参照したサイトや書籍を紹介します。
 
-[1] ちなみに「Steins;Git」という言葉をたどると https://twitter.com/ruedap/status/82250750268420096 が最初かと思われます。
-[2] http://blog.o2p.jp/2014/07/23/c86-steins-git.html
+[^1] ちなみに「Steins;Git」という言葉をたどると https://twitter.com/ruedap/status/82250750268420096 が最初かと思われます。
+[^2] http://blog.o2p.jp/2014/07/23/c86-steins-git.html
