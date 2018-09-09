@@ -7,9 +7,9 @@ GitHub と Bitbucket について
 
 なので、Git の仕組みを使って、自分達が作ったプログラムコードなどを共有できるサービスがいくつか出てきました。
 
-その中の一つがこれから紹介する GitHub[1] と Bitbucket[2] になります。　
+その中の一つがこれから紹介する GitHub[^1] と Bitbucket[^2] になります。　
 
-ちなみに、この書籍も GitHub で管理されています。[3]
+ちなみに、この書籍も GitHub で管理されています。[^3]
 
 GitHub と Bitbucket 共通の機能
 ==============================
@@ -43,8 +43,6 @@ Pull Requests は、元のリポジトリを変更する権利を与えないか
 
 利点としては、Fork 元のリポジトリの管理者は変更できる権利を与えなくて済むのと Fork 先のリポジトリで変更した点を取り込む前に確認できるので、リポジトリに変な変更が加えられてしまうのを防げるという点にあります。
 
-[1] https://github.com/
-
-[2] https://www.atlassian.com/ja/software/bitbucket/overview
-
-[3] <https://github.com/o2project/steins-git>
+[^1] https://github.com/
+[^2] https://www.atlassian.com/ja/software/bitbucket/overview
+[^3] https://github.com/o2project/steins-git
