@@ -1,19 +1,16 @@
-作者
-====
+## 作者
 
 - 執筆: kubosho\_[^1]
 - アシスタント: fruitsnoodle[^2]
 - 表紙・各章のイラスト: GiantRobot
 - 発行所: 日光企画[^3]
 
-使用しているフォント
-====================
+## 使用しているフォント
 
 - あおぞら明朝 (本文など)[^4]
 - 源真ゴシック (見出し部分など)[^5]
 
-Git のロゴについて
-==================
+## Git のロゴについて
 
 - Git Logo by Jason Long is licensed under the Creative Commons Attribution 3.0 Unported License.
 

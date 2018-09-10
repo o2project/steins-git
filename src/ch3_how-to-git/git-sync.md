@@ -1,5 +1,4 @@
-GitHub for Windows (Mac) でリモートリポジトリと同期する
-=======================================================
+## GitHub for Windows (Mac) でリモートリポジトリと同期する
 
 GitHub for Windows (Mac) では画面の右上に「Sync」というボタンがあります。
 
