@@ -4,13 +4,6 @@
   "version": "2.2.1",
   "author": "O2 Project",
   "license": "CC-BY-NC 2.1 JP",
-  "scripts": {
-    "setup": "npm install && bundle install --path vendor/bundle",
-    "build": "grunt shell:generateHtml",
-    "serve": "grunt server",
-    "open": "grunt server-open",
-    "redpen": "grunt shell:proofreading"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/o2project/steins-git.git"
