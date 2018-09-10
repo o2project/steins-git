@@ -8,4 +8,4 @@ images/illustration/
 
 bin/kindlegen
 .DS_Store
-npm-debug.log
+*.log
