@@ -28,6 +28,8 @@
     "stylelint": "^9.5.0"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.1",
+    "markdown-it-footnote": "^3.0.1",
     "nuxt": "^1.4.2"
   }
 }
