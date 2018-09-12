@@ -20,7 +20,7 @@
 
 ## 作者
 
-- 執筆: kubosho\_[^9]
+- 執筆: kubosho_[^9]
 - アシスタント: fruitsnoodle[^10]
 - 表紙・各章のイラスト: GiantRobot
 - 発行所: 日光企画[^11]
