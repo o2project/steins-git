@@ -38,8 +38,8 @@
 [^6] http://www.amazon.co.jp/dp/427406767X
 [^7] http://www.amazon.co.jp/dp/4863541465
 [^8] http://www.amazon.co.jp/dp/477416366X
-[^9] https://github.com/kubosho>
-[^10] https://github.com/fruitsnoodle>
-[^11] http://www.nikko-pc.com/>
-[^12] http://blueskis.wktk.so/AozoraMincho/>
-[^13] http://jikasei.me/font/genshin/>
+[^9] https://github.com/kubosho
+[^10] https://github.com/fruitsnoodle
+[^11] http://www.nikko-pc.com/
+[^12] http://blueskis.wktk.so/AozoraMincho/
+[^13] http://jikasei.me/font/genshin/
