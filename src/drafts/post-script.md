@@ -30,10 +30,14 @@
 
 - 執筆: kubosho_
     - https://github.com/kubosho
+- 表紙デザイン: Kino
+- 表紙イラスト: GiantRobot
 - アシスタント: fruitsnoodle
     - https://github.com/fruitsnoodle
-- 表紙・各章のイラスト: GiantRobot
-- 発行所: 日光企画
+
+## 印刷所
+
+- 日光企画
     - http://www.nikko-pc.com/
 
 ## 使用しているフォント
