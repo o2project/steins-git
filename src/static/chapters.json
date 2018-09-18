@@ -1,0 +1,107 @@
+{
+  "chapter0": {
+    "title": "はじめに",
+    "contents": {
+      "1": {
+        "title": "はじめに",
+        "link": "/introduction"
+      }
+    }
+  },
+  "chapter1": {
+    "title": "改変管理のデュバス",
+    "contents": {
+      "1": {
+        "title": "手軽なバージョン管理",
+        "link": "/chapter1/easiest-to-version-control"
+      },
+      "2": {
+        "title": "分散型バージョン管理システム「Git」について",
+        "link": "/chapter1/distributed-revision-control"
+      }
+    }
+  },
+  "chapter2": {
+    "title": "一問一答のコンクルージョン",
+    "contents": {
+      "1": {
+        "title": "流行っている",
+        "link": "/chapter2/trend"
+      },
+      "2": {
+        "title": "ネットワーク接続がいらない",
+        "link": "/chapter2/not-need-network-connection"
+      },
+      "3": {
+        "title": "自分の PC 上にあるリポジトリでいろいろ試せる",
+        "link": "/chapter2/try-out-a-local-repository"
+      }
+    }
+  },
+  "chapter3": {
+    "title": "率先躬行のサインポスト",
+    "contents": {
+      "1": {
+        "title": "SourceTree のインストールと設定",
+        "link": "/chapter3/sourcetree-settings"
+      },
+      "2": {
+        "title": "Git によるバージョン管理を始める",
+        "link": "/chapter3/git-init"
+      },
+      "3": {
+        "title": "すでにあるリモートリポジトリを使ってバージョン管理を始める",
+        "link": "/chapter3/git-clone"
+      },
+      "4": {
+        "title": "作業内容を記録する",
+        "link": "/chapter3/git-commit"
+      },
+      "5": {
+        "title": "作業内容を無かった事にする",
+        "link": "/chapter3/git-checkout-file"
+      },
+      "6": {
+        "title": "作業内容の差分を見る",
+        "link": "/chapter3/git-diff"
+      },
+      "7": {
+        "title": "ブランチの一覧を見たり、新たにブランチを作る",
+        "link": "/chapter3/git-branch"
+      },
+      "8": {
+        "title": "作業内容をリセットする",
+        "link": "/chapter3/git-reset"
+      },
+      "9": {
+        "title": "作業内容を改変する",
+        "link": "/chapter3/git-rebase"
+      },
+      "10": {
+        "title": "ブランチを移動する",
+        "link": "/chapter3/git-checkout"
+      },
+      "11": {
+        "title": "リモートリポジトリに作業内容を送る",
+        "link": "/chapter3/git-push"
+      },
+      "12": {
+        "title": "リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む",
+        "link": "/chapter3/git-pull"
+      },
+      "13": {
+        "title": "別のブランチでの作業内容を取り込む",
+        "link": "/chapter3/git-merge"
+      }
+    }
+  },
+  "chapter99": {
+    "title": "あとがき",
+    "contents": {
+      "1": {
+        "title": "あとがき",
+        "link": "/post-script"
+      }
+    }
+  }
+}
