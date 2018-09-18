@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <div v-html="mdContents" />
-    <sg-aside />
-  </div>
+  <div v-html="mdContents" />
 </template>
 
 <script>
-import SgAside from '~/components/Aside.vue';
-
 export default {
   async asyncData({ params }) {
     const { chapter, slug } = params;
@@ -16,10 +11,6 @@ export default {
     return {
       mdContents,
     }
-  },
-
-  components: {
-    SgAside,
   },
 }
 </script>

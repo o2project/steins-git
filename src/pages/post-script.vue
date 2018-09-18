@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <div v-html="mdContents" />
-    <sg-aside />
-  </div>
+  <div v-html="mdContents" />
 </template>
 
 <script>
-import SgAside from '~/components/Aside.vue';
-
 export default {
   async asyncData() {
     const mdContents = await import(`../drafts/post-script.md`);
@@ -15,10 +10,6 @@ export default {
     return {
       mdContents,
     }
-  },
-
-  components: {
-    SgAside,
   },
 }
 </script>
