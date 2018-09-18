@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <nuxt />
-    <sg-aside />
-  </div>
+  <main class="contents">
+    <nuxt class="chapter" />
+    <sg-aside class="aside" />
+  </main>
 </template>
 
 <script>
@@ -14,3 +14,24 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.contents {
+  display: grid;
+  grid-template-columns: 20em 1fr;
+}
+
+.chapter {
+  grid-row: 1;
+  grid-column: 2;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.aside {
+  grid-row: 1;
+  grid-column: 1;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+</style>
