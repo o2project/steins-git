@@ -1,0 +1,19 @@
+:root {
+  /* Color (general) */
+  --color-bg--dark:  #393939;
+  --color-bg--light:  #f9fcff;
+  --color-text--light:  #f9fcff;
+  --color-link: #0063ac;
+
+  /* Color (this site context) */
+  --color-main: #003760;
+
+  --space: 4px;
+  --border-size: 1px;
+
+  /* Ratio */
+  --ratio: 1.5;
+  --text-ratio: 1;
+  --medium-text-ratio: calc((var(--text-ratio) + var(--ratio)) / 2);
+  --big-text-ratio: calc(var(--text-ratio) * var(--ratio) / 1.2);
+}
