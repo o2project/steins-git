@@ -25,6 +25,7 @@ export default {
   grid-row: 1;
   grid-column: 2;
   max-height: 100vh;
+  padding: 0 0.5em;
   overflow-y: auto;
 }
 
@@ -32,6 +33,7 @@ export default {
   grid-row: 1;
   grid-column: 1;
   max-height: 100vh;
+  padding: 0 0.5em;
   overflow-y: auto;
 }
 </style>
