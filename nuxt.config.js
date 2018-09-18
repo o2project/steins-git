@@ -1,5 +1,8 @@
 module.exports = {
   srcDir: 'src/',
+  css: [
+    '@/assets/styles/reset.css',
+  ],
   modules: [
     '@nuxtjs/markdownit'
   ],
