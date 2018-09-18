@@ -1,8 +1,8 @@
 <template>
   <nav>
     <template v-for="(group, index) in menu">
-      <h3 :key="index">{{ group.title }}</h3>
-      <ul :key="index">
+      <h3 class="title" :key="index">{{ group.title }}</h3>
+      <ul class="items" :key="index">
         <li v-for="(content, idx) in group.contents" :key="index">
           <nuxt-link :to="content.link" :key="idx" exact>
             {{ content.title }}
@@ -20,3 +20,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.title {
+  margin: 0.5em 0;
+}
+
+.items {
+  margin: 0;
+}
+</style>
