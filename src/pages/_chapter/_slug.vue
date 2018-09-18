@@ -1,7 +1,7 @@
 <template>
   <div>
-    <sg-aside />
     <div v-html="mdContents" />
+    <sg-aside />
   </div>
 </template>
 
