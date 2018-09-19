@@ -1,7 +1,11 @@
 <template>
   <nav>
     <template v-for="(group, index) in menu">
-      <h3 class="title" :key="index">{{ group.title }}</h3>
+      <h3 class="title" :key="index">
+        <nuxt-link :to="group.link" exact>
+          {{ group.title }}
+        </nuxt-link>
+      </h3>
       <ul class="items" :key="index">
         <li v-for="(content, idx) in group.contents" :key="index">
           <nuxt-link :to="content.link" :key="idx" exact>
