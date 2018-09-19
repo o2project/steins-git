@@ -1,15 +1,12 @@
 {
   "chapter0": {
     "title": "はじめに",
-    "contents": {
-      "1": {
-        "title": "はじめに",
-        "link": "/introduction"
-      }
-    }
+    "link": "/introduction",
+    "contents": {}
   },
   "chapter1": {
     "title": "改変管理のデュバス",
+    "link": "/chapter1/readme",
     "contents": {
       "1": {
         "title": "手軽なバージョン管理",
@@ -23,6 +20,7 @@
   },
   "chapter2": {
     "title": "一問一答のコンクルージョン",
+    "link": "/chapter2/readme",
     "contents": {
       "1": {
         "title": "流行っている",
@@ -40,6 +38,7 @@
   },
   "chapter3": {
     "title": "率先躬行のサインポスト",
+    "link": "/chapter3/readme",
     "contents": {
       "1": {
         "title": "SourceTree のインストールと設定",
@@ -97,11 +96,7 @@
   },
   "chapter99": {
     "title": "あとがき",
-    "contents": {
-      "1": {
-        "title": "あとがき",
-        "link": "/post-script"
-      }
-    }
+    "link": "/post-script",
+    "contents": {}
   }
 }
