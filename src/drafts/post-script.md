@@ -2,9 +2,9 @@
 
 ## 参考にした資料
 
-本書を書くにあたり参考にした資料の一覧となります。本書を読み、より Git について知りたいと感じたときには、以下のサイトや書籍を見てみるといいでしょう。
+本書を書くにあたり参考にした資料を挙げます。本書を読んだ結果、もっとGitについて知りたいと感じたときには、以下のWebサイトや書籍を見てみるといいでしょう。
 
-## Webサイト
+### Webサイト
 
 - Gitチュートリアルとトレーニング| Atlassian
     - https://www.atlassian.com/ja/git/tutorial
@@ -15,7 +15,7 @@
 - 初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG
     - http://liginc.co.jp/web/tool/79390
 
-## 書籍
+### 書籍
 
 - シュタインズ・ゲート公式資料集
     - http://www.amazon.co.jp/dp/4047263745
@@ -30,10 +30,11 @@
 
 - 執筆: kubosho_
     - https://github.com/kubosho
-- 表紙デザイン: Kino
-- 表紙イラスト: GiantRobot
 - アシスタント: fruitsnoodle
     - https://github.com/fruitsnoodle
+- 表紙・ロゴデザイン: KinoAkmt
+    - https://twitter.com/KinoAkmt
+- 表紙イラスト: GiantRobot
 
 ## 印刷所
 
