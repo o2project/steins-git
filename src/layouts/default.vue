@@ -1,8 +1,18 @@
 <template>
-  <main class="contents">
-    <nuxt class="chapter" />
-    <sg-aside class="aside" />
-  </main>
+  <div class="container">
+    <header class="header">
+      <h1>Steins;Git <span class="sub">Rebuild</span></h1>
+    </header>
+    <main class="contents">
+      <nuxt class="chapter" />
+      <sg-aside class="aside" />
+    </main>
+    <footer class="footer">
+      <p class="copyrights">
+        <small>© 2014 O2 Project.</small>
+      </p>
+    </footer>
+  </div>
 </template>
 
 <script>
