@@ -5,7 +5,7 @@
     </header>
     <main class="contents">
       <nuxt class="chapter" />
-      <sg-aside class="aside" />
+      <sg-toc class="toc" />
     </main>
     <footer class="footer">
       <p class="copyrights">
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import SgAside from '~/components/Aside.vue';
+import SgToc from '~/components/Toc.vue';
 
 export default {
   components: {
-    SgAside,
+    SgToc,
   },
 }
 </script>
