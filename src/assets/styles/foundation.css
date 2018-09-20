@@ -22,10 +22,6 @@ blockquote {
   border-left: calc(var(--border-size) * 4) solid var(--color-main);
 }
 
-h1 {
-  color: var(--color-main);
-}
-
 pre {
   white-space: pre-wrap;
 }
