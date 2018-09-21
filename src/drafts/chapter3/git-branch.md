@@ -21,15 +21,3 @@ SourceTree の画面上部にある「ブランチ」を押すとブランチ名
 「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。
 
 ![ブランチを作った後](ch3/git-branch/source-tree/after.jpg)
-
-### GitHub for Windows (Mac) でのやり方
-
-現在のブランチ名が書かれている左横に「線が分岐していて分岐先に "＋" が書かれているボタン」があります。
-
-このボタンを押すと「Create New Branch」という画面が表示され、そこには「Name」と「From」の二つの項目があります。「Name」には任意の名前を入力し「From」では分岐元のブランチを選択します。
-
-![「Create New Branch」という画面が表示されている状態](ch3/git-branch/github-app/branch-create-before.jpg)
-
-それぞれ情報を入力した後「Create Branch」というボタンを押す事により、新しいブランチが作られます。
-
-![新規ブランチが作られた図](ch3/git-branch/github-app/branch-create-after.jpg)

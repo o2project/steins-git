@@ -19,15 +19,3 @@ SourceTree を起動すると、ブックマークウインドウが表示され
 ただし、まだ今までの作業内容が無いので、過去に戻ったり改変するという事はできません。
 
 ![リポジトリが作られた状態](ch3/git-init/source-tree/empty.jpg)
-
-### GitHub for Windows (Mac) でのやり方
-
-GitHub for Windows (Mac) を起動すると、左上に「＋」ボタンがあります。そのボタンを押して表示された画面の中にある「Create」を押します。
-
-「Create」を押すと「Name」と「Local Path」を入力する欄が表示されます。「Name」にはリポジトリの名前を「Local Path」にはリポジトリを保存しておきたいディレクトリを入力します。
-
-![「＋」ボタンを押した後「Create」を押している様子](ch3/git-init/github-app/plus.jpg)
-
-それぞれ入力して「Create Repository」ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。しかし、やはり今までの作業内容が無いので、過去に戻ったり改変するという事はできません。
-
-![「リポジトリを作った後の画面](ch3/git-init/github-app/done.jpg)
