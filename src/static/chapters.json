@@ -1,20 +1,20 @@
 {
   "chapter0": {
     "title": "はじめに",
-    "link": "/introduction",
+    "path": "/introduction",
     "contents": []
   },
   "chapter1": {
     "title": "改変管理のデュバス",
-    "link": "/chapter1/readme",
+    "path": "/chapter1/readme",
     "contents": [
       {
         "title": "手軽なバージョン管理",
-        "link": "/chapter1/easiest-to-version-control"
+        "path": "/chapter1/easiest-to-version-control"
       },
       {
         "title": "分散型バージョン管理システム「Git」について",
-        "link": "/chapter1/distributed-revision-control"
+        "path": "/chapter1/distributed-revision-control"
       }
     ]
   },
@@ -26,79 +26,79 @@
       },
       {
         "title": "流行っている",
-        "link": "/chapter2/trend"
+        "path": "/chapter2/trend"
       },
       {
         "title": "ネットワーク接続がいらない",
-        "link": "/chapter2/not-need-network-connection"
+        "path": "/chapter2/not-need-network-connection"
       },
       {
         "title": "自分の PC 上にあるリポジトリでいろいろ試せる",
-        "link": "/chapter2/try-out-a-local-repository"
+        "path": "/chapter2/try-out-a-local-repository"
       }
     ]
   },
   "chapter3": {
     "title": "率先躬行のサインポスト",
-    "link": "/chapter3/readme",
+    "path": "/chapter3/readme",
     "contents": [
       {
         "title": "SourceTree のインストールと設定",
-        "link": "/chapter3/sourcetree-settings"
+        "path": "/chapter3/sourcetree-settings"
       },
       {
         "title": "Git によるバージョン管理を始める",
-        "link": "/chapter3/git-init"
+        "path": "/chapter3/git-init"
       },
       {
         "title": "すでにあるリモートリポジトリを使ってバージョン管理を始める",
-        "link": "/chapter3/git-clone"
+        "path": "/chapter3/git-clone"
       },
       {
         "title": "作業内容を記録する",
-        "link": "/chapter3/git-commit"
+        "path": "/chapter3/git-commit"
       },
       {
         "title": "作業内容を無かった事にする",
-        "link": "/chapter3/git-checkout-file"
+        "path": "/chapter3/git-checkout-file"
       },
       {
         "title": "作業内容の差分を見る",
-        "link": "/chapter3/git-diff"
+        "path": "/chapter3/git-diff"
       },
       {
         "title": "ブランチの一覧を見たり、新たにブランチを作る",
-        "link": "/chapter3/git-branch"
+        "path": "/chapter3/git-branch"
       },
       {
         "title": "作業内容をリセットする",
-        "link": "/chapter3/git-reset"
+        "path": "/chapter3/git-reset"
       },
       {
         "title": "作業内容を改変する",
-        "link": "/chapter3/git-rebase"
+        "path": "/chapter3/git-rebase"
       },
       {
         "title": "ブランチを移動する",
-        "link": "/chapter3/git-checkout"
+        "path": "/chapter3/git-checkout"
       },
       {
         "title": "リモートリポジトリに作業内容を送る",
-        "link": "/chapter3/git-push"
+        "path": "/chapter3/git-push"
       },
       {
         "title": "リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む",
-        "link": "/chapter3/git-pull"
+        "path": "/chapter3/git-pull"
       },
       {
         "title": "別のブランチでの作業内容を取り込む",
-        "link": "/chapter3/git-merge"
+        "path": "/chapter3/git-merge"
       }
     ]
   },
   "chapter99": {
     "title": "あとがき",
-    "link": "/post-script",
+    "path": "/post-script",
     "contents": []
   }
 }
