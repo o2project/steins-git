@@ -1,13 +1,18 @@
 {
   "chapter0": {
-    "title": "はじめに",
-    "path": "/introduction",
-    "contents": []
+    "contents": [
+      {
+        "title": "はじめに",
+        "path": "/introduction"
+      }
+    ]
   },
   "chapter1": {
-    "title": "改変管理のデュバス",
-    "path": "/chapter1/readme",
     "contents": [
+      {
+        "title": "改変管理のデュバス",
+        "path": "/chapter1/readme"
+      },
       {
         "title": "手軽なバージョン管理",
         "path": "/chapter1/easiest-to-version-control"
@@ -39,9 +44,11 @@
     ]
   },
   "chapter3": {
-    "title": "率先躬行のサインポスト",
-    "path": "/chapter3/readme",
     "contents": [
+      {
+        "title": "率先躬行のサインポスト",
+        "path": "/chapter3/readme"
+      },
       {
         "title": "SourceTree のインストールと設定",
         "path": "/chapter3/sourcetree-settings"
@@ -97,8 +104,11 @@
     ]
   },
   "chapter99": {
-    "title": "あとがき",
-    "path": "/post-script",
-    "contents": []
+    "contents": [
+      {
+        "title": "あとがき",
+        "path": "/post-script"
+      }
+    ]
   }
 }
