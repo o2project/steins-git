@@ -1,6 +1,0 @@
-{
-    "build": "dist/for-pdf.md",
-    "files": [
-        "./src/for-pdf.md"
-    ]
-}
