@@ -19,6 +19,7 @@
   "private": true,
   "devDependencies": {
     "cpx": "^1.5.0",
+    "gitbook-cli": "^2.3.2",
     "md-to-html": "^1.0.2",
     "node-sass": "^4.9.3",
     "pkg-dir": "^3.0.0",
