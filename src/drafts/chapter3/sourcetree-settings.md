@@ -1,5 +1,4 @@
-SourceTree のインストールと設定
-===============================
+## SourceTree のインストールと設定
 
 SourceTree のダウンロードは以下のURLからおこなえます。SourceTree はWindows と Mac OS X に対応しています。
 

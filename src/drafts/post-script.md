@@ -1,0 +1,49 @@
+# あとがき
+
+## 参考にした資料
+
+本書を書くにあたり参考にした資料を挙げます。本書を読んだ結果、もっとGitについて知りたいと感じたときには、以下のWebサイトや書籍を見てみるといいでしょう。
+
+### Webサイト
+
+- Gitチュートリアルとトレーニング| Atlassian
+    - https://www.atlassian.com/ja/git/tutorial
+- イラストでわかる！git入門の入門 : アシアルブログ
+    - http://blog.asial.co.jp/894
+- Git - Book
+    - http://git-scm.com/book/ja/
+- 初心者でも分かる！git rebaseの使い方を解説します | 株式会社LIG
+    - http://liginc.co.jp/web/tool/79390
+
+### 書籍
+
+- シュタインズ・ゲート公式資料集
+    - http://www.amazon.co.jp/dp/4047263745
+- 入門git
+    - http://www.amazon.co.jp/dp/427406767X
+- 開発効率をUPする Git逆引き入門
+    - http://www.amazon.co.jp/dp/4863541465
+- GitHub実践入門 Pull Requestによる開発の変革
+    - http://www.amazon.co.jp/dp/477416366X
+
+## 作者
+
+- 執筆: kubosho_
+    - https://github.com/kubosho
+- アシスタント: fruitsnoodle
+    - https://github.com/fruitsnoodle
+- 表紙・ロゴデザイン: KinoAkmt
+    - https://twitter.com/KinoAkmt
+- 表紙イラスト: GiantRobot
+
+## 印刷所
+
+- 日光企画
+    - http://www.nikko-pc.com/
+
+## 使用しているフォント
+
+- あおぞら明朝 (本文など)
+    - http://blueskis.wktk.so/AozoraMincho/
+- 源真ゴシック (見出し部分など)
+    - http://jikasei.me/font/genshin/
