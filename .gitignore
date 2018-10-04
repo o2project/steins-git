@@ -1,5 +1,6 @@
 .bundle/
 .idea/
+.nuxt/
 vendor/
 node_modules/
 build/

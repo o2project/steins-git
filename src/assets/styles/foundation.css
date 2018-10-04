@@ -1,0 +1,35 @@
+@import "./vars.css";
+
+html {
+  font-size: calc(var(--text-ratio) * 1.1rem);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg--light);
+  font-family: "Hiragino Kaku Gothic ProN", YuGothic, "游ゴシック", Helvetica, sans-serif;
+  font-weight: 500;
+  font-feature-settings: "palt";
+  text-rendering: optimizeLegibility;
+}
+
+a:link {
+  color: var(--color-link);
+}
+
+blockquote {
+  padding-left: calc(var(--space) * 2);
+  border-left: calc(var(--border-size) * 4) solid var(--color-main);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+pre code {
+  display: block;
+  padding: calc(var(--space) * 2);
+  background-color: var(--color-bg--dark);
+  color: var(--color-text--light);
+  font-family: 'Fira Code', Consolas, 'Courier New', monospace;
+}

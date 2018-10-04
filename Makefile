@@ -52,8 +52,8 @@ build_markdown:
 # Preview server
 ####################################
 .PHONY: serve
-serve: serve_with_bs ## Launch preview server with browser-sync.
+serve: serve_with_nuxt ## Launch preview server with nuxt.
 
-.PHONY: serve_with_bs
-serve_with_bs:
-	$(NPM_BIN_DIR)/browser-sync start --config $(CURDIR)/bs-config.js
+.PHONY: serve_with_nuxt
+serve_with_nuxt:
+	$(NPM_BIN_DIR)/nuxt
