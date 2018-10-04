@@ -1,6 +1,0 @@
-[submodule "fopub"]
-	path = fopub
-	url = https://github.com/asciidoctor/asciidoctor-fopub.git
-[submodule "styles"]
-	path = styles
-	url = https://github.com/o2project/steins-git.styles
