@@ -1,1 +1,1 @@
-status = ["ci/circleci"]
+status = ["ci/circleci: test"]
