@@ -2,6 +2,7 @@ NPM_MOD_DIR := $(CURDIR)/node_modules
 NPM_BIN_DIR := $(NPM_MOD_DIR)/.bin
 
 SRC_DIR := $(CURDIR)/src
+DRAFTS_DIR := $(CURDIR)/src/drafts
 DIST_DIR := $(CURDIR)/dist
 PUBLIC_DIR := $(CURDIR)/public
 
@@ -28,6 +29,20 @@ clean: clean_dist ## Clean up before building the code.
 .PHONY: clean_dist
 clean_dist:
 	$(NPM_BIN_DIR)/rimraf $(DIST_DIR)/*.*
+
+####################################
+# Formatter
+####################################
+.PHONY: format
+format: format_md ## Format drafts.
+
+.PHONY: format_md
+format_md:
+	$(NPM_BIN_DIR)/prettier --config $(CURDIR)/.prettierrc.js --write {$(DRAFTS_DIR)/*.md,$(DRAFTS_DIR)/**/*.md}
+
+.PHONY: check_format
+check_format: format
+	git diff --exit-code
 
 ####################################
 # Build
