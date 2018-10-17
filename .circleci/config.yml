@@ -43,10 +43,9 @@ jobs:
             # - run:
             #     name: Lint
             #     command: make lint -j
-            # FIXME: https://github.com/o2project/steins-git/issues/147
-            # - run:
-            #     name: Check formatted sources
-            #     command: make check_format -j
+            - run:
+                name: Check formatted sources
+                command: make check_format -j
 
 ###########################################
 # Workflow Definitions
