@@ -2,7 +2,6 @@ NPM_MOD_DIR := $(CURDIR)/node_modules
 NPM_BIN_DIR := $(NPM_MOD_DIR)/.bin
 
 SRC_DIR := $(CURDIR)/src
-DRAFTS_DIR := $(CURDIR)/src/drafts
 DIST_DIR := $(CURDIR)/dist
 PUBLIC_DIR := $(CURDIR)/public
 
@@ -38,7 +37,7 @@ format: format_md ## Format drafts.
 
 .PHONY: format_md
 format_md:
-	$(NPM_BIN_DIR)/prettier --config $(CURDIR)/.prettierrc.js --write {$(DRAFTS_DIR)/*.md,$(DRAFTS_DIR)/**/*.md}
+	$(NPM_BIN_DIR)/prettier --config $(CURDIR)/.prettierrc.js --write {$(SRC_DIR)/*.md,$(SRC_DIR)/**/*.md}
 
 .PHONY: check_format
 check_format: format
