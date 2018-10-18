@@ -27,5 +27,8 @@
     "prettier": "^1.14.3",
     "rimraf": "^2.6.2",
     "stylelint": "^9.5.0"
+  },
+  "dependencies": {
+    "gitbook": "^2.6.9"
   }
 }
