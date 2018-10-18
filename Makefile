@@ -2,7 +2,7 @@ NPM_MOD_DIR := $(CURDIR)/node_modules
 NPM_BIN_DIR := $(NPM_MOD_DIR)/.bin
 
 SRC_DIR := $(CURDIR)/src
-DIST_DIR := $(CURDIR)/dist
+DIST_DIR := $(CURDIR)/_book
 PUBLIC_DIR := $(CURDIR)/public
 
 ####################################
