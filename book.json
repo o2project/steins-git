@@ -1,0 +1,9 @@
+{
+  "root": "./src/",
+  "title": "Steins;Git",
+  "description": "Steins;Gateを用いてGitを解説する薄い本",
+  "author": "kubosho",
+  "language": "ja",
+  "gitbook": ">=3.0.0",
+  "plugins": ["-search"]
+}

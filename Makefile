@@ -2,8 +2,7 @@ NPM_MOD_DIR := $(CURDIR)/node_modules
 NPM_BIN_DIR := $(NPM_MOD_DIR)/.bin
 
 SRC_DIR := $(CURDIR)/src
-DRAFTS_DIR := $(CURDIR)/src/drafts
-DIST_DIR := $(CURDIR)/dist
+DIST_DIR := $(CURDIR)/_book
 PUBLIC_DIR := $(CURDIR)/public
 
 ####################################
@@ -38,7 +37,7 @@ format: format_md ## Format drafts.
 
 .PHONY: format_md
 format_md:
-	$(NPM_BIN_DIR)/prettier --config $(CURDIR)/.prettierrc.js --write {$(DRAFTS_DIR)/*.md,$(DRAFTS_DIR)/**/*.md}
+	$(NPM_BIN_DIR)/prettier --config $(CURDIR)/.prettierrc.js --write {$(SRC_DIR)/*.md,$(SRC_DIR)/**/*.md}
 
 .PHONY: check_format
 check_format: format
@@ -48,7 +47,7 @@ check_format: format
 # Build
 ####################################
 .PHONY: build
-build: ENV ?= dev ## Building scripts and stylesheets.
+build: ENV ?= dev ## Building gitbook.
 build:
 ifeq ($(ENV),prd)
 	$(MAKE) _build RELEASE_CHANNEL=production
@@ -57,18 +56,18 @@ else
 endif
 
 .PHONY: _build
-_build: clean build_markdown
+_build: clean build_gitbook
 
-.PHONY: build_markdown
-build_markdown:
-	$(NPM_BIN_DIR)/markdown-include tools/markdown-include.json
+.PHONY: build_gitbook
+build_gitbook:
+	$(NPM_BIN_DIR)/gitbook build
 
 ####################################
 # Preview server
 ####################################
 .PHONY: serve
-serve: serve_with_bs ## Launch preview server with browser-sync.
+serve: serve_with_gitbook ## Launch preview server with gitbook.
 
-.PHONY: serve_with_bs
-serve_with_bs:
-	$(NPM_BIN_DIR)/browser-sync start --config $(CURDIR)/bs-config.js
+.PHONY: serve_with_gitbook
+serve_with_gitbook:
+	$(NPM_BIN_DIR)/gitbook serve
