@@ -19,6 +19,17 @@ executors:
             - image: circleci/node:10.11.0
 
 ###########################################
+# Commands Definitions
+###########################################
+commands:
+    ###########################################
+    # Observability Commands
+    ###########################################
+    show_yarn_version:
+        steps:
+            - run: yarn -v
+
+###########################################
 # Job Definitions
 ###########################################
 jobs:
@@ -39,6 +50,7 @@ jobs:
         steps:
             - attach_workspace:
                 at: *workspace_root
+            - show_yarn_version
             # FIXME: https://github.com/o2project/steins-git/issues/148
             # - run:
             #     name: Lint
