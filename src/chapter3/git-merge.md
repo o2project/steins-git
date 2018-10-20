@@ -6,30 +6,30 @@
 
 その結果、岡部は天王寺裕吾から鈴羽が書いた手紙を受け取る事になります。
 
-![鈴羽を引き止めた世界線でいくつか作業をした例](ch3/git-merge/source-tree/before.jpg)
+![鈴羽を引き止めた世界線でいくつか作業をした例](/images/ch3/git-merge/source-tree/before.jpg)
 
 それを無かった事にするため D メールを送り世界線を変動させて鈴羽を引き止めないようにします。その為には「秋葉原から萌えが消えた世界線」のブランチへ移動します。
 
-![秋葉原から萌えが消えた世界線に移動した](ch3/git-merge/source-tree/branch-change.jpg)
+![秋葉原から萌えが消えた世界線に移動した](/images/ch3/git-merge/source-tree/branch-change.jpg)
 
 移動した後は D メールを送った状態が最新の状態となっています。この状態から「鈴羽を引き止めた世界線」でしてきた作業を「秋葉原から萌えが消えた世界線」に統合します。
 
 方法としては、統合したいブランチの名前を右クリックして「"統合するブランチ名" を "統合させたいブランチ名" へマージ」を選択します。
 
-![マージ対象のブランチを選択している状態](ch3/git-merge/source-tree/select.jpg)
+![マージ対象のブランチを選択している状態](/images/ch3/git-merge/source-tree/select.jpg)
 
 選択すると、確認メッセージが表示されるので「確認する」を押します。
 
-![マージする際の確認メッセージ](ch3/git-merge/source-tree/confirm.jpg)
+![マージする際の確認メッセージ](/images/ch3/git-merge/source-tree/confirm.jpg)
 
 すると「秋葉原から萌えが消えた世界線」に「鈴羽を引き止めた世界線」でしてきた作業内容が統合された状態になります。
 
-![マージした後の状態](ch3/git-merge/source-tree/uncommit.jpg)
+![マージした後の状態](/images/ch3/git-merge/source-tree/uncommit.jpg)
 
 ただし、まだコミットはされていないのでコミットをしておきます。ここではコミットメッセージを「尾行は中止前のメールは SERN の罠というメールを送信した」としています。
 
-![マージした際のコミットメッセージを書いている状態](ch3/git-merge/source-tree/commit-message.jpg)
+![マージした際のコミットメッセージを書いている状態](/images/ch3/git-merge/source-tree/commit-message.jpg)
 
 コミットが完了しました。このように D メールを送信する感覚で、ブランチ同士を統合する事ができます。
 
-![マージが完了した状態](ch3/git-merge/source-tree/after.jpg)
+![マージが完了した状態](/images/ch3/git-merge/source-tree/after.jpg)

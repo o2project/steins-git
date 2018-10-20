@@ -6,18 +6,18 @@
 
 リポジトリ内にファイルを新しく作成した場合 SourceTree 上ではファイル名の横に「？」が付く形で表示されます。これは、ファイルがまだバージョン管理されてない事を示しています。
 
-![変更したファイルにチェックを付ける前](ch3/git-commit/source-tree/add-before.jpg)
+![変更したファイルにチェックを付ける前](/images/ch3/git-commit/source-tree/add-before.jpg)
 
 この状態でファイル名の左横にあるチェックボックスにチェックを付けると「ステージングエリア」といわれるところにファイルが移動します。
 
-![変更したファイルにチェックを付けた後](ch3/git-commit/source-tree/add-after.jpg)
+![変更したファイルにチェックを付けた後](/images/ch3/git-commit/source-tree/add-after.jpg)
 
 移動した状態で、画面の下部にある「コミットメッセージ」と書かれている場所に任意のメッセージを入力します。
 
-![コミットメッセージを入力する前](ch3/git-commit/source-tree/commit-before.jpg)
+![コミットメッセージを入力する前](/images/ch3/git-commit/source-tree/commit-before.jpg)
 
 入力した後「コミット」ボタンを押すと、作業した内容がリポジトリに記録されます。なお、初回以降は画面上部にある「コミット」ボタンを押す事により、メッセージを入力できます。
 
-![コミットした後](ch3/git-commit/source-tree/commit-after.jpg)
+![コミットした後](/images/ch3/git-commit/source-tree/commit-after.jpg)
 
 ちなみに、コミットメッセージなどが表示されている場所の「ラベル」部分に「HEAD」という記載がありますが、これは「現時点でどのブランチにいるかを判別する情報」です。つまり、世界線の観測ができているという事で、これを例えるならば、ダイバージェンスメーターです。
