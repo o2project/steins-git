@@ -6,6 +6,9 @@ version: 2.1
 workspace_root: &workspace_root
     /tmp/workspace
 
+node_modules_dir: &node_modules_dir
+    node_modules/
+
 defaults: &defaults
     working_directory: *workspace_root
 
@@ -17,6 +20,17 @@ executors:
         <<: *defaults
         docker:
             - image: circleci/node:10.11.0
+
+###########################################
+# Commands Definitions
+###########################################
+commands:
+    ###########################################
+    # Observability Commands
+    ###########################################
+    show_yarn_version:
+        steps:
+            - run: yarn -v
 
 ###########################################
 # Job Definitions
@@ -32,13 +46,15 @@ jobs:
             - persist_to_workspace:
                 root: *workspace_root
                 paths:
-                    - "./*"
+                    - *node_modules_dir
 
     test:
         executor: build_executor
         steps:
+            - checkout
             - attach_workspace:
                 at: *workspace_root
+            - show_yarn_version
             # FIXME: https://github.com/o2project/steins-git/issues/148
             # - run:
             #     name: Lint
