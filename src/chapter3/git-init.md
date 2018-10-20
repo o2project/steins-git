@@ -8,14 +8,14 @@ SourceTree を起動すると、ブックマークウインドウが表示され
 
 そのブックマークウインドウの中で、三つ横並びに表示されているボタンのうち、一番左のボタンを押します。
 
-![SourceTree のボタン](ch3/git-init/source-tree/buttons.jpg)
+![SourceTree のボタン](/images/ch3/git-init/source-tree/buttons.jpg)
 
 ボタンを押すといくつか選択肢が表示されますが、その中の「リポジトリを作成」を選択します。すると、リポジトリの保存先ディレクトリや、名前を決める画面が表示されます。
 
-![リポジトリ名を決めている状態](ch3/git-init/source-tree/dialog.jpg)
+![リポジトリ名を決めている状態](/images/ch3/git-init/source-tree/dialog.jpg)
 
 情報を入力した上で「作成」ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。
 
 ただし、まだ今までの作業内容が無いので、過去に戻ったり改変するという事はできません。
 
-![リポジトリが作られた状態](ch3/git-init/source-tree/empty.jpg)
+![リポジトリが作られた状態](/images/ch3/git-init/source-tree/empty.jpg)

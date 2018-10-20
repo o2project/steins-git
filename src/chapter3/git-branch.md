@@ -8,7 +8,7 @@
 
 「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」で鈴羽を引き止めるために、岡部が D メールを送信しました。ここまでの作業内容は以下のようになります。
 
-![新たなブランチを作る前](ch3/git-branch/source-tree/before.jpg)
+![新たなブランチを作る前](/images/ch3/git-branch/source-tree/before.jpg)
 
 この状態から SourceTree もしくは GitHub for Windows (Mac) を使って「鈴羽を引き止めるために D メールを送信した後の世界線」というブランチを作ります。
 
@@ -16,8 +16,8 @@
 
 SourceTree の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。
 
-![ブランチ名を決めているところ](ch3/git-branch/source-tree/name.jpg)
+![ブランチ名を決めているところ](/images/ch3/git-branch/source-tree/name.jpg)
 
 「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。
 
-![ブランチを作った後](ch3/git-branch/source-tree/after.jpg)
+![ブランチを作った後](/images/ch3/git-branch/source-tree/after.jpg)
