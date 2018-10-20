@@ -6,6 +6,9 @@ version: 2.1
 workspace_root: &workspace_root
     /tmp/workspace
 
+node_modules_dir: &node_modules_dir
+    node_modules/
+
 defaults: &defaults
     working_directory: *workspace_root
 
@@ -43,7 +46,7 @@ jobs:
             - persist_to_workspace:
                 root: *workspace_root
                 paths:
-                    - "./*"
+                    - *node_modules_dir
 
     test:
         executor: build_executor
