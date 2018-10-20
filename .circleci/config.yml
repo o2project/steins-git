@@ -51,6 +51,7 @@ jobs:
     test:
         executor: build_executor
         steps:
+            - checkout
             - attach_workspace:
                 at: *workspace_root
             - show_yarn_version
