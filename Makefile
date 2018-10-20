@@ -47,7 +47,7 @@ check_format: format
 # Build
 ####################################
 .PHONY: build
-build: ENV ?= dev ## Building scripts and stylesheets.
+build: ENV ?= dev ## Building gitbook.
 build:
 ifeq ($(ENV),prd)
 	$(MAKE) _build RELEASE_CHANNEL=production
@@ -56,18 +56,18 @@ else
 endif
 
 .PHONY: _build
-_build: clean build_markdown
+_build: clean build_gitbook
 
-.PHONY: build_markdown
-build_markdown:
-	$(NPM_BIN_DIR)/markdown-include tools/markdown-include.json
+.PHONY: build_gitbook
+build_gitbook:
+	$(NPM_BIN_DIR)/gitbook build
 
 ####################################
 # Preview server
 ####################################
 .PHONY: serve
-serve: serve_with_bs ## Launch preview server with browser-sync.
+serve: serve_with_gitbook ## Launch preview server with gitbook.
 
-.PHONY: serve_with_bs
-serve_with_bs:
-	$(NPM_BIN_DIR)/browser-sync start --config $(CURDIR)/bs-config.js
+.PHONY: serve_with_gitbook
+serve_with_gitbook:
+	$(NPM_BIN_DIR)/gitbook serve
