@@ -39,6 +39,10 @@ lint: lint_md ## Run all lint targets.
 lint_md:
 	$(NPM_BIN_DIR)/textlint $(SRC_DIR)/**
 
+.PHONY: lint_md_auto_fix
+lint_md_auto_fix:
+	$(NPM_BIN_DIR)/textlint --fix $(SRC_DIR)/**
+
 ####################################
 # Formatter
 ####################################
