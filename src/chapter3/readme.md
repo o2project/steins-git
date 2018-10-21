@@ -4,4 +4,4 @@
 
 これらを踏まえ、ここでは実際に Git の様々な操作方法を SourceTree[^1] というソフトウェアを使用して説明します。
 
-[^1] https://www.atlassian.com/ja/software/sourcetree/overview
+[^1] https://ja.atlassian.com/software/sourcetree
