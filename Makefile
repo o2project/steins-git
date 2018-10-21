@@ -30,6 +30,16 @@ clean_dist:
 	$(NPM_BIN_DIR)/rimraf $(DIST_DIR)/*.*
 
 ####################################
+# Lint
+####################################
+.PHONY: lint
+lint: lint_md ## Run all lint targets.
+
+.PHONY: lint_md
+lint_md:
+	$(NPM_BIN_DIR)/textlint $(SRC_DIR)/**
+
+####################################
 # Formatter
 ####################################
 .PHONY: format
