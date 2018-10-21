@@ -1,0 +1,33 @@
+{
+  "filters": {},
+  "rules": {
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-no-abusage": true,
+    "ja-no-mixed-period": true,
+    "ja-no-redundant-expression": true,
+    "max-ten": {
+      "max" : 3
+    },
+    "no-dead-link": {
+      "checkRelative": true,
+      "baseURI": null,
+      "ignore": [],
+      "preferGET": [],
+      "ignoreRedirects": false
+    },
+    "no-doubled-conjunction": true,
+    "no-doubled-conjunctive-particle-ga": true,
+    "no-double-negative-ja": true,
+    "no-doubled-joshi": {
+      "min_interval" : 1,
+      "strict": false,
+      "allow": []
+    },
+    "no-dropping-the-ra": true,
+    "no-mix-dearu-desumasu": true,
+    "no-nfd": true,
+    "prefer-tari-tari": true,
+    "web-plus-db": true
+  }
+}
