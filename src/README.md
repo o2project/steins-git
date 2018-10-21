@@ -22,7 +22,7 @@
 > 結局「シュタゲで覚える git」って誰も書かなかったんですか？
 > 2013 年 12 月 19 日 https://twitter.com/kyo_ago/status/413586733008044032
 
-@kyo_ago には Twitter 上で様々な助言をいただいたり、@watilde も交えてレビュー会をしていただきました。
+@kyo_ago には Twitter 上で様々な助言や、@watilde を交えてのレビュー会などさまざまなことをしていただきました。
 
 Gitter というチャットサービス上では、構成について yosiwo さんから助言をもらいました。
 また、@GeckoTang には GitHub 上で誤字の指摘をしていただきました。
