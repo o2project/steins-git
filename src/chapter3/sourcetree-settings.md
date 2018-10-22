@@ -4,7 +4,7 @@ SourceTree のダウンロードは以下の URL からおこなえます。Sour
 
 `https://www.atlassian.com/ja/software/sourcetree/overview`
 
-SourceTree のダウンロードが終わったら、次にインストールと設定をおこないます。Windows と Mac OS X それぞれ説明が分かりやすいページがあるので、そのページを紹介しておきます。
+SourceTree のダウンロードが終わったら、次にインストールと設定をおこないます。Windows と macOS それぞれで分かりやすいページがあるので、そのページを紹介します。
 
 - Windows: [あおたくノート • SourceTree と Git ではじめるバージョン管理 \#1](https://blog.aotak.me/post/67349113824/sourcetree-tutorial-1)
 
