@@ -1,5 +1,7 @@
 {
-  "filters": {},
+  "filters": {
+    "comments": true
+  },
   "rules": {
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
