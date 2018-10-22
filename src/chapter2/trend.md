@@ -28,7 +28,7 @@ Stack Overflow のタグ検索で SVN を検索した結果が以下の通りに
 
 以上の事から、Git は SVN に比べて流行っていると言えます。
 
-[^1] https://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&geo=JP&date=4%2F2005%20112m
+[^1] https://trends.google.com/trends/explore?date=2005-04-01%202014-07-31&geo=JP&q=Git,SVN,Subversion
 [^2] https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=svn
 [^3] https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=subversion
 [^4] https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=git
