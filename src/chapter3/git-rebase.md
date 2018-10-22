@@ -14,7 +14,7 @@
 
 ![対話形式でリベースを選択している状態](/images/ch3/git-rebase/source-tree/message-edit-select.jpg)
 
-すると、対象となる作業内容が表示されるので、コミットメッセージを直したい作業内容を選び、画面下部の「Edit message」を押します。すると、コミットメッセージを編集する画面が表示されます。
+すると対象となる作業内容が表示されます。そこでコミットメッセージを直したい作業内容を選び、画面下部の「Edit message」を押すと、コミットメッセージを編集する画面が表示されます。
 
 ![コミットメッセージを編集している状態](/images/ch3/git-rebase/source-tree/message-edit-now.jpg)
 
