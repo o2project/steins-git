@@ -1,8 +1,7 @@
 Steins;Git
 ===========
 
-[![Build Status](http://img.shields.io/travis/o2project/steins-git.svg?style=flat-square)](https://travis-ci.org/o2project/steins-git)
-[![Gemnasium](http://img.shields.io/gemnasium/o2project/steins-git.svg?style=flat-square)](https://gemnasium.com/o2project/steins-git)
+[![CircleCI](https://circleci.com/gh/o2project/steins-git.svg?style=svg&circle-token=de169eedf1024803e57569d75b18cf82e8d87330)](https://circleci.com/gh/o2project/steins-git)
 
 「GitをSteins;Gateの世界観を使って説明する」薄い本です。
 
