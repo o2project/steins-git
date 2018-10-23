@@ -27,7 +27,7 @@ make init -j
 make serve
 ```
 
-なお、以下のものをインストールしているが前提となります。
+なお、以下のものをインストールしている前提となります。
 
 - Node.js
   - LTS or Currentの最新版
