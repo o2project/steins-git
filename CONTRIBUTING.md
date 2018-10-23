@@ -1,5 +1,9 @@
 Steins;Gitにようこそ！この文章を読んでくださっているということは、Steins;Gitに対し、なんらかの貢献をしたいと思い、読んでくださっていることだろうと思います。ここでは、貢献のためのヒントを書いていこうと思います。
 
+## はじめに
+
+Steins;GitはSteins;Gateの二次創作物となります。そのため貢献をする前に[著作物転載ガイドライン｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/)と[二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/fanbook.php)を読み、これらに遵守した形で貢献をしていただけるようお願いします。
+
 ## Steins;Gitに主に関わっている人
 
 - [kubosho](https://github.com/kubosho)
