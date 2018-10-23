@@ -48,9 +48,3 @@ Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://steinsg
 © GiantRobot
 
 Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://steinsgate.jp/" rel="dct:source">STEINS;GATE</a>.
-
-## Steins;Gateのゲーム画面
-
-© MAGES. / 5pb. / Nitroplus
-
-ゲーム画面については、[著作物転載ガイドライン｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/) や [二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/fanbook.php) に遵守した形で転載しています。

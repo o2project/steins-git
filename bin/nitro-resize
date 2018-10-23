@@ -1,8 +1,0 @@
-#!/bin/bash
-
-declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
-
-for img in `ls $parentDir/Ch*/img/nitro-*.*`
-do
-    mogrify -resize 56.3% -quality 100 -unsharp 2x1.4+0.5+0 $img
-done
