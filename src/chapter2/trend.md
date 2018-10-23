@@ -1,7 +1,6 @@
 ## 流行っている
 
-SVN と比較すると、Git は流行しています。つまり、それだけ皆が使いノウハウが出やすい状況にあります。
-
+SVN と比較すると、Git は流行しています。
 といっても、言葉だけでは説得力がありません。なので、流行している事を示すデータをいくつか紹介します。なお、これから出てくるスクリーンショットは 2014 年 8 月 3 日に撮られたものです。
 
 はじめに Google トレンドで日本における Git・SVN・Subversion の人気度の動向を調べた結果[^1]です。
@@ -18,17 +17,23 @@ SVN と比較すると、Git は流行しています。つまり、それだけ
 
 ![Qiita で Git を検索した結果](/images/ch2/qiita-git.jpg)
 
-最後に Stack Overflow という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあるのですが、そこでタグ検索で SVN を検索した結果が以下の通りになります。
+最後に Stack Overflow という、プログラミングやソフトウェア開発のときに使うツールなどで分からないところを聞く掲示板のようなサイトがあります。
+Stack Overflow のタグ検索で SVN を検索した結果が以下の通りになります。
 
 ![Stack Overflow で SVN を検索した結果](/images/ch2/stackoverflow-svn.jpg)
 
-次に Git を検索した結果です。SVN に比べ、タグが付けられた数が二倍以上となっています。
+次に Git を検索した結果です。SVN と比較して、タグ付けされた数が二倍以上となっています。
 
 ![Stack Overflow で Git を検索した結果](/images/ch2/stackoverflow-git.jpg)
 
 以上の事から、Git は SVN に比べて流行っていると言えます。
 
-[^1] https://www.google.com/trends/explore#q=Git%2C%20SVN%2C%20Subversion&geo=JP&date=4%2F2005%20112m
+<!-- textlint-disable no-dead-link -->
+
+[^1] https://trends.google.com/trends/explore?date=2005-04-01%202014-07-31&geo=JP&q=Git,SVN,Subversion
+
+<!-- textlint-enable no-dead-link -->
+
 [^2] https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=svn
 [^3] https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=subversion
 [^4] https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=git

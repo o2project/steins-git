@@ -40,6 +40,7 @@ jobs:
         executor: build_executor
         steps:
             - checkout
+            - show_yarn_version
             - run:
                 name: Install dependencies
                 command: make init -j
@@ -54,11 +55,9 @@ jobs:
             - checkout
             - attach_workspace:
                 at: *workspace_root
-            - show_yarn_version
-            # FIXME: https://github.com/o2project/steins-git/issues/148
-            # - run:
-            #     name: Lint
-            #     command: make lint -j
+            - run:
+                name: Lint sources
+                command: make lint -j
             - run:
                 name: Check formatted sources
                 command: make check_format -j

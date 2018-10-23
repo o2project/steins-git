@@ -15,7 +15,7 @@
   - [作業内容を記録する](./chapter3/git-commit.md)
   - [作業内容を無かった事にする](./chapter3/git-checkout-file.md)
   - [作業内容の差分を見る](./chapter3/git-diff.md)
-  - [ブランチの一覧を見たり、新たにブランチを作る](./chapter3/git-branch.md)
+  - [ブランチの一覧を見たり、新たにブランチを作ったりする](./chapter3/git-branch.md)
   - [作業内容をリセットする](./chapter3/git-reset.md)
   - [作業内容を改変する](./chapter3/git-rebase.md)
   - [ブランチを移動する](./chapter3/git-checkout.md)
