@@ -40,10 +40,3 @@
 
 - 日光企画
   - http://www.nikko-pc.com/
-
-## 使用しているフォント
-
-- あおぞら明朝 (本文など)
-  - http://blueskis.wktk.so/AozoraMincho/
-- 源真ゴシック (見出し部分など)
-  - http://jikasei.me/font/genshin/
