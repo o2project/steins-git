@@ -1062,7 +1062,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cpx@^1.5.0:
+cpx@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/cpx/-/cpx-1.5.0.tgz#185be018511d87270dedccc293171e37655ab88f"
   dependencies:
@@ -2042,7 +2042,7 @@ gitbook-asciidoc@0.2.4:
     lodash "^3.2.0"
     q "^1.1.2"
 
-gitbook-cli@^2.3.2:
+gitbook-cli@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/gitbook-cli/-/gitbook-cli-2.3.2.tgz#5e893582e1f743f6fa920c3c3eb36b62ea4a31a0"
   dependencies:
@@ -2112,7 +2112,7 @@ gitbook-restructuredtext@0.2.3:
     q "^1.1.2"
     tmp "0.0.24"
 
-gitbook@^2.6.9:
+gitbook@2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/gitbook/-/gitbook-2.6.9.tgz#d1962e4609ad9f1805bb983ad3e27e67623463e6"
   dependencies:
@@ -2132,7 +2132,7 @@ gitbook@^2.6.9:
     gitbook-plugin-sharing "1.0.1"
     github-slugid "1.0.0"
     graceful-fs "3.0.5"
-    i18n GitbookIO/i18n-node#f26fbfa6b1d7a3bb086ff7849ca262f58a30255b
+    i18n "github:gitbookio/i18n-node#f26fbfa6b1d7a3bb086ff7849ca262f58a30255b"
     json-schema-defaults "0.1.1"
     jsonschema "1.0.2"
     juice "1.5.0"
@@ -2147,7 +2147,7 @@ gitbook@^2.6.9:
     request "2.51.0"
     resolve "0.6.3"
     semver "5.0.1"
-    send GitbookIO/send#9081de9cb0fc85d60e871685f252c98db764cb55
+    send "github:gitbookio/send#9081de9cb0fc85d60e871685f252c98db764cb55"
     spawn-cmd "0.0.2"
     tiny-lr "0.2.1"
     tmp "0.0.24"
@@ -2490,9 +2490,10 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-i18n@GitbookIO/i18n-node#f26fbfa6b1d7a3bb086ff7849ca262f58a30255b:
+"i18n@github:gitbookio/i18n-node#f26fbfa6b1d7a3bb086ff7849ca262f58a30255b":
   version "0.5.0"
-  resolved "https://codeload.github.com/GitbookIO/i18n-node/tar.gz/f26fbfa6b1d7a3bb086ff7849ca262f58a30255b"
+  uid f26fbfa6b1d7a3bb086ff7849ca262f58a30255b
+  resolved "https://codeload.github.com/gitbookio/i18n-node/tar.gz/f26fbfa6b1d7a3bb086ff7849ca262f58a30255b"
   dependencies:
     debug "^3"
     mustache "*"
@@ -4464,7 +4465,7 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
-pkg-dir@^3.0.0:
+pkg-dir@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
   dependencies:
@@ -4490,7 +4491,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.14.3:
+prettier@1.14.3:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.3.tgz#90238dd4c0684b7edce5f83b0fb7328e48bd0895"
 
@@ -5095,7 +5096,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.8, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.6.1:
+rimraf@2, rimraf@2.6.2, rimraf@^2.2.8, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.6.1:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
@@ -5165,9 +5166,10 @@ semver@~5.1.0:
   version "5.1.1"
   resolved "http://registry.npmjs.org/semver/-/semver-5.1.1.tgz#a3292a373e6f3e0798da0b20641b9a9c5bc47e19"
 
-send@GitbookIO/send#9081de9cb0fc85d60e871685f252c98db764cb55:
+"send@github:gitbookio/send#9081de9cb0fc85d60e871685f252c98db764cb55":
   version "0.2.0"
-  resolved "https://codeload.github.com/GitbookIO/send/tar.gz/9081de9cb0fc85d60e871685f252c98db764cb55"
+  uid "9081de9cb0fc85d60e871685f252c98db764cb55"
+  resolved "https://codeload.github.com/gitbookio/send/tar.gz/9081de9cb0fc85d60e871685f252c98db764cb55"
   dependencies:
     debug "^3"
     fresh "~0.2.1"
@@ -5699,7 +5701,7 @@ text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
 
-textlint-filter-rule-comments@^1.2.2:
+textlint-filter-rule-comments@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/textlint-filter-rule-comments/-/textlint-filter-rule-comments-1.2.2.tgz#3a72c494994e068e0e4aaad0f24ea7cfe338503a"
 
@@ -5715,7 +5717,7 @@ textlint-rule-helper@^2.0.0:
   dependencies:
     unist-util-visit "^1.1.0"
 
-textlint-rule-ja-hiragana-fukushi@^1.0.3:
+textlint-rule-ja-hiragana-fukushi@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/textlint-rule-ja-hiragana-fukushi/-/textlint-rule-ja-hiragana-fukushi-1.0.3.tgz#3edef0da4f6d6746dff6944aac97d2fa72ad3ac6"
   dependencies:
@@ -5723,7 +5725,7 @@ textlint-rule-ja-hiragana-fukushi@^1.0.3:
     kuromojin "^1.3.2"
     morpheme-match-all "^1.1.0"
 
-textlint-rule-ja-hiragana-hojodoushi@^1.0.4:
+textlint-rule-ja-hiragana-hojodoushi@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/textlint-rule-ja-hiragana-hojodoushi/-/textlint-rule-ja-hiragana-hojodoushi-1.0.4.tgz#39495f512a50b873e034b55d33df8d9c68b9e64d"
   dependencies:
@@ -5731,14 +5733,14 @@ textlint-rule-ja-hiragana-hojodoushi@^1.0.4:
     kuromojin "^1.3.2"
     morpheme-match-all "^1.1.0"
 
-textlint-rule-ja-hiragana-keishikimeishi@^1.0.2:
+textlint-rule-ja-hiragana-keishikimeishi@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-ja-hiragana-keishikimeishi/-/textlint-rule-ja-hiragana-keishikimeishi-1.0.2.tgz#d17329e105a9fe9f0fc943c60414e0e6679dcd98"
   dependencies:
     kuromojin "^1.3.2"
     morpheme-match-all "^1.1.0"
 
-textlint-rule-ja-no-abusage@^1.2.2:
+textlint-rule-ja-no-abusage@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-ja-no-abusage/-/textlint-rule-ja-no-abusage-1.2.2.tgz#6478a150d4dcea4e95bb88a2af92a2fcace1c5f0"
   dependencies:
@@ -5746,14 +5748,14 @@ textlint-rule-ja-no-abusage@^1.2.2:
     morpheme-match "^1.0.1"
     textlint-rule-prh "^3.1.1"
 
-textlint-rule-ja-no-mixed-period@^2.1.1:
+textlint-rule-ja-no-mixed-period@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/textlint-rule-ja-no-mixed-period/-/textlint-rule-ja-no-mixed-period-2.1.1.tgz#6c63446de0bab9870041f38b1a339d54328f4c60"
   dependencies:
     check-ends-with-period "^1.0.1"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-ja-no-redundant-expression@^2.0.0:
+textlint-rule-ja-no-redundant-expression@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/textlint-rule-ja-no-redundant-expression/-/textlint-rule-ja-no-redundant-expression-2.0.0.tgz#ef5e34f619005c9e5d5509b6eeceab11b9610f10"
   dependencies:
@@ -5761,7 +5763,7 @@ textlint-rule-ja-no-redundant-expression@^2.0.0:
     morpheme-match "^1.0.1"
     morpheme-match-all "^1.1.0"
 
-textlint-rule-max-ten@^2.0.3:
+textlint-rule-max-ten@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/textlint-rule-max-ten/-/textlint-rule-max-ten-2.0.3.tgz#dccbc0d0157ee86a7572ca00a47ab1fa577f0645"
   dependencies:
@@ -5770,7 +5772,7 @@ textlint-rule-max-ten@^2.0.3:
     structured-source "^3.0.2"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-dead-link@^4.4.1:
+textlint-rule-no-dead-link@4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.4.1.tgz#013f4eb268a3b093d2ea942c786807ed8a2a8873"
   dependencies:
@@ -5780,13 +5782,13 @@ textlint-rule-no-dead-link@^4.4.1:
     minimatch "^3.0.4"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-double-negative-ja@^1.0.5:
+textlint-rule-no-double-negative-ja@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-double-negative-ja/-/textlint-rule-no-double-negative-ja-1.0.5.tgz#ba30db424dc7ef84ceda6d103781b14cd20cc764"
   dependencies:
     kuromojin "^1.1.0"
 
-textlint-rule-no-doubled-conjunction@^1.0.2:
+textlint-rule-no-doubled-conjunction@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-conjunction/-/textlint-rule-no-doubled-conjunction-1.0.2.tgz#24c6e8014c6b2e184bc7a5d4c1a6ee13bb309930"
   dependencies:
@@ -5795,7 +5797,7 @@ textlint-rule-no-doubled-conjunction@^1.0.2:
     textlint-rule-helper "^1.1.5"
     textlint-util-to-string "^1.2.0"
 
-textlint-rule-no-doubled-conjunctive-particle-ga@^1.0.2:
+textlint-rule-no-doubled-conjunctive-particle-ga@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-conjunctive-particle-ga/-/textlint-rule-no-doubled-conjunctive-particle-ga-1.0.2.tgz#b9cb679555aea2ab0d4ffcfa4dd2ffab71bf0057"
   dependencies:
@@ -5804,7 +5806,7 @@ textlint-rule-no-doubled-conjunctive-particle-ga@^1.0.2:
     textlint-rule-helper "^1.1.5"
     textlint-util-to-string "^1.2.0"
 
-textlint-rule-no-doubled-joshi@^3.5.1:
+textlint-rule-no-doubled-joshi@3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-joshi/-/textlint-rule-no-doubled-joshi-3.5.1.tgz#759c6c5def8075f849d9a4df551c2d2a0815ba2f"
   dependencies:
@@ -5813,14 +5815,14 @@ textlint-rule-no-doubled-joshi@^3.5.1:
     textlint-rule-helper "^1.1.4"
     textlint-util-to-string "^1.1.0"
 
-textlint-rule-no-dropping-the-ra@^1.1.2:
+textlint-rule-no-dropping-the-ra@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-dropping-the-ra/-/textlint-rule-no-dropping-the-ra-1.1.2.tgz#17d8c65986d7bd8014a4529303a2ba0b769a89d2"
   dependencies:
     kuromojin "^1.2.1"
     textlint-rule-helper "^1.1.4"
 
-textlint-rule-no-mix-dearu-desumasu@^3.0.3:
+textlint-rule-no-mix-dearu-desumasu@3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-mix-dearu-desumasu/-/textlint-rule-no-mix-dearu-desumasu-3.0.3.tgz#ac4b8160b4f46644a4a40d62fe01d8db7670b7c3"
   dependencies:
@@ -5828,7 +5830,7 @@ textlint-rule-no-mix-dearu-desumasu@^3.0.3:
     textlint-rule-helper "^2.0.0"
     unist-util-visit "^1.1.0"
 
-textlint-rule-no-nfd@^1.0.1:
+textlint-rule-no-nfd@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-nfd/-/textlint-rule-no-nfd-1.0.1.tgz#bf483f844e641ef23ae3f82361421a9e53b5d65a"
   dependencies:
@@ -5836,7 +5838,7 @@ textlint-rule-no-nfd@^1.0.1:
     textlint-rule-helper "^1.1.5"
     unorm "^1.4.1"
 
-textlint-rule-prefer-tari-tari@^1.0.3:
+textlint-rule-prefer-tari-tari@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/textlint-rule-prefer-tari-tari/-/textlint-rule-prefer-tari-tari-1.0.3.tgz#0164a473c55810dab87a1a3848156614fbc7f149"
   dependencies:
@@ -5862,7 +5864,7 @@ textlint-rule-prh@^3.1.1:
     textlint-rule-helper "^2.0.0"
     untildify "^3.0.2"
 
-textlint-rule-web-plus-db@^1.1.5:
+textlint-rule-web-plus-db@1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/textlint-rule-web-plus-db/-/textlint-rule-web-plus-db-1.1.5.tgz#082eee79a3b55e62e81b2501fdfbc57c3e2f22db"
   dependencies:
@@ -5883,7 +5885,7 @@ textlint-util-to-string@^2.1.1:
     object-assign "^4.0.1"
     structured-source "^3.0.2"
 
-textlint@^11.0.1:
+textlint@11.0.1:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/textlint/-/textlint-11.0.1.tgz#2c4ce2bcefdf8307374ec19ac1b33261a50e294c"
   dependencies:
