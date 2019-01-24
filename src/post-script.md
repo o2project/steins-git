@@ -9,11 +9,11 @@
 - Git チュートリアルとトレーニング| Atlassian
   - https://ja.atlassian.com/git/tutorials
 - イラストでわかる！ Git 入門の入門 : アシアルブログ
-  - http://blog.asial.co.jp/894
+  - https://blog.asial.co.jp/894
 - Git - Book
   - https://git-scm.com/book/ja/v2
 - 初心者でも分かる！ `git rebase` の使い方を解説します | 株式会社 LIG
-  - http://liginc.co.jp/web/tool/79390
+  - https://liginc.co.jp/web/tool/79390
 
 ### 書籍
 
