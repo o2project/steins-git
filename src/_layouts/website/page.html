@@ -1,0 +1,10 @@
+{% extends template.self %} {% block head %}
+{{ super() }}
+<script>
+  window.__gaId__ = 'UA-25380313-6';
+</script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-25380313-6"></script>
+<script defer src="/assets/scripts/gaInitialize.js" type="module"></script>
+{% endblock %} {% block body %}
+{{ super() }}
+{% endblock %}
