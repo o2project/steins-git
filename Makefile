@@ -6,6 +6,13 @@ DIST_DIR := $(CURDIR)/_book
 PUBLIC_DIR := $(CURDIR)/public
 
 ####################################
+# Command definition
+####################################
+ifeq ($(OS),Windows_NT)
+	MAKE = make --file=Makefile
+endif
+
+####################################
 # Self-documentize utility
 ####################################
 .PHONY: help
