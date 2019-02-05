@@ -1,5 +1,5 @@
-import { GAOptout } from './gaOptout.mjs';
-import { GAOptoutKeyStorage } from './gaOptoutKeyStorage.mjs';
+import { GAOptout } from './gaOptout.js';
+import { GAOptoutKeyStorage } from './gaOptoutKeyStorage.js';
 
 function gtag() {
   window.dataLayer = window.dataLayer || [];
