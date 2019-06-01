@@ -19,7 +19,7 @@ executors:
     build_executor:
         <<: *defaults
         docker:
-            - image: circleci/node:10.15.0
+            - image: circleci/node:10.16.0
 
 ###########################################
 # Commands Definitions
