@@ -7,7 +7,7 @@
 ### Web サイト
 
 - Git チュートリアルとトレーニング| Atlassian
-  - https://ja.atlassian.com/git/tutorials
+  - https://www.atlassian.com/ja/git/tutorials
 - イラストでわかる！ Git 入門の入門 : アシアルブログ
   - https://blog.asial.co.jp/894
 - Git - Book
