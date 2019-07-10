@@ -280,4 +280,4 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 
 ![マージが完了した状態](/assets/images/ch3/git-merge/source-tree/after.jpg)
 
-[^1] https://ja.atlassian.com/software/sourcetree
+[^1] https://www.atlassian.com/ja/software/sourcetree
