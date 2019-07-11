@@ -1861,11 +1861,11 @@ fs-extra@3.0.1:
     jsonfile "^3.0.0"
     universalify "^0.1.0"
 
-fs-extra@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
+fs-extra@^8.0.1:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   dependencies:
-    graceful-fs "^4.1.2"
+    graceful-fs "^4.2.0"
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
@@ -2274,6 +2274,10 @@ graceful-fs@3.0.5:
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@~4.1.11, graceful-fs@~4.1.2, graceful-fs@~4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
+
+graceful-fs@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
 
 har-schema@^1.0.5:
   version "1.0.5"
@@ -5779,15 +5783,15 @@ textlint-rule-max-ten@2.0.3:
     structured-source "^3.0.2"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-dead-link@4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.4.1.tgz#013f4eb268a3b093d2ea942c786807ed8a2a8873"
+textlint-rule-no-dead-link@4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.4.2.tgz#14d29411171075e687d5d2429ca1a0b0039505b0"
   dependencies:
-    fs-extra "^5.0.0"
+    fs-extra "^8.0.1"
     get-url-origin "^1.0.1"
     isomorphic-fetch "^2.2.1"
     minimatch "^3.0.4"
-    textlint-rule-helper "^2.0.0"
+    textlint-rule-helper "^2.1.1"
 
 textlint-rule-no-double-negative-ja@1.0.5:
   version "1.0.5"
