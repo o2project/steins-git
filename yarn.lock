@@ -3268,9 +3268,9 @@ markdown-escapes@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.2.tgz#e639cbde7b99c841c0bacc8a07982873b46d2122"
 
-match-index@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/match-index/-/match-index-1.0.1.tgz#b4b673e99ab3ac5a6af303ccf4db709812bc3f58"
+match-index@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/match-index/-/match-index-1.0.3.tgz#752ec60c6586ea5dd440d5e62cfbff25838c071a"
   dependencies:
     regexp.prototype.flags "^1.1.1"
 
@@ -5932,12 +5932,12 @@ textlint-rule-no-mix-dearu-desumasu@3.0.3:
     textlint-rule-helper "^2.0.0"
     unist-util-visit "^1.1.0"
 
-textlint-rule-no-nfd@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-nfd/-/textlint-rule-no-nfd-1.0.1.tgz#bf483f844e641ef23ae3f82361421a9e53b5d65a"
+textlint-rule-no-nfd@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-nfd/-/textlint-rule-no-nfd-1.0.2.tgz#8c5793b57caada6e620b89d7a1d2886487dbbe2e"
   dependencies:
-    match-index "^1.0.1"
-    textlint-rule-helper "^1.1.5"
+    match-index "^1.0.3"
+    textlint-rule-helper "^2.1.1"
     unorm "^1.4.1"
 
 textlint-rule-prefer-tari-tari@1.0.3:
