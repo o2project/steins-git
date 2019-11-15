@@ -26,7 +26,7 @@
   document.addEventListener('DOMContentLoaded', showGAOptoutStatus);
 </script>
 
-当Webサイトでは内容の改善を目的として、Google アナリティクスによるアクセス分析をおこなっています。
+当 Web サイトでは内容の改善を目的として、Google アナリティクスによるアクセス分析をおこなっています。
 
 Google アナリティクスは Cookie を使い匿名のトラフィックデータを収集しています。
 Cookie に含まれるデータは利用者の個人情報を特定しません。また利用者は Cookie を無効にした状態で当サイトにアクセスできます。
