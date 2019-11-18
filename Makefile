@@ -92,3 +92,10 @@ serve: serve_with_gitbook ## Launch preview server with gitbook.
 .PHONY: serve_with_gitbook
 serve_with_gitbook:
 	$(NPM_BIN_DIR)/gitbook serve
+
+####################################
+# Save PDF
+####################################
+.PHONY: save_pdf
+save_pdf:
+	$(NPM_BIN_DIR)/savepdf $(SRC_DIR) --output $(SRC_DIR)/output.pdf --timeout 10
