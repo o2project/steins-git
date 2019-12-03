@@ -1,8 +1,7 @@
 # 第二章 - 率先躬行のサインポスト
 
-これまで、Git とは何かという事や Git を使う理由について説明してきました。
-
-これらを踏まえ、ここでは実際に Git の様々な操作方法を SourceTree[^1] というソフトウェアを使用して説明します。
+Git とは何かという事や Git を使う理由について説明してきました。
+ここから Git の操作方法を Fork[^1] というソフトウェアを使用して説明します。
 
 ## SourceTree のインストールと設定
 
@@ -280,4 +279,4 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 
 ![マージが完了した状態](/assets/images/ch3/git-merge/source-tree/after.jpg)
 
-[^1] https://www.atlassian.com/ja/software/sourcetree
+[^1] https://git-fork.com/
