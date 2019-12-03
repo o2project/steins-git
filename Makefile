@@ -2,7 +2,9 @@ NPM_MOD_DIR := $(CURDIR)/node_modules
 NPM_BIN_DIR := $(NPM_MOD_DIR)/.bin
 
 SRC_DIR := $(CURDIR)/src
-DIST_DIR := $(CURDIR)/_book
+BOOK_DIR := $(CURDIR)/_book
+HTML_DIR := $(CURDIR)/_html
+TMP_DIR := $(CURDIR)/_tmp
 PUBLIC_DIR := $(CURDIR)/public
 
 ####################################
@@ -34,7 +36,7 @@ clean: clean_dist ## Clean up before building the code.
 
 .PHONY: clean_dist
 clean_dist:
-	$(NPM_BIN_DIR)/rimraf $(DIST_DIR)/*.*
+	$(NPM_BIN_DIR)/rimraf $(BOOK_DIR)/*.*
 
 ####################################
 # Lint
@@ -98,4 +100,4 @@ serve_with_gitbook:
 ####################################
 .PHONY: save_pdf
 save_pdf:
-	$(NPM_BIN_DIR)/savepdf $(SRC_DIR) --output $(SRC_DIR)/output.pdf --timeout 10
+	$(NPM_BIN_DIR)/savepdf $(HTML_DIR) --output $(TMP_DIR)/output.pdf --timeout 100

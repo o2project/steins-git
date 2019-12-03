@@ -1,4 +1,7 @@
 _book/
+_html/
+_tmp/
+
 .bundle/
 .idea/
 vendor/
