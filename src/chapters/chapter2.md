@@ -5,7 +5,7 @@ Git とは何かという事や Git を使う理由について説明してき�
 
 ## SourceTree のインストールと設定
 
-SourceTree のダウンロードは以下の URL からおこなえます。SourceTree は Windows と Mac OS X に対応しています。
+SourceTree のダウンロードは以下の URL からおこなえます。SourceTree は Windows と macOS に対応しています。
 
 `https://www.atlassian.com/ja/software/sourcetree/overview`
 
