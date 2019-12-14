@@ -1,9 +1,10 @@
 # 第二章 - 率先躬行のサインポスト
 
 Git とは何かという事や Git を使う理由について説明してきました。
-ここから Git の操作方法をコマンドラインインタフェース (CLI) と Fork[^1] というソフトウェアを使用して説明します。
+ここから Git の操作方法をコマンドラインインタフェース (CLI) のコマンドと Fork というソフトウェアを使用して説明します。
+なお CLI を使った説明は「Git 初心者への道 - お仕事で困らないレベルまでググっとします。[^2]」や「今日からはじめる GitHub 〜 初心者が Git をインストールして、プルリクできるようになるまでを解説[^3]」といったページを見て、なんとなくの雰囲気を掴むのが良いでしょう。
 
-Fork のダウンロードは以下の URL からおこなえます。Fork は Windows と macOS に対応しています。
+Fork は以下の URL からダウンロードできます。Fork は Windows と macOS に対応しています。
 `https://git-fork.com/`
 
 ## Git によるバージョン管理を始める
@@ -251,3 +252,5 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 ![マージが完了した状態](/assets/images/ch3/git-merge/source-tree/after.jpg)
 
 [^1] https://git-fork.com/
+[^2] https://gist.github.com/yatemmma/6486028
+[^3] https://employment.en-japan.com/engineerhub/entry/2017/01/31/110000
