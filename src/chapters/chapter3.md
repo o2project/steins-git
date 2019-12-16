@@ -66,7 +66,7 @@ Watch は GitHub 上にあるリポジトリを観察するためのものです
 
 Star は GitHub 上にあるリポジトリをブックマークするような機能です。
 Star を付けたリポジトリは Star を付けたリポジトリの一覧から見られます。
-また Star を付けたリポジトリなどを元におすすめのリポジトリを Discover repositories[^2] で表示してくれるため、気になるリポジトリがある場合は積極的に Star を付けると良いでしょう。
+また Star を付けたリポジトリなどを元におすすめのリポジトリを Discover repositories[^3] で表示してくれるため、気になるリポジトリがある場合は積極的に Star を付けると良いでしょう。
 
 ## Fork
 
@@ -75,10 +75,11 @@ GitHub ではさまざまなリポジトリが公開されています。そう�
 
 ## チームの管理
 
-[^1] GitHub 上の設定として、変更が問題ないと承認された後にコードを変更した場合に再度承認をもらわないとマージできないようにする設定があります。
+[^1] https://capec.mitre.org/data/definitions/253.html
+[^2] GitHub 上の設定として、変更が問題ないと承認された後にコードを変更した場合に再度承認をもらわないとマージできないようにする設定があります。
 
 <!-- textlint-disable -->
 
-[^2] https://github.com/discover
+[^3] https://github.com/discover
 
 <!-- textlint-enable -->
