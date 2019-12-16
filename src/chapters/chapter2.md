@@ -17,16 +17,16 @@ Fork は以下の URL からダウンロードできます。Fork は Windows �
 Fork を起動すると、ブックマークウィンドウが表示されます。Windows 版の場合は Fork を起動した時に表示される画面の左端に表示されます。Mac 版の場合は 「Cmd + B」というショートカットキーで表示する事ができます。
 そのブックマークウィンドウの中で、三つ横並びに表示されているボタンのうち、一番左のボタンを押します。
 
-![Fork のボタン](/assets/images/ch3/git-init/source-tree/buttons.jpg)
+![Fork のボタン](/assets/images/ch2/git-init/source-tree/buttons.jpg)
 
 ボタンを押すといくつか選択肢が表示されますが、その中の「リポジトリを作成」を選択します。すると、リポジトリの保存先ディレクトリや、名前を決める画面が表示されます。
 
-![リポジトリ名を決めている状態](/assets/images/ch3/git-init/source-tree/dialog.jpg)
+![リポジトリ名を決めている状態](/assets/images/ch2/git-init/source-tree/dialog.jpg)
 
 情報を入力した上で「作成」ボタンを押すと、空のリポジトリができます。これでタイムリープマシンが作られた状態になります。
 しかし、今までの作業内容がまだ無いため、過去に戻ったり改変したりはできません。
 
-![リポジトリが作られた状態](/assets/images/ch3/git-init/source-tree/empty.jpg)
+![リポジトリが作られた状態](/assets/images/ch2/git-init/source-tree/empty.jpg)
 
 ## すでにあるリモートリポジトリを使ってバージョン管理を始める
 
@@ -46,19 +46,19 @@ Fork を起動すると、ブックマークウィンドウが表示されます
 
 リポジトリ内にファイルを新しく作成した場合 Fork 上ではファイル名の横に「？」が付く形で表示されます。これは、ファイルがまだバージョン管理されてない事を示しています。
 
-![変更したファイルにチェックを付ける前](/assets/images/ch3/git-commit/source-tree/add-before.jpg)
+![変更したファイルにチェックを付ける前](/assets/images/ch2/git-commit/source-tree/add-before.jpg)
 
 この状態でファイル名の左横にあるチェックボックスへチェックを付けると「ステージングエリア」といわれるところにファイルが移動します。
 
-![変更したファイルにチェックを付けた後](/assets/images/ch3/git-commit/source-tree/add-after.jpg)
+![変更したファイルにチェックを付けた後](/assets/images/ch2/git-commit/source-tree/add-after.jpg)
 
 移動した状態で、画面の下部にある「コミットメッセージ」と書かれている場所に任意のメッセージを入力します。
 
-![コミットメッセージを入力する前](/assets/images/ch3/git-commit/source-tree/commit-before.jpg)
+![コミットメッセージを入力する前](/assets/images/ch2/git-commit/source-tree/commit-before.jpg)
 
 入力した後「コミット」ボタンを押すと、作業した内容がリポジトリに記録されます。なお、初回以降は画面上部にある「コミット」ボタンを押す事により、メッセージを入力できます。
 
-![コミットした後](/assets/images/ch3/git-commit/source-tree/commit-after.jpg)
+![コミットした後](/assets/images/ch2/git-commit/source-tree/commit-after.jpg)
 
 ちなみに、コミットメッセージなどが表示されている場所の「ラベル」部分に「HEAD」という記載がありますが、これは「現時点でどのブランチにいるかを判別する情報」です。
 つまり、世界線の観測ができているということです。例えるならばダイバージェンスメーターです。
@@ -72,15 +72,15 @@ Fork を起動すると、ブックマークウィンドウが表示されます
 
 方法としては、作業内容を無かった事にするファイルを右クリックで選択し「リセット(Windows の場合は破棄)」を選択します。
 
-![作業内容を無かった事にする](/assets/images/ch3/git-checkout-file/source-tree/before.jpg)
+![作業内容を無かった事にする](/assets/images/ch2/git-checkout-file/source-tree/before.jpg)
 
 変更を本当に破棄していいか確認の画面が表示されるので「OK」を押します。
 
-![作業内容を無かった事にするか確認がされる](/assets/images/ch3/git-checkout-file/source-tree/confirm.jpg)
+![作業内容を無かった事にするか確認がされる](/assets/images/ch2/git-checkout-file/source-tree/confirm.jpg)
 
 これで、紅莉栖に論破されたという事が無くなりました。
 
-![論破された事を無くした後](/assets/images/ch3/git-checkout-file/source-tree/after.jpg)
+![論破された事を無くした後](/assets/images/ch2/git-checkout-file/source-tree/after.jpg)
 
 ## 作業内容の差分を見る
 
@@ -89,7 +89,7 @@ Fork を起動すると、ブックマークウィンドウが表示されます
 
 Fork では、特定の作業内容を選択する事で、その作業内容の一つ前の作業内容と比べてどのような変更をしたのか見る事ができます。
 
-![Fork で作業内容の差分を見ている例](/assets/images/ch3/git-diff/source-tree/diff.jpg)
+![Fork で作業内容の差分を見ている例](/assets/images/ch2/git-diff/source-tree/diff.jpg)
 
 ## ブランチの一覧を見たり、新たにブランチを作ったりする
 
@@ -98,7 +98,7 @@ Fork では、特定の作業内容を選択する事で、その作業内容の
 では、ブランチを作る方法を説明していきます。なお、現在のブランチは「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」だとします。
 「秋葉原が電気街となり、フェイリスのお父さんが生きている世界線」で鈴羽を引き止めるために、岡部が D メールを送信しました。ここまでの作業内容は以下のようになります。
 
-![新たなブランチを作る前](/assets/images/ch3/git-branch/source-tree/before.jpg)
+![新たなブランチを作る前](/assets/images/ch2/git-branch/source-tree/before.jpg)
 
 この状態から Fork もしくは GitHub for Windows (Mac) を使って「鈴羽を引き止めるために D メールを送信した後の世界線」というブランチを作ります。
 
@@ -106,11 +106,11 @@ Fork では、特定の作業内容を選択する事で、その作業内容の
 
 Fork の画面上部にある「ブランチ」を押すとブランチ名を入力する画面が表示されます。この画面内の新規ブランチの項目に任意の名前を入力します。
 
-![ブランチ名を決めているところ](/assets/images/ch3/git-branch/source-tree/name.jpg)
+![ブランチ名を決めているところ](/assets/images/ch2/git-branch/source-tree/name.jpg)
 
 「ブランチを作成」を押すとブランチができた状態になり、かつ作ったブランチ(鈴羽を引き止めた世界線)に移動しています。世界線変動が起きました。
 
-![ブランチを作った後](/assets/images/ch3/git-branch/source-tree/after.jpg)
+![ブランチを作った後](/assets/images/ch2/git-branch/source-tree/after.jpg)
 
 ## 作業内容をリセットする
 
@@ -119,56 +119,56 @@ Fork の画面上部にある「ブランチ」を押すとブランチ名を入
 たとえば「作業内容を無かった事にする」はリーディング・シュタイナーが働かないので記憶から無くなってしまいます。しかし「作業内容をリセットする」はリーディング・シュタイナーが働くため記憶に残ります。このように例えれば分かりやすいと思います。
 話を戻しますが「鈴羽を引き止めた世界線」でいくつか作業をした結果、履歴が以下のようになりました。最新の作業内容は「SERN の襲撃によりまゆりが死んでしまった…」となっています。
 
-![鈴羽を引き止めた世界線でいくつか作業した後の状態](/assets/images/ch3/git-reset-before.jpg)
+![鈴羽を引き止めた世界線でいくつか作業した後の状態](/assets/images/ch2/git-reset-before.jpg)
 
 ここで最新の作業内容である「SERN の襲撃によりまゆりが死んでしまった…」という作業を無かった事にして、紅莉栖がタイムリープマシンを完成させたところにタイムリープします。
 タイムリープするためには、戻したい作業内容の一つ前の作業内容を右クリックで選択し「このコミットまで "ブランチ名" を元に戻す」を選択します。
 
-![git resetをおこなおうとしている状態](/assets/images/ch3/git-reset-right-click.jpg)
+![git resetをおこなおうとしている状態](/assets/images/ch2/git-reset-right-click.jpg)
 
 これで、作業内容から「SERN の襲撃によりまゆりが死んでしまった…」というのが消えました。
 
-![git resetをした後の状態](/assets/images/ch3/git-reset-after.jpg)
+![git resetをした後の状態](/assets/images/ch2/git-reset-after.jpg)
 
 ## 作業内容を改変する
 
 作業内容を改変します。例えるならば、タイムリープマシンを使って過去の作業をやり直す感じです。
 電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃もしくは他の要因により、まゆりが何度も死んでしまった状態の最新の作業内容ですが「ラウンダー追ってきて、まゆりが刺されて死んだ」となっています。
 
-![まゆりが何度も死んでしまったときの作業内容](/assets/images/ch3/git-rebase/source-tree/message-edit-before.jpg)
+![まゆりが何度も死んでしまったときの作業内容](/assets/images/ch2/git-rebase/source-tree/message-edit-before.jpg)
 
 ## コミットメッセージを修正する
 
 まず始めに、コミットメッセージを修正してみます。
 先ほどの最新の作業内容を記録したコミットが「ラウンダー追ってきて」と、間に「が」が足りないメッセージになっています。これを修正するため、直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。
 
-![対話形式でリベースを選択している状態](/assets/images/ch3/git-rebase/source-tree/message-edit-select.jpg)
+![対話形式でリベースを選択している状態](/assets/images/ch2/git-rebase/source-tree/message-edit-select.jpg)
 
 すると対象となる作業内容が表示されます。そこでコミットメッセージを直したい作業内容を選び、画面下部の「Edit message」を押すと、コミットメッセージを編集する画面が表示されます。
 
-![コミットメッセージを編集している状態](/assets/images/ch3/git-rebase/source-tree/message-edit-now.jpg)
+![コミットメッセージを編集している状態](/assets/images/ch2/git-rebase/source-tree/message-edit-now.jpg)
 
 任意のコミットメッセージを書いた後「OK」ボタンを押すとコミットメッセージが修正されます。
 
-![コミットメッセージを編集し終えた状態](/assets/images/ch3/git-rebase/source-tree/message-edit-after.jpg)
+![コミットメッセージを編集し終えた状態](/assets/images/ch2/git-rebase/source-tree/message-edit-after.jpg)
 
 ## 複数の作業内容を一つにまとめる
 
 次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。
 
-![git rebase squash するべく親となるコミットを選択している状態](/assets/images/ch3/git-rebase/source-tree/squash-right-click.jpg)
+![git rebase squash するべく親となるコミットを選択している状態](/assets/images/ch2/git-rebase/source-tree/squash-right-click.jpg)
 
 今回は四つの作業内容を対象としました。ここから作業内容をまとめるには「Squash with previous」を三回押します。「まとめる作業内容の数 - 一回 Squash with previous を押す」と覚えるといいかもしれません。
 
-![git rebase squash しようとしている状態](/assets/images/ch3/git-rebase/source-tree/squash-before.jpg)
+![git rebase squash しようとしている状態](/assets/images/ch2/git-rebase/source-tree/squash-before.jpg)
 
 その後、まとめた作業内容のコミットメッセージを編集するために「Edit message」を押します。
 
-![コミットをまとめた後コミットメッセージを編集している状態](/assets/images/ch3/git-rebase/source-tree/squash-message-edit.jpg)
+![コミットをまとめた後コミットメッセージを編集している状態](/assets/images/ch2/git-rebase/source-tree/squash-message-edit.jpg)
 
 これで、まゆりが死んだと書かれた複数の履歴がまとめられました。
 
-![git rebase squashした状態](/assets/images/ch3/git-rebase/source-tree/squash-after.jpg)
+![git rebase squashした状態](/assets/images/ch2/git-rebase/source-tree/squash-after.jpg)
 
 ## ブランチを移動する
 
@@ -181,7 +181,7 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 画面左端に表示されているブランチ一覧から、移動したいブランチの名前をダブルクリックする事により、ブランチを移動できます。
 以下の図では「鈴羽を引き止めた世界線」から「萌郁が IBN 5100 を手に入れた世界線」へ移動しています。
 
-![ブランチを移動した後](/assets/images/ch3/git-checkout.jpg)
+![ブランチを移動した後](/assets/images/ch2/git-checkout.jpg)
 
 ## リモートリポジトリに作業内容を送る
 
@@ -192,12 +192,12 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 なので、他のラボメン(今回の場合だと紅莉栖)に今まで岡部がしてきた作業内容を伝える必要があります。
 画面上部の「プッシュ」を押します。初期設定では現在のブランチのみが選択されているので、その状態で「OK」を押します。
 
-![git push 前](/assets/images/ch3/git-push-branch-select.jpg)
+![git push 前](/assets/images/ch2/git-push-branch-select.jpg)
 
 プッシュが終わり、作業内容の一覧に「origin/ブランチ名」という文字が表示されるようになりました。なお、「origin」というのは、リモートリポジトリの事を指しています。
 作業内容をリモートリポジトリに送ったとともに、紅莉栖にも今までの作業内容が伝わりました。
 
-![git push 後](/assets/images/ch3/git-push-after.jpg)
+![git push 後](/assets/images/ch2/git-push-after.jpg)
 
 ## リモートリポジトリの変更内容を自分の PC 上のリポジトリに取り込む
 
@@ -208,15 +208,15 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 
 その場合、自分の PC 上のリポジトリ(鈴羽を引き止めた世界線)に比べ、リモートリポジトリ(origin/鈴羽を引き止めた世界線)が二つ進んでいます。
 
-![紅莉栖が作業している](/assets/images/ch3/git-pull-before.jpg)
+![紅莉栖が作業している](/assets/images/ch2/git-pull-before.jpg)
 
 ここで、画面上部の「プル」を押します。基本は表示された画面内の「OK」を押すだけで良いです。
 
-![pull してくるブランチを選んでいる状態](/assets/images/ch3/git-pull-select.jpg)
+![pull してくるブランチを選んでいる状態](/assets/images/ch2/git-pull-select.jpg)
 
 「OK」を押す事により、自分とリモートのリポジトリの作業内容が同期します。
 
-![自分の PC 上のリポジトリとリモートリポジトリの同期をとった](/assets/images/ch3/git-pull-after.jpg)
+![自分の PC 上のリポジトリとリモートリポジトリの同期をとった](/assets/images/ch2/git-pull-after.jpg)
 
 ## 別のブランチでの作業内容を取り込む
 
@@ -224,32 +224,32 @@ Git のブランチは「世界線」です。D メールによる世界線変�
 「鈴羽を引き止めた世界線」というブランチで作業をした結果、鈴羽がタイムトラベルを失敗して「失敗した失敗した失敗した失敗した失敗した」と何度も書いた手紙を書き残し、自殺してしまいました。
 その結果、岡部は天王寺裕吾から鈴羽が書いた手紙を受け取る事になります。
 
-![鈴羽を引き止めた世界線でいくつか作業をした例](/assets/images/ch3/git-merge/source-tree/before.jpg)
+![鈴羽を引き止めた世界線でいくつか作業をした例](/assets/images/ch2/git-merge/source-tree/before.jpg)
 
 それを無かった事にするため D メールを送り世界線を変動させて鈴羽を引き止めないようにします。その為には「秋葉原から萌えが消えた世界線」のブランチへ移動します。
 
-![秋葉原から萌えが消えた世界線に移動した](/assets/images/ch3/git-merge/source-tree/branch-change.jpg)
+![秋葉原から萌えが消えた世界線に移動した](/assets/images/ch2/git-merge/source-tree/branch-change.jpg)
 
 移動した後は D メールを送った状態が最新の状態となっています。この状態から「鈴羽を引き止めた世界線」でしてきた作業を「秋葉原から萌えが消えた世界線」に統合します。
 方法としては、統合したいブランチの名前を右クリックして「"統合するブランチ名" を "統合させたいブランチ名" へマージ」を選択します。
 
-![マージ対象のブランチを選択している状態](/assets/images/ch3/git-merge/source-tree/select.jpg)
+![マージ対象のブランチを選択している状態](/assets/images/ch2/git-merge/source-tree/select.jpg)
 
 選択すると、確認メッセージが表示されるので「確認する」を押します。
 
-![マージする際の確認メッセージ](/assets/images/ch3/git-merge/source-tree/confirm.jpg)
+![マージする際の確認メッセージ](/assets/images/ch2/git-merge/source-tree/confirm.jpg)
 
 すると「秋葉原から萌えが消えた世界線」に「鈴羽を引き止めた世界線」でしてきた作業内容が統合された状態になります。
 
-![マージした後の状態](/assets/images/ch3/git-merge/source-tree/uncommit.jpg)
+![マージした後の状態](/assets/images/ch2/git-merge/source-tree/uncommit.jpg)
 
 ただし、まだコミットはされていないのでコミットをしておきます。ここではコミットメッセージを「尾行は中止前のメールは SERN の罠というメールを送信した」としています。
 
-![マージした際のコミットメッセージを書いている状態](/assets/images/ch3/git-merge/source-tree/commit-message.jpg)
+![マージした際のコミットメッセージを書いている状態](/assets/images/ch2/git-merge/source-tree/commit-message.jpg)
 
 コミットが完了しました。このように D メールを送信する感覚で、ブランチ同士を統合する事ができます。
 
-![マージが完了した状態](/assets/images/ch3/git-merge/source-tree/after.jpg)
+![マージが完了した状態](/assets/images/ch2/git-merge/source-tree/after.jpg)
 
 [^1] https://git-fork.com/
 [^2] https://gist.github.com/yatemmma/6486028
