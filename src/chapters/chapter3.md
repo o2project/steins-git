@@ -79,10 +79,3 @@ Project はオペレーションです。Project を使うことにより Issue 
 [^2] https://capec.mitre.org/data/definitions/253.html
 [^3] https://github.com/o2project/steins-git/issues/18
 [^4] https://github.com/vivliostyle/vivliostyle-ui/pull/79
-[^4] GitHub 上の設定として、変更が問題ないと承認された後にコードを変更した場合に再度承認をもらわないとマージできないようにする設定があります。
-
-<!-- textlint-disable -->
-
-[^5] https://github.com/discover
-
-<!-- textlint-enable -->
