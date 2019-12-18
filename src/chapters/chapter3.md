@@ -68,22 +68,6 @@ Project はオペレーションです。Project を使うことにより Issue 
 
 ## チームの管理
 
-## Watch
-
-Watch は GitHub 上にあるリポジトリを観察するためのものです。Watch しているリポジトリで何らかのアクションがおこなわれると GitHub にログインしている状態で見られる All activity 上に表示されます。
-リポジトリのオーナーに「お前を見ているぞ」という気持ちを伝える機能と言っていいでしょう。
-
-## Star
-
-Star は GitHub 上にあるリポジトリをブックマークするような機能です。
-Star を付けたリポジトリは Star を付けたリポジトリの一覧から見られます。
-また Star を付けたリポジトリなどを元におすすめのリポジトリを Discover repositories[^4] で表示してくれるため、気になるリポジトリがある場合は積極的に Star を付けると良いでしょう。
-
-## Fork
-
-Fork は GitHub 上にあるリポジトリをコピーする機能です。
-GitHub ではさまざまなリポジトリが公開されています。そういったリポジトリに何かバグを見つけたときや新しい機能が欲しいといったときに Fork 機能を使うことで、元のリポジトリに影響を与えることなく自分の手元で作業できます。
-
 [^1] https://www.kikakurui.com/q/Q27000-2019-01.html
 [^2] https://capec.mitre.org/data/definitions/253.html
 [^3] https://github.com/o2project/steins-git/issues/18
