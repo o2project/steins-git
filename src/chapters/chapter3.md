@@ -91,8 +91,6 @@ GitHub にはこういった脆弱性を検知する仕組みが備わってい�
 
 ![依存しているパッケージに脆弱性があることを知らせる表示](/assets/images/ch3/github-security.png)
 
-## GitHub Actions (CI / CD)
-
 [^1] https://github.com/o2project/steins-git/issues/18
 [^2] https://github.com/vivliostyle/vivliostyle-ui/pull/79
 [^3] https://www.kikakurui.com/q/Q27000-2019-01.html
