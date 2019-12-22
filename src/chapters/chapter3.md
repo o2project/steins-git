@@ -11,7 +11,7 @@ GitHub はリポジトリを作って保持してくれるだけではなくチ�
 Issue は現在のリポジトリにある問題点や改善点をみんなで議論できます。
 未来ガジェット研究所でおこなわれている円卓会議をインターネット上でおこなえるものと考えれば問題ありません。
 
-実際の Issue の例を見てみましょう。この Steins;Git を書き始めた当初に作った、対象の読者を決めるための Issue[^3] です。
+実際の Issue の例を見てみましょう。この Steins;Git を書き始めた当初に作った、対象の読者を決めるための Issue[^1] です。
 
 ![GitHub上で対象の読者について話している様子](/assets/images/ch3/github-issue.png)
 
@@ -24,7 +24,7 @@ Issue は現在のリポジトリにある問題点や改善点をみんなで�
 ## Pull Request
 
 Pull Request は他のリポジトリに対して、問題点や改善したい点の修正をしたときに、その修正を取り込んでもらうよう依頼するときに使います。
-例として自分が vivliostyle-ui というリポジトリに対して送った Pull Request[^4] を見てみます。
+例として自分が vivliostyle-ui というリポジトリに対して送った Pull Request[^2] を見てみます。
 これはもともと JavaScript で書かれたコードを TypeScript に変換する Pull Request です。
 
 ![vivliostyle-uiに対して送ったJavaScriptで書かれたコードをTypeScriptへ変換するPull Request](https://i.gyazo.com/25ef15b95a8e7055b4e3c142461c87e6.png)
@@ -74,7 +74,7 @@ GitHub ではチームに関するさまざまな設定をおこなえます。
 
 ## 脆弱性検知
 
-脆弱性とは JIS Q 27000:2019[^1] の 3.77 によると次の意味になります。
+脆弱性とは JIS Q 27000:2019[^3] の 3.77 によると次の意味になります。
 
 > 一つ以上の脅威（3.74）によって付け込まれる可能性のある，資産又は管理策（3.14）の弱点。
 
@@ -84,7 +84,7 @@ GitHub ではチームに関するさまざまな設定をおこなえます。
 
 椎名かがりには牧瀬紅莉栖の記憶が移植されていました。また特定の音楽に反応し自分の意志とは関係なく行動をするように仕向けられていました。
 移植の目的として牧瀬紅莉栖しか知りえない情報を椎名かがりを通して聞き出すことにあることが挙げられました。
-これらは CAPEC で定義されている Remote Code Inclusion と言われる脆弱性[^2]でしょう。
+これらは CAPEC で定義されている Remote Code Inclusion と言われる脆弱性[^4]でしょう。
 
 GitHub にはこういった脆弱性を検知する仕組みが備わっています。
 依存しているパッケージに脆弱性がある場合、次の画像のように脆弱性があることを GitHub のリポジトリページ上で表示してくれます。
@@ -93,7 +93,7 @@ GitHub にはこういった脆弱性を検知する仕組みが備わってい�
 
 ## GitHub Actions (CI / CD)
 
-[^1] https://www.kikakurui.com/q/Q27000-2019-01.html
-[^2] https://capec.mitre.org/data/definitions/253.html
-[^3] https://github.com/o2project/steins-git/issues/18
-[^4] https://github.com/vivliostyle/vivliostyle-ui/pull/79
+[^1] https://github.com/o2project/steins-git/issues/18
+[^2] https://github.com/vivliostyle/vivliostyle-ui/pull/79
+[^3] https://www.kikakurui.com/q/Q27000-2019-01.html
+[^4] https://capec.mitre.org/data/definitions/253.html
