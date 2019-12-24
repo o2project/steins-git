@@ -126,30 +126,33 @@ Fork では特定の作業内容を選択した上で、右下のウィンドウ
 
 ![git revertをした後の状態](https://i.gyazo.com/ccc6e8267dd224ab62e6dc81e138b887.png)
 
-## 作業内容を改変する
+## 作業内容を改変する `git rebase`
 
-作業内容を改変します。例えるならば、タイムリープマシンを使って過去の作業をやり直す感じです。
-電話レンジ(仮)を改造してタイムリープマシンができた後、萌郁やラウンダー達の襲撃もしくは他の要因により、まゆりが何度も死んでしまった状態の最新の作業内容ですが「ラウンダー追ってきて、まゆりが刺されて死んだ」となっています。
+作業内容を改変します。
 
-![まゆりが何度も死んでしまったときの作業内容](/assets/images/ch2/git-rebase/source-tree/message-edit-before.jpg)
+まゆりが死んだと書かれた複数の履歴を1つにまとめてみましょう。
+まとめる対象のコミットの1つ前を右クリックで選択し「Interactive Rebase」から「Rebase '<ブランチ名>' to Here Interactively」を選びます。
 
-### 複数の作業内容を一つにまとめる
+![git rebase squash するべく親となるコミットを選択している状態](https://i.gyazo.com/12c19463b3c3df32132633429a35581c.png)
 
-次に、まゆりが死んだと書かれた複数の履歴を一つにまとめます。直したい対象の一つ前の作業内容を右クリックで選択し「"コミット番号" の子を対話形式でリベース」を選びます。
+今回は4つの作業内容を対象としました。
+ここから作業内容をまとめるには「Interactive Rebase」の画面で一番下のコミットを除い他コミットをfixupのモードにする必要があります。
+初期状態だと全てのコミットが「Pick」になっていますが、「Pick」と書いている部分をクリックして「Fixup」にする必要があります。
 
-![git rebase squash するべく親となるコミットを選択している状態](/assets/images/ch2/git-rebase/source-tree/squash-right-click.jpg)
+![コミットの扱いをどうするかの一覧](https://i.gyazo.com/e295bc0797576013dbf34f9a26fc0373.png)
 
-今回は四つの作業内容を対象としました。ここから作業内容をまとめるには「Squash with previous」を三回押します。「まとめる作業内容の数 - 一回 Squash with previous を押す」と覚えるといいかもしれません。
+一番下のコミットはコミットメッセージを編集するために「Reword」にします。
 
-![git rebase squash しようとしている状態](/assets/images/ch2/git-rebase/source-tree/squash-before.jpg)
+![一番下のコミットをRewordにした状態](https://i.gyazo.com/55de371328f73a45fb22b8b42010f79b.png)
 
-その後、まとめた作業内容のコミットメッセージを編集するために「Edit message」を押します。
+編集後に次のような上のコミット3つは「Fixup」が選択されて、一番下のコミットは「Reword」になっていれば問題ないです。
+これで右下の「Rebase」を押します。
 
-![コミットをまとめた後コミットメッセージを編集している状態](/assets/images/ch2/git-rebase/source-tree/squash-message-edit.jpg)
+![全ての作業が終わった状態](https://i.gyazo.com/51c701d325b691134004a35575182dfc.png)
 
 これで、まゆりが死んだと書かれた複数の履歴がまとめられました。
 
-![git rebase squashした状態](/assets/images/ch2/git-rebase/source-tree/squash-after.jpg)
+![git rebaseが完了した状態](https://i.gyazo.com/459a2232362f835559ef5fab0a98bd1a.png)
 
 ## ブランチを移動する `git checkout <ブランチ名>`
 
