@@ -1,8 +1,18 @@
 # あとがき
 
+ここまで読んでいただきありがとうございました。
+Steins;Git は 2014 年に初版を頒布して以降、2015 年に第二版、2017 年に Steins;Git 0 を頒布しました。
+そして本書がおそらく Steins;Git シリーズ最後となる書籍だと思います。
+
+正直ここまで Steins;Git シリーズを出すことになるとは、5 年前は微塵も思っていませんでした。
+ですが Steins;Git を読んでいただいた方々が Twitter に感想を投げてくれて、それを励みにここまで書けたと思います。
+また本書は元々 2018 年に頒布する予定だったのですが、仕事などで忙しく技術書典やコミックマーケットで頒布できないという悔しい思いをしてきたのもモチベーションになりました。
+
+Steins;Git はおそらく終わりですが、今後も書きたいものができたら技術書典やコミックマーケットなどに申し込もうと思います。
+
 ## 参考にした資料
 
-本書を書くにあたり参考にした資料を挙げます。本書を読んだ結果、もっと Git について知りたいと感じたときには、以下の Web サイトや書籍を見てみるといいでしょう。
+本書を書くにあたり参考にした資料を挙げます。本書を読んだ結果もっと Git について知りたいと感じたときには、次の Web サイトや書籍を見てみるといいでしょう。
 
 ### Web サイト
 
@@ -12,13 +22,13 @@
   - https://blog.asial.co.jp/894
 - Git - Book
   - https://git-scm.com/book/ja/v2
-- 初心者でも分かる！ `git rebase` の使い方を解説します | 株式会社 LIG
-  - https://liginc.co.jp/web/tool/79390
 
 ### 書籍
 
 - シュタインズ・ゲート公式資料集
   - https://www.amazon.co.jp/dp/4047263745
+- STEINS;GATE 0 公式資料集 Amadeus’Script
+  - https://www.amazon.co.jp/dp/B01DCXXEZE
 - 入門 Git
   - https://www.amazon.co.jp/dp/427406767X
 - 開発効率を UP する Git 逆引き入門
@@ -28,15 +38,13 @@
 
 ## 作者
 
-- 執筆: kubosho\_
+- 執筆: kubosho
   - https://github.com/kubosho
-- アシスタント: fruitsnoodle
-  - https://github.com/fruitsnoodle
 - 表紙・ロゴデザイン: KinoAkmt
   - https://twitter.com/KinoAkmt
 - 表紙イラスト: GiantRobot
 
 ## 印刷所
 
-- 日光企画
-  - http://www.nikko-pc.com/
+- 特急オンデマンド同人誌印刷のエー・ディー・ピー
+  - http://www.doujin-adp.sakura.ne.jp/
