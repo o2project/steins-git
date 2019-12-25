@@ -2,7 +2,7 @@
 
 Git とは何かという事や Git を使う理由について説明してきました。
 ここから Git の操作方法をコマンドラインインタフェース (CLI) のコマンドと Fork というソフトウェアを使用して説明します。
-なお CLI を使った説明は「Git 初心者への道 - お仕事で困らないレベルまでググっとします。[^2]」や「今日からはじめる GitHub 〜 初心者が Git をインストールして、プルリクできるようになるまでを解説[^3]」といったページを見て、なんとなくの雰囲気を掴むのが良いでしょう。
+なお CLI を使った説明は「Git 初心者への道 - お仕事で困らないレベルまでググっとします。[^1]」や「今日からはじめる GitHub 〜 初心者が Git をインストールして、プルリクできるようになるまでを解説[^2]」といったページを見て、なんとなくの雰囲気を掴むのが良いでしょう。
 
 Fork は以下の URL からダウンロードできます。Fork は Windows と macOS に対応しています。
 `https://git-fork.com/`
@@ -227,6 +227,5 @@ D メールによる世界線変動は世界の状況に影響を及ぼしてま
 
 ![マージが完了した状態](https://i.gyazo.com/a73bef720f7bc58698ffb0eceaaa7a15.png)
 
-[^1] https://git-fork.com/
-[^2] https://gist.github.com/yatemmma/6486028
-[^3] https://employment.en-japan.com/engineerhub/entry/2017/01/31/110000
+[^1] https://gist.github.com/yatemmma/6486028
+[^2] https://employment.en-japan.com/engineerhub/entry/2017/01/31/110000
