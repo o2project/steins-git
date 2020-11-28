@@ -6951,12 +6951,12 @@ textlint-rule-no-double-negative-ja@1.0.5:
   dependencies:
     kuromojin "^1.1.0"
 
-textlint-rule-no-doubled-conjunction@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-conjunction/-/textlint-rule-no-doubled-conjunction-1.0.2.tgz#24c6e8014c6b2e184bc7a5d4c1a6ee13bb309930"
-  integrity sha1-JMboAUxrLhhLx6XUwabuE7swmTA=
+textlint-rule-no-doubled-conjunction@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-conjunction/-/textlint-rule-no-doubled-conjunction-1.0.3.tgz#e80e49020265e78f84d9505b464b48027da00bf2"
+  integrity sha512-0YRPG6daaGXI0sq1RLNry7rzk2HKJbTOB5dohR0+GQ60r+Fc8RKRo+auCPRu6RIYZOD65AApemLpiaMbrgucDQ==
   dependencies:
-    kuromojin "^1.1.0"
+    kuromojin "^2.0.0"
     sentence-splitter "^2.0.0"
     textlint-rule-helper "^1.1.5"
     textlint-util-to-string "^1.2.0"
