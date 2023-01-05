@@ -31,7 +31,6 @@
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "honkit": "^4.0.4",
-    "pkg-dir": "3.0.0",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
     "semantic-release": "^19.0.5",
