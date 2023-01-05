@@ -25,10 +25,16 @@
     "format": "prettier --config .prettierrc.js --write chapters/*.md"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "honkit": "^4.0.4",
     "pkg-dir": "3.0.0",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
+    "semantic-release": "^19.0.5",
     "textlint": "11.5.0",
     "textlint-filter-rule-comments": "1.2.2",
     "textlint-rule-ja-hiragana-fukushi": "1.1.0",
@@ -48,5 +54,27 @@
     "textlint-rule-no-nfd": "1.0.2",
     "textlint-rule-prefer-tari-tari": "1.0.3",
     "textlint-rule-web-plus-db": "1.1.5"
+  },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      "master",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
   }
 }
