@@ -1,8 +1,6 @@
 Steins;Git
 ===========
 
-[![CircleCI](https://circleci.com/gh/o2project/steins-git.svg?style=svg&circle-token=de169eedf1024803e57569d75b18cf82e8d87330)](https://circleci.com/gh/o2project/steins-git)
-
 「GitをSteins;Gateの世界観を使って説明する」薄い本です。
 
 ## イベントでの頒布
