@@ -7,6 +7,7 @@
   "plugins": ["-search"],
   "root": "./chapters/",
   "structure": {
+    "readme": "index.md",
     "summary": "README.md"
   }
 }
