@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/o2project/steins-git",
   "private": true,
+  "scripts": {
+    "build": "honkit build",
+    "serve": "honkit serve",
+    "clean": "rimraf _book",
+    "lint": "textlint chapters/*.md",
+    "format": "prettier --config .prettierrc.js --write chapters/*.md"
+  },
   "devDependencies": {
     "cpx": "1.5.0",
     "honkit": "^4.0.4",
