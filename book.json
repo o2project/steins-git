@@ -1,0 +1,12 @@
+{
+  "gitbook": ">=3.0.0",
+  "title": "Steins;Git #steinsgit",
+  "description": "Steins;Gateを用いてGitを解説する薄い本",
+  "author": "kubosho",
+  "language": "ja",
+  "plugins": ["-search"],
+  "root": "./chapters/",
+  "structure": {
+    "summary": "README.md"
+  }
+}
