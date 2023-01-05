@@ -4,7 +4,7 @@
   "description": "Steins;Gateを用いてGitを解説する薄い本",
   "author": "kubosho",
   "language": "ja",
-  "plugins": ["-search"],
+  "plugins": ["-search", "-lunr"],
   "root": "./chapters/",
   "structure": {
     "readme": "index.md",
