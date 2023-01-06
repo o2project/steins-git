@@ -97,5 +97,5 @@ GitHubではチームに関するさまざまな設定をおこなえます。
 
 [^1]: https://github.com/o2project/steins-git/issues/18
 [^2]: https://github.com/vivliostyle/vivliostyle-ui/pull/79
-[^3]: https://www.kikakurui.com/q/Q27000-2019-01.html
+[^3]: https://kikakurui.com/q/Q27000-2019-01.html
 [^4]: https://capec.mitre.org/data/definitions/253.html
