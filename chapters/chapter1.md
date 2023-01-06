@@ -87,5 +87,5 @@ Gitは手軽に自分のPC上でリポジトリを作ったりブランチやタ
 たとえば、まゆりやるかが役に立ちたいと思って岡部や紅莉栖からGitの使い方を教えてもらうとします。
 そのとき岡部や紅莉栖は実際にGitの機能を試しながら教えるということができます。
 
-[^1] Gitの読み方は「ギット」です。これはGit FAQ (英語) https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F を元に判断しました。
-[^2] https://togetter.com/li/1294503
+[^1]: Gitの読み方は「ギット」です。これはGit FAQ (英語) https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F を元に判断しました。
+[^2]: https://togetter.com/li/1294503

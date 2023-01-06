@@ -95,7 +95,7 @@ GitHubではチームに関するさまざまな設定をおこなえます。
 ただGitHubのorganizationはただメンバーを属させるだけでなく、個々のリポジトリへのアクセス権を細かく設定できます。
 岡部倫太郎が桐生萌郁に対してDメールに関する情報を渡しがらなかったり、比屋定真帆がレスキネン教授とレイエス教授の企みを盗み聞きしたりといった出来事が起こっていましたが、GitHubでアクセス権の管理をすればこういったことが起こらなくなります。
 
-[^1] https://github.com/o2project/steins-git/issues/18
-[^2] https://github.com/vivliostyle/vivliostyle-ui/pull/79
-[^3] https://www.kikakurui.com/q/Q27000-2019-01.html
-[^4] https://capec.mitre.org/data/definitions/253.html
+[^1]: https://github.com/o2project/steins-git/issues/18
+[^2]: https://github.com/vivliostyle/vivliostyle-ui/pull/79
+[^3]: https://www.kikakurui.com/q/Q27000-2019-01.html
+[^4]: https://capec.mitre.org/data/definitions/253.html
