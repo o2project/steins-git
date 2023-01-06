@@ -1,5 +1,4 @@
-# [1.0.0](https://github.com/o2project/steins-git/compare/v0.1.1...v1.0.0) (2023-01-06)
-
+# [3.0.0](https://github.com/o2project/steins-git/compare/2.2.1...v3.0.0) (2023-01-06)
 
 ### Bug Fixes
 
