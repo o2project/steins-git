@@ -21,8 +21,8 @@
     "build": "honkit build",
     "serve": "honkit serve",
     "clean": "rimraf _book",
-    "lint": "textlint chapters/*.md",
-    "format": "prettier --config .prettierrc.js --write chapters/*.md"
+    "lint": "textlint src/*.md",
+    "format": "prettier --config .prettierrc.js --write src/*.md"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
