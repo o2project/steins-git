@@ -9,5 +9,6 @@
   "structure": {
     "readme": "index.md",
     "summary": "README.md"
-  }
+  },
+  "baseUrl": "https://o2project.github.io/steins-git"
 }
