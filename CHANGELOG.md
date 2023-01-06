@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/o2project/steins-git/compare/v3.0.1...v3.0.2) (2023-01-06)
+
+
+### Bug Fixes
+
+* **src:** fix textlint ([2eba263](https://github.com/o2project/steins-git/commit/2eba263b6311311807b885f20b1ad3095d247599))
+
 ## [3.0.1](https://github.com/o2project/steins-git/compare/v3.0.0...v3.0.1) (2023-01-06)
 
 
