@@ -1,9 +1,13 @@
 {
-  "root": "./src/",
-  "title": "Steins;Git",
+  "gitbook": ">=3.0.0",
+  "title": "Steins;Git #steinsgit",
   "description": "Steins;Gateを用いてGitを解説する薄い本",
   "author": "kubosho",
   "language": "ja",
-  "gitbook": ">=3.0.0",
-  "plugins": ["-search"]
+  "plugins": ["-search", "-lunr"],
+  "root": "./src/",
+  "structure": {
+    "readme": "index.md",
+    "summary": "README.md"
+  }
 }

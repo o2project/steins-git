@@ -1,10 +1,57 @@
-{% extends template.self %} {% block head %}
+{% extends template.self %}
+{% block title %}{% if page.fullTitle %}{{ page.fullTitle }}{% else %}{{ super() }}{% endif %}{% endblock %}
+
+{% block head %}
 {{ super() }}
+<meta name="theme-color" content="#d0ab6b">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://o2project.github.io/steins-git/images/share/ogp.jpg">
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@kubosho_">
+<meta name="twitter:creator" content="@kubosho_">
+<meta name="google-site-verification" content="ks4kX-pP-O3s-HHbW-QVvxv1GnAQ1hzM-HAyYrh_EIM">
+<link rel="preload" href="/assets/styles/page.css" as="style">
+<link rel="stylesheet" href="/assets/styles/page.css">
 <script>
-  window.__gaId__ = 'UA-25380313-6';
+    window.__gaId__ = 'UA-25380313-6';
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const button = document.querySelector('#optout-button');
+        const output = document.querySelector('#optout-status');
+
+        const optoutEnabledText = 'オプトアウトは有効になっています。';
+        const optoutDisabledText = 'オプトアウトは無効になっています。';
+
+        gaOptout.gaId = window.__gaId__;
+
+        if (gaOptout.enabled()) {
+            gaOptout.enable();
+            output.textContent = optoutEnabledText;
+        } else {
+            output.textContent = optoutDisabledText;
+        }
+
+        button.addEventListener('click', event => {
+            if (gaOptout.enabled()) {
+                gaOptout.disable();
+                output.textContent = optoutDisabledText;
+            } else {
+                gaOptout.enable();
+                output.textContent = optoutEnabledText;
+            }
+        });
+    });
 </script>
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-25380313-6"></script>
-<script defer src="/assets/scripts/gaInitialize.js" type="module"></script>
-{% endblock %} {% block body %}
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-25380313-6" defer></script>
+<script src="/assets/scripts/gaInitialize.js" type="module"></script>
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+{% endblock %}
+
+{% block book_inner %}
+<a href="/" class="book-title">Steins;Git</a>
 {{ super() }}
 {% endblock %}

@@ -1,6 +1,0 @@
-{
-  "extends": ["config:base"],
-  "assignees": ["kubosho"],
-  "schedule": ["every weekend"],
-  "labels": ["A-repository/dependency ", "C-gardening"]
-}

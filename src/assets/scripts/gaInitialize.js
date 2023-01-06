@@ -11,13 +11,13 @@ function gaInitialize() {
   const optout = new GAOptout(storage);
 
   window.gaOptout = optout || {};
+  const gaId = window.__gaId__ || '';
 
   if (optout.enabled()) {
     optout.gaId = gaId;
     optout.enable();
   }
 
-  const gaId = window.__gaId__ || '';
   gtag('js', new Date());
   gtag('config', gaId);
 }

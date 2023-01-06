@@ -1,7 +1,4 @@
-Steins;Git
-===========
-
-[![CircleCI](https://circleci.com/gh/o2project/steins-git.svg?style=svg&circle-token=de169eedf1024803e57569d75b18cf82e8d87330)](https://circleci.com/gh/o2project/steins-git)
+# Steins;Git
 
 「GitをSteins;Gateの世界観を使って説明する」薄い本です。
 
@@ -42,4 +39,4 @@ make serve
 4. リモートにプッシュします: `git push origin my-new-feature`
 5. pull requestしましょう :D
 
-詳しくは[CONTRIBUTING.md](CONTRIBUTING.md "CONTRIBUTING.md")に様々な案内を書いているので、参考にしてみてください。
+詳しくは[CONTRIBUTING.md](CONTRIBUTING.md 'CONTRIBUTING.md')に様々な案内を書いているので、参考にしてみてください。

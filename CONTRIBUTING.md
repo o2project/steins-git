@@ -2,7 +2,7 @@ Steins;Gitにようこそ！この文章を読んでくださっているとい�
 
 ## はじめに
 
-Steins;GitはSteins;Gateの二次創作物となります。そのため貢献をする前に[著作物転載ガイドライン｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/)と[二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/fanbook.php)を読み、これらに遵守した形で貢献をしていただけるようお願いします。
+Steins;GitはSteins;Gateの二次創作物となります。そのため貢献をする前に[著作物転載ガイドライン｜ニトロプラスNitroplus](https://www.nitroplus.co.jp/license/)と[二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラスNitroplus](https://www.nitroplus.co.jp/license/fanbook.php)を読み、これらに遵守した形で貢献をしていただけるようお願いします。
 
 ## Steins;Gitに主に関わっている人
 
@@ -37,7 +37,9 @@ Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を使って説明�
 ## 新たな章や節を追加する際のガイドライン
 
 1. まずIssueを立てます。タイトルは「[ChX-x] 章や節のタイトル」という形式にします。(例: [Ch1-3] 集中型バージョン管理)
-  - 必ず「writing」というラベルをつけます。
+
+- 必ず「writing」というラベルをつけます。
+
 2. 新たにbranchを作ります。branch名は「feature/id/:issue-id」という形式にします。
 3. 執筆します。
 4. Pull Requestをmasterに対して出します。出来るかぎりレビューしてからマージという形をとります。
@@ -49,9 +51,9 @@ Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を使って説明�
 
 ## ディレクトリの命名規則について
 
-- Ch*/
+- Ch\*/
   - 各章と節を書いたAsciidoc形式のファイルが格納されています。各ディレクトリには必ずreadme.adocがあり、そこで各節をincludeしています。
-- Ch*/img
+- Ch\*/img
   - 各章や節で使う画像が格納されています。
 
 ## 自分のPC上でSteins;Gitを確認したい場合について
