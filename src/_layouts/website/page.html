@@ -5,7 +5,14 @@
 {{ super() }}
 <meta name="theme-color" content="#d0ab6b">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://o2project.github.io/steins-git/assets/images/share/ogp.jpg">
+<meta property="og:image" content="http://o2project.github.io/steins-git/images/share/ogp.jpg">
+<meta property="og:title"
+    content="{% if page.fullTitle %}{{ page.fullTitle }}{% else %}{{ page.title }} · {{ config.title }}{% endif %}">
+<meta property="og:site_name" content="{{ config.title }}">
+<meta property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}">
+<meta property="og:url"
+    content="{{ config.baseUrl }}/{{ file.path | replace(config.structure['readme'],'') | replace('README.md','') | replace('readme.md','') | replace('.md','.html')}}">
 <meta property="og:locale" content="ja_JP" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@kubosho_">
