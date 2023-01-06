@@ -10,7 +10,9 @@ Steins;GitはSteins;Gateの二次創作物です。そのため貢献をする�
 - [著作物転載ガイドライン｜ニトロプラスNitroplus](https://www.nitroplus.co.jp/license/)
 - [二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラスNitroplus](https://www.nitroplus.co.jp/license/fanbook.php)
 
+<!-- textlint-disable  web-plus-db -->
 {% include "./static/sns-share.html" %}
+<!-- textlint-enable  web-plus-db -->
 
 ## Steins;Gitの執筆方針について
 
