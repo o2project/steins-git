@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/o2project/steins-git/compare/v3.0.3...v3.0.4) (2023-01-06)
+
+
+### Bug Fixes
+
+* **website/page:** change assets path to relative path ([bdef2cd](https://github.com/o2project/steins-git/commit/bdef2cdeddf065cbfa0a4c8b5797bafa5b428c35))
+
 ## [3.0.3](https://github.com/o2project/steins-git/compare/v3.0.2...v3.0.3) (2023-01-06)
 
 
