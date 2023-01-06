@@ -3,7 +3,7 @@
   "description": "Steins;Gateを用いてGitを解説する薄い本",
   "version": "2.2.1",
   "author": "O2 Project",
-  "license": "CC-BY-NC 2.1 JP",
+  "license": "CC-BY-NC 4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/o2project/steins-git.git"
