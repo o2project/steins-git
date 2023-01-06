@@ -18,7 +18,8 @@
   "homepage": "https://github.com/o2project/steins-git",
   "private": true,
   "scripts": {
-    "build": "honkit build",
+    "build": "npm-run-all build:web copy:icon",
+    "build:web": "honkit build",
     "copy:icon": "node tools/copy_icon.js",
     "serve": "honkit serve",
     "clean": "rimraf _book",
