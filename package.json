@@ -21,7 +21,7 @@
     "cpx": "1.5.0",
     "gitbook-cli": "2.3.2",
     "pkg-dir": "3.0.0",
-    "prettier": "1.19.1",
+    "prettier": "2.8.1",
     "rimraf": "3.0.0",
     "textlint": "11.5.0",
     "textlint-filter-rule-comments": "1.2.2",
