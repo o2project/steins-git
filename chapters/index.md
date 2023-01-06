@@ -1,6 +1,5 @@
 ---
-author: kubosho
-title: "Steins;Git #steinsgit"
+fullTitle: "Steins;Git #steinsgit"
 description: "Steins;Gateを用いてGitを解説する薄い本。"
 ---
 
