@@ -28,7 +28,7 @@ Gitの知識については「Gitに触れた事が無い、もしくは触り�
 ## 謝辞
 
 表紙のイラストを描いたGiantRobotさんには非常に助けられました。本当にありがとうございます。
-今回のSteins;Git REBUILDで表紙デザインをしてくれた @KinoAkmtにはとても良い表紙を作ってもらいました。本当にありがとうございます。
+今回のSteins;Git REBUILDで表紙デザインをしてくれた[@KinoAkmt](https://twitter.com/KinoAkmt)にはとても良い表紙を作ってもらいました。本当にありがとうございます。
 
 ## 本書の構成
 
@@ -40,7 +40,7 @@ Gitの知識については「Gitに触れた事が無い、もしくは触り�
 
 ## お問い合わせ先
 
-本書に関するお問い合わせは ta2+sg@o2p.jp、またはTwitterで @o2pjpへお問い合わせください。
+本書に関するお問い合わせはta2+sg@o2p.jp、またはTwitterで[@kubosho_](https://twitter.com/kubosho_)へお問い合わせください。
 
 ## 免責事項
 
