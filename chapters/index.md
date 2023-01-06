@@ -24,3 +24,15 @@ Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を使って説明�
 
 - Steins;Gateのアニメを全話見た、もしくはゲームで全てのエンディングを見た人
 - Gitを触れたことがない、もしくは、Gitを触り始めたばかりの人
+
+## Google Analyticsについて
+
+当サイトでは内容の改善などを目的として[Google アナリティクス](https://marketingplatform.google.com/intl/ja/about/analytics/)を使っています。
+
+アクセス情報は匿名のトラフィックデータという形で収集・解析しています。
+
+データ収集の状態を変更したい場合は以下のボタンから変更する事ができます。
+
+<!-- textlint-disable  web-plus-db -->
+{% include "./static/optout.html" %}
+<!-- textlint-enable  web-plus-db -->

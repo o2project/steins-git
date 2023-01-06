@@ -35,9 +35,7 @@ export class GAOptout {
   }
 
   enabled() {
-    return (
-      window[this.gaOptoutKey] || this._storage.getKey() !== null || this._isDoNotTrackEnabled()
-    );
+    return window[this.gaOptoutKey] || this._storage.getKey() !== null || this._isDoNotTrackEnabled();
   }
 
   _isDoNotTrackEnabled() {
