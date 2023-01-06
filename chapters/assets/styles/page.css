@@ -64,6 +64,17 @@ body,
   top: calc(50px + 1em + 8px * 2);
 }
 
+.share-buttons {
+  display: inline-flex;
+}
+
+.share-buttons > * {
+  margin-left: 8px;
+}
+.share-buttons:first-child {
+  margin: 0;
+}
+
 .optout-status {
   display: block;
   padding: 8px;
