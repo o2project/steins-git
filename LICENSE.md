@@ -43,6 +43,12 @@ Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://steinsg
 
 Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://steinsgate.jp/" rel="dct:source">STEINS;GATE</a>.
 
+### Steins;Git REBUILD
+
+© GiantRobot / KinoAkmt
+
+Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://steinsgate.jp/" rel="dct:source">STEINS;GATE</a>.
+
 ## イラスト
 
 © GiantRobot
