@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'BIZ UDPMincho Alphabet';
+  font-weight: 400;
+  src: local('BIZ UDPMincho');
+  unicode-range: U+00-7f;
+}
+
+@font-face {
+  font-family: 'BIZ UDPMincho Alphabet';
+  font-weight: 700;
+  src: local('BIZ UDPMincho Bold');
+  unicode-range: U+00-7f;
+}
+
+@font-face {
+  font-family: 'BIZ UDPGothic Alphabet';
+  font-weight: 400;
+  src: local('BIZ UDPGothic');
+  unicode-range: U+00-7f;
+}
+
+@font-face {
+  font-family: 'BIZ UDPGothic Alphabet';
+  font-weight: 700;
+  src: local('BIZ UDPGothic Bold');
+  unicode-range: U+00-7f;
+}
+
+html {
+  font-kerning: none;
+  hanging-punctuation: allow-end;
+  line-break: strict;
+}
+
+:lang(en) {
+  font-kerning: normal;
+}
+
+body,
+.book.font-family-0 {
+  font-family: 'BIZ UDPMincho Alphabet', 'BIZ UDPMincho', serif;
+}
+
+.book.font-family-1 {
+  font-family: 'BIZ UDPGothic Alphabet', 'BIZ UDPGothic', sans-serif;
+}
+
+.body-inner {
+  padding-top: calc(1em + 8px * 2);
+}
+
+.book-title {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 8px 0 8px calc(8px + 15px);
+  background-color: #000;
+  color: #fff;
+}
+
+.navigation {
+  top: calc(50px + 1em + 8px * 2);
+}

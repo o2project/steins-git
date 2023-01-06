@@ -1,0 +1,18 @@
+{% extends template.self %}
+{% block title %}{% if page.fullTitle %}{{ page.fullTitle }}{% else %}{{ super() }}{% endif %}{% endblock %}
+
+{% block head %}
+{{ super() }}
+<meta name="theme-color" content="#d0ab6b">
+<link rel="preload" href="/assets/styles/page.css" as="style">
+<link rel="stylesheet" href="/assets/styles/page.css">
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+{% endblock %}
+
+{% block book_inner %}
+<a href="/" class="book-title">Steins;Git</a>
+{{ super() }}
+{% endblock %}
