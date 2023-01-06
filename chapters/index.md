@@ -1,14 +1,14 @@
 ---
-fullTitle: "Steins;Git #steinsgit"
-description: "Steins;Gateを用いてGitを解説する薄い本。"
+fullTitle: 'Steins;Git #steinsgit'
+description: 'Steins;Gateを用いてGitを解説する薄い本。'
 ---
 
 Steins;GitはSteins;Gateを用いてGitを解説する薄い本です。
 
 Steins;GitはSteins;Gateの二次創作物です。そのため貢献をする前に次に挙げるページを読み、これらに遵守した形で貢献をしていただけるようお願いします。
 
-* [著作物転載ガイドライン｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/)
-* [二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラス Nitroplus](https://www.nitroplus.co.jp/license/fanbook.php)
+- [著作物転載ガイドライン｜ニトロプラスNitroplus](https://www.nitroplus.co.jp/license/)
+- [二次創作活動における同人誌等の活動に関する取り扱いについて｜ニトロプラスNitroplus](https://www.nitroplus.co.jp/license/fanbook.php)
 
 {% include "./static/sns-share.html" %}
 
@@ -22,5 +22,5 @@ Steins;Gitは「Gitの使い方を、Steins;Gateの世界観を使って説明�
 
 対象の読者は以下の通りとなります。
 
-* Steins;Gateのアニメを全話見た、もしくはゲームで全てのエンディングを見た人
-* Gitを触れたことがない、もしくは、Gitを触り始めたばかりの人
+- Steins;Gateのアニメを全話見た、もしくはゲームで全てのエンディングを見た人
+- Gitを触れたことがない、もしくは、Gitを触り始めたばかりの人

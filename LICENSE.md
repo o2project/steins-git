@@ -7,11 +7,11 @@
 
 ### v2.2.2以降の文章と独自に作成した図を使いたい場合
 
-<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">Creative Commons — 表示 - 非営利 4.0 国際 — CC BY-NC 4.0</a>
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">Creative Commons — 表示 - 非営利4.0国際 — CC BY-NC 4.0</a>
 
 ### v2.2.1以前の文章と独自に作成した図を使いたい場合
 
-<a rel="license" href="https://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons — 表示 - 非営利 2.1 日本 — CC BY-NC 2.1 JP</a>
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons — 表示 - 非営利2.1日本 — CC BY-NC 2.1 JP</a>
 
 ## ソースコードとその他の文章
 

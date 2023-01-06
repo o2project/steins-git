@@ -1,5 +1,4 @@
-Steins;Git
-===========
+# Steins;Git
 
 「GitをSteins;Gateの世界観を使って説明する」薄い本です。
 
@@ -40,4 +39,4 @@ make serve
 4. リモートにプッシュします: `git push origin my-new-feature`
 5. pull requestしましょう :D
 
-詳しくは[CONTRIBUTING.md](CONTRIBUTING.md "CONTRIBUTING.md")に様々な案内を書いているので、参考にしてみてください。
+詳しくは[CONTRIBUTING.md](CONTRIBUTING.md 'CONTRIBUTING.md')に様々な案内を書いているので、参考にしてみてください。
