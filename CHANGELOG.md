@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/o2project/steins-git/compare/v3.0.5...v3.0.6) (2023-01-06)
+
+
+### Bug Fixes
+
+* **website/page:** correct OGP values ([511737f](https://github.com/o2project/steins-git/commit/511737fb9d22140f016ae188d26bf72c9ceb742d))
+
 ## [3.0.5](https://github.com/o2project/steins-git/compare/v3.0.4...v3.0.5) (2023-01-06)
 
 
