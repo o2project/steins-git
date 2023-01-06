@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/o2project/steins-git/compare/v3.0.0...v3.0.1) (2023-01-06)
+
+
+### Bug Fixes
+
+* **CHANGELOG:** correct versioning ([bb9f66b](https://github.com/o2project/steins-git/commit/bb9f66ba9aaa55706eca961c7bc815a9b4608e53))
+
 # [3.0.0](https://github.com/o2project/steins-git/compare/2.2.1...v3.0.0) (2023-01-06)
 
 ### Bug Fixes
