@@ -510,6 +510,11 @@
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.2.5.tgz#ae13981bc8711c98313a6ac1c361194d6bf2d39b"
   integrity sha512-+rEx4jLOeZpUcdvll7jEg/7hNbwYvHWFy4IGW/tk2JdbyB3SJVyIP6arAwzTH/sp/pO9jftfyZnRj4//sLbLvQ==
 
+"@textlint/ast-node-types@^4.4.2":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.4.3.tgz#fdba16e8126cddc50f45433ce7f6c55e7829566c"
+  integrity sha512-qi2jjgO6Tn3KNPGnm6B7p6QTEPvY95NFsIAaJuwbulur8iJUEenp1OnoUfiDaC/g2WPPEFkcfXpmnu8XEMFo2A==
+
 "@textlint/ast-traverse@^2.1.6":
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/@textlint/ast-traverse/-/ast-traverse-2.1.6.tgz#ce68cdcdf12776fa6161161b0ada002e9bd6beab"
@@ -2022,7 +2027,7 @@ error@^7.0.0:
   dependencies:
     string-template "~0.2.1"
 
-es-abstract@^1.12.0, es-abstract@^1.13.0, es-abstract@^1.4.3:
+es-abstract@^1.13.0, es-abstract@^1.4.3:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.16.0.tgz#d3a26dc9c3283ac9750dca569586e976d9dcc06d"
   integrity sha512-xdQnfykZ9JMEiasTAJZJdMWCQ1Vm00NBw79/AWi7ELfZuuPCSOMDZbT9mkOfSctVtfhb+sAAzrm+j//GjjLHLg==
@@ -4683,15 +4688,10 @@ object.assign@^4.1.4:
     has-symbols "^1.0.3"
     object-keys "^1.1.1"
 
-object.values@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/object.values/-/object.values-1.1.0.tgz#bf6810ef5da3e5325790eaaa2be213ea84624da9"
-  integrity sha512-8mf0nKLAoFX6VlNVdhGj31SVYpaNFtUnuoOXWyFEstsWRgU837AK+JYM0iAxwkSzGRbwn8cbFmgbyxj1j4VbXg==
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.12.0"
-    function-bind "^1.1.1"
-    has "^1.0.3"
+object_values@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/object_values/-/object_values-0.1.2.tgz#f8fbc31d2e537170a4cbcfb28dd61501b3207334"
+  integrity sha512-tZgUiKLraVH+4OAedBYrr4/K6KmAQw2RPNd1AuNdhLsuz5WP3VB7WuiKBWbOcjeqqAjus2ChIIWC8dSfmg7ReA==
 
 omit-keys@^0.1.0:
   version "0.1.0"
@@ -5760,14 +5760,14 @@ sentence-splitter@^2.0.0:
     concat-stream "^1.5.2"
     structured-source "^3.0.2"
 
-sentence-splitter@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/sentence-splitter/-/sentence-splitter-3.2.0.tgz#fb2cd2f61f40006643ba83d9acf4609233c1c68c"
-  integrity sha512-lKX2tZ1rsA9Tu0gW8vRmMDmIEJoZ1d7cKpzcbFZdUrSpCR6gy/7OPPh7jjT/6Oc6Z79ToUmC2l8tyTEGanVmiA==
+sentence-splitter@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/sentence-splitter/-/sentence-splitter-3.2.2.tgz#b02a28c08bbad4bd3b6ec6f619d50e3fd3596d07"
+  integrity sha512-hMvaodgK9Fay928uiQoTMEWjXpCERdKD2uKo7BbSyP+uWTo+wHiRjN+ZShyI99rW0VuoV4Cuw8FUmaRcnpN7Ug==
   dependencies:
-    "@textlint/ast-node-types" "^4.2.5"
+    "@textlint/ast-node-types" "^4.4.2"
     concat-stream "^2.0.0"
-    object.values "^1.1.0"
+    object_values "^0.1.2"
     structured-source "^3.0.2"
 
 set-blocking@^2.0.0:
@@ -6430,13 +6430,13 @@ textlint-rule-no-doubled-conjunctive-particle-ga@1.0.2:
     textlint-rule-helper "^1.1.5"
     textlint-util-to-string "^1.2.0"
 
-textlint-rule-no-doubled-joshi@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-joshi/-/textlint-rule-no-doubled-joshi-3.7.0.tgz#c5c71a8ab2b4f302cac24f01a8c7109a3db9b6e4"
-  integrity sha512-igFRyOvHjuC7M8NTj047QUAZZKizO0YJkn9sH8/Yby1WpLMwqVgr93vYdo7kir+I488k6DgzRt+M8oBk44XQlg==
+textlint-rule-no-doubled-joshi@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-doubled-joshi/-/textlint-rule-no-doubled-joshi-4.0.1.tgz#2a2c01549fbe5cbf1355a9960c353d449eaec4e6"
+  integrity sha512-zkdFMvrbVeU3nrio5SxCg+jObflG1JdT6e5FaHAny8yyqEsRVz4vS7zPxjlsqXDK1c/GqcPcGJFNyhDupfsz4w==
   dependencies:
-    kuromojin "^2.0.0"
-    sentence-splitter "^3.2.0"
+    kuromojin "^3.0.0"
+    sentence-splitter "^3.2.1"
     textlint-rule-helper "^2.1.1"
     textlint-util-to-string "^3.0.0"
 
