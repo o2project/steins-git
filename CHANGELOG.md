@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/o2project/steins-git/compare/v3.0.4...v3.0.5) (2023-01-06)
+
+
+### Bug Fixes
+
+* **website/page:** correct page link ([2350710](https://github.com/o2project/steins-git/commit/235071050fae7ffb5685fffdea8cb14a760454cf))
+
 ## [3.0.4](https://github.com/o2project/steins-git/compare/v3.0.3...v3.0.4) (2023-01-06)
 
 
