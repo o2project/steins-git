@@ -37,7 +37,7 @@
     "prettier": "^2.8.3",
     "prettier-plugin-md-nocjsp": "^1.5.0",
     "rimraf": "^4.0.7",
-    "semantic-release": "^19.0.5",
+    "semantic-release": "^20.0.2",
     "textlint": "^12.5.1",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-ja-hiragana-fukushi": "^1.3.0",
