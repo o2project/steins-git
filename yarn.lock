@@ -510,10 +510,15 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@textlint/ast-node-types@^12.3.0", "@textlint/ast-node-types@^12.6.0":
+"@textlint/ast-node-types@^12.6.0":
   version "12.6.0"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-12.6.0.tgz#d385b39deee32bba3f4394000386f3fc33aa349a"
   integrity sha512-DPxbo0d6Uihwcv2MKE/6oUaCuipHeEygow0In98SHZRY8hMytYWoYQEfhcTE5i+0cIcA2hHZhz4OQ0JaujqZ6w==
+
+"@textlint/ast-node-types@^13.0.2":
+  version "13.0.5"
+  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-13.0.5.tgz#fcea5a5ad29478e84b3de6286fea0b32278b685b"
+  integrity sha512-BiH5QOKDs52WR2Q26POwm5RaNs7hnU6TCrkoo4uECZQjjDQoaQWsp242KDQnvbiGnkj/a2xl+XPMuFCyn0XqjA==
 
 "@textlint/ast-node-types@^4.2.4", "@textlint/ast-node-types@^4.4.2":
   version "4.4.3"
@@ -6691,12 +6696,12 @@ textlint-rule-helper@^1.1.3:
   dependencies:
     unist-util-visit "^1.1.0"
 
-textlint-rule-helper@^2.0.0, textlint-rule-helper@^2.1.1, textlint-rule-helper@^2.2.0, textlint-rule-helper@^2.2.1, textlint-rule-helper@^2.2.2, textlint-rule-helper@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/textlint-rule-helper/-/textlint-rule-helper-2.2.4.tgz#32a69a2658b2f0845ddd835c0c1f307f698e4c10"
-  integrity sha512-aQDn83+L6uG8tA6IjAsfFLWxR0/OJg51/C0k6OxNuGJnn/rgQnX+6Lh/bWh9dJ0RmOIQk7VkZ1uHUny5PXkjwQ==
+textlint-rule-helper@^2.0.0, textlint-rule-helper@^2.1.1, textlint-rule-helper@^2.2.0, textlint-rule-helper@^2.2.1, textlint-rule-helper@^2.2.2, textlint-rule-helper@^2.2.4, textlint-rule-helper@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/textlint-rule-helper/-/textlint-rule-helper-2.3.0.tgz#5ab84db686d42fd2e39a63b40310501bb336520d"
+  integrity sha512-Ug78Saahb/qVImttL0NSFyT5/JJ5wXvOPepR2pYAjNi54BsQAAz/hAyyEgKuYeR0+yjFb0KPhby4f880X5vqHA==
   dependencies:
-    "@textlint/ast-node-types" "^12.3.0"
+    "@textlint/ast-node-types" "^13.0.2"
     structured-source "^4.0.0"
     unist-util-visit "^2.0.3"
 
@@ -6834,13 +6839,13 @@ textlint-rule-no-mix-dearu-desumasu@^5.0.0:
     textlint-rule-helper "^2.0.0"
     unist-util-visit "^3.0.0"
 
-textlint-rule-no-nfd@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-nfd/-/textlint-rule-no-nfd-1.0.2.tgz#8c5793b57caada6e620b89d7a1d2886487dbbe2e"
-  integrity sha512-n6tUx40/V6koDo78qqePHxSovuwSIKO0xwY3FCqVDbcfg9GxQCjde1twQJ99T3bs4LabhPOo/Pt3USaQ9XcTRQ==
+textlint-rule-no-nfd@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-nfd/-/textlint-rule-no-nfd-2.0.1.tgz#f13c74796dcfe06b8bd6e8c0e2560d041b384ee7"
+  integrity sha512-d0SSK64qliPzan+xuRo7F2N4cfgDxBSwzZSwOMclwtPN+ag4Ir0M5SVfBEX1uOAgfPFnjssziDm6kp6WSwzJxg==
   dependencies:
     match-index "^1.0.3"
-    textlint-rule-helper "^2.1.1"
+    textlint-rule-helper "^2.3.0"
     unorm "^1.4.1"
 
 textlint-rule-prefer-tari-tari@^1.0.3:
